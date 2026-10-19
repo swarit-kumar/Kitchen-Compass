@@ -1,0 +1,13 @@
+
+{
+  "schema_version": "1.0",
+  "data_version": "0.1.0",
+  "config_version": "0.1.0",
+  "random_seed": 42,
+  "top_k_recipes": 5,
+  "top_k_substitutions": 5,
+  "top_k_joint_plans": 3,
+  "max_replacements": 3,
+  "max_candidates_per_target": 5,
+  "max_combinations": 125
+}
