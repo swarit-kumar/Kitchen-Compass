@@ -1,0 +1,57 @@
+{
+  "config_version": "0.3.0",
+  "counts": {
+    "ingredients": 162,
+    "recipes": 212,
+    "train_recipes": 124
+  },
+  "data_version": "2.0",
+  "input_sha256": {
+    "app.py": "cc63ed5db32b137c91eb9f9b90c7e44c145225bc8d4c75398732d17d363546ab",
+    "config/settings.json": "0dc2345681f851b26173338a06162f737447d381eb4f26fe4f556a5e0f925a01",
+    "data/benchmark/dev_cases.jsonl": "81c48612bb094c40f7f16cc96f841df8ed80ada262962c13fcc93a786424a35b",
+    "data/curation/catalogue.json": "25b1a2842a61266b9b76a5056cfa34025e3a4d4e923463e4c30108ff162da944",
+    "data/curation/catalogue_v1.json": "31002c23ce65bfa57d20768ebc5ddd0f0c551c89ade220af176a273825c98410",
+    "data/curation/recipe_expansion_v2.txt": "6fe1d87c15c2a13f60e3eb20d6ff16f85df45f2281f5e065da53d73087605f72",
+    "data/raw/KitchenCompass_Recipes_v1.json": "b1898d4ea0fb19f45bc8adc2de35f5c8d0ee799d4ce0635a16af6f9ef0894749",
+    "data/raw/KitchenCompass_Recipes_v2.json": "dbed6b676e0c558260067c952963c0b1724e26bf5e2108070af3fb4935522828",
+    "data/raw/flavordb_entity_cids.json": "47e2032e7c3c5cac974d93eaf20cf5c63f58e61221f7c43aa5bb25832ce933d6",
+    "kitchencompass/constraints.py": "ae0af6fa64806d34d91faa7b010b26cd5449cb5c4be329d09d750b045d25ae7b",
+    "kitchencompass/context.py": "0bddfe4139f7a49c2c9c9ee41e7cbde8ef964cac1b54da1767ad30ffbd1f4d7b",
+    "kitchencompass/custom_recipes.py": "e35c809c36faae47b8196a65e78dad021206c7e4b062a003bf9c23df60db20f1",
+    "kitchencompass/data_io.py": "e1e0246225c62a75c73b89028382e99c1267227ba023f3a0c6502f98c480e239",
+    "kitchencompass/normalize.py": "8b059161eac20cfb5bae28493af60de252e0d018272048b6ee2186fb98da29e1",
+    "kitchencompass/prepare.py": "370c447d6616abff6f02e10b97f8463beed3b163b914a99473219c49141acfca",
+    "kitchencompass/recommend.py": "df3526cd2e02e052d0088feb94726478856447093f6e259db5f61312b3dec8c4",
+    "kitchencompass/schemas.py": "da53b41ad47125d5ef273cbc235c0b125e5d4a00f1c45728b94e78ac90602dd4",
+    "kitchencompass/service.py": "cf86e2ce5a76644ae82abbb052eeda423186f55ef84e344b8219e31137459afa",
+    "requirements.txt": "d915d7cb65c97edc64427ea59d099402a237fb10e1e6b778ffd5af4b9b3ac46e",
+    "scripts/build_features.py": "8bcce81b6e459c3f6f489f544de487abff8f05d96bd32a02af52b1890b3b2283",
+    "scripts/expand_recipes.py": "6069bbbd81e999cec4a277dc54520bce1a5fbdc140678a14fc8d19c06064cb64",
+    "scripts/prepare_data.py": "f6f183d2c25427c9ae98f2f51a896b9f4d23ac25c4166dc722377c38fd8771ed",
+    "tests/test_contracts.py": "a1fc3642a83edf2c459d63a1b2a302d54f112397c574db7f495b313557a159de",
+    "tests/test_phase1.py": "77a393d9742cec4d7c3a4ef3a4a331680cf87f9e52953fe07a768a6b606ad3ca",
+    "tests/test_phase2.py": "928eea5a3e264ba2591ebfe9d3dafd9d8da35892812f8c1eb07c41663239638d"
+  },
+  "output_sha256": {
+    "artifacts/context_vectors.json": "dc3a0f7ddbb747501e1b8a8ba6d9a3d514507e7453743546ca88278a512c171d",
+    "data/benchmark/splits.json": "7ab36ee668b7bf47c1c315201f8127f940234921dc34bc2c1c5b8352add8be0c",
+    "data/processed/flavors.jsonl": "661e6d1d4a654bfe00ced9b34e7b6a1084aeab97b8ccf5f3ad050d43f1788e78",
+    "data/processed/ingredients.jsonl": "959aa36113a3aaa27f7e34b89a370eb08440e4f4c0c937bc2fce0cf40f5096cd",
+    "data/processed/recipes.jsonl": "8a5a7ebd3bd9a0890c9ed5a9764af52e1b9625a2ddae67ccee39b5fd3ffcd22a",
+    "data/processed/role_rules.json": "21b3beda2caf81a94520c4e9ff256fd5e1379c39a3b4cb415ef895c37a97e8a9",
+    "data/processed/sources.jsonl": "05b94a3697baf90cefbbcae47149e8129f3101c6da0b07af16805cf4b9aee555",
+    "results/data_audit.json": "3c6e0984d59f492e559d30e36e150f4f3c52f798c4fc840eeecf16b667ccdae6"
+  },
+  "package_versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.1.1",
+    "pydantic": "2.14.3",
+    "pytest": "9.2.0",
+    "streamlit": "1.67.0"
+  },
+  "python_version": "3.11.9",
+  "schema_version": "1.0",
+  "seed": 42,
+  "split_id": "groups_seed_42_v2"
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "action_keywords": [
+      "roux",
+      "stir in flour",
+      "thicken"
+    ],
+    "categories": [],
+    "ingredient_ids": [
+      "ing_all_purpose_flour",
+      "ing_wheat_flour"
+    ],
+    "priority": 10,
+    "role": "thickener",
+    "rule_id": "roux_thickener",
+    "source_refs": [
+      "src_kc_project_curation_v2"
+    ]
+  },
+  {
+    "action_keywords": [
+      "slurry",
+      "thicken",
+      "whisk cornstarch"
+    ],
+    "categories": [],
+    "ingredient_ids": [
+      "ing_cornstarch"
+    ],
+    "priority": 10,
+    "role": "thickener",
+    "rule_id": "starch_slurry",
+    "source_refs": [
+      "src_kc_project_curation_v2"
+    ]
+  },
+  {
+    "action_keywords": [
+      "simmer",
+      "stir in coconut milk"
+    ],
+    "categories": [],
+    "ingredient_ids": [
+      "ing_coconut_milk"
+    ],
+    "priority": 5,
+    "role": "liquid",
+    "rule_id": "coconut_milk_simmer",
+    "source_refs": [
+      "src_kc_project_curation_v2"
+    ]
+  },
+  {
+    "action_keywords": [
+      "finish",
+      "season",
+      "stir in lemon juice",
+      "stir in lime juice"
+    ],
+    "categories": [],
+    "ingredient_ids": [
+      "ing_lemon_juice",
+      "ing_lime_juice"
+    ],
+    "priority": 5,
+    "role": "acid",
+    "rule_id": "citrus_finish",
+    "source_refs": [
+      "src_kc_project_curation_v2"
+    ]
+  }
+]

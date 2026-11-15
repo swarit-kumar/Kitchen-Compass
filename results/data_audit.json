@@ -1,0 +1,341 @@
+{
+  "active_by_family": {
+    "curry": 118,
+    "soup": 94
+  },
+  "active_by_group": {
+    "Indian": 110,
+    "International": 102
+  },
+  "active_by_recipe_source": {
+    "src_kc_generated_recipes_v1": 36,
+    "src_kc_generated_recipes_v2": 176
+  },
+  "active_distinct_ingredient_sets": 212,
+  "active_ingredients": 162,
+  "active_recipes": 212,
+  "additional_pantry_ingredients": [],
+  "data_version": "2.0",
+  "direct_recipe_ingredients": 152,
+  "excluded_recipes": {
+    "rec_aloo_paratha": [
+      "outside_dish_family_scope"
+    ],
+    "rec_baingan_bharta": [
+      "outside_dish_family_scope"
+    ],
+    "rec_besan_chilla": [
+      "outside_dish_family_scope"
+    ],
+    "rec_bhindi_masala": [
+      "outside_dish_family_scope"
+    ],
+    "rec_chicken_pho": [
+      "unresolved_compound:fish sauce",
+      "unresolved_compound:rice noodle"
+    ],
+    "rec_cucumber_raita": [
+      "outside_dish_family_scope"
+    ],
+    "rec_greek_tzatziki": [
+      "outside_dish_family_scope"
+    ],
+    "rec_guacamole": [
+      "outside_dish_family_scope"
+    ],
+    "rec_hummus": [
+      "outside_dish_family_scope"
+    ],
+    "rec_japanese_katsu_curry": [
+      "unresolved_compound:panko"
+    ],
+    "rec_kheer": [
+      "outside_dish_family_scope"
+    ],
+    "rec_kimchi_jjigae": [
+      "unresolved_compound:napa cabbage kimchi"
+    ],
+    "rec_mango_sticky_rice": [
+      "outside_dish_family_scope"
+    ],
+    "rec_mapo_tofu": [
+      "outside_dish_family_scope"
+    ],
+    "rec_margherita_pizza": [
+      "outside_dish_family_scope"
+    ],
+    "rec_masala_dosa": [
+      "outside_dish_family_scope"
+    ],
+    "rec_massaman_beef_curry": [
+      "unresolved_compound:fish sauce"
+    ],
+    "rec_miso_soup": [
+      "unresolved_compound:dashi"
+    ],
+    "rec_moong_dal_khichdi": [
+      "outside_dish_family_scope"
+    ],
+    "rec_new_england_clam_chowder": [
+      "unresolved_compound:canned clam",
+      "unresolved_compound:clam juice"
+    ],
+    "rec_pav_bhaji": [
+      "outside_dish_family_scope"
+    ],
+    "rec_poha": [
+      "outside_dish_family_scope"
+    ],
+    "rec_rava_upma": [
+      "outside_dish_family_scope"
+    ],
+    "rec_shakshuka": [
+      "outside_dish_family_scope"
+    ],
+    "rec_shoyu_ramen": [
+      "unresolved_compound:mirin",
+      "unresolved_compound:ramen noodle",
+      "unresolved_compound:soy sauce"
+    ],
+    "rec_spaghetti_aglio_e_olio": [
+      "outside_dish_family_scope"
+    ],
+    "rec_spanish_tortilla": [
+      "outside_dish_family_scope"
+    ],
+    "rec_tabbouleh": [
+      "outside_dish_family_scope"
+    ],
+    "rec_thai_green_chicken_curry": [
+      "unresolved_compound:fish sauce"
+    ],
+    "rec_thai_red_tofu_curry": [
+      "unresolved_compound:soy sauce"
+    ],
+    "rec_tom_kha_gai": [
+      "unresolved_compound:fish sauce"
+    ],
+    "rec_tom_yum_goong": [
+      "unresolved_compound:fish sauce"
+    ],
+    "rec_vegetable_biryani": [
+      "outside_dish_family_scope"
+    ],
+    "rec_vegetable_fried_rice": [
+      "outside_dish_family_scope"
+    ],
+    "rec_vegetable_manchow_soup": [
+      "unresolved_compound:crispy noodles",
+      "unresolved_compound:soy sauce"
+    ],
+    "rec_vegetable_pulao": [
+      "outside_dish_family_scope"
+    ]
+  },
+  "flavor_profiles_available": 5,
+  "ingredient_ids_without_a_modeled_role": [
+    "ing_salt"
+  ],
+  "largest_duplicate_group": 10,
+  "missing_flavor_ingredient_ids": [
+    "ing_all_purpose_flour",
+    "ing_apple",
+    "ing_avocado",
+    "ing_baby_potato",
+    "ing_baguette",
+    "ing_basil",
+    "ing_beef_chuck",
+    "ing_beef_stock",
+    "ing_beetroot",
+    "ing_black_pepper",
+    "ing_black_peppercorn",
+    "ing_boneless_chicken_thigh",
+    "ing_broccoli",
+    "ing_butter",
+    "ing_butternut_squash",
+    "ing_cabbage",
+    "ing_canned_tomato",
+    "ing_carrot",
+    "ing_cashew",
+    "ing_cauliflower",
+    "ing_celery",
+    "ing_cheddar",
+    "ing_cherry_tomato",
+    "ing_chicken",
+    "ing_chicken_leg",
+    "ing_chicken_stock",
+    "ing_chickpea",
+    "ing_chickpea_flour",
+    "ing_cilantro",
+    "ing_cinnamon_stick",
+    "ing_clove",
+    "ing_coconut_milk",
+    "ing_coconut_oil",
+    "ing_cooked_black_bean",
+    "ing_cooked_black_chickpea",
+    "ing_cooked_black_eyed_pea",
+    "ing_cooked_brown_lentil",
+    "ing_cooked_cannellini_bean",
+    "ing_cooked_chicken",
+    "ing_cooked_chickpea",
+    "ing_cooked_kidney_bean",
+    "ing_cooked_mung_bean",
+    "ing_cooked_pigeon_pea",
+    "ing_cooked_turkey",
+    "ing_cooked_whole_black_gram",
+    "ing_coriander_seed",
+    "ing_corn_tortilla",
+    "ing_cornstarch",
+    "ing_cream",
+    "ing_cucumber",
+    "ing_cumin_seed",
+    "ing_curry_leaf",
+    "ing_curry_powder",
+    "ing_dill",
+    "ing_dried_ancho_chili",
+    "ing_dried_apricot",
+    "ing_dried_fenugreek_leaf",
+    "ing_dried_red_chili",
+    "ing_dried_wakame",
+    "ing_drumstick_pod",
+    "ing_egg",
+    "ing_egg_noodles",
+    "ing_eggplant",
+    "ing_fennel_seed",
+    "ing_fenugreek_leaf",
+    "ing_fenugreek_seed",
+    "ing_firm_tofu",
+    "ing_galangal",
+    "ing_garam_masala",
+    "ing_ghee",
+    "ing_ginger",
+    "ing_green_bean",
+    "ing_green_bell_pepper",
+    "ing_green_cardamom",
+    "ing_green_curry_paste",
+    "ing_green_pea",
+    "ing_ground_cinnamon",
+    "ing_ground_coriander",
+    "ing_ground_cumin",
+    "ing_ground_fennel",
+    "ing_ground_ginger",
+    "ing_ground_red_chili",
+    "ing_gruyere",
+    "ing_jamaican_curry_powder",
+    "ing_japanese_curry_roux",
+    "ing_kale",
+    "ing_kombu",
+    "ing_kombu_stock",
+    "ing_leek",
+    "ing_lemon",
+    "ing_lemon_juice",
+    "ing_lemongrass",
+    "ing_lime",
+    "ing_lime_juice",
+    "ing_maize",
+    "ing_maize_flour",
+    "ing_makrut_lime_leaf",
+    "ing_massaman_curry_paste",
+    "ing_milk",
+    "ing_mint",
+    "ing_miso_paste",
+    "ing_mushroom",
+    "ing_mustard_greens",
+    "ing_mustard_seed",
+    "ing_okra",
+    "ing_olive_oil",
+    "ing_palm_sugar",
+    "ing_paneer",
+    "ing_paprika",
+    "ing_parmesan",
+    "ing_parsley",
+    "ing_peanut",
+    "ing_pearl_barley",
+    "ing_pineapple",
+    "ing_plain_yogurt",
+    "ing_pork_shoulder",
+    "ing_pumpkin",
+    "ing_radish",
+    "ing_rasam_powder",
+    "ing_red_bell_pepper",
+    "ing_red_curry_paste",
+    "ing_red_lentil",
+    "ing_rice_vinegar",
+    "ing_salt",
+    "ing_sambar_powder",
+    "ing_scallion",
+    "ing_sesame_oil",
+    "ing_sherry_vinegar",
+    "ing_short_grain_rice",
+    "ing_shrimp",
+    "ing_silken_tofu",
+    "ing_small_pasta",
+    "ing_soybean",
+    "ing_spinach",
+    "ing_split_chickpea",
+    "ing_split_mung_bean",
+    "ing_split_pigeon_pea",
+    "ing_sugar",
+    "ing_sunflower_seed",
+    "ing_sweet_corn",
+    "ing_sweet_potato",
+    "ing_tamarind_paste",
+    "ing_thai_basil",
+    "ing_thai_chili",
+    "ing_thyme",
+    "ing_tomato_puree",
+    "ing_turmeric",
+    "ing_vegetable_oil",
+    "ing_vegetable_stock",
+    "ing_water",
+    "ing_watermelon",
+    "ing_wheat_flour",
+    "ing_white_fish_fillet",
+    "ing_white_pepper",
+    "ing_white_wine_vinegar",
+    "ing_yellow_onion",
+    "ing_zucchini"
+  ],
+  "proposed_team_review": "proposed_for_team_review",
+  "raw_input_hashes": {
+    "data/raw/KitchenCompass_Recipes_v2.json": "dbed6b676e0c558260067c952963c0b1724e26bf5e2108070af3fb4935522828",
+    "data/raw/flavordb_entity_cids.json": "47e2032e7c3c5cac974d93eaf20cf5c63f58e61221f7c43aa5bb25832ce933d6"
+  },
+  "raw_total_recipes": 248,
+  "schema_version": "1.0",
+  "scope_candidate_recipes": 224,
+  "sources": [
+    "src_kc_generated_recipes_v1",
+    "src_kc_generated_recipes_v2",
+    "src_kc_project_curation_v2",
+    "src_flavordb_364",
+    "src_flavordb_373",
+    "src_flavordb_172",
+    "src_flavordb_259",
+    "src_flavordb_348"
+  ],
+  "split_group_counts": {
+    "dev": 9,
+    "test": 9,
+    "train": 26
+  },
+  "split_recipe_counts": {
+    "dev": 45,
+    "test": 43,
+    "train": 124
+  },
+  "unknown_ingredient_names": {},
+  "unresolved_compounds": {
+    "canned clam": 1,
+    "clam juice": 1,
+    "crispy noodles": 1,
+    "dashi": 1,
+    "fish sauce": 5,
+    "mirin": 1,
+    "napa cabbage kimchi": 1,
+    "panko": 1,
+    "ramen noodle": 1,
+    "rice noodle": 1,
+    "soy sauce": 3
+  }
+}

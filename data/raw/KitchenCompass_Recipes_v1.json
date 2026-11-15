@@ -1,0 +1,4810 @@
+{
+  "dataset_id": "kitchencompass_generated_recipes",
+  "data_version": "1.0",
+  "raw_format_version": "1.0",
+  "stage": "raw_phase_1_input",
+  "source": {
+    "source_id": "src_kc_generated_recipes_v1",
+    "title": "KitchenCompass generated starter recipes",
+    "origin": "AI-generated home-style versions of recognizable dishes, written for KitchenCompass",
+    "external_recipe_url": null,
+    "independent_source_reviewed": false,
+    "cooking_tested": false
+  },
+  "usage_notes": [
+    "Save this JSON under data/raw/ and preserve it as the immutable source snapshot.",
+    "Cuisine and dish family labels are catalogue groupings, not claims of exclusive origin or authentic formulations.",
+    "Ingredient name hints are inputs for alias review and canonical mapping. Counts of hints do not measure supported ingredient coverage.",
+    "Compound flags are starting points for review. Verify actual components or mark the ingredient unsupported before enforcing exclusions.",
+    "A few cooking liquids and seasonings are recorded as needed. Decide how pantry staples are handled separately during Phase 1.",
+    "The soup and curry subset is the candidate pool for the current Phase 1 scope. Review eligibility and near-duplicate groups before splitting.",
+    "This file contains no FlavorDB mappings, evidence-backed substitution labels, or benchmark judgments."
+  ],
+  "coverage": {
+    "total_recipes": 72,
+    "by_group": {
+      "Indian": 36,
+      "International": 36
+    },
+    "by_dish_family": {
+      "curry": 26,
+      "other": 24,
+      "soup": 22
+    },
+    "soup_and_curry_records_before_validation": 48,
+    "distinct_raw_ingredient_name_hints": 169,
+    "soup_and_curry_distinct_raw_ingredient_name_hints": 133,
+    "compound_review_flags": 59
+  },
+  "recipes": [
+    {
+      "recipe_id": "rec_palak_paneer",
+      "title": "Palak Paneer",
+      "cuisine_label": "India",
+      "dish_family": "curry",
+      "ingredients": [
+        {
+          "original_phrase": "300 g of spinach",
+          "ingredient_name_hint": "spinach",
+          "quantity_text": "300 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "200 g of paneer",
+          "ingredient_name_hint": "paneer",
+          "quantity_text": "200 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 cloves of garlic",
+          "ingredient_name_hint": "garlic",
+          "quantity_text": "3 cloves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ginger",
+          "ingredient_name_hint": "ginger",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 tsp of cumin seed",
+          "ingredient_name_hint": "cumin seed",
+          "quantity_text": "1/2 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of cream",
+          "ingredient_name_hint": "cream",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/4 cup of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "1/4 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Blanch the spinach and blend it with the water.",
+        "Fry cumin, chopped onion, ginger and garlic in oil until softened.",
+        "Stir in the spinach and simmer briefly.",
+        "Fold in paneer cubes, cream and salt and heat through."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_paneer_butter_masala",
+      "title": "Paneer Butter Masala",
+      "cuisine_label": "India",
+      "dish_family": "curry",
+      "ingredients": [
+        {
+          "original_phrase": "250 g of paneer",
+          "ingredient_name_hint": "paneer",
+          "quantity_text": "250 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "4 tomatoes",
+          "ingredient_name_hint": "tomato",
+          "quantity_text": "4",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "30 g of cashew",
+          "ingredient_name_hint": "cashew",
+          "quantity_text": "30 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of butter",
+          "ingredient_name_hint": "butter",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ginger",
+          "ingredient_name_hint": "ginger",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of garam masala",
+          "ingredient_name_hint": "garam masala",
+          "quantity_text": "1 tsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "1 tsp of dried fenugreek leaf",
+          "ingredient_name_hint": "dried fenugreek leaf",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 tbsp of cream",
+          "ingredient_name_hint": "cream",
+          "quantity_text": "3 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 cup of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "1/2 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Simmer chopped tomatoes, cashews and ginger in water until soft, then blend.",
+        "Cook the puree in butter until thick.",
+        "Stir in garam masala, crushed fenugreek leaves, cream and salt.",
+        "Add the cubed paneer and simmer gently."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_chana_masala",
+      "title": "Chana Masala",
+      "cuisine_label": "India",
+      "dish_family": "curry",
+      "ingredients": [
+        {
+          "original_phrase": "2 cups of cooked chickpea",
+          "ingredient_name_hint": "cooked chickpea",
+          "quantity_text": "2 cups",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tomatoes",
+          "ingredient_name_hint": "tomato",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ginger",
+          "ingredient_name_hint": "ginger",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 cloves of garlic",
+          "ingredient_name_hint": "garlic",
+          "quantity_text": "2 cloves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of cumin seed",
+          "ingredient_name_hint": "cumin seed",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ground coriander",
+          "ingredient_name_hint": "ground coriander",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of garam masala",
+          "ingredient_name_hint": "garam masala",
+          "quantity_text": "1 tsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "2 tbsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 cup of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Toast the cumin in oil and brown the chopped onion.",
+        "Add ginger, garlic, tomatoes, ground coriander and salt and cook to a paste.",
+        "Add chickpeas and water and simmer until the sauce coats the chickpeas.",
+        "Mash a spoonful of chickpeas into the sauce and stir in garam masala."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_rajma_masala",
+      "title": "Rajma Masala",
+      "cuisine_label": "India",
+      "dish_family": "curry",
+      "ingredients": [
+        {
+          "original_phrase": "2 cups of cooked kidney bean",
+          "ingredient_name_hint": "cooked kidney bean",
+          "quantity_text": "2 cups",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tomatoes",
+          "ingredient_name_hint": "tomato",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ginger",
+          "ingredient_name_hint": "ginger",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 cloves of garlic",
+          "ingredient_name_hint": "garlic",
+          "quantity_text": "3 cloves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ground cumin",
+          "ingredient_name_hint": "ground cumin",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of garam masala",
+          "ingredient_name_hint": "garam masala",
+          "quantity_text": "1 tsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "2 tbsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 cup of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Brown chopped onion in oil, then add ginger and garlic.",
+        "Cook down the tomatoes with cumin and salt.",
+        "Simmer the cooked kidney beans in the tomato mixture with water until creamy.",
+        "Finish with garam masala."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_dal_tadka",
+      "title": "Dal Tadka",
+      "cuisine_label": "India",
+      "dish_family": "curry",
+      "ingredients": [
+        {
+          "original_phrase": "1 cup of split pigeon pea",
+          "ingredient_name_hint": "split pigeon pea",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tomato",
+          "ingredient_name_hint": "tomato",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 tsp of turmeric",
+          "ingredient_name_hint": "turmeric",
+          "quantity_text": "1/2 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 cups of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "3 cups",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of ghee",
+          "ingredient_name_hint": "ghee",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of cumin seed",
+          "ingredient_name_hint": "cumin seed",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 cloves of garlic",
+          "ingredient_name_hint": "garlic",
+          "quantity_text": "3 cloves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 dried red chilis",
+          "ingredient_name_hint": "dried red chili",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Rinse the pigeon peas and simmer with water, turmeric and chopped tomato until tender.",
+        "Whisk the cooked dal and season with salt.",
+        "Heat ghee separately and fry cumin, sliced garlic and dried chilies until fragrant.",
+        "Pour the tempering over the hot dal."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_dal_makhani",
+      "title": "Dal Makhani",
+      "cuisine_label": "India",
+      "dish_family": "curry",
+      "ingredients": [
+        {
+          "original_phrase": "2 cups of cooked whole black gram",
+          "ingredient_name_hint": "cooked whole black gram",
+          "quantity_text": "2 cups",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 cup of cooked kidney bean",
+          "ingredient_name_hint": "cooked kidney bean",
+          "quantity_text": "1/2 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3/4 cup of tomato puree",
+          "ingredient_name_hint": "tomato puree",
+          "quantity_text": "3/4 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of butter",
+          "ingredient_name_hint": "butter",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/4 cup of cream",
+          "ingredient_name_hint": "cream",
+          "quantity_text": "1/4 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ginger",
+          "ingredient_name_hint": "ginger",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 cloves of garlic",
+          "ingredient_name_hint": "garlic",
+          "quantity_text": "3 cloves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 tsp of ground red chili",
+          "ingredient_name_hint": "ground red chili",
+          "quantity_text": "1/2 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 cup of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Cook ginger, garlic and chili in butter, then reduce the tomato puree in the same pot.",
+        "Add the cooked beans, water and salt and simmer until creamy, stirring often.",
+        "Mash a few beans against the pot and finish with cream."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_aloo_gobi",
+      "title": "Aloo Gobi",
+      "cuisine_label": "India",
+      "dish_family": "curry",
+      "ingredients": [
+        {
+          "original_phrase": "2 potatoes",
+          "ingredient_name_hint": "potato",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "400 g of cauliflower",
+          "ingredient_name_hint": "cauliflower",
+          "quantity_text": "400 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ginger",
+          "ingredient_name_hint": "ginger",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of cumin seed",
+          "ingredient_name_hint": "cumin seed",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 tsp of turmeric",
+          "ingredient_name_hint": "turmeric",
+          "quantity_text": "1/2 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ground coriander",
+          "ingredient_name_hint": "ground coriander",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Fry cumin and sliced onion in oil until the onion softens.",
+        "Stir in ginger, turmeric, coriander and salt.",
+        "Add diced potato and cauliflower florets and cook covered over low heat until tender, stirring occasionally."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_aloo_matar",
+      "title": "Aloo Matar",
+      "cuisine_label": "India",
+      "dish_family": "curry",
+      "ingredients": [
+        {
+          "original_phrase": "2 potatoes",
+          "ingredient_name_hint": "potato",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 cup of green pea",
+          "ingredient_name_hint": "green pea",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tomatoes",
+          "ingredient_name_hint": "tomato",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ginger",
+          "ingredient_name_hint": "ginger",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ground cumin",
+          "ingredient_name_hint": "ground cumin",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 tsp of turmeric",
+          "ingredient_name_hint": "turmeric",
+          "quantity_text": "1/2 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 cup of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Soften chopped onion and ginger in oil.",
+        "Add tomatoes, cumin and turmeric and cook into a sauce.",
+        "Simmer diced potatoes in the sauce with water and salt until nearly tender.",
+        "Add peas and finish cooking uncovered."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_baingan_bharta",
+      "title": "Baingan Bharta",
+      "cuisine_label": "India",
+      "dish_family": "other",
+      "ingredients": [
+        {
+          "original_phrase": "1 large eggplant",
+          "ingredient_name_hint": "eggplant",
+          "quantity_text": "1 large",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tomatoes",
+          "ingredient_name_hint": "tomato",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 cloves of garlic",
+          "ingredient_name_hint": "garlic",
+          "quantity_text": "3 cloves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 green chili",
+          "ingredient_name_hint": "green chili",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of cilantro",
+          "ingredient_name_hint": "cilantro",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Roast the eggplant at 220 C until it collapses and the flesh is tender.",
+        "Peel away the skin and mash the flesh.",
+        "Fry chopped onion, garlic and green chili in oil and cook in the tomatoes until soft.",
+        "Mix in the eggplant and salt, then finish with cilantro."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_bhindi_masala",
+      "title": "Bhindi Masala",
+      "cuisine_label": "India",
+      "dish_family": "other",
+      "ingredients": [
+        {
+          "original_phrase": "350 g of okra",
+          "ingredient_name_hint": "okra",
+          "quantity_text": "350 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tomato",
+          "ingredient_name_hint": "tomato",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ground coriander",
+          "ingredient_name_hint": "ground coriander",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 tsp of turmeric",
+          "ingredient_name_hint": "turmeric",
+          "quantity_text": "1/2 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 tsp of dried mango powder",
+          "ingredient_name_hint": "dried mango powder",
+          "quantity_text": "1/2 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Dry and slice the okra, then saute it in half the oil until lightly browned.",
+        "Soften the onion in the remaining oil and cook the tomato with coriander and turmeric.",
+        "Return the okra and season with salt and dried mango powder."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_kadhi_pakora",
+      "title": "Kadhi Pakora",
+      "cuisine_label": "India",
+      "dish_family": "curry",
+      "ingredients": [
+        {
+          "original_phrase": "1 cup of plain yogurt",
+          "ingredient_name_hint": "plain yogurt",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3/4 cup of chickpea flour",
+          "ingredient_name_hint": "chickpea flour",
+          "quantity_text": "3/4 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 tsp of turmeric",
+          "ingredient_name_hint": "turmeric",
+          "quantity_text": "1/2 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 tsp of cumin seed",
+          "ingredient_name_hint": "cumin seed",
+          "quantity_text": "1/2 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 cups of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "3 cups",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "vegetable oil, for shallow frying",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "for shallow frying",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Whisk yogurt with one-quarter cup of flour, turmeric, salt and most of the water.",
+        "Fry cumin in a little oil, pour in the yogurt mixture and stir while bringing it to a simmer.",
+        "Mix sliced onion with the remaining flour and just enough remaining water to form a thick batter.",
+        "Shallow-fry spoonfuls of batter until cooked through and add them to the simmering kadhi."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_malai_kofta",
+      "title": "Malai Kofta",
+      "cuisine_label": "India",
+      "dish_family": "curry",
+      "ingredients": [
+        {
+          "original_phrase": "150 g of paneer",
+          "ingredient_name_hint": "paneer",
+          "quantity_text": "150 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 potatoes",
+          "ingredient_name_hint": "potato",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of cornstarch",
+          "ingredient_name_hint": "cornstarch",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 tomatoes",
+          "ingredient_name_hint": "tomato",
+          "quantity_text": "3",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "30 g of cashew",
+          "ingredient_name_hint": "cashew",
+          "quantity_text": "30 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/4 cup of cream",
+          "ingredient_name_hint": "cream",
+          "quantity_text": "1/4 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of garam masala",
+          "ingredient_name_hint": "garam masala",
+          "quantity_text": "1 tsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "vegetable oil, for shallow frying",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "for shallow frying",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3/4 cup of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "3/4 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Boil and mash the potatoes, then combine with grated paneer, cornstarch and a little salt.",
+        "Shape into small balls and shallow-fry until golden.",
+        "Simmer tomatoes and cashews in water, blend, then reduce the puree with garam masala and salt.",
+        "Finish the gravy with cream and add the koftas just before serving."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_matar_paneer",
+      "title": "Matar Paneer",
+      "cuisine_label": "India",
+      "dish_family": "curry",
+      "ingredients": [
+        {
+          "original_phrase": "200 g of paneer",
+          "ingredient_name_hint": "paneer",
+          "quantity_text": "200 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 cup of green pea",
+          "ingredient_name_hint": "green pea",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tomatoes",
+          "ingredient_name_hint": "tomato",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ginger",
+          "ingredient_name_hint": "ginger",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ground coriander",
+          "ingredient_name_hint": "ground coriander",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 tsp of garam masala",
+          "ingredient_name_hint": "garam masala",
+          "quantity_text": "1/2 tsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "1 tbsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3/4 cup of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "3/4 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Fry chopped onion and ginger in oil until golden.",
+        "Add tomatoes, coriander and salt and cook until thick.",
+        "Simmer peas in the sauce with water until tender.",
+        "Add paneer cubes and garam masala and cook briefly."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_dum_aloo",
+      "title": "Dum Aloo",
+      "cuisine_label": "India",
+      "dish_family": "curry",
+      "ingredients": [
+        {
+          "original_phrase": "450 g of baby potato",
+          "ingredient_name_hint": "baby potato",
+          "quantity_text": "450 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3/4 cup of plain yogurt",
+          "ingredient_name_hint": "plain yogurt",
+          "quantity_text": "3/4 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ground red chili",
+          "ingredient_name_hint": "ground red chili",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ground fennel",
+          "ingredient_name_hint": "ground fennel",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 tsp of ground ginger",
+          "ingredient_name_hint": "ground ginger",
+          "quantity_text": "1/2 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 tsp of cumin seed",
+          "ingredient_name_hint": "cumin seed",
+          "quantity_text": "1/2 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 cup of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "1/2 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Parboil and peel the potatoes, then brown them in oil.",
+        "Fry cumin in the same pan and lower the heat.",
+        "Whisk yogurt with water, chili, fennel, ginger and salt and add it while stirring.",
+        "Return the potatoes and simmer gently until tender."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_butter_chicken",
+      "title": "Butter Chicken",
+      "cuisine_label": "India",
+      "dish_family": "curry",
+      "ingredients": [
+        {
+          "original_phrase": "450 g of boneless chicken thigh",
+          "ingredient_name_hint": "boneless chicken thigh",
+          "quantity_text": "450 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/3 cup of plain yogurt",
+          "ingredient_name_hint": "plain yogurt",
+          "quantity_text": "1/3 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 cup of tomato puree",
+          "ingredient_name_hint": "tomato puree",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tsp of ginger",
+          "ingredient_name_hint": "ginger",
+          "quantity_text": "2 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 cloves of garlic",
+          "ingredient_name_hint": "garlic",
+          "quantity_text": "3 cloves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of butter",
+          "ingredient_name_hint": "butter",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/4 cup of cream",
+          "ingredient_name_hint": "cream",
+          "quantity_text": "1/4 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of garam masala",
+          "ingredient_name_hint": "garam masala",
+          "quantity_text": "1 tsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "1 tsp of dried fenugreek leaf",
+          "ingredient_name_hint": "dried fenugreek leaf",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Coat the chicken in yogurt, half the ginger, some garlic, garam masala and salt.",
+        "Sear the chicken in some butter and set it aside.",
+        "Cook the remaining ginger and garlic in butter and reduce the tomato puree with crushed fenugreek leaves.",
+        "Return the chicken and simmer to 74 C at the center, then stir in cream."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_chicken_korma",
+      "title": "Chicken Korma",
+      "cuisine_label": "India",
+      "dish_family": "curry",
+      "ingredients": [
+        {
+          "original_phrase": "450 g of boneless chicken thigh",
+          "ingredient_name_hint": "boneless chicken thigh",
+          "quantity_text": "450 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 onions",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 cup of plain yogurt",
+          "ingredient_name_hint": "plain yogurt",
+          "quantity_text": "1/2 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "30 g of cashew",
+          "ingredient_name_hint": "cashew",
+          "quantity_text": "30 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ginger",
+          "ingredient_name_hint": "ginger",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 cloves of garlic",
+          "ingredient_name_hint": "garlic",
+          "quantity_text": "3 cloves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "4 pods of green cardamom",
+          "ingredient_name_hint": "green cardamom",
+          "quantity_text": "4 pods",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3/4 cup of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "3/4 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Brown the sliced onions in oil and blend them with the cashews and half the water.",
+        "Fry cardamom, ginger and garlic in the same pan, then brown the chicken.",
+        "Stir in the onion paste, whisked yogurt, remaining water and salt.",
+        "Simmer gently until the chicken reaches 74 C at the center."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_chicken_chettinad",
+      "title": "Chicken Chettinad",
+      "cuisine_label": "India",
+      "dish_family": "curry",
+      "ingredients": [
+        {
+          "original_phrase": "450 g of boneless chicken thigh",
+          "ingredient_name_hint": "boneless chicken thigh",
+          "quantity_text": "450 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tomatoes",
+          "ingredient_name_hint": "tomato",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/3 cup of grated coconut",
+          "ingredient_name_hint": "grated coconut",
+          "quantity_text": "1/3 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of fennel seed",
+          "ingredient_name_hint": "fennel seed",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of black peppercorn",
+          "ingredient_name_hint": "black peppercorn",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 dried red chilis",
+          "ingredient_name_hint": "dried red chili",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "10 leaves of curry leaf",
+          "ingredient_name_hint": "curry leaf",
+          "quantity_text": "10 leaves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3/4 cup of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "3/4 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Dry-toast coconut, fennel, peppercorns and dried chili, then blend with a splash of the measured water.",
+        "Fry the curry leaves and chopped onion in oil, then cook down the tomatoes.",
+        "Add chicken, spice paste, salt and the remaining water.",
+        "Simmer until the sauce thickens and the chicken reaches 74 C at the center."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_goan_fish_curry",
+      "title": "Goan Fish Curry",
+      "cuisine_label": "India",
+      "dish_family": "curry",
+      "ingredients": [
+        {
+          "original_phrase": "400 g of white fish fillet",
+          "ingredient_name_hint": "white fish fillet",
+          "quantity_text": "400 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 cup of coconut milk",
+          "ingredient_name_hint": "coconut milk",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of tamarind paste",
+          "ingredient_name_hint": "tamarind paste",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 cloves of garlic",
+          "ingredient_name_hint": "garlic",
+          "quantity_text": "3 cloves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ground coriander",
+          "ingredient_name_hint": "ground coriander",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 tsp of turmeric",
+          "ingredient_name_hint": "turmeric",
+          "quantity_text": "1/2 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ground red chili",
+          "ingredient_name_hint": "ground red chili",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Soften chopped onion and garlic in oil, then add the ground spices.",
+        "Stir in coconut milk, tamarind and salt and bring to a gentle simmer.",
+        "Lower the fish pieces into the sauce and poach until the center reaches 63 C."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_kerala_egg_roast",
+      "title": "Kerala Egg Roast",
+      "cuisine_label": "India",
+      "dish_family": "curry",
+      "ingredients": [
+        {
+          "original_phrase": "4 eggs",
+          "ingredient_name_hint": "egg",
+          "quantity_text": "4",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 onions",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tomatoes",
+          "ingredient_name_hint": "tomato",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ginger",
+          "ingredient_name_hint": "ginger",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 cloves of garlic",
+          "ingredient_name_hint": "garlic",
+          "quantity_text": "2 cloves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "10 leaves of curry leaf",
+          "ingredient_name_hint": "curry leaf",
+          "quantity_text": "10 leaves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ground red chili",
+          "ingredient_name_hint": "ground red chili",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ground coriander",
+          "ingredient_name_hint": "ground coriander",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of coconut oil",
+          "ingredient_name_hint": "coconut oil",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Hard-boil the eggs and peel them.",
+        "Fry curry leaves and sliced onions in coconut oil until deep golden.",
+        "Add ginger, garlic, spices, tomatoes and salt and cook to a thick masala.",
+        "Halve the eggs and coat them in the masala."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_sambar",
+      "title": "Sambar",
+      "cuisine_label": "India",
+      "dish_family": "curry",
+      "ingredients": [
+        {
+          "original_phrase": "3/4 cup of split pigeon pea",
+          "ingredient_name_hint": "split pigeon pea",
+          "quantity_text": "3/4 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 carrot",
+          "ingredient_name_hint": "carrot",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 small eggplant",
+          "ingredient_name_hint": "eggplant",
+          "quantity_text": "1 small",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tomato",
+          "ingredient_name_hint": "tomato",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of tamarind paste",
+          "ingredient_name_hint": "tamarind paste",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of sambar powder",
+          "ingredient_name_hint": "sambar powder",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "1 tsp of mustard seed",
+          "ingredient_name_hint": "mustard seed",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "10 leaves of curry leaf",
+          "ingredient_name_hint": "curry leaf",
+          "quantity_text": "10 leaves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "4 cups of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "4 cups",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Simmer the pigeon peas in half the water until soft, then mash them.",
+        "Cook carrot, eggplant and tomato in the remaining water with sambar powder, tamarind and salt.",
+        "Stir the dal into the cooked vegetables and simmer.",
+        "Fry mustard seeds and curry leaves in oil and add the tempering."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_tomato_rasam",
+      "title": "Tomato Rasam",
+      "cuisine_label": "India",
+      "dish_family": "soup",
+      "ingredients": [
+        {
+          "original_phrase": "3 tomatoes",
+          "ingredient_name_hint": "tomato",
+          "quantity_text": "3",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tsp of tamarind paste",
+          "ingredient_name_hint": "tamarind paste",
+          "quantity_text": "2 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 cups of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "3 cups",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tsp of rasam powder",
+          "ingredient_name_hint": "rasam powder",
+          "quantity_text": "2 tsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "3 cloves of garlic",
+          "ingredient_name_hint": "garlic",
+          "quantity_text": "3 cloves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 tsp of mustard seed",
+          "ingredient_name_hint": "mustard seed",
+          "quantity_text": "1/2 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "8 leaves of curry leaf",
+          "ingredient_name_hint": "curry leaf",
+          "quantity_text": "8 leaves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ghee",
+          "ingredient_name_hint": "ghee",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of cilantro",
+          "ingredient_name_hint": "cilantro",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Simmer crushed tomatoes, tamarind, garlic, rasam powder and salt in water until fragrant.",
+        "Heat ghee in a small pan and fry mustard seeds and curry leaves.",
+        "Pour the tempering into the rasam and scatter cilantro over it."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_mulligatawny_soup",
+      "title": "Mulligatawny Soup",
+      "cuisine_label": "India",
+      "dish_family": "soup",
+      "ingredients": [
+        {
+          "original_phrase": "3/4 cup of red lentil",
+          "ingredient_name_hint": "red lentil",
+          "quantity_text": "3/4 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 carrot",
+          "ingredient_name_hint": "carrot",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 apple",
+          "ingredient_name_hint": "apple",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of curry powder",
+          "ingredient_name_hint": "curry powder",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "1/2 cup of coconut milk",
+          "ingredient_name_hint": "coconut milk",
+          "quantity_text": "1/2 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "4 cups of vegetable stock",
+          "ingredient_name_hint": "vegetable stock",
+          "quantity_text": "4 cups",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "1 tbsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of lemon juice",
+          "ingredient_name_hint": "lemon juice",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Soften diced onion and carrot in oil and stir in curry powder.",
+        "Add chopped apple, lentils and stock and simmer until the lentils break down.",
+        "Blend the soup, stir in coconut milk and finish with lemon juice."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_carrot_ginger_soup",
+      "title": "Carrot Ginger Soup",
+      "cuisine_label": "International",
+      "dish_family": "soup",
+      "ingredients": [
+        {
+          "original_phrase": "500 g of carrot",
+          "ingredient_name_hint": "carrot",
+          "quantity_text": "500 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of ginger",
+          "ingredient_name_hint": "ginger",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 cups of vegetable stock",
+          "ingredient_name_hint": "vegetable stock",
+          "quantity_text": "3 cups",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "1 tbsp of olive oil",
+          "ingredient_name_hint": "olive oil",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of plain yogurt",
+          "ingredient_name_hint": "plain yogurt",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Soften onion and ginger in olive oil.",
+        "Add chopped carrots and stock and simmer until the carrots are tender.",
+        "Blend until smooth and swirl yogurt into each bowl."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_vegetable_manchow_soup",
+      "title": "Vegetable Manchow Soup",
+      "cuisine_label": "India",
+      "dish_family": "soup",
+      "ingredients": [
+        {
+          "original_phrase": "1 cup of cabbage",
+          "ingredient_name_hint": "cabbage",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 carrot",
+          "ingredient_name_hint": "carrot",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 cup of green bean",
+          "ingredient_name_hint": "green bean",
+          "quantity_text": "1/2 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 scallions",
+          "ingredient_name_hint": "scallion",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 cloves of garlic",
+          "ingredient_name_hint": "garlic",
+          "quantity_text": "3 cloves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ginger",
+          "ingredient_name_hint": "ginger",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of soy sauce",
+          "ingredient_name_hint": "soy sauce",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "1 tbsp of rice vinegar",
+          "ingredient_name_hint": "rice vinegar",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of cornstarch",
+          "ingredient_name_hint": "cornstarch",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "4 cups of vegetable stock",
+          "ingredient_name_hint": "vegetable stock",
+          "quantity_text": "4 cups",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "2 tbsp of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 cup of crispy noodles",
+          "ingredient_name_hint": "crispy noodles",
+          "quantity_text": "1/2 cup",
+          "compound_review_required": true
+        }
+      ],
+      "instructions": [
+        "Stir-fry chopped garlic, ginger, scallion whites, cabbage, carrot and green beans in oil.",
+        "Add stock, soy sauce and vinegar and simmer until the vegetables are just tender.",
+        "Whisk cornstarch with water and stir it into the simmering soup to thicken.",
+        "Top with scallion greens and crispy noodles."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_pav_bhaji",
+      "title": "Pav Bhaji",
+      "cuisine_label": "India",
+      "dish_family": "other",
+      "ingredients": [
+        {
+          "original_phrase": "3 potatoes",
+          "ingredient_name_hint": "potato",
+          "quantity_text": "3",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "200 g of cauliflower",
+          "ingredient_name_hint": "cauliflower",
+          "quantity_text": "200 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 cup of green pea",
+          "ingredient_name_hint": "green pea",
+          "quantity_text": "1/2 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 tomatoes",
+          "ingredient_name_hint": "tomato",
+          "quantity_text": "3",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 green bell pepper",
+          "ingredient_name_hint": "green bell pepper",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 tbsp of butter",
+          "ingredient_name_hint": "butter",
+          "quantity_text": "3 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of pav bhaji masala",
+          "ingredient_name_hint": "pav bhaji masala",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "4 pav rolls",
+          "ingredient_name_hint": "pav roll",
+          "quantity_text": "4",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "1 cup of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 lemon",
+          "ingredient_name_hint": "lemon",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Simmer chopped potato, cauliflower and peas in the water until soft, then mash.",
+        "Cook onion, bell pepper, tomatoes and masala in two tablespoons of butter.",
+        "Add the mashed vegetables and salt and stir until thick.",
+        "Toast the split pav in the remaining butter and serve with lemon."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_vegetable_pulao",
+      "title": "Vegetable Pulao",
+      "cuisine_label": "India",
+      "dish_family": "other",
+      "ingredients": [
+        {
+          "original_phrase": "1 cup of basmati rice",
+          "ingredient_name_hint": "basmati rice",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 cup of green pea",
+          "ingredient_name_hint": "green pea",
+          "quantity_text": "1/2 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 carrot",
+          "ingredient_name_hint": "carrot",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of cumin seed",
+          "ingredient_name_hint": "cumin seed",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 bay leaf",
+          "ingredient_name_hint": "bay leaf",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of ghee",
+          "ingredient_name_hint": "ghee",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 3/4 cups of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "1 3/4 cups",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Rinse and drain the rice.",
+        "Fry cumin, bay leaf and onion in ghee, then stir in diced carrot and peas.",
+        "Add rice, water and salt and cook covered on low until the water is absorbed.",
+        "Rest covered briefly before fluffing."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_poha",
+      "title": "Poha",
+      "cuisine_label": "India",
+      "dish_family": "other",
+      "ingredients": [
+        {
+          "original_phrase": "2 cups of flattened rice",
+          "ingredient_name_hint": "flattened rice",
+          "quantity_text": "2 cups",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 potato",
+          "ingredient_name_hint": "potato",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/4 cup of peanut",
+          "ingredient_name_hint": "peanut",
+          "quantity_text": "1/4 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of mustard seed",
+          "ingredient_name_hint": "mustard seed",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "8 leaves of curry leaf",
+          "ingredient_name_hint": "curry leaf",
+          "quantity_text": "8 leaves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 tsp of turmeric",
+          "ingredient_name_hint": "turmeric",
+          "quantity_text": "1/2 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of lemon juice",
+          "ingredient_name_hint": "lemon juice",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Rinse the flattened rice in a sieve and let it soften while draining.",
+        "Toast the peanuts in oil and set aside.",
+        "Fry mustard seeds and curry leaves, then cook diced potato and onion until tender.",
+        "Fold in the softened poha, turmeric and salt. Finish with lemon juice and peanuts."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_rava_upma",
+      "title": "Rava Upma",
+      "cuisine_label": "India",
+      "dish_family": "other",
+      "ingredients": [
+        {
+          "original_phrase": "1 cup of semolina",
+          "ingredient_name_hint": "semolina",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ginger",
+          "ingredient_name_hint": "ginger",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of mustard seed",
+          "ingredient_name_hint": "mustard seed",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "8 leaves of curry leaf",
+          "ingredient_name_hint": "curry leaf",
+          "quantity_text": "8 leaves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of ghee",
+          "ingredient_name_hint": "ghee",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 1/2 cups of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "2 1/2 cups",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Dry-roast the semolina until fragrant and set it aside.",
+        "Fry mustard seeds, curry leaves, onion and ginger in ghee.",
+        "Add water and salt and bring to a boil.",
+        "Sprinkle in the semolina while stirring, then cover and cook over low heat until fluffy."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_moong_dal_khichdi",
+      "title": "Moong Dal Khichdi",
+      "cuisine_label": "India",
+      "dish_family": "other",
+      "ingredients": [
+        {
+          "original_phrase": "1/2 cup of basmati rice",
+          "ingredient_name_hint": "basmati rice",
+          "quantity_text": "1/2 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 cup of split mung bean",
+          "ingredient_name_hint": "split mung bean",
+          "quantity_text": "1/2 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of cumin seed",
+          "ingredient_name_hint": "cumin seed",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 tsp of turmeric",
+          "ingredient_name_hint": "turmeric",
+          "quantity_text": "1/2 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of ghee",
+          "ingredient_name_hint": "ghee",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 cups of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "3 cups",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Rinse the rice and mung beans together.",
+        "Toast cumin in ghee, then stir in turmeric and the drained rice and dal.",
+        "Add water and salt and simmer covered until both grains are soft."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_aloo_paratha",
+      "title": "Aloo Paratha",
+      "cuisine_label": "India",
+      "dish_family": "other",
+      "ingredients": [
+        {
+          "original_phrase": "2 cups of whole wheat flour",
+          "ingredient_name_hint": "whole wheat flour",
+          "quantity_text": "2 cups",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 potatoes",
+          "ingredient_name_hint": "potato",
+          "quantity_text": "3",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3/4 cup of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "3/4 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 green chili",
+          "ingredient_name_hint": "green chili",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of cilantro",
+          "ingredient_name_hint": "cilantro",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ground cumin",
+          "ingredient_name_hint": "ground cumin",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of ghee",
+          "ingredient_name_hint": "ghee",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Knead the flour with enough water and a pinch of salt to make a pliable dough.",
+        "Boil, peel and mash the potatoes with chopped chili, cilantro, cumin and salt.",
+        "Enclose a scoop of potato in each dough ball and roll it flat.",
+        "Cook the parathas on a hot skillet with ghee until browned on both sides."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_cucumber_raita",
+      "title": "Cucumber Raita",
+      "cuisine_label": "India",
+      "dish_family": "other",
+      "ingredients": [
+        {
+          "original_phrase": "1 cup of plain yogurt",
+          "ingredient_name_hint": "plain yogurt",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 cucumber",
+          "ingredient_name_hint": "cucumber",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 tsp of ground cumin",
+          "ingredient_name_hint": "ground cumin",
+          "quantity_text": "1/2 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of mint",
+          "ingredient_name_hint": "mint",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Grate the cucumber and squeeze out excess liquid.",
+        "Whisk the yogurt until smooth and fold in cucumber, cumin, mint and salt.",
+        "Chill before serving."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_besan_chilla",
+      "title": "Besan Chilla",
+      "cuisine_label": "India",
+      "dish_family": "other",
+      "ingredients": [
+        {
+          "original_phrase": "1 cup of chickpea flour",
+          "ingredient_name_hint": "chickpea flour",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 small onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1 small",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tomato",
+          "ingredient_name_hint": "tomato",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 green chili",
+          "ingredient_name_hint": "green chili",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of cilantro",
+          "ingredient_name_hint": "cilantro",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/4 tsp of turmeric",
+          "ingredient_name_hint": "turmeric",
+          "quantity_text": "1/4 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3/4 cup of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "3/4 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Whisk chickpea flour, water, turmeric and salt to a pourable batter.",
+        "Stir in finely chopped onion, tomato, chili and cilantro.",
+        "Spread thin rounds of batter on an oiled skillet and cook both sides until browned."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_kheer",
+      "title": "Kheer",
+      "cuisine_label": "India",
+      "dish_family": "other",
+      "ingredients": [
+        {
+          "original_phrase": "1/4 cup of basmati rice",
+          "ingredient_name_hint": "basmati rice",
+          "quantity_text": "1/4 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 litre of milk",
+          "ingredient_name_hint": "milk",
+          "quantity_text": "1 litre",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/4 cup of sugar",
+          "ingredient_name_hint": "sugar",
+          "quantity_text": "1/4 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 pods of green cardamom",
+          "ingredient_name_hint": "green cardamom",
+          "quantity_text": "3 pods",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of almond",
+          "ingredient_name_hint": "almond",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Rinse the rice and simmer it in milk with crushed cardamom, stirring regularly.",
+        "When the rice is very soft and the milk thickens, stir in sugar until dissolved.",
+        "Serve warm or chilled with sliced almonds."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_thai_green_chicken_curry",
+      "title": "Thai Green Chicken Curry",
+      "cuisine_label": "Thailand",
+      "dish_family": "curry",
+      "ingredients": [
+        {
+          "original_phrase": "400 g of boneless chicken thigh",
+          "ingredient_name_hint": "boneless chicken thigh",
+          "quantity_text": "400 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 tbsp of green curry paste",
+          "ingredient_name_hint": "green curry paste",
+          "quantity_text": "3 tbsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "400 ml of coconut milk",
+          "ingredient_name_hint": "coconut milk",
+          "quantity_text": "400 ml",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "250 g of eggplant",
+          "ingredient_name_hint": "eggplant",
+          "quantity_text": "250 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of fish sauce",
+          "ingredient_name_hint": "fish sauce",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "1 tsp of palm sugar",
+          "ingredient_name_hint": "palm sugar",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 cup of Thai basil",
+          "ingredient_name_hint": "Thai basil",
+          "quantity_text": "1/2 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Fry green curry paste in oil until fragrant and stir in coconut milk.",
+        "Add sliced chicken and eggplant and simmer until tender and the chicken reaches 74 C at the center.",
+        "Season with fish sauce and palm sugar and fold in Thai basil."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_thai_red_tofu_curry",
+      "title": "Thai Red Tofu Curry",
+      "cuisine_label": "Thailand",
+      "dish_family": "curry",
+      "ingredients": [
+        {
+          "original_phrase": "300 g of firm tofu",
+          "ingredient_name_hint": "firm tofu",
+          "quantity_text": "300 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of red curry paste",
+          "ingredient_name_hint": "red curry paste",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "400 ml of coconut milk",
+          "ingredient_name_hint": "coconut milk",
+          "quantity_text": "400 ml",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 red bell pepper",
+          "ingredient_name_hint": "red bell pepper",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "150 g of green bean",
+          "ingredient_name_hint": "green bean",
+          "quantity_text": "150 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of soy sauce",
+          "ingredient_name_hint": "soy sauce",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "1 tbsp of lime juice",
+          "ingredient_name_hint": "lime juice",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Brown tofu cubes in oil and lift them out.",
+        "Fry the red curry paste briefly in the pan and add coconut milk.",
+        "Simmer sliced bell pepper and green beans in the sauce until tender.",
+        "Return the tofu and finish with soy sauce and lime juice."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_massaman_beef_curry",
+      "title": "Massaman Beef Curry",
+      "cuisine_label": "Thailand",
+      "dish_family": "curry",
+      "ingredients": [
+        {
+          "original_phrase": "500 g of beef chuck",
+          "ingredient_name_hint": "beef chuck",
+          "quantity_text": "500 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 tbsp of massaman curry paste",
+          "ingredient_name_hint": "massaman curry paste",
+          "quantity_text": "3 tbsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "400 ml of coconut milk",
+          "ingredient_name_hint": "coconut milk",
+          "quantity_text": "400 ml",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 potatoes",
+          "ingredient_name_hint": "potato",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/4 cup of peanut",
+          "ingredient_name_hint": "peanut",
+          "quantity_text": "1/4 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tsp of tamarind paste",
+          "ingredient_name_hint": "tamarind paste",
+          "quantity_text": "2 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of fish sauce",
+          "ingredient_name_hint": "fish sauce",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "1 tbsp of palm sugar",
+          "ingredient_name_hint": "palm sugar",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 cup of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Fry the curry paste in the thick top of the coconut milk and add the beef.",
+        "Add the rest of the milk and water and simmer covered until the beef is nearly tender.",
+        "Add potato and onion and continue simmering until soft.",
+        "Season with tamarind, fish sauce and palm sugar and stir in peanuts."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_japanese_chicken_curry",
+      "title": "Japanese Chicken Curry",
+      "cuisine_label": "Japan",
+      "dish_family": "curry",
+      "ingredients": [
+        {
+          "original_phrase": "400 g of boneless chicken thigh",
+          "ingredient_name_hint": "boneless chicken thigh",
+          "quantity_text": "400 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 carrot",
+          "ingredient_name_hint": "carrot",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 potatoes",
+          "ingredient_name_hint": "potato",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "90 g of Japanese curry roux",
+          "ingredient_name_hint": "Japanese curry roux",
+          "quantity_text": "90 g",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "3 cups of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "3 cups",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Brown chopped onion and chicken in oil.",
+        "Add sliced carrot, diced potato and water and simmer until tender and the chicken reaches 74 C at the center.",
+        "Turn off the heat and dissolve the curry roux into the broth.",
+        "Simmer briefly until thickened."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_japanese_katsu_curry",
+      "title": "Japanese Katsu Curry",
+      "cuisine_label": "Japan",
+      "dish_family": "curry",
+      "ingredients": [
+        {
+          "original_phrase": "2 chicken breasts",
+          "ingredient_name_hint": "chicken breast",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 carrot",
+          "ingredient_name_hint": "carrot",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "90 g of Japanese curry roux",
+          "ingredient_name_hint": "Japanese curry roux",
+          "quantity_text": "90 g",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "3 cups of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "3 cups",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/3 cup of all purpose flour",
+          "ingredient_name_hint": "all purpose flour",
+          "quantity_text": "1/3 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 egg",
+          "ingredient_name_hint": "egg",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 cup of panko",
+          "ingredient_name_hint": "panko",
+          "quantity_text": "1 cup",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "vegetable oil, for frying",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "for frying",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Saute sliced onion and carrot in a little oil, add water and simmer until soft.",
+        "Dissolve the roux off the heat, then briefly simmer the sauce until thick.",
+        "Flatten the chicken and dredge it in flour, beaten egg and panko.",
+        "Fry until crisp and 74 C at the center, then slice and serve with the curry sauce."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_jamaican_curry_chicken",
+      "title": "Jamaican Curry Chicken",
+      "cuisine_label": "Jamaica",
+      "dish_family": "curry",
+      "ingredients": [
+        {
+          "original_phrase": "450 g of boneless chicken thigh",
+          "ingredient_name_hint": "boneless chicken thigh",
+          "quantity_text": "450 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of Jamaican curry powder",
+          "ingredient_name_hint": "Jamaican curry powder",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 scallions",
+          "ingredient_name_hint": "scallion",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 cloves of garlic",
+          "ingredient_name_hint": "garlic",
+          "quantity_text": "3 cloves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "4 sprigs of thyme",
+          "ingredient_name_hint": "thyme",
+          "quantity_text": "4 sprigs",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 potato",
+          "ingredient_name_hint": "potato",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 cup of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Season the chicken with curry powder, garlic and salt.",
+        "Heat oil and brown the chicken with chopped onion and scallions.",
+        "Add thyme, diced potato and water and simmer until tender and the chicken reaches 74 C at the center."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_cape_malay_chicken_curry",
+      "title": "Cape Malay Chicken Curry",
+      "cuisine_label": "South Africa",
+      "dish_family": "curry",
+      "ingredients": [
+        {
+          "original_phrase": "450 g of boneless chicken thigh",
+          "ingredient_name_hint": "boneless chicken thigh",
+          "quantity_text": "450 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 tomatoes",
+          "ingredient_name_hint": "tomato",
+          "quantity_text": "3",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 potatoes",
+          "ingredient_name_hint": "potato",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of curry powder",
+          "ingredient_name_hint": "curry powder",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "1 cinnamon stick",
+          "ingredient_name_hint": "cinnamon stick",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "6 dried apricots",
+          "ingredient_name_hint": "dried apricot",
+          "quantity_text": "6",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 cup of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Brown onions in oil with the cinnamon stick and curry powder.",
+        "Stir in the chicken and tomatoes and cook until the tomatoes soften.",
+        "Add potatoes, apricots, salt and water and simmer until the potatoes are tender and the chicken reaches 74 C at the center."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_sri_lankan_dhal_curry",
+      "title": "Sri Lankan Dhal Curry",
+      "cuisine_label": "Sri Lanka",
+      "dish_family": "curry",
+      "ingredients": [
+        {
+          "original_phrase": "1 cup of red lentil",
+          "ingredient_name_hint": "red lentil",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 cup of coconut milk",
+          "ingredient_name_hint": "coconut milk",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 cups of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "2 cups",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 tsp of turmeric",
+          "ingredient_name_hint": "turmeric",
+          "quantity_text": "1/2 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "10 leaves of curry leaf",
+          "ingredient_name_hint": "curry leaf",
+          "quantity_text": "10 leaves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 tsp of mustard seed",
+          "ingredient_name_hint": "mustard seed",
+          "quantity_text": "1/2 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of coconut oil",
+          "ingredient_name_hint": "coconut oil",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Rinse the lentils and simmer in water with sliced onion and turmeric until soft.",
+        "Add coconut milk and salt and simmer gently until creamy.",
+        "Fry mustard seeds and curry leaves in coconut oil and pour over the dhal."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_french_onion_soup",
+      "title": "French Onion Soup",
+      "cuisine_label": "France",
+      "dish_family": "soup",
+      "ingredients": [
+        {
+          "original_phrase": "800 g of yellow onion",
+          "ingredient_name_hint": "yellow onion",
+          "quantity_text": "800 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 tbsp of butter",
+          "ingredient_name_hint": "butter",
+          "quantity_text": "3 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "5 cups of beef stock",
+          "ingredient_name_hint": "beef stock",
+          "quantity_text": "5 cups",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "3 sprigs of thyme",
+          "ingredient_name_hint": "thyme",
+          "quantity_text": "3 sprigs",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "4 slices of baguette",
+          "ingredient_name_hint": "baguette",
+          "quantity_text": "4 slices",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "120 g of Gruyere",
+          "ingredient_name_hint": "Gruyere",
+          "quantity_text": "120 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "black pepper, to taste",
+          "ingredient_name_hint": "black pepper",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Cook sliced onions in butter over medium-low heat until deeply golden, stirring often.",
+        "Add stock, thyme and pepper and simmer to combine the flavors.",
+        "Ladle into oven-safe bowls, top with baguette and grated Gruyere, then broil until bubbling."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_minestrone",
+      "title": "Minestrone",
+      "cuisine_label": "Italy",
+      "dish_family": "soup",
+      "ingredients": [
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 carrot",
+          "ingredient_name_hint": "carrot",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 stalks of celery",
+          "ingredient_name_hint": "celery",
+          "quantity_text": "2 stalks",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 zucchini",
+          "ingredient_name_hint": "zucchini",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "400 g of canned tomato",
+          "ingredient_name_hint": "canned tomato",
+          "quantity_text": "400 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 cup of cooked cannellini bean",
+          "ingredient_name_hint": "cooked cannellini bean",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 cup of small pasta",
+          "ingredient_name_hint": "small pasta",
+          "quantity_text": "1/2 cup",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "5 cups of vegetable stock",
+          "ingredient_name_hint": "vegetable stock",
+          "quantity_text": "5 cups",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "2 tbsp of olive oil",
+          "ingredient_name_hint": "olive oil",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of Parmesan",
+          "ingredient_name_hint": "Parmesan",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Soften chopped onion, carrot and celery in olive oil.",
+        "Add zucchini, tomatoes and stock and simmer until the vegetables soften.",
+        "Add beans and pasta and simmer until the pasta is tender.",
+        "Finish with grated Parmesan."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_gazpacho",
+      "title": "Gazpacho",
+      "cuisine_label": "Spain",
+      "dish_family": "soup",
+      "ingredients": [
+        {
+          "original_phrase": "700 g of tomato",
+          "ingredient_name_hint": "tomato",
+          "quantity_text": "700 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 cucumber",
+          "ingredient_name_hint": "cucumber",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 red bell pepper",
+          "ingredient_name_hint": "red bell pepper",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 clove of garlic",
+          "ingredient_name_hint": "garlic",
+          "quantity_text": "1 clove",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 tbsp of olive oil",
+          "ingredient_name_hint": "olive oil",
+          "quantity_text": "3 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of sherry vinegar",
+          "ingredient_name_hint": "sherry vinegar",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Roughly chop the vegetables and blend with garlic and vinegar.",
+        "Blend in olive oil and salt until smooth.",
+        "Chill thoroughly before serving."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_miso_soup",
+      "title": "Miso Soup",
+      "cuisine_label": "Japan",
+      "dish_family": "soup",
+      "ingredients": [
+        {
+          "original_phrase": "4 cups of dashi",
+          "ingredient_name_hint": "dashi",
+          "quantity_text": "4 cups",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "3 tbsp of miso paste",
+          "ingredient_name_hint": "miso paste",
+          "quantity_text": "3 tbsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "150 g of silken tofu",
+          "ingredient_name_hint": "silken tofu",
+          "quantity_text": "150 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "5 g of dried wakame",
+          "ingredient_name_hint": "dried wakame",
+          "quantity_text": "5 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 scallions",
+          "ingredient_name_hint": "scallion",
+          "quantity_text": "2",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Warm the dashi and rehydrate the wakame separately.",
+        "Add cubed tofu and drained wakame to the broth and heat gently.",
+        "Take the pot off the heat and dissolve the miso in a ladleful of broth before stirring it back.",
+        "Top with sliced scallions."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_tom_yum_goong",
+      "title": "Tom Yum Goong",
+      "cuisine_label": "Thailand",
+      "dish_family": "soup",
+      "ingredients": [
+        {
+          "original_phrase": "300 g of shrimp",
+          "ingredient_name_hint": "shrimp",
+          "quantity_text": "300 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 stalks of lemongrass",
+          "ingredient_name_hint": "lemongrass",
+          "quantity_text": "2 stalks",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "6 slices of galangal",
+          "ingredient_name_hint": "galangal",
+          "quantity_text": "6 slices",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "5 leaves of makrut lime leaf",
+          "ingredient_name_hint": "makrut lime leaf",
+          "quantity_text": "5 leaves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "150 g of mushroom",
+          "ingredient_name_hint": "mushroom",
+          "quantity_text": "150 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 Thai chilis",
+          "ingredient_name_hint": "Thai chili",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of fish sauce",
+          "ingredient_name_hint": "fish sauce",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "3 tbsp of lime juice",
+          "ingredient_name_hint": "lime juice",
+          "quantity_text": "3 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "4 cups of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "4 cups",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Simmer bruised lemongrass, sliced galangal and lime leaves in water to make a fragrant broth.",
+        "Add mushrooms and chopped chili and simmer until tender.",
+        "Poach the shrimp in the broth until opaque throughout.",
+        "Remove the tough aromatics before serving and season with fish sauce and lime juice."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_tom_kha_gai",
+      "title": "Tom Kha Gai",
+      "cuisine_label": "Thailand",
+      "dish_family": "soup",
+      "ingredients": [
+        {
+          "original_phrase": "350 g of boneless chicken thigh",
+          "ingredient_name_hint": "boneless chicken thigh",
+          "quantity_text": "350 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "400 ml of coconut milk",
+          "ingredient_name_hint": "coconut milk",
+          "quantity_text": "400 ml",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 cups of chicken stock",
+          "ingredient_name_hint": "chicken stock",
+          "quantity_text": "2 cups",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "6 slices of galangal",
+          "ingredient_name_hint": "galangal",
+          "quantity_text": "6 slices",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 stalks of lemongrass",
+          "ingredient_name_hint": "lemongrass",
+          "quantity_text": "2 stalks",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "5 leaves of makrut lime leaf",
+          "ingredient_name_hint": "makrut lime leaf",
+          "quantity_text": "5 leaves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "150 g of mushroom",
+          "ingredient_name_hint": "mushroom",
+          "quantity_text": "150 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of fish sauce",
+          "ingredient_name_hint": "fish sauce",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "2 tbsp of lime juice",
+          "ingredient_name_hint": "lime juice",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Simmer galangal, bruised lemongrass and lime leaves in the stock.",
+        "Add coconut milk, sliced chicken and mushrooms and simmer gently until chicken reaches 74 C at the center.",
+        "Remove the tough aromatics before serving and add fish sauce and lime juice."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_chicken_pho",
+      "title": "Chicken Pho",
+      "cuisine_label": "Vietnam",
+      "dish_family": "soup",
+      "ingredients": [
+        {
+          "original_phrase": "2 chicken legs",
+          "ingredient_name_hint": "chicken leg",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "40 g of ginger",
+          "ingredient_name_hint": "ginger",
+          "quantity_text": "40 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 star anises",
+          "ingredient_name_hint": "star anise",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "6 cups of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "6 cups",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "200 g of rice noodle",
+          "ingredient_name_hint": "rice noodle",
+          "quantity_text": "200 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of fish sauce",
+          "ingredient_name_hint": "fish sauce",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "2 scallions",
+          "ingredient_name_hint": "scallion",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 lime",
+          "ingredient_name_hint": "lime",
+          "quantity_text": "1",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Char the cut onion and ginger and add them to water with star anise and chicken legs.",
+        "Simmer until the chicken reaches 74 C, then remove the meat and strain the broth.",
+        "Cook the rice noodles separately and divide them into bowls with shredded chicken.",
+        "Season the broth with fish sauce and ladle over the noodles. Serve with scallions and lime."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_greek_lemon_chicken_soup",
+      "title": "Greek Lemon Chicken Soup",
+      "cuisine_label": "Greece",
+      "dish_family": "soup",
+      "ingredients": [
+        {
+          "original_phrase": "250 g of cooked chicken",
+          "ingredient_name_hint": "cooked chicken",
+          "quantity_text": "250 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "5 cups of chicken stock",
+          "ingredient_name_hint": "chicken stock",
+          "quantity_text": "5 cups",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "1/2 cup of short grain rice",
+          "ingredient_name_hint": "short grain rice",
+          "quantity_text": "1/2 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 eggs",
+          "ingredient_name_hint": "egg",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/4 cup of lemon juice",
+          "ingredient_name_hint": "lemon juice",
+          "quantity_text": "1/4 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "black pepper, to taste",
+          "ingredient_name_hint": "black pepper",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Simmer rice in the stock until tender, then add shredded cooked chicken.",
+        "Whisk the eggs and lemon juice and gradually whisk in some hot broth.",
+        "Stir the tempered mixture into the pot and heat gently to 71 C without boiling.",
+        "Finish with black pepper."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_new_england_clam_chowder",
+      "title": "New England Clam Chowder",
+      "cuisine_label": "United States",
+      "dish_family": "soup",
+      "ingredients": [
+        {
+          "original_phrase": "300 g of canned clam",
+          "ingredient_name_hint": "canned clam",
+          "quantity_text": "300 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 potatoes",
+          "ingredient_name_hint": "potato",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 stalks of celery",
+          "ingredient_name_hint": "celery",
+          "quantity_text": "2 stalks",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of butter",
+          "ingredient_name_hint": "butter",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of all purpose flour",
+          "ingredient_name_hint": "all purpose flour",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 cups of milk",
+          "ingredient_name_hint": "milk",
+          "quantity_text": "2 cups",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 cups of clam juice",
+          "ingredient_name_hint": "clam juice",
+          "quantity_text": "2 cups",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "black pepper, to taste",
+          "ingredient_name_hint": "black pepper",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Soften onion and celery in butter and stir in flour.",
+        "Whisk in clam juice and milk and add diced potato.",
+        "Simmer gently until the potatoes are tender.",
+        "Add drained clams and pepper and heat through."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_broccoli_cheddar_soup",
+      "title": "Broccoli Cheddar Soup",
+      "cuisine_label": "United States",
+      "dish_family": "soup",
+      "ingredients": [
+        {
+          "original_phrase": "400 g of broccoli",
+          "ingredient_name_hint": "broccoli",
+          "quantity_text": "400 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 carrot",
+          "ingredient_name_hint": "carrot",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "180 g of cheddar",
+          "ingredient_name_hint": "cheddar",
+          "quantity_text": "180 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 cups of vegetable stock",
+          "ingredient_name_hint": "vegetable stock",
+          "quantity_text": "3 cups",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "1 cup of milk",
+          "ingredient_name_hint": "milk",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of butter",
+          "ingredient_name_hint": "butter",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of all purpose flour",
+          "ingredient_name_hint": "all purpose flour",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Soften diced onion in butter, stir in flour, then gradually whisk in stock and milk.",
+        "Add broccoli florets and grated carrot and simmer until tender.",
+        "Take the pot off the heat and stir in grated cheddar until smooth."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_moroccan_harira",
+      "title": "Moroccan Harira",
+      "cuisine_label": "Morocco",
+      "dish_family": "soup",
+      "ingredients": [
+        {
+          "original_phrase": "1 cup of cooked chickpea",
+          "ingredient_name_hint": "cooked chickpea",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 cup of red lentil",
+          "ingredient_name_hint": "red lentil",
+          "quantity_text": "1/2 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 stalks of celery",
+          "ingredient_name_hint": "celery",
+          "quantity_text": "2 stalks",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "400 g of canned tomato",
+          "ingredient_name_hint": "canned tomato",
+          "quantity_text": "400 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ground ginger",
+          "ingredient_name_hint": "ground ginger",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 tsp of ground cinnamon",
+          "ingredient_name_hint": "ground cinnamon",
+          "quantity_text": "1/2 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "5 cups of vegetable stock",
+          "ingredient_name_hint": "vegetable stock",
+          "quantity_text": "5 cups",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "1 tbsp of olive oil",
+          "ingredient_name_hint": "olive oil",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/4 cup of cilantro",
+          "ingredient_name_hint": "cilantro",
+          "quantity_text": "1/4 cup",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Soften chopped onion and celery in oil and stir in ginger and cinnamon.",
+        "Add tomatoes, lentils and stock and simmer until the lentils soften.",
+        "Stir in the cooked chickpeas and heat through.",
+        "Finish with chopped cilantro."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_mexican_tortilla_soup",
+      "title": "Mexican Tortilla Soup",
+      "cuisine_label": "Mexico",
+      "dish_family": "soup",
+      "ingredients": [
+        {
+          "original_phrase": "4 corn tortillas",
+          "ingredient_name_hint": "corn tortilla",
+          "quantity_text": "4",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "400 g of canned tomato",
+          "ingredient_name_hint": "canned tomato",
+          "quantity_text": "400 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 cloves of garlic",
+          "ingredient_name_hint": "garlic",
+          "quantity_text": "2 cloves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 dried ancho chili",
+          "ingredient_name_hint": "dried ancho chili",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "4 cups of chicken stock",
+          "ingredient_name_hint": "chicken stock",
+          "quantity_text": "4 cups",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "1 avocado",
+          "ingredient_name_hint": "avocado",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 lime",
+          "ingredient_name_hint": "lime",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Cut tortillas into strips, toss with half the oil and bake at 200 C until crisp.",
+        "Soften onion and garlic in the remaining oil, then blend with tomatoes and a soaked, deseeded ancho chili.",
+        "Simmer the tomato mixture with the stock until flavorful.",
+        "Top the bowls with tortilla strips, avocado and lime."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_italian_tomato_basil_soup",
+      "title": "Italian Tomato Basil Soup",
+      "cuisine_label": "Italy",
+      "dish_family": "soup",
+      "ingredients": [
+        {
+          "original_phrase": "800 g of canned tomato",
+          "ingredient_name_hint": "canned tomato",
+          "quantity_text": "800 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 cloves of garlic",
+          "ingredient_name_hint": "garlic",
+          "quantity_text": "3 cloves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 cups of vegetable stock",
+          "ingredient_name_hint": "vegetable stock",
+          "quantity_text": "2 cups",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "2 tbsp of olive oil",
+          "ingredient_name_hint": "olive oil",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 cup of basil",
+          "ingredient_name_hint": "basil",
+          "quantity_text": "1/2 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "black pepper, to taste",
+          "ingredient_name_hint": "black pepper",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Soften chopped onion and garlic in oil.",
+        "Add tomatoes and stock and simmer until the flavors combine.",
+        "Blend with basil and black pepper until smooth."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_kimchi_jjigae",
+      "title": "Kimchi Jjigae",
+      "cuisine_label": "South Korea",
+      "dish_family": "soup",
+      "ingredients": [
+        {
+          "original_phrase": "2 cups of napa cabbage kimchi",
+          "ingredient_name_hint": "napa cabbage kimchi",
+          "quantity_text": "2 cups",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "180 g of pork belly",
+          "ingredient_name_hint": "pork belly",
+          "quantity_text": "180 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "200 g of firm tofu",
+          "ingredient_name_hint": "firm tofu",
+          "quantity_text": "200 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 scallions",
+          "ingredient_name_hint": "scallion",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tsp of gochugaru",
+          "ingredient_name_hint": "gochugaru",
+          "quantity_text": "2 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of sesame oil",
+          "ingredient_name_hint": "sesame oil",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 cups of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "3 cups",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Cook sliced pork belly and chopped kimchi in sesame oil until fragrant.",
+        "Add gochugaru and water and simmer until the pork is fully cooked.",
+        "Add sliced tofu and simmer to heat through.",
+        "Scatter sliced scallions over the stew."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_greek_tzatziki",
+      "title": "Greek Tzatziki",
+      "cuisine_label": "Greece",
+      "dish_family": "other",
+      "ingredients": [
+        {
+          "original_phrase": "1 cup of Greek yogurt",
+          "ingredient_name_hint": "Greek yogurt",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 cucumber",
+          "ingredient_name_hint": "cucumber",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 clove of garlic",
+          "ingredient_name_hint": "garlic",
+          "quantity_text": "1 clove",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of dill",
+          "ingredient_name_hint": "dill",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of olive oil",
+          "ingredient_name_hint": "olive oil",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of lemon juice",
+          "ingredient_name_hint": "lemon juice",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Grate the cucumber and squeeze out the liquid.",
+        "Stir into the yogurt with grated garlic, dill, oil, lemon and salt.",
+        "Chill before serving."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_spaghetti_aglio_e_olio",
+      "title": "Spaghetti Aglio e Olio",
+      "cuisine_label": "Italy",
+      "dish_family": "other",
+      "ingredients": [
+        {
+          "original_phrase": "250 g of spaghetti",
+          "ingredient_name_hint": "spaghetti",
+          "quantity_text": "250 g",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "5 cloves of garlic",
+          "ingredient_name_hint": "garlic",
+          "quantity_text": "5 cloves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/4 cup of olive oil",
+          "ingredient_name_hint": "olive oil",
+          "quantity_text": "1/4 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 tsp of red chili flakes",
+          "ingredient_name_hint": "red chili flakes",
+          "quantity_text": "1/2 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of parsley",
+          "ingredient_name_hint": "parsley",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "water, for cooking pasta",
+          "ingredient_name_hint": "water",
+          "quantity_text": "for cooking pasta",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Cook spaghetti in salted water and reserve some pasta water before draining.",
+        "Gently fry sliced garlic and chili flakes in oil until the garlic is pale gold.",
+        "Toss in spaghetti and a splash of reserved water until glossy.",
+        "Finish with chopped parsley."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_margherita_pizza",
+      "title": "Margherita Pizza",
+      "cuisine_label": "Italy",
+      "dish_family": "other",
+      "ingredients": [
+        {
+          "original_phrase": "300 g of pizza dough",
+          "ingredient_name_hint": "pizza dough",
+          "quantity_text": "300 g",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "1/3 cup of tomato puree",
+          "ingredient_name_hint": "tomato puree",
+          "quantity_text": "1/3 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "120 g of fresh mozzarella",
+          "ingredient_name_hint": "fresh mozzarella",
+          "quantity_text": "120 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "8 leaves of basil",
+          "ingredient_name_hint": "basil",
+          "quantity_text": "8 leaves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of olive oil",
+          "ingredient_name_hint": "olive oil",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Preheat a baking tray in the oven at 245 C.",
+        "Stretch the dough and top with tomato puree seasoned with salt and torn mozzarella.",
+        "Bake on the hot tray until the crust is browned and the cheese bubbles.",
+        "Finish with basil and olive oil."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_hummus",
+      "title": "Hummus",
+      "cuisine_label": "Levant",
+      "dish_family": "other",
+      "ingredients": [
+        {
+          "original_phrase": "1 1/2 cups of cooked chickpea",
+          "ingredient_name_hint": "cooked chickpea",
+          "quantity_text": "1 1/2 cups",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/4 cup of tahini",
+          "ingredient_name_hint": "tahini",
+          "quantity_text": "1/4 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 tbsp of lemon juice",
+          "ingredient_name_hint": "lemon juice",
+          "quantity_text": "3 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 clove of garlic",
+          "ingredient_name_hint": "garlic",
+          "quantity_text": "1 clove",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of olive oil",
+          "ingredient_name_hint": "olive oil",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 tbsp of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "3 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Blend tahini, lemon and garlic until smooth.",
+        "Add chickpeas and salt and blend, adding water gradually until creamy.",
+        "Spoon into a bowl and drizzle with olive oil."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_shakshuka",
+      "title": "Shakshuka",
+      "cuisine_label": "North Africa",
+      "dish_family": "other",
+      "ingredients": [
+        {
+          "original_phrase": "4 eggs",
+          "ingredient_name_hint": "egg",
+          "quantity_text": "4",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "400 g of canned tomato",
+          "ingredient_name_hint": "canned tomato",
+          "quantity_text": "400 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 red bell pepper",
+          "ingredient_name_hint": "red bell pepper",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 cloves of garlic",
+          "ingredient_name_hint": "garlic",
+          "quantity_text": "2 cloves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ground cumin",
+          "ingredient_name_hint": "ground cumin",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of paprika",
+          "ingredient_name_hint": "paprika",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of olive oil",
+          "ingredient_name_hint": "olive oil",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Cook diced onion and bell pepper in oil until soft.",
+        "Add garlic, cumin, paprika, tomatoes and salt and simmer until thick.",
+        "Make four wells and crack an egg into each.",
+        "Cover and cook gently until the whites and yolks are set."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_guacamole",
+      "title": "Guacamole",
+      "cuisine_label": "Mexico",
+      "dish_family": "other",
+      "ingredients": [
+        {
+          "original_phrase": "2 avocados",
+          "ingredient_name_hint": "avocado",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of lime juice",
+          "ingredient_name_hint": "lime juice",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/4 of red onion",
+          "ingredient_name_hint": "red onion",
+          "quantity_text": "1/4",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 jalapeno",
+          "ingredient_name_hint": "jalapeno",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of cilantro",
+          "ingredient_name_hint": "cilantro",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Mash avocado with lime juice and salt.",
+        "Fold in finely chopped onion, jalapeno and cilantro.",
+        "Serve immediately."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_vegetable_fried_rice",
+      "title": "Vegetable Fried Rice",
+      "cuisine_label": "China",
+      "dish_family": "other",
+      "ingredients": [
+        {
+          "original_phrase": "3 cups of cooked rice",
+          "ingredient_name_hint": "cooked rice",
+          "quantity_text": "3 cups",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 eggs",
+          "ingredient_name_hint": "egg",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 cup of green pea",
+          "ingredient_name_hint": "green pea",
+          "quantity_text": "1/2 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 carrot",
+          "ingredient_name_hint": "carrot",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 scallions",
+          "ingredient_name_hint": "scallion",
+          "quantity_text": "3",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of soy sauce",
+          "ingredient_name_hint": "soy sauce",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "2 tbsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Scramble the eggs in a little oil and lift them out.",
+        "Stir-fry finely diced carrot, peas and scallion whites in the remaining oil.",
+        "Add chilled cooked rice and stir-fry until steaming hot, breaking up clumps.",
+        "Stir in soy sauce, eggs and scallion greens."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_mapo_tofu",
+      "title": "Mapo Tofu",
+      "cuisine_label": "China",
+      "dish_family": "other",
+      "ingredients": [
+        {
+          "original_phrase": "400 g of firm tofu",
+          "ingredient_name_hint": "firm tofu",
+          "quantity_text": "400 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "150 g of ground pork",
+          "ingredient_name_hint": "ground pork",
+          "quantity_text": "150 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of doubanjiang",
+          "ingredient_name_hint": "doubanjiang",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "3 cloves of garlic",
+          "ingredient_name_hint": "garlic",
+          "quantity_text": "3 cloves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ginger",
+          "ingredient_name_hint": "ginger",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 tsp of ground Sichuan pepper",
+          "ingredient_name_hint": "ground Sichuan pepper",
+          "quantity_text": "1/2 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3/4 cup of chicken stock",
+          "ingredient_name_hint": "chicken stock",
+          "quantity_text": "3/4 cup",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "1 tsp of cornstarch",
+          "ingredient_name_hint": "cornstarch",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 scallions",
+          "ingredient_name_hint": "scallion",
+          "quantity_text": "2",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Brown the ground pork in oil, then stir in doubanjiang, garlic and ginger.",
+        "Add stock and cubed tofu and simmer until the pork reaches 71 C.",
+        "Whisk cornstarch with water and stir it into the sauce to thicken.",
+        "Finish with Sichuan pepper and scallions."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_spanish_tortilla",
+      "title": "Spanish Tortilla",
+      "cuisine_label": "Spain",
+      "dish_family": "other",
+      "ingredients": [
+        {
+          "original_phrase": "450 g of potato",
+          "ingredient_name_hint": "potato",
+          "quantity_text": "450 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "5 eggs",
+          "ingredient_name_hint": "egg",
+          "quantity_text": "5",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 cup of olive oil",
+          "ingredient_name_hint": "olive oil",
+          "quantity_text": "1/2 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Cook thinly sliced potatoes and onion gently in oil until tender, then drain.",
+        "Fold the warm vegetables and salt into beaten eggs.",
+        "Cook in a lightly oiled skillet over low heat until nearly set, then flip with a plate.",
+        "Cook the second side until the eggs are set."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_tabbouleh",
+      "title": "Tabbouleh",
+      "cuisine_label": "Levant",
+      "dish_family": "other",
+      "ingredients": [
+        {
+          "original_phrase": "2 cups of parsley",
+          "ingredient_name_hint": "parsley",
+          "quantity_text": "2 cups",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 cup of mint",
+          "ingredient_name_hint": "mint",
+          "quantity_text": "1/2 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/4 cup of fine bulgur",
+          "ingredient_name_hint": "fine bulgur",
+          "quantity_text": "1/4 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tomatoes",
+          "ingredient_name_hint": "tomato",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 scallions",
+          "ingredient_name_hint": "scallion",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 tbsp of lemon juice",
+          "ingredient_name_hint": "lemon juice",
+          "quantity_text": "3 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 tbsp of olive oil",
+          "ingredient_name_hint": "olive oil",
+          "quantity_text": "3 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "water, for soaking bulgur",
+          "ingredient_name_hint": "water",
+          "quantity_text": "for soaking bulgur",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Soak the fine bulgur in water until tender, then drain well.",
+        "Finely chop parsley, mint, tomatoes and scallions.",
+        "Toss with the bulgur, lemon juice, olive oil and salt."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_mango_sticky_rice",
+      "title": "Mango Sticky Rice",
+      "cuisine_label": "Thailand",
+      "dish_family": "other",
+      "ingredients": [
+        {
+          "original_phrase": "1 cup of glutinous rice",
+          "ingredient_name_hint": "glutinous rice",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 cup of coconut milk",
+          "ingredient_name_hint": "coconut milk",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 mangos",
+          "ingredient_name_hint": "mango",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/4 cup of sugar",
+          "ingredient_name_hint": "sugar",
+          "quantity_text": "1/4 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/4 tsp of salt",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "1/4 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "water, for soaking and steaming",
+          "ingredient_name_hint": "water",
+          "quantity_text": "for soaking and steaming",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Soak the rice in water, drain it and steam until tender.",
+        "Warm the coconut milk with sugar and salt and pour most over the hot rice.",
+        "Rest until absorbed, then serve with sliced mango and the remaining coconut sauce."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_masala_dosa",
+      "title": "Masala Dosa",
+      "cuisine_label": "India",
+      "dish_family": "other",
+      "ingredients": [
+        {
+          "original_phrase": "2 cups of dosa batter",
+          "ingredient_name_hint": "dosa batter",
+          "quantity_text": "2 cups",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "3 potatoes",
+          "ingredient_name_hint": "potato",
+          "quantity_text": "3",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of mustard seed",
+          "ingredient_name_hint": "mustard seed",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "8 leaves of curry leaf",
+          "ingredient_name_hint": "curry leaf",
+          "quantity_text": "8 leaves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 tsp of turmeric",
+          "ingredient_name_hint": "turmeric",
+          "quantity_text": "1/2 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Boil the potatoes until tender, then peel and mash them coarsely.",
+        "Fry mustard seeds and curry leaves in half the oil, soften the sliced onion and stir in potatoes, turmeric and salt.",
+        "Spread a ladle of dosa batter thinly on a hot griddle and drizzle with a little remaining oil.",
+        "When the underside is crisp, add some potato filling, fold and repeat with the remaining batter."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_vegetable_biryani",
+      "title": "Vegetable Biryani",
+      "cuisine_label": "India",
+      "dish_family": "other",
+      "ingredients": [
+        {
+          "original_phrase": "1 1/2 cups of basmati rice",
+          "ingredient_name_hint": "basmati rice",
+          "quantity_text": "1 1/2 cups",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "200 g of cauliflower",
+          "ingredient_name_hint": "cauliflower",
+          "quantity_text": "200 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 carrot",
+          "ingredient_name_hint": "carrot",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 cup of green pea",
+          "ingredient_name_hint": "green pea",
+          "quantity_text": "1/2 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 onions",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/2 cup of plain yogurt",
+          "ingredient_name_hint": "plain yogurt",
+          "quantity_text": "1/2 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tbsp of biryani masala",
+          "ingredient_name_hint": "biryani masala",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "1/4 cup of mint",
+          "ingredient_name_hint": "mint",
+          "quantity_text": "1/4 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 tbsp of ghee",
+          "ingredient_name_hint": "ghee",
+          "quantity_text": "3 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "water, for boiling rice",
+          "ingredient_name_hint": "water",
+          "quantity_text": "for boiling rice",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "salt, to taste",
+          "ingredient_name_hint": "salt",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Rinse the rice and boil in salted water until nearly tender, then drain.",
+        "Fry sliced onions in ghee until golden and reserve half for layering.",
+        "Add cauliflower, carrot, peas, yogurt, masala and salt to the pan and cook until the vegetables are nearly tender.",
+        "Layer rice, vegetables, mint and reserved onion in a covered pot and steam over low heat until the rice is tender."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_lemon_coriander_soup",
+      "title": "Lemon Coriander Soup",
+      "cuisine_label": "India",
+      "dish_family": "soup",
+      "ingredients": [
+        {
+          "original_phrase": "1 carrot",
+          "ingredient_name_hint": "carrot",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 cup of cabbage",
+          "ingredient_name_hint": "cabbage",
+          "quantity_text": "1 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 cloves of garlic",
+          "ingredient_name_hint": "garlic",
+          "quantity_text": "2 cloves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of ginger",
+          "ingredient_name_hint": "ginger",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "4 cups of vegetable stock",
+          "ingredient_name_hint": "vegetable stock",
+          "quantity_text": "4 cups",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "2 tbsp of lemon juice",
+          "ingredient_name_hint": "lemon juice",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/3 cup of cilantro",
+          "ingredient_name_hint": "cilantro",
+          "quantity_text": "1/3 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "black pepper, to taste",
+          "ingredient_name_hint": "black pepper",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 tsp of vegetable oil",
+          "ingredient_name_hint": "vegetable oil",
+          "quantity_text": "1 tsp",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Gently fry chopped garlic and ginger in oil.",
+        "Add finely chopped carrot and cabbage and stir briefly.",
+        "Pour in stock and simmer until the vegetables are tender.",
+        "Turn off the heat and stir in lemon juice, cilantro and pepper."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_sweet_corn_soup",
+      "title": "Sweet Corn Soup",
+      "cuisine_label": "India",
+      "dish_family": "soup",
+      "ingredients": [
+        {
+          "original_phrase": "2 cups of sweet corn",
+          "ingredient_name_hint": "sweet corn",
+          "quantity_text": "2 cups",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 carrot",
+          "ingredient_name_hint": "carrot",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 scallions",
+          "ingredient_name_hint": "scallion",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "4 cups of vegetable stock",
+          "ingredient_name_hint": "vegetable stock",
+          "quantity_text": "4 cups",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "1 tbsp of cornstarch",
+          "ingredient_name_hint": "cornstarch",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 tbsp of water",
+          "ingredient_name_hint": "water",
+          "quantity_text": "2 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "white pepper, to taste",
+          "ingredient_name_hint": "white pepper",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Blend half the corn with some stock.",
+        "Simmer the puree, remaining corn and finely diced carrot in the rest of the stock.",
+        "Whisk cornstarch with water and stir it into the soup until slightly thickened.",
+        "Finish with scallions and white pepper."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_pumpkin_soup",
+      "title": "Pumpkin Soup",
+      "cuisine_label": "International",
+      "dish_family": "soup",
+      "ingredients": [
+        {
+          "original_phrase": "600 g of pumpkin",
+          "ingredient_name_hint": "pumpkin",
+          "quantity_text": "600 g",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 onion",
+          "ingredient_name_hint": "onion",
+          "quantity_text": "1",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 cloves of garlic",
+          "ingredient_name_hint": "garlic",
+          "quantity_text": "2 cloves",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "3 cups of vegetable stock",
+          "ingredient_name_hint": "vegetable stock",
+          "quantity_text": "3 cups",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "1 tbsp of olive oil",
+          "ingredient_name_hint": "olive oil",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1/4 cup of cream",
+          "ingredient_name_hint": "cream",
+          "quantity_text": "1/4 cup",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "black pepper, to taste",
+          "ingredient_name_hint": "black pepper",
+          "quantity_text": "to taste",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Toss pumpkin chunks in half the oil and roast at 200 C until tender.",
+        "Soften chopped onion and garlic in the remaining oil.",
+        "Simmer the pumpkin and stock with the aromatics, then blend until smooth.",
+        "Finish with cream and pepper."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    },
+    {
+      "recipe_id": "rec_shoyu_ramen",
+      "title": "Shoyu Ramen",
+      "cuisine_label": "Japan",
+      "dish_family": "soup",
+      "ingredients": [
+        {
+          "original_phrase": "200 g of ramen noodle",
+          "ingredient_name_hint": "ramen noodle",
+          "quantity_text": "200 g",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "4 cups of chicken stock",
+          "ingredient_name_hint": "chicken stock",
+          "quantity_text": "4 cups",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "3 tbsp of soy sauce",
+          "ingredient_name_hint": "soy sauce",
+          "quantity_text": "3 tbsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "1 tbsp of mirin",
+          "ingredient_name_hint": "mirin",
+          "quantity_text": "1 tbsp",
+          "compound_review_required": true
+        },
+        {
+          "original_phrase": "4 slices of ginger",
+          "ingredient_name_hint": "ginger",
+          "quantity_text": "4 slices",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 scallions",
+          "ingredient_name_hint": "scallion",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "2 eggs",
+          "ingredient_name_hint": "egg",
+          "quantity_text": "2",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "1 sheet of nori",
+          "ingredient_name_hint": "nori",
+          "quantity_text": "1 sheet",
+          "compound_review_required": false
+        },
+        {
+          "original_phrase": "water, for boiling eggs and noodles",
+          "ingredient_name_hint": "water",
+          "quantity_text": "for boiling eggs and noodles",
+          "compound_review_required": false
+        }
+      ],
+      "instructions": [
+        "Simmer stock with soy sauce, mirin and ginger, then remove the ginger.",
+        "Hard-boil and peel the eggs and cook the noodles separately.",
+        "Divide noodles between bowls and pour in the hot broth.",
+        "Top with halved eggs, scallions and strips of nori."
+      ],
+      "source_ref": "src_kc_generated_recipes_v1"
+    }
+  ]
+}

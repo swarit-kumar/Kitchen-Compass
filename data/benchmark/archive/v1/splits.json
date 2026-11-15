@@ -1,0 +1,92 @@
+{
+  "fractions_requested": {
+    "dev": 0.2,
+    "test": 0.2,
+    "train": 0.6
+  },
+  "groups": {
+    "dev": [
+      "group_carrot_ginger_soup",
+      "group_dum_aloo",
+      "group_french_onion_soup",
+      "group_italian_tomato_basil_soup",
+      "group_malai_kofta",
+      "group_palak_paneer",
+      "group_pumpkin_soup"
+    ],
+    "test": [
+      "group_dal_makhani",
+      "group_dal_tadka",
+      "group_goan_fish_curry",
+      "group_greek_lemon_chicken_soup",
+      "group_lemon_coriander_soup",
+      "group_mexican_tortilla_soup",
+      "group_sambar"
+    ],
+    "train": [
+      "group_aloo_gobi",
+      "group_aloo_matar",
+      "group_broccoli_cheddar_soup",
+      "group_butter_chicken",
+      "group_cape_malay_chicken_curry",
+      "group_chana_masala",
+      "group_chicken_chettinad",
+      "group_chicken_korma",
+      "group_gazpacho",
+      "group_kadhi_pakora",
+      "group_kerala_egg_roast",
+      "group_matar_paneer",
+      "group_minestrone",
+      "group_moroccan_harira",
+      "group_mulligatawny_soup",
+      "group_rajma_masala",
+      "group_sri_lankan_dhal_curry",
+      "group_sweet_corn_soup",
+      "group_tomato_rasam"
+    ]
+  },
+  "recipes": {
+    "dev": [
+      "rec_carrot_ginger_soup",
+      "rec_dum_aloo",
+      "rec_french_onion_soup",
+      "rec_italian_tomato_basil_soup",
+      "rec_malai_kofta",
+      "rec_palak_paneer",
+      "rec_pumpkin_soup"
+    ],
+    "test": [
+      "rec_dal_makhani",
+      "rec_dal_tadka",
+      "rec_goan_fish_curry",
+      "rec_greek_lemon_chicken_soup",
+      "rec_lemon_coriander_soup",
+      "rec_mexican_tortilla_soup",
+      "rec_sambar"
+    ],
+    "train": [
+      "rec_aloo_gobi",
+      "rec_aloo_matar",
+      "rec_broccoli_cheddar_soup",
+      "rec_butter_chicken",
+      "rec_cape_malay_chicken_curry",
+      "rec_chana_masala",
+      "rec_chicken_chettinad",
+      "rec_chicken_korma",
+      "rec_gazpacho",
+      "rec_kadhi_pakora",
+      "rec_kerala_egg_roast",
+      "rec_matar_paneer",
+      "rec_minestrone",
+      "rec_moroccan_harira",
+      "rec_mulligatawny_soup",
+      "rec_paneer_butter_masala",
+      "rec_rajma_masala",
+      "rec_sri_lankan_dhal_curry",
+      "rec_sweet_corn_soup",
+      "rec_tomato_rasam"
+    ]
+  },
+  "seed": 42,
+  "split_id": "groups_seed_42_v1"
+}

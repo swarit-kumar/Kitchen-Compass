@@ -1,0 +1,222 @@
+# Group | cuisine | dish family | technique | fat | aromatics | liquid/base | common finish | prior related titles
+# Recipe title | mains | additional finish | essential names (semicolon-separated)
+@punjabi_bean|India|curry|gravy|vegetable oil|onion;ginger;garlic;ground cumin;ground coriander|tomato puree=1 cup;water=1/2 cup|garam masala;salt|Chana Masala;Rajma Masala
+Punjabi Kala Chana|cooked black chickpea=2 cups|cilantro|cooked black chickpea
+Lobia Masala|cooked black eyed pea=2 cups|lemon juice|cooked black eyed pea
+Punjabi White Bean Masala|cooked cannellini bean=2 cups|dried fenugreek leaf|cooked cannellini bean
+Chana and Potato Curry|cooked chickpea=1 1/2 cups;potato=1 medium|ground red chili|cooked chickpea;potato
+@dal_temper|India|curry|dal|ghee|cumin seed;garlic;dried red chili|water=3 cups;turmeric|salt|Dal Tadka;Dal Makhani
+Masoor Dal Tadka|red lentil=3/4 cup|cilantro|red lentil
+Yellow Moong Dal Tadka|split mung bean=3/4 cup|lemon juice|split mung bean
+Chana Dal with Garlic Tadka|split chickpea=3/4 cup|ginger|split chickpea
+Spinach Toor Dal|split pigeon pea=3/4 cup;spinach=2 cups|tomato=1 medium|split pigeon pea;spinach
+@sambar|India|curry|sambar|vegetable oil|mustard seed;curry leaf|water=3 cups;tamarind paste;sambar powder|salt|Sambar
+Drumstick Sambar|split pigeon pea=3/4 cup;drumstick pod=2 pods cut into pieces|cilantro|split pigeon pea;drumstick pod
+Pumpkin Sambar|split pigeon pea=3/4 cup;pumpkin=250 g diced|turmeric|split pigeon pea;pumpkin
+Radish Sambar|split pigeon pea=3/4 cup;radish=180 g sliced|dried red chili|split pigeon pea;radish
+Onion Sambar|split pigeon pea=3/4 cup;onion=2 small onions quartered|tomato=1 medium|split pigeon pea;onion
+@yogurt_curry|India|curry|yogurt|ghee|cumin seed;curry leaf;ground ginger|plain yogurt=1 cup;water=2 cups;chickpea flour=2 tbsp|turmeric;salt|Kadhi Pakora;Dum Aloo
+Gujarati Kadhi|ginger=1 tsp grated|sugar=2 tsp|plain yogurt;chickpea flour
+Spinach Kadhi|spinach=2 cups chopped|dried red chili|plain yogurt;spinach
+Rajasthani-Style Onion Kadhi|onion=1 small minced|cilantro|plain yogurt;chickpea flour
+Yogurt Potato Curry|potato=250 g diced|ground fennel|plain yogurt;potato
+@coconut_kerala|India|curry|stew|coconut oil|onion;ginger;curry leaf;black peppercorn|coconut milk=1 1/2 cups;water=1/2 cup|salt|Goan Fish Curry
+Kerala Vegetable Ishtu|potato=200 g diced;carrot=100 g diced;green bean=100 g trimmed|green cardamom|coconut milk;potato
+Kerala Chicken Ishtu|boneless chicken thigh=350 g diced;potato=150 g diced|green cardamom|boneless chicken thigh;coconut milk
+Kerala Mushroom Coconut Stew|mushroom=250 g sliced;green pea=1/2 cup|green cardamom|mushroom;coconut milk
+Kerala Egg and Coconut Curry|egg=4 hard-boiled and peeled|ground coriander;turmeric|egg;coconut milk
+@tamarind_curry|India|curry|gravy|vegetable oil|onion;garlic;mustard seed;curry leaf|tomato=2 medium chopped;water=1 cup;tamarind paste|turmeric;salt|
+Tamil Brinjal Puli Kuzhambu|eggplant=300 g quartered|ground coriander|eggplant;tamarind paste
+Okra Puli Kuzhambu|okra=250 g trimmed and sliced|ground red chili|okra;tamarind paste
+Vendhaya Kuzhambu with Onion|onion=2 small onions quartered;fenugreek seed=1/2 tsp|ground coriander|fenugreek seed;tamarind paste
+Garlic Puli Kuzhambu|garlic=12 whole cloves|ground red chili|garlic;tamarind paste
+@leafy_saag|India|curry|saag|ghee|garlic;ginger;cumin seed|water=1/3 cup|salt|Palak Paneer
+Sarson ka Saag|mustard greens=350 g chopped;spinach=150 g chopped|maize flour=1 tbsp|mustard greens
+Palak Chana|spinach=300 g chopped;cooked chickpea=1 1/2 cups|ground coriander|spinach;cooked chickpea
+Saag Tofu|spinach=250 g chopped;mustard greens=150 g chopped;firm tofu=200 g cubed|ground cumin|spinach;firm tofu
+Methi Matar Malai|fenugreek leaf=180 g chopped;green pea=1 cup|cream=1/3 cup|fenugreek leaf;green pea;cream
+@makhani|India|curry|butter|butter|ginger;garlic|tomato puree=1 cup;water=1/2 cup;cashew=2 tbsp|cream=1/4 cup;garam masala;dried fenugreek leaf;salt|Paneer Butter Masala;Butter Chicken;Malai Kofta;Matar Paneer
+Tofu Makhani|firm tofu=250 g cubed||firm tofu;butter
+Mushroom Makhani|mushroom=280 g sliced|black pepper|mushroom;butter
+Chickpea Makhani|cooked chickpea=2 cups|cilantro|cooked chickpea;butter
+Cauliflower Makhani|cauliflower=300 g florets|ground coriander|cauliflower;butter
+@dry_sabzi|India|curry|covered|vegetable oil|cumin seed;ginger;ground coriander;turmeric|water=1/4 cup|salt|Aloo Gobi;Aloo Matar
+Aloo Baingan Sabzi|potato=200 g diced;eggplant=200 g diced|ground red chili|potato;eggplant
+Aloo Shimla Mirch|potato=250 g diced;red bell pepper=180 g diced|ground cumin|potato;red bell pepper
+Patta Gobi Matar|cabbage=300 g shredded;green pea=3/4 cup|lemon juice|cabbage;green pea
+Beans and Carrot Sabzi|green bean=180 g trimmed;carrot=180 g diced|grated coconut=3 tbsp|green bean;carrot
+@potato_gravy|India|curry|gravy|vegetable oil|cumin seed;ginger;ground coriander;turmeric|tomato=2 medium chopped;water=1 cup|salt|Aloo Matar
+Banarasi Aloo Rasedar|potato=300 g diced|cilantro|potato
+Aloo and Mung Curry|potato=200 g diced;cooked mung bean=1 cup|garam masala|potato;cooked mung bean
+Bengali Aloo Phulkopi Dalna|potato=200 g diced;cauliflower=250 g florets|ground cinnamon|potato;cauliflower
+Potato and Green Bean Gravy|potato=200 g diced;green bean=150 g trimmed|ground cumin|potato;green bean
+@cashew_korma|India|curry|korma|vegetable oil|onion;ginger;garlic;green cardamom|plain yogurt=1/2 cup;water=3/4 cup;cashew=1/4 cup|salt|Chicken Korma
+Navratan-Style Vegetable Korma|carrot=100 g diced;green pea=1/2 cup;cauliflower=160 g florets;paneer=100 g cubed|dried apricot=2 tbsp chopped|cashew;carrot;cauliflower
+Mushroom Korma|mushroom=300 g sliced|ground coriander|mushroom;cashew
+Paneer Cashew Korma|paneer=250 g cubed|ground cinnamon|paneer;cashew
+Potato and Pea Korma|potato=250 g diced;green pea=1/2 cup|cilantro|potato;green pea;cashew
+@tomato_masala|India|curry|gravy|vegetable oil|onion;garlic;ginger;ground cumin;turmeric|tomato=3 medium chopped;water=1 cup|cilantro;salt|Kerala Egg Roast
+Home-Style Egg Curry|egg=4 hard-boiled and peeled|ground coriander|egg
+Chicken Masala Curry|boneless chicken thigh=350 g diced|garam masala|boneless chicken thigh
+Capsicum and Paneer Masala|red bell pepper=180 g diced;paneer=200 g cubed|ground coriander|red bell pepper;paneer
+Green Pea and Mushroom Masala|green pea=3/4 cup;mushroom=250 g sliced|ground red chili|green pea;mushroom
+@bengali_mustard|India|curry|mustard|vegetable oil|mustard seed;turmeric|water=3/4 cup|salt|
+Shorshe Fish Curry|white fish fillet=330 g cut into pieces|thai chili|white fish fillet;mustard seed
+Shorshe Begun|eggplant=330 g sliced|thai chili|eggplant;mustard seed
+Bengali Mustard Paneer|paneer=250 g cubed|plain yogurt=2 tbsp|paneer;mustard seed
+Mustard Shrimp Curry|shrimp=300 g peeled|grated coconut=1/4 cup|shrimp;mustard seed
+@vindaloo|India|curry|gravy|vegetable oil|onion;garlic;ginger;ground cumin;ground red chili|tomato puree=3/4 cup;water=1/2 cup;white wine vinegar=2 tbsp|salt|
+Goan Pork Vindaloo|pork shoulder=380 g cubed|ground cinnamon|pork shoulder;white wine vinegar
+Chicken Vindaloo|boneless chicken thigh=350 g diced|clove|boneless chicken thigh;white wine vinegar
+Mushroom Vindaloo|mushroom=300 g quartered|black pepper|mushroom;white wine vinegar
+Tofu Vindaloo|firm tofu=280 g cubed|paprika|firm tofu;white wine vinegar
+@pepper_roast|India|curry|covered|coconut oil|onion;garlic;ginger;curry leaf;black peppercorn|water=1/2 cup|salt|Chicken Chettinad
+Kerala Chicken Pepper Roast|boneless chicken thigh=350 g diced|ground fennel|boneless chicken thigh;black peppercorn
+Mushroom Pepper Fry|mushroom=280 g sliced|ground coriander|mushroom;black peppercorn
+Black Pepper Paneer|paneer=250 g cubed;red bell pepper=1 medium sliced|ground cumin|paneer;black peppercorn
+Black Pepper Cauliflower Roast|cauliflower=350 g florets|grated coconut=2 tbsp|cauliflower;black peppercorn
+@thai_green|Thailand|curry|thai|coconut oil|green curry paste;makrut lime leaf|coconut milk=1 1/2 cups;water=1/2 cup|thai basil;lime juice;salt|Thai Green Chicken Curry
+Thai Green Tofu Curry|firm tofu=250 g cubed;eggplant=160 g diced||firm tofu;green curry paste
+Thai Green Curry with Shrimp|shrimp=300 g peeled;green bean=120 g trimmed||shrimp;green curry paste
+Thai Green Vegetable Curry|zucchini=160 g diced;red bell pepper=1 medium;green pea=1/2 cup||green curry paste;coconut milk
+Thai Green Chicken and Eggplant Curry|boneless chicken thigh=320 g diced;eggplant=160 g diced||boneless chicken thigh;green curry paste
+@thai_red|Thailand|curry|thai|coconut oil|red curry paste;lemongrass|coconut milk=1 1/2 cups;water=1/2 cup|thai basil;lime juice;salt|Thai Red Tofu Curry
+Thai Red Chicken Curry|boneless chicken thigh=350 g diced;red bell pepper=1 medium sliced||boneless chicken thigh;red curry paste
+Thai Red Pumpkin Curry|pumpkin=330 g diced;green bean=100 g trimmed||pumpkin;red curry paste
+Thai Red Curry with Fish|white fish fillet=320 g cut into pieces;eggplant=140 g diced||white fish fillet;red curry paste
+Thai Red Chickpea Curry|cooked chickpea=1 1/2 cups;spinach=2 cups chopped||cooked chickpea;red curry paste
+@thai_yellow|Thailand|curry|thai|coconut oil|onion;garlic;curry powder;turmeric|coconut milk=1 1/2 cups;water=1/2 cup|palm sugar;lime juice;salt|
+Thai Yellow Chicken and Potato Curry|boneless chicken thigh=320 g diced;potato=180 g diced||boneless chicken thigh;potato;turmeric
+Thai Yellow Tofu Curry|firm tofu=260 g cubed;carrot=100 g diced||firm tofu;turmeric
+Thai Yellow Cauliflower Curry|cauliflower=300 g florets;green pea=1/2 cup||cauliflower;turmeric
+Thai Yellow Sweet Potato Curry|sweet potato=300 g diced;green bean=100 g trimmed||sweet potato;turmeric
+@massaman|Thailand|curry|thai|coconut oil|massaman curry paste;onion|coconut milk=1 1/2 cups;water=1/2 cup|peanut=3 tbsp chopped;tamarind paste;salt|Massaman Beef Curry
+Massaman Chicken Curry|boneless chicken thigh=340 g diced;potato=180 g diced||boneless chicken thigh;massaman curry paste
+Massaman Tofu Curry|firm tofu=260 g cubed;potato=180 g diced||firm tofu;massaman curry paste
+Massaman Beef and Potato Curry|beef chuck=350 g cubed;potato=180 g diced||beef chuck;massaman curry paste
+Massaman Pumpkin Curry|pumpkin=350 g diced;green bean=120 g trimmed||pumpkin;massaman curry paste
+@japanese_curry|Japan|curry|japanese|vegetable oil|onion;ginger|vegetable stock=2 cups;japanese curry roux=60 g|apple=1/2 grated|Japanese Chicken Curry;Japanese Katsu Curry
+Japanese Beef Curry|beef chuck=350 g cubed;potato=160 g diced;carrot=100 g sliced||beef chuck;japanese curry roux
+Japanese Mushroom Curry Rice Sauce|mushroom=260 g sliced;carrot=100 g sliced;potato=150 g diced||mushroom;japanese curry roux
+Japanese Tofu Curry|firm tofu=250 g cubed;carrot=100 g sliced;potato=160 g diced||firm tofu;japanese curry roux
+Japanese Chicken and Carrot Curry|boneless chicken thigh=350 g diced;carrot=160 g sliced;green pea=1/2 cup||boneless chicken thigh;japanese curry roux
+@sri_lanka|Sri Lanka|curry|stew|coconut oil|onion;garlic;ginger;curry leaf;ground coriander;ground cumin|coconut milk=1 1/2 cups;water=1/2 cup|lime juice;salt|Sri Lankan Dhal Curry
+Sri Lankan Beetroot Curry|beetroot=320 g diced|ground cinnamon|beetroot;coconut milk
+Sri Lankan Pumpkin Curry|pumpkin=330 g diced|mustard seed|pumpkin;coconut milk
+Sri Lankan Green Bean Curry|green bean=300 g trimmed|ground red chili|green bean;coconut milk
+Sri Lankan Chicken Coconut Curry|boneless chicken thigh=360 g diced|ground fennel|boneless chicken thigh;coconut milk
+@caribbean|Jamaica|curry|gravy|vegetable oil|onion;scallion;garlic;jamaican curry powder;thyme|water=1 1/2 cups|lime juice;salt|Jamaican Curry Chicken
+Jamaican Curry Chicken and Potatoes|boneless chicken thigh=360 g diced;potato=180 g diced|thai chili|boneless chicken thigh;jamaican curry powder
+Jamaican Curry Shrimp|shrimp=300 g peeled;red bell pepper=1 medium sliced||shrimp;jamaican curry powder
+Jamaican Chickpea Curry|cooked chickpea=2 cups;carrot=120 g sliced|black pepper|cooked chickpea;jamaican curry powder
+Jamaican Curry Vegetables|potato=200 g diced;carrot=120 g sliced;cauliflower=180 g florets||jamaican curry powder;potato
+@cape_malay|South Africa|curry|gravy|vegetable oil|onion;garlic;ginger;curry powder;ground cinnamon|tomato=2 medium chopped;water=1 cup|dried apricot=2 tbsp chopped;salt|Cape Malay Chicken Curry
+Cape Malay Beef Curry|beef chuck=350 g cubed;potato=160 g diced||beef chuck;curry powder
+Cape Malay Chickpea Curry|cooked chickpea=2 cups;carrot=120 g sliced||cooked chickpea;curry powder
+Cape Malay Cauliflower Curry|cauliflower=300 g florets;green pea=1/2 cup||cauliflower;curry powder
+Cape Malay Chicken and Apricot Curry|boneless chicken thigh=350 g diced;sweet potato=180 g diced||boneless chicken thigh;dried apricot
+@malaysian|Malaysia|curry|thai|vegetable oil|onion;garlic;ginger;lemongrass;curry powder|coconut milk=1 1/2 cups;water=1/2 cup|lime juice;salt|
+Malaysian Chicken and Potato Curry|boneless chicken thigh=340 g diced;potato=180 g diced|curry leaf|boneless chicken thigh;coconut milk
+Malaysian Fish Coconut Curry|white fish fillet=320 g cut into pieces;okra=110 g trimmed|tamarind paste|white fish fillet;coconut milk
+Malaysian Tofu and Eggplant Curry|firm tofu=240 g cubed;eggplant=180 g diced|thai chili|firm tofu;eggplant
+Malaysian Shrimp and Green Bean Curry|shrimp=300 g peeled;green bean=120 g trimmed|turmeric|shrimp;coconut milk
+@rasam|India|soup|rasam|ghee|mustard seed;curry leaf;dried red chili|water=3 cups;tamarind paste;rasam powder|cilantro;salt|Tomato Rasam
+Pepper Rasam|tomato=1 medium chopped;black peppercorn=1 tsp crushed|ground cumin|black peppercorn;rasam powder
+Garlic Rasam|garlic=8 cloves lightly crushed;tomato=1 medium chopped||garlic;rasam powder
+Lemon Dal Rasam|cooked pigeon pea=1/2 cup mashed|lemon juice|cooked pigeon pea;lemon juice
+Pineapple Rasam|pineapple=150 g diced;tomato=1 medium chopped||pineapple;rasam powder
+@shorba|India|soup|broth|ghee|onion;ginger;garlic;ground cumin|vegetable stock=3 cups|cilantro;lemon juice;salt|
+Indian Tomato Shorba|tomato=400 g chopped|black pepper|tomato
+Palak Shorba|spinach=300 g chopped|ground coriander|spinach
+Carrot and Cumin Shorba|carrot=330 g diced|ground coriander|carrot;ground cumin
+Chickpea Shorba|cooked chickpea=1 1/2 cups|ground red chili|cooked chickpea
+@indian_dal_soup|India|soup|soup_dal|vegetable oil|onion;ginger;ground cumin;turmeric|water=4 cups|lemon juice;salt|Mulligatawny Soup
+Masoor Dal Soup|red lentil=3/4 cup;carrot=1 medium diced|cilantro|red lentil
+Yellow Moong and Spinach Soup|split mung bean=3/4 cup;spinach=2 cups chopped|black pepper|split mung bean;spinach
+Tomato and Toor Dal Soup|split pigeon pea=3/4 cup;tomato=2 medium chopped|cilantro|split pigeon pea;tomato
+Indian Lentil and Pumpkin Soup|red lentil=3/4 cup;pumpkin=250 g diced|ground coriander|red lentil;pumpkin
+@indo_chinese|India|soup|slurry|vegetable oil|garlic;ginger;scallion;white pepper|vegetable stock=4 cups;cornstarch=1 tbsp|rice vinegar;salt|Vegetable Manchow Soup;Sweet Corn Soup
+Indo-Chinese Hot and Sour Vegetable Soup|cabbage=1 cup shredded;mushroom=120 g sliced;carrot=1 medium julienned|ground red chili|mushroom;rice vinegar
+Sweet Corn and Chicken Soup|sweet corn=1 cup;cooked chicken=140 g shredded|egg=1 beaten|sweet corn;cooked chicken
+Mushroom Manchow-Style Soup|mushroom=200 g sliced;cabbage=1 cup shredded|thai chili|mushroom;cabbage
+Sweet Corn and Tofu Soup|sweet corn=1 cup;silken tofu=180 g cubed|black pepper|sweet corn;silken tofu
+@indian_clear|India|soup|broth|vegetable oil|garlic;ginger;black pepper|vegetable stock=4 cups|cilantro;lemon juice;salt|Lemon Coriander Soup
+Clear Spinach and Lemon Soup|spinach=2 cups chopped;carrot=1 medium diced||spinach;lemon juice
+Indian Clear Chicken Soup|cooked chicken=180 g shredded;carrot=1 medium sliced|scallion|cooked chicken
+Clear Cabbage and Green Bean Soup|cabbage=1 cup shredded;green bean=130 g trimmed||cabbage;green bean
+Indian Clear Mushroom Soup|mushroom=200 g sliced;scallion=2 sliced|white pepper|mushroom
+@indian_cream|India|soup|puree|ghee|onion;ginger;ground coriander|vegetable stock=3 cups|cream=1/4 cup;salt|
+Spiced Pumpkin Shorba|pumpkin=350 g diced|black pepper|pumpkin
+Indian Beetroot and Ginger Soup|beetroot=320 g diced|lemon juice|beetroot;ginger
+Roasted Cauliflower Shorba|cauliflower=350 g roasted florets|ground cumin|cauliflower
+Indian Creamy Green Pea Soup|green pea=2 cups|mint|green pea
+@indiancoconut|India|soup|puree|coconut oil|ginger;curry leaf;turmeric|vegetable stock=2 cups;coconut milk=1 cup|lime juice;salt|
+Kerala Carrot Coconut Soup|carrot=350 g sliced|black pepper|carrot;coconut milk
+Spiced Sweet Potato and Coconut Soup|sweet potato=340 g diced|ground cumin|sweet potato;coconut milk
+Spinach Coconut Shorba|spinach=280 g chopped;potato=100 g diced|cilantro|spinach;coconut milk
+Corn and Curry Leaf Coconut Soup|sweet corn=2 cups|white pepper|sweet corn;coconut milk
+@european_puree|International|soup|puree|olive oil|onion;garlic|vegetable stock=3 cups|black pepper;salt|Pumpkin Soup;Carrot Ginger Soup
+Butternut Squash Soup|butternut squash=400 g cubed|cream=2 tbsp|butternut squash
+Roasted Red Pepper Soup|red bell pepper=3 roasted and peeled;potato=100 g diced|basil|red bell pepper
+Sweet Potato and Carrot Soup|sweet potato=220 g diced;carrot=180 g sliced|thyme|sweet potato;carrot
+Creamy Zucchini Soup|zucchini=350 g sliced;potato=100 g diced|plain yogurt=3 tbsp|zucchini
+@french_soup|France|soup|broth|butter|onion;garlic;thyme|vegetable stock=4 cups|black pepper;salt|French Onion Soup
+French Vegetable Potage|carrot=130 g diced;potato=160 g diced;celery=1 stalk sliced|parsley|carrot;potato
+French Mushroom and Thyme Soup|mushroom=300 g sliced|cream=2 tbsp|mushroom;thyme
+French Carrot and Leek Soup|carrot=300 g sliced;leek=1 small sliced|parsley|carrot;leek
+French Lentil and Carrot Soup|cooked brown lentil=1 1/2 cups;carrot=120 g diced|parsley|cooked brown lentil
+@veloute|France|soup|puree|butter|leek;garlic|vegetable stock=3 cups|cream=1/3 cup;black pepper;salt|
+Potato Leek Soup|potato=380 g diced|dill|potato;leek
+Cauliflower Veloute|cauliflower=370 g florets|ground cinnamon|cauliflower
+Cream of Mushroom Soup|mushroom=360 g sliced;potato=100 g diced|thyme|mushroom;cream
+French Green Pea Veloute|green pea=2 cups|mint|green pea
+@italian_tomato|Italy|soup|broth|olive oil|onion;garlic;celery|canned tomato=1 cup;vegetable stock=3 cups|basil;black pepper;salt|Italian Tomato Basil Soup;Minestrone
+Pasta e Fagioli|cooked cannellini bean=1 1/2 cups;small pasta=1/2 cup|parmesan=2 tbsp|cooked cannellini bean;small pasta
+Pasta e Ceci|cooked chickpea=1 1/2 cups;small pasta=1/2 cup|parsley|cooked chickpea;small pasta
+Italian Lentil Soup|cooked brown lentil=1 1/2 cups;carrot=1 medium diced|parmesan=2 tbsp|cooked brown lentil
+Ribollita-Style Bread and Bean Soup|cooked cannellini bean=1 1/2 cups;kale=2 cups chopped;baguette=2 slices torn|thyme|cooked cannellini bean;kale;baguette
+@spain_chilled|Spain|soup|cold|olive oil|garlic|sherry vinegar=1 tbsp;water=1/2 cup|salt|Gazpacho
+Cordoban Salmorejo|tomato=600 g chopped;baguette=100 g torn|egg=1 hard-boiled diced|tomato;baguette
+Green Cucumber Gazpacho|cucumber=350 g chopped;avocado=1 medium peeled;green bell pepper=1 medium chopped|cilantro|cucumber;avocado
+Watermelon Gazpacho|watermelon=350 g diced;tomato=250 g chopped;red bell pepper=1/2 chopped|basil|watermelon;tomato
+Cherry Tomato and Cucumber Gazpacho|cherry tomato=380 g halved;cucumber=200 g chopped;red bell pepper=1/2 chopped|black pepper|cherry tomato;cucumber
+@mediterranean_beans|Mediterranean|soup|broth|olive oil|onion;celery;garlic;paprika|vegetable stock=3 cups;canned tomato=1 cup|parsley;lemon juice;salt|Moroccan Harira
+Greek Fasolada-Style Bean Soup|cooked cannellini bean=2 cups;carrot=1 medium sliced||cooked cannellini bean
+Spanish Chickpea and Spinach Soup|cooked chickpea=1 1/2 cups;spinach=2 cups chopped|ground cumin|cooked chickpea;spinach
+Mediterranean Kidney Bean Soup|cooked kidney bean=1 1/2 cups;red bell pepper=1 medium diced|thyme|cooked kidney bean
+Moroccan Lentil and Carrot Soup|cooked brown lentil=1 1/2 cups;carrot=150 g diced|ground cumin|cooked brown lentil;carrot
+@american_chowder|United States|soup|chowder|butter|onion;celery|milk=2 cups;vegetable stock=2 cups;all purpose flour=2 tbsp|black pepper;salt|Broccoli Cheddar Soup;New England Clam Chowder
+New England-Style Fish Chowder|white fish fillet=300 g cut into pieces;potato=200 g diced|dill|white fish fillet;potato
+Corn Chowder|sweet corn=2 cups;potato=180 g diced|scallion|sweet corn;potato
+Potato Cheddar Chowder|potato=320 g diced;cheddar=90 g grated|scallion|potato;cheddar
+Chicken and Corn Chowder|cooked chicken=160 g shredded;sweet corn=1 cup;potato=150 g diced|thyme|cooked chicken;sweet corn
+@american_broth|United States|soup|broth|olive oil|onion;celery;garlic;thyme|chicken stock=4 cups|black pepper;salt|
+Chicken Noodle Soup|cooked chicken=170 g shredded;carrot=1 medium sliced;egg noodles=100 g|parsley|cooked chicken;egg noodles
+Chicken and Rice Soup|cooked chicken=170 g shredded;short grain rice=1/3 cup;carrot=1 medium sliced||cooked chicken;short grain rice
+Turkey and Vegetable Soup|cooked turkey=170 g shredded;potato=170 g diced;green bean=100 g trimmed|parsley|cooked turkey
+Mushroom and Barley Soup|mushroom=220 g sliced;pearl barley=1/3 cup;carrot=1 medium sliced||mushroom;pearl barley
+@mexican_soup|Mexico|soup|broth|vegetable oil|onion;garlic;ground cumin;dried ancho chili|canned tomato=1 cup;vegetable stock=3 cups|lime juice;cilantro;salt|Mexican Tortilla Soup
+Mexican Black Bean Soup|cooked black bean=2 cups|avocado=1/2 diced|cooked black bean
+Sopa de Fideo|small pasta=100 g;carrot=1 medium diced||small pasta;canned tomato
+Tomato and Tortilla Soup with Avocado|corn tortilla=3 baked and sliced;avocado=1 medium diced||corn tortilla;canned tomato
+Caldo de Pollo with Vegetables|cooked chicken=170 g shredded;carrot=1 medium sliced;potato=140 g diced;zucchini=1 small diced||cooked chicken;carrot
+@thai_soup|Thailand|soup|thai_soup|coconut oil|lemongrass;galangal;makrut lime leaf|vegetable stock=3 cups|lime juice;salt|Tom Yum Goong;Tom Kha Gai
+Tom Yum Mushroom Soup|mushroom=220 g sliced;tomato=1 medium quartered|thai chili|mushroom;lemongrass
+Tom Yum Tofu Soup|firm tofu=220 g cubed;tomato=1 medium quartered|thai chili|firm tofu;lemongrass
+Tom Kha Mushroom Soup|mushroom=230 g sliced;coconut milk=1 cup||mushroom;coconut milk
+Tom Kha Chicken and Mushroom Soup|boneless chicken thigh=280 g sliced;mushroom=120 g sliced;coconut milk=1 cup||boneless chicken thigh;coconut milk
+@japanese_soup|Japan|soup|miso|sesame oil|scallion;ginger|kombu stock=3 cups;miso paste=2 tbsp|salt|Miso Soup
+Japanese Miso Tofu and Wakame Soup|silken tofu=200 g cubed;dried wakame=1 tbsp rehydrated||miso paste;silken tofu
+Japanese Miso Mushroom Soup|mushroom=220 g sliced;firm tofu=120 g cubed||miso paste;mushroom
+Japanese Daikon Miso Soup|radish=220 g thinly sliced;carrot=1 medium sliced||miso paste;radish
+Japanese Cabbage Miso Soup|cabbage=2 cups shredded;dried wakame=1 tbsp rehydrated||miso paste;cabbage
+@middle_east|Middle East|soup|soup_dal|olive oil|onion;garlic;ground cumin;turmeric|vegetable stock=4 cups|lemon juice;parsley;salt|
+Lebanese Red Lentil Soup|red lentil=3/4 cup;carrot=1 medium diced||red lentil;lemon juice
+Turkish Mercimek Corbasi|red lentil=3/4 cup;potato=140 g diced;tomato puree=2 tbsp|paprika|red lentil;tomato puree
+Middle Eastern Lentil and Sweet Potato Soup|red lentil=3/4 cup;sweet potato=200 g diced|ground coriander|red lentil;sweet potato
+Lentil and Greens Soup|red lentil=3/4 cup;kale=2 cups chopped|dill|red lentil;kale
+@central_europe|Central Europe|soup|broth|vegetable oil|onion;garlic;paprika;thyme|vegetable stock=3 cups;tomato puree=2 tbsp|black pepper;salt|
+Hungarian-Style Mushroom Paprika Soup|mushroom=300 g sliced;potato=100 g diced|plain yogurt=3 tbsp|mushroom;paprika
+Beet and Cabbage Soup|beetroot=220 g diced;cabbage=1 1/2 cups shredded;carrot=1 medium sliced|dill|beetroot;cabbage
+Paprika Potato Soup|potato=300 g diced;carrot=1 medium diced|parsley|potato;paprika
+Paprika White Bean Soup|cooked cannellini bean=1 1/2 cups;red bell pepper=1 medium diced|parsley|cooked cannellini bean;paprika

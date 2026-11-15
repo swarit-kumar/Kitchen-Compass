@@ -1,0 +1,2714 @@
+{
+  "additional_pantry_ingredients": [
+    "firm tofu",
+    "silken tofu"
+  ],
+  "alias_overrides": {
+    "all purpose flour": [
+      "all-purpose flour",
+      "maida"
+    ],
+    "beetroot": [
+      "beet",
+      "beets"
+    ],
+    "black peppercorn": [
+      "black peppercorns"
+    ],
+    "cauliflower": [
+      "gobi",
+      "phool gobhi"
+    ],
+    "chickpea flour": [
+      "besan",
+      "gram flour"
+    ],
+    "cilantro": [
+      "coriander leaves",
+      "fresh coriander",
+      "hara dhania"
+    ],
+    "cornstarch": [
+      "corn starch"
+    ],
+    "cumin seed": [
+      "cumin seeds",
+      "jeera"
+    ],
+    "curry leaf": [
+      "curry leaves",
+      "kadi patta"
+    ],
+    "dried fenugreek leaf": [
+      "kasuri methi",
+      "dried fenugreek leaves"
+    ],
+    "drumstick pod": [
+      "moringa pod"
+    ],
+    "egg noodles": [
+      "egg noodle"
+    ],
+    "eggplant": [
+      "aubergine",
+      "brinjal",
+      "baingan"
+    ],
+    "green pea": [
+      "green peas",
+      "matar"
+    ],
+    "ground coriander": [
+      "coriander powder",
+      "dhania powder"
+    ],
+    "ground cumin": [
+      "cumin powder",
+      "ground jeera"
+    ],
+    "makrut lime leaf": [
+      "kaffir lime leaf",
+      "makrut lime leaves"
+    ],
+    "mustard seed": [
+      "mustard seeds"
+    ],
+    "paneer": [
+      "Indian cottage cheese"
+    ],
+    "plain yogurt": [
+      "plain yoghurt",
+      "dahi",
+      "plain curd"
+    ],
+    "potato": [
+      "aloo",
+      "potatoes"
+    ],
+    "radish": [
+      "mooli"
+    ],
+    "scallion": [
+      "spring onion",
+      "green onion"
+    ],
+    "spinach": [
+      "palak"
+    ],
+    "split pigeon pea": [
+      "arhar dal",
+      "toor dal",
+      "tur dal"
+    ],
+    "tomato": [
+      "tomatoes",
+      "tamatar"
+    ],
+    "turmeric": [
+      "haldi",
+      "turmeric powder"
+    ],
+    "vegetable stock": [
+      "veg stock",
+      "vegetable broth"
+    ]
+  },
+  "component_definitions": {
+    "all purpose flour": [
+      "wheat flour"
+    ],
+    "baby potato": [
+      "potato"
+    ],
+    "baguette": [
+      "salt",
+      "water",
+      "wheat flour"
+    ],
+    "beef stock": [
+      "beef chuck",
+      "carrot",
+      "celery",
+      "onion",
+      "salt",
+      "water"
+    ],
+    "boneless chicken thigh": [
+      "chicken"
+    ],
+    "butter": [
+      "milk"
+    ],
+    "canned tomato": [
+      "tomato"
+    ],
+    "cheddar": [
+      "milk"
+    ],
+    "cherry tomato": [
+      "tomato"
+    ],
+    "chicken breast": [
+      "chicken"
+    ],
+    "chicken leg": [
+      "chicken"
+    ],
+    "chicken stock": [
+      "carrot",
+      "celery",
+      "chicken leg",
+      "onion",
+      "salt",
+      "water"
+    ],
+    "chickpea flour": [
+      "chickpea"
+    ],
+    "coconut milk": [
+      "grated coconut",
+      "water"
+    ],
+    "coconut oil": [
+      "grated coconut"
+    ],
+    "cooked black chickpea": [
+      "chickpea"
+    ],
+    "cooked chicken": [
+      "chicken"
+    ],
+    "cooked chickpea": [
+      "chickpea"
+    ],
+    "cooked pigeon pea": [
+      "split pigeon pea"
+    ],
+    "corn tortilla": [
+      "maize",
+      "salt",
+      "water"
+    ],
+    "cornstarch": [
+      "maize"
+    ],
+    "cream": [
+      "milk"
+    ],
+    "curry powder": [
+      "ground coriander",
+      "ground cumin",
+      "ground ginger",
+      "ground red chili",
+      "turmeric"
+    ],
+    "egg noodles": [
+      "egg",
+      "water",
+      "wheat flour"
+    ],
+    "firm tofu": [
+      "soybean",
+      "water"
+    ],
+    "garam masala": [
+      "black peppercorn",
+      "clove",
+      "green cardamom",
+      "ground cinnamon",
+      "ground coriander",
+      "ground cumin"
+    ],
+    "ghee": [
+      "butter"
+    ],
+    "green curry paste": [
+      "coriander seed",
+      "garlic",
+      "ginger",
+      "lemongrass",
+      "thai chili"
+    ],
+    "ground cinnamon": [
+      "cinnamon stick"
+    ],
+    "ground coriander": [
+      "coriander seed"
+    ],
+    "ground cumin": [
+      "cumin seed"
+    ],
+    "ground fennel": [
+      "fennel seed"
+    ],
+    "ground ginger": [
+      "ginger"
+    ],
+    "ground red chili": [
+      "dried red chili"
+    ],
+    "gruyere": [
+      "milk"
+    ],
+    "jamaican curry powder": [
+      "ground coriander",
+      "ground cumin",
+      "ground ginger",
+      "ground red chili",
+      "turmeric"
+    ],
+    "japanese curry roux": [
+      "curry powder",
+      "vegetable oil",
+      "wheat flour"
+    ],
+    "kombu stock": [
+      "kombu",
+      "water"
+    ],
+    "lemon juice": [
+      "lemon"
+    ],
+    "lime juice": [
+      "lime"
+    ],
+    "maize flour": [
+      "maize"
+    ],
+    "massaman curry paste": [
+      "dried red chili",
+      "garlic",
+      "ground cinnamon",
+      "ground cumin",
+      "lemongrass"
+    ],
+    "miso paste": [
+      "salt",
+      "soybean",
+      "water"
+    ],
+    "paneer": [
+      "lemon juice",
+      "milk"
+    ],
+    "parmesan": [
+      "milk"
+    ],
+    "plain yogurt": [
+      "milk"
+    ],
+    "rasam powder": [
+      "black peppercorn",
+      "dried red chili",
+      "ground coriander",
+      "ground cumin"
+    ],
+    "red curry paste": [
+      "dried red chili",
+      "garlic",
+      "ginger",
+      "ground coriander",
+      "lemongrass"
+    ],
+    "sambar powder": [
+      "dried red chili",
+      "ground coriander",
+      "ground cumin",
+      "split pigeon pea",
+      "turmeric"
+    ],
+    "silken tofu": [
+      "soybean",
+      "water"
+    ],
+    "small pasta": [
+      "water",
+      "wheat flour"
+    ],
+    "split chickpea": [
+      "chickpea"
+    ],
+    "sweet corn": [
+      "maize"
+    ],
+    "tomato puree": [
+      "tomato"
+    ],
+    "vegetable oil": [
+      "sunflower seed"
+    ],
+    "vegetable stock": [
+      "carrot",
+      "celery",
+      "onion",
+      "salt",
+      "water"
+    ],
+    "yellow onion": [
+      "onion"
+    ]
+  },
+  "composition_policy": "Named project preparations and base-ingredient relations for exclusion expansion. Packaged versions with an unknown ingredient list cannot inherit these definitions.",
+  "essential_by_recipe": {
+    "rec_aloo_and_mung_curry": {
+      "cooked mung bean": "Defines the named ingredient, base or preparation style.",
+      "potato": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_aloo_baingan_sabzi": {
+      "eggplant": "Defines the named ingredient, base or preparation style.",
+      "potato": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_aloo_gobi": {
+      "cauliflower": "Cauliflower defines this draft's named style, main ingredient, or signature base.",
+      "potato": "Potato defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_aloo_matar": {
+      "green pea": "Green pea defines this draft's named style, main ingredient, or signature base.",
+      "potato": "Potato defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_aloo_shimla_mirch": {
+      "potato": "Defines the named ingredient, base or preparation style.",
+      "red bell pepper": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_banarasi_aloo_rasedar": {
+      "potato": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_beans_and_carrot_sabzi": {
+      "carrot": "Defines the named ingredient, base or preparation style.",
+      "green bean": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_beet_and_cabbage_soup": {
+      "beetroot": "Defines the named ingredient, base or preparation style.",
+      "cabbage": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_bengali_aloo_phulkopi_dalna": {
+      "cauliflower": "Defines the named ingredient, base or preparation style.",
+      "potato": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_bengali_mustard_paneer": {
+      "mustard seed": "Defines the named ingredient, base or preparation style.",
+      "paneer": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_black_pepper_cauliflower_roast": {
+      "black peppercorn": "Defines the named ingredient, base or preparation style.",
+      "cauliflower": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_black_pepper_paneer": {
+      "black peppercorn": "Defines the named ingredient, base or preparation style.",
+      "paneer": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_broccoli_cheddar_soup": {
+      "broccoli": "Broccoli defines this draft's named style, main ingredient, or signature base.",
+      "cheddar": "Cheddar defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_butter_chicken": {
+      "boneless chicken thigh": "Boneless chicken thigh defines this draft's named style, main ingredient, or signature base.",
+      "butter": "Butter defines this draft's named style, main ingredient, or signature base.",
+      "tomato puree": "Tomato puree defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_butternut_squash_soup": {
+      "butternut squash": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_caldo_de_pollo_with_vegetables": {
+      "carrot": "Defines the named ingredient, base or preparation style.",
+      "cooked chicken": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_cape_malay_beef_curry": {
+      "beef chuck": "Defines the named ingredient, base or preparation style.",
+      "curry powder": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_cape_malay_cauliflower_curry": {
+      "cauliflower": "Defines the named ingredient, base or preparation style.",
+      "curry powder": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_cape_malay_chicken_and_apricot_curry": {
+      "boneless chicken thigh": "Defines the named ingredient, base or preparation style.",
+      "dried apricot": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_cape_malay_chicken_curry": {
+      "boneless chicken thigh": "Boneless chicken thigh defines this draft's named style, main ingredient, or signature base.",
+      "curry powder": "Curry powder defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_cape_malay_chickpea_curry": {
+      "cooked chickpea": "Defines the named ingredient, base or preparation style.",
+      "curry powder": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_capsicum_and_paneer_masala": {
+      "paneer": "Defines the named ingredient, base or preparation style.",
+      "red bell pepper": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_carrot_and_cumin_shorba": {
+      "carrot": "Defines the named ingredient, base or preparation style.",
+      "ground cumin": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_carrot_ginger_soup": {
+      "carrot": "Carrot defines this draft's named style, main ingredient, or signature base.",
+      "ginger": "Ginger defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_cauliflower_makhani": {
+      "butter": "Defines the named ingredient, base or preparation style.",
+      "cauliflower": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_cauliflower_veloute": {
+      "cauliflower": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_chana_and_potato_curry": {
+      "cooked chickpea": "Defines the named ingredient, base or preparation style.",
+      "potato": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_chana_dal_with_garlic_tadka": {
+      "split chickpea": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_chana_masala": {
+      "cooked chickpea": "Cooked chickpea defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_cherry_tomato_and_cucumber_gazpacho": {
+      "cherry tomato": "Defines the named ingredient, base or preparation style.",
+      "cucumber": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_chicken_and_corn_chowder": {
+      "cooked chicken": "Defines the named ingredient, base or preparation style.",
+      "sweet corn": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_chicken_and_rice_soup": {
+      "cooked chicken": "Defines the named ingredient, base or preparation style.",
+      "short grain rice": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_chicken_chettinad": {
+      "black peppercorn": "Black peppercorn defines this draft's named style, main ingredient, or signature base.",
+      "boneless chicken thigh": "Boneless chicken thigh defines this draft's named style, main ingredient, or signature base.",
+      "grated coconut": "Grated coconut defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_chicken_korma": {
+      "boneless chicken thigh": "Boneless chicken thigh defines this draft's named style, main ingredient, or signature base.",
+      "plain yogurt": "Plain yogurt defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_chicken_masala_curry": {
+      "boneless chicken thigh": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_chicken_noodle_soup": {
+      "cooked chicken": "Defines the named ingredient, base or preparation style.",
+      "egg noodles": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_chicken_pho": {
+      "chicken leg": "Chicken leg defines this draft's named style, main ingredient, or signature base.",
+      "rice noodle": "Rice noodle defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_chicken_vindaloo": {
+      "boneless chicken thigh": "Defines the named ingredient, base or preparation style.",
+      "white wine vinegar": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_chickpea_makhani": {
+      "butter": "Defines the named ingredient, base or preparation style.",
+      "cooked chickpea": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_chickpea_shorba": {
+      "cooked chickpea": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_clear_cabbage_and_green_bean_soup": {
+      "cabbage": "Defines the named ingredient, base or preparation style.",
+      "green bean": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_clear_spinach_and_lemon_soup": {
+      "lemon juice": "Defines the named ingredient, base or preparation style.",
+      "spinach": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_cordoban_salmorejo": {
+      "baguette": "Defines the named ingredient, base or preparation style.",
+      "tomato": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_corn_and_curry_leaf_coconut_soup": {
+      "coconut milk": "Defines the named ingredient, base or preparation style.",
+      "sweet corn": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_corn_chowder": {
+      "potato": "Defines the named ingredient, base or preparation style.",
+      "sweet corn": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_cream_of_mushroom_soup": {
+      "cream": "Defines the named ingredient, base or preparation style.",
+      "mushroom": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_creamy_zucchini_soup": {
+      "zucchini": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_dal_makhani": {
+      "butter": "Butter defines this draft's named style, main ingredient, or signature base.",
+      "cooked whole black gram": "Cooked whole black gram defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_dal_tadka": {
+      "split pigeon pea": "Split pigeon pea defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_drumstick_sambar": {
+      "drumstick pod": "Defines the named ingredient, base or preparation style.",
+      "split pigeon pea": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_dum_aloo": {
+      "baby potato": "Baby potato defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_french_carrot_and_leek_soup": {
+      "carrot": "Defines the named ingredient, base or preparation style.",
+      "leek": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_french_green_pea_veloute": {
+      "green pea": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_french_lentil_and_carrot_soup": {
+      "cooked brown lentil": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_french_mushroom_and_thyme_soup": {
+      "mushroom": "Defines the named ingredient, base or preparation style.",
+      "thyme": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_french_onion_soup": {
+      "beef stock": "Beef stock defines this draft's named style, main ingredient, or signature base.",
+      "yellow onion": "Yellow onion defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_french_vegetable_potage": {
+      "carrot": "Defines the named ingredient, base or preparation style.",
+      "potato": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_garlic_puli_kuzhambu": {
+      "garlic": "Defines the named ingredient, base or preparation style.",
+      "tamarind paste": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_garlic_rasam": {
+      "garlic": "Defines the named ingredient, base or preparation style.",
+      "rasam powder": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_gazpacho": {
+      "cucumber": "Cucumber defines this draft's named style, main ingredient, or signature base.",
+      "tomato": "Tomato defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_goan_fish_curry": {
+      "coconut milk": "Coconut milk defines this draft's named style, main ingredient, or signature base.",
+      "tamarind paste": "Tamarind paste defines this draft's named style, main ingredient, or signature base.",
+      "white fish fillet": "White fish fillet defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_goan_pork_vindaloo": {
+      "pork shoulder": "Defines the named ingredient, base or preparation style.",
+      "white wine vinegar": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_greek_fasolada_style_bean_soup": {
+      "cooked cannellini bean": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_greek_lemon_chicken_soup": {
+      "cooked chicken": "Cooked chicken defines this draft's named style, main ingredient, or signature base.",
+      "egg": "Egg defines this draft's named style, main ingredient, or signature base.",
+      "lemon juice": "Lemon juice defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_green_cucumber_gazpacho": {
+      "avocado": "Defines the named ingredient, base or preparation style.",
+      "cucumber": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_green_pea_and_mushroom_masala": {
+      "green pea": "Defines the named ingredient, base or preparation style.",
+      "mushroom": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_gujarati_kadhi": {
+      "chickpea flour": "Defines the named ingredient, base or preparation style.",
+      "plain yogurt": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_home_style_egg_curry": {
+      "egg": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_hungarian_style_mushroom_paprika_soup": {
+      "mushroom": "Defines the named ingredient, base or preparation style.",
+      "paprika": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_indian_beetroot_and_ginger_soup": {
+      "beetroot": "Defines the named ingredient, base or preparation style.",
+      "ginger": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_indian_clear_chicken_soup": {
+      "cooked chicken": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_indian_clear_mushroom_soup": {
+      "mushroom": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_indian_creamy_green_pea_soup": {
+      "green pea": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_indian_lentil_and_pumpkin_soup": {
+      "pumpkin": "Defines the named ingredient, base or preparation style.",
+      "red lentil": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_indian_tomato_shorba": {
+      "tomato": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_indo_chinese_hot_and_sour_vegetable_soup": {
+      "mushroom": "Defines the named ingredient, base or preparation style.",
+      "rice vinegar": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_italian_lentil_soup": {
+      "cooked brown lentil": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_italian_tomato_basil_soup": {
+      "basil": "Basil defines this draft's named style, main ingredient, or signature base.",
+      "canned tomato": "Canned tomato defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_jamaican_chickpea_curry": {
+      "cooked chickpea": "Defines the named ingredient, base or preparation style.",
+      "jamaican curry powder": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_jamaican_curry_chicken": {
+      "boneless chicken thigh": "Boneless chicken thigh defines this draft's named style, main ingredient, or signature base.",
+      "jamaican curry powder": "Jamaican curry powder defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_jamaican_curry_chicken_and_potatoes": {
+      "boneless chicken thigh": "Defines the named ingredient, base or preparation style.",
+      "jamaican curry powder": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_jamaican_curry_shrimp": {
+      "jamaican curry powder": "Defines the named ingredient, base or preparation style.",
+      "shrimp": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_jamaican_curry_vegetables": {
+      "jamaican curry powder": "Defines the named ingredient, base or preparation style.",
+      "potato": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_japanese_beef_curry": {
+      "beef chuck": "Defines the named ingredient, base or preparation style.",
+      "japanese curry roux": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_japanese_cabbage_miso_soup": {
+      "cabbage": "Defines the named ingredient, base or preparation style.",
+      "miso paste": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_japanese_chicken_and_carrot_curry": {
+      "boneless chicken thigh": "Defines the named ingredient, base or preparation style.",
+      "japanese curry roux": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_japanese_chicken_curry": {
+      "boneless chicken thigh": "Boneless chicken thigh defines this draft's named style, main ingredient, or signature base.",
+      "japanese curry roux": "Japanese curry roux defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_japanese_daikon_miso_soup": {
+      "miso paste": "Defines the named ingredient, base or preparation style.",
+      "radish": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_japanese_katsu_curry": {
+      "chicken breast": "Chicken breast defines this draft's named style, main ingredient, or signature base.",
+      "japanese curry roux": "Japanese curry roux defines this draft's named style, main ingredient, or signature base.",
+      "panko": "Panko defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_japanese_miso_mushroom_soup": {
+      "miso paste": "Defines the named ingredient, base or preparation style.",
+      "mushroom": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_japanese_miso_tofu_and_wakame_soup": {
+      "miso paste": "Defines the named ingredient, base or preparation style.",
+      "silken tofu": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_japanese_mushroom_curry_rice_sauce": {
+      "japanese curry roux": "Defines the named ingredient, base or preparation style.",
+      "mushroom": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_japanese_tofu_curry": {
+      "firm tofu": "Defines the named ingredient, base or preparation style.",
+      "japanese curry roux": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_kadhi_pakora": {
+      "chickpea flour": "Chickpea flour defines this draft's named style, main ingredient, or signature base.",
+      "plain yogurt": "Plain yogurt defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_kerala_carrot_coconut_soup": {
+      "carrot": "Defines the named ingredient, base or preparation style.",
+      "coconut milk": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_kerala_chicken_ishtu": {
+      "boneless chicken thigh": "Defines the named ingredient, base or preparation style.",
+      "coconut milk": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_kerala_chicken_pepper_roast": {
+      "black peppercorn": "Defines the named ingredient, base or preparation style.",
+      "boneless chicken thigh": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_kerala_egg_and_coconut_curry": {
+      "coconut milk": "Defines the named ingredient, base or preparation style.",
+      "egg": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_kerala_egg_roast": {
+      "egg": "Egg defines this draft's named style, main ingredient, or signature base.",
+      "onion": "Onion defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_kerala_mushroom_coconut_stew": {
+      "coconut milk": "Defines the named ingredient, base or preparation style.",
+      "mushroom": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_kerala_vegetable_ishtu": {
+      "coconut milk": "Defines the named ingredient, base or preparation style.",
+      "potato": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_kimchi_jjigae": {
+      "napa cabbage kimchi": "Napa cabbage kimchi defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_lebanese_red_lentil_soup": {
+      "lemon juice": "Defines the named ingredient, base or preparation style.",
+      "red lentil": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_lemon_coriander_soup": {
+      "cilantro": "Cilantro defines this draft's named style, main ingredient, or signature base.",
+      "lemon juice": "Lemon juice defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_lemon_dal_rasam": {
+      "cooked pigeon pea": "Defines the named ingredient, base or preparation style.",
+      "lemon juice": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_lentil_and_greens_soup": {
+      "kale": "Defines the named ingredient, base or preparation style.",
+      "red lentil": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_lobia_masala": {
+      "cooked black eyed pea": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_malai_kofta": {
+      "cream": "Cream defines this draft's named style, main ingredient, or signature base.",
+      "paneer": "Paneer defines this draft's named style, main ingredient, or signature base.",
+      "potato": "Potato defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_malaysian_chicken_and_potato_curry": {
+      "boneless chicken thigh": "Defines the named ingredient, base or preparation style.",
+      "coconut milk": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_malaysian_fish_coconut_curry": {
+      "coconut milk": "Defines the named ingredient, base or preparation style.",
+      "white fish fillet": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_malaysian_shrimp_and_green_bean_curry": {
+      "coconut milk": "Defines the named ingredient, base or preparation style.",
+      "shrimp": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_malaysian_tofu_and_eggplant_curry": {
+      "eggplant": "Defines the named ingredient, base or preparation style.",
+      "firm tofu": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_masoor_dal_soup": {
+      "red lentil": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_masoor_dal_tadka": {
+      "red lentil": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_massaman_beef_and_potato_curry": {
+      "beef chuck": "Defines the named ingredient, base or preparation style.",
+      "massaman curry paste": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_massaman_beef_curry": {
+      "beef chuck": "Beef chuck defines this draft's named style, main ingredient, or signature base.",
+      "massaman curry paste": "Massaman curry paste defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_massaman_chicken_curry": {
+      "boneless chicken thigh": "Defines the named ingredient, base or preparation style.",
+      "massaman curry paste": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_massaman_pumpkin_curry": {
+      "massaman curry paste": "Defines the named ingredient, base or preparation style.",
+      "pumpkin": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_massaman_tofu_curry": {
+      "firm tofu": "Defines the named ingredient, base or preparation style.",
+      "massaman curry paste": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_matar_paneer": {
+      "green pea": "Green pea defines this draft's named style, main ingredient, or signature base.",
+      "paneer": "Paneer defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_mediterranean_kidney_bean_soup": {
+      "cooked kidney bean": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_methi_matar_malai": {
+      "cream": "Defines the named ingredient, base or preparation style.",
+      "fenugreek leaf": "Defines the named ingredient, base or preparation style.",
+      "green pea": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_mexican_black_bean_soup": {
+      "cooked black bean": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_mexican_tortilla_soup": {
+      "canned tomato": "Canned tomato defines this draft's named style, main ingredient, or signature base.",
+      "corn tortilla": "Corn tortilla defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_middle_eastern_lentil_and_sweet_potato_soup": {
+      "red lentil": "Defines the named ingredient, base or preparation style.",
+      "sweet potato": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_minestrone": {
+      "cooked cannellini bean": "Cooked cannellini bean defines this draft's named style, main ingredient, or signature base.",
+      "small pasta": "Small pasta defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_miso_soup": {
+      "dashi": "Dashi defines this draft's named style, main ingredient, or signature base.",
+      "miso paste": "Miso paste defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_moroccan_harira": {
+      "cooked chickpea": "Cooked chickpea defines this draft's named style, main ingredient, or signature base.",
+      "red lentil": "Red lentil defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_moroccan_lentil_and_carrot_soup": {
+      "carrot": "Defines the named ingredient, base or preparation style.",
+      "cooked brown lentil": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_mulligatawny_soup": {
+      "curry powder": "Curry powder defines this draft's named style, main ingredient, or signature base.",
+      "red lentil": "Red lentil defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_mushroom_and_barley_soup": {
+      "mushroom": "Defines the named ingredient, base or preparation style.",
+      "pearl barley": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_mushroom_korma": {
+      "cashew": "Defines the named ingredient, base or preparation style.",
+      "mushroom": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_mushroom_makhani": {
+      "butter": "Defines the named ingredient, base or preparation style.",
+      "mushroom": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_mushroom_manchow_style_soup": {
+      "cabbage": "Defines the named ingredient, base or preparation style.",
+      "mushroom": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_mushroom_pepper_fry": {
+      "black peppercorn": "Defines the named ingredient, base or preparation style.",
+      "mushroom": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_mushroom_vindaloo": {
+      "mushroom": "Defines the named ingredient, base or preparation style.",
+      "white wine vinegar": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_mustard_shrimp_curry": {
+      "mustard seed": "Defines the named ingredient, base or preparation style.",
+      "shrimp": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_navratan_style_vegetable_korma": {
+      "carrot": "Defines the named ingredient, base or preparation style.",
+      "cashew": "Defines the named ingredient, base or preparation style.",
+      "cauliflower": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_new_england_clam_chowder": {
+      "canned clam": "Canned clam defines this draft's named style, main ingredient, or signature base.",
+      "clam juice": "Clam juice defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_new_england_style_fish_chowder": {
+      "potato": "Defines the named ingredient, base or preparation style.",
+      "white fish fillet": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_okra_puli_kuzhambu": {
+      "okra": "Defines the named ingredient, base or preparation style.",
+      "tamarind paste": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_onion_sambar": {
+      "onion": "Defines the named ingredient, base or preparation style.",
+      "split pigeon pea": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_palak_chana": {
+      "cooked chickpea": "Defines the named ingredient, base or preparation style.",
+      "spinach": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_palak_paneer": {
+      "paneer": "Paneer defines this draft's named style, main ingredient, or signature base.",
+      "spinach": "Spinach defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_palak_shorba": {
+      "spinach": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_paneer_butter_masala": {
+      "butter": "Butter defines this draft's named style, main ingredient, or signature base.",
+      "paneer": "Paneer defines this draft's named style, main ingredient, or signature base.",
+      "tomato": "Tomato defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_paneer_cashew_korma": {
+      "cashew": "Defines the named ingredient, base or preparation style.",
+      "paneer": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_paprika_potato_soup": {
+      "paprika": "Defines the named ingredient, base or preparation style.",
+      "potato": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_paprika_white_bean_soup": {
+      "cooked cannellini bean": "Defines the named ingredient, base or preparation style.",
+      "paprika": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_pasta_e_ceci": {
+      "cooked chickpea": "Defines the named ingredient, base or preparation style.",
+      "small pasta": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_pasta_e_fagioli": {
+      "cooked cannellini bean": "Defines the named ingredient, base or preparation style.",
+      "small pasta": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_patta_gobi_matar": {
+      "cabbage": "Defines the named ingredient, base or preparation style.",
+      "green pea": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_pepper_rasam": {
+      "black peppercorn": "Defines the named ingredient, base or preparation style.",
+      "rasam powder": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_pineapple_rasam": {
+      "pineapple": "Defines the named ingredient, base or preparation style.",
+      "rasam powder": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_potato_and_green_bean_gravy": {
+      "green bean": "Defines the named ingredient, base or preparation style.",
+      "potato": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_potato_and_pea_korma": {
+      "cashew": "Defines the named ingredient, base or preparation style.",
+      "green pea": "Defines the named ingredient, base or preparation style.",
+      "potato": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_potato_cheddar_chowder": {
+      "cheddar": "Defines the named ingredient, base or preparation style.",
+      "potato": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_potato_leek_soup": {
+      "leek": "Defines the named ingredient, base or preparation style.",
+      "potato": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_pumpkin_sambar": {
+      "pumpkin": "Defines the named ingredient, base or preparation style.",
+      "split pigeon pea": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_pumpkin_soup": {
+      "pumpkin": "Pumpkin defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_punjabi_kala_chana": {
+      "cooked black chickpea": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_punjabi_white_bean_masala": {
+      "cooked cannellini bean": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_radish_sambar": {
+      "radish": "Defines the named ingredient, base or preparation style.",
+      "split pigeon pea": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_rajasthani_style_onion_kadhi": {
+      "chickpea flour": "Defines the named ingredient, base or preparation style.",
+      "plain yogurt": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_rajma_masala": {
+      "cooked kidney bean": "Cooked kidney bean defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_ribollita_style_bread_and_bean_soup": {
+      "baguette": "Defines the named ingredient, base or preparation style.",
+      "cooked cannellini bean": "Defines the named ingredient, base or preparation style.",
+      "kale": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_roasted_cauliflower_shorba": {
+      "cauliflower": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_roasted_red_pepper_soup": {
+      "red bell pepper": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_saag_tofu": {
+      "firm tofu": "Defines the named ingredient, base or preparation style.",
+      "spinach": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_sambar": {
+      "sambar powder": "Sambar powder defines this draft's named style, main ingredient, or signature base.",
+      "split pigeon pea": "Split pigeon pea defines this draft's named style, main ingredient, or signature base.",
+      "tamarind paste": "Tamarind paste defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_sarson_ka_saag": {
+      "mustard greens": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_shorshe_begun": {
+      "eggplant": "Defines the named ingredient, base or preparation style.",
+      "mustard seed": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_shorshe_fish_curry": {
+      "mustard seed": "Defines the named ingredient, base or preparation style.",
+      "white fish fillet": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_shoyu_ramen": {
+      "ramen noodle": "Ramen noodle defines this draft's named style, main ingredient, or signature base.",
+      "soy sauce": "Soy sauce defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_sopa_de_fideo": {
+      "canned tomato": "Defines the named ingredient, base or preparation style.",
+      "small pasta": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_spanish_chickpea_and_spinach_soup": {
+      "cooked chickpea": "Defines the named ingredient, base or preparation style.",
+      "spinach": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_spiced_pumpkin_shorba": {
+      "pumpkin": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_spiced_sweet_potato_and_coconut_soup": {
+      "coconut milk": "Defines the named ingredient, base or preparation style.",
+      "sweet potato": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_spinach_coconut_shorba": {
+      "coconut milk": "Defines the named ingredient, base or preparation style.",
+      "spinach": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_spinach_kadhi": {
+      "plain yogurt": "Defines the named ingredient, base or preparation style.",
+      "spinach": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_spinach_toor_dal": {
+      "spinach": "Defines the named ingredient, base or preparation style.",
+      "split pigeon pea": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_sri_lankan_beetroot_curry": {
+      "beetroot": "Defines the named ingredient, base or preparation style.",
+      "coconut milk": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_sri_lankan_chicken_coconut_curry": {
+      "boneless chicken thigh": "Defines the named ingredient, base or preparation style.",
+      "coconut milk": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_sri_lankan_dhal_curry": {
+      "coconut milk": "Coconut milk defines this draft's named style, main ingredient, or signature base.",
+      "red lentil": "Red lentil defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_sri_lankan_green_bean_curry": {
+      "coconut milk": "Defines the named ingredient, base or preparation style.",
+      "green bean": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_sri_lankan_pumpkin_curry": {
+      "coconut milk": "Defines the named ingredient, base or preparation style.",
+      "pumpkin": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_sweet_corn_and_chicken_soup": {
+      "cooked chicken": "Defines the named ingredient, base or preparation style.",
+      "sweet corn": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_sweet_corn_and_tofu_soup": {
+      "silken tofu": "Defines the named ingredient, base or preparation style.",
+      "sweet corn": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_sweet_corn_soup": {
+      "sweet corn": "Sweet corn defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_sweet_potato_and_carrot_soup": {
+      "carrot": "Defines the named ingredient, base or preparation style.",
+      "sweet potato": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_tamil_brinjal_puli_kuzhambu": {
+      "eggplant": "Defines the named ingredient, base or preparation style.",
+      "tamarind paste": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_thai_green_chicken_and_eggplant_curry": {
+      "boneless chicken thigh": "Defines the named ingredient, base or preparation style.",
+      "green curry paste": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_thai_green_chicken_curry": {
+      "boneless chicken thigh": "Boneless chicken thigh defines this draft's named style, main ingredient, or signature base.",
+      "coconut milk": "Coconut milk defines this draft's named style, main ingredient, or signature base.",
+      "green curry paste": "Green curry paste defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_thai_green_curry_with_shrimp": {
+      "green curry paste": "Defines the named ingredient, base or preparation style.",
+      "shrimp": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_thai_green_tofu_curry": {
+      "firm tofu": "Defines the named ingredient, base or preparation style.",
+      "green curry paste": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_thai_green_vegetable_curry": {
+      "coconut milk": "Defines the named ingredient, base or preparation style.",
+      "green curry paste": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_thai_red_chicken_curry": {
+      "boneless chicken thigh": "Defines the named ingredient, base or preparation style.",
+      "red curry paste": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_thai_red_chickpea_curry": {
+      "cooked chickpea": "Defines the named ingredient, base or preparation style.",
+      "red curry paste": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_thai_red_curry_with_fish": {
+      "red curry paste": "Defines the named ingredient, base or preparation style.",
+      "white fish fillet": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_thai_red_pumpkin_curry": {
+      "pumpkin": "Defines the named ingredient, base or preparation style.",
+      "red curry paste": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_thai_red_tofu_curry": {
+      "coconut milk": "Coconut milk defines this draft's named style, main ingredient, or signature base.",
+      "firm tofu": "Firm tofu defines this draft's named style, main ingredient, or signature base.",
+      "red curry paste": "Red curry paste defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_thai_yellow_cauliflower_curry": {
+      "cauliflower": "Defines the named ingredient, base or preparation style.",
+      "turmeric": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_thai_yellow_chicken_and_potato_curry": {
+      "boneless chicken thigh": "Defines the named ingredient, base or preparation style.",
+      "potato": "Defines the named ingredient, base or preparation style.",
+      "turmeric": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_thai_yellow_sweet_potato_curry": {
+      "sweet potato": "Defines the named ingredient, base or preparation style.",
+      "turmeric": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_thai_yellow_tofu_curry": {
+      "firm tofu": "Defines the named ingredient, base or preparation style.",
+      "turmeric": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_tofu_makhani": {
+      "butter": "Defines the named ingredient, base or preparation style.",
+      "firm tofu": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_tofu_vindaloo": {
+      "firm tofu": "Defines the named ingredient, base or preparation style.",
+      "white wine vinegar": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_tom_kha_chicken_and_mushroom_soup": {
+      "boneless chicken thigh": "Defines the named ingredient, base or preparation style.",
+      "coconut milk": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_tom_kha_gai": {
+      "boneless chicken thigh": "Boneless chicken thigh defines this draft's named style, main ingredient, or signature base.",
+      "coconut milk": "Coconut milk defines this draft's named style, main ingredient, or signature base.",
+      "galangal": "Galangal defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_tom_kha_mushroom_soup": {
+      "coconut milk": "Defines the named ingredient, base or preparation style.",
+      "mushroom": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_tom_yum_goong": {
+      "lemongrass": "Lemongrass defines this draft's named style, main ingredient, or signature base.",
+      "lime juice": "Lime juice defines this draft's named style, main ingredient, or signature base.",
+      "shrimp": "Shrimp defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_tom_yum_mushroom_soup": {
+      "lemongrass": "Defines the named ingredient, base or preparation style.",
+      "mushroom": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_tom_yum_tofu_soup": {
+      "firm tofu": "Defines the named ingredient, base or preparation style.",
+      "lemongrass": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_tomato_and_toor_dal_soup": {
+      "split pigeon pea": "Defines the named ingredient, base or preparation style.",
+      "tomato": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_tomato_and_tortilla_soup_with_avocado": {
+      "canned tomato": "Defines the named ingredient, base or preparation style.",
+      "corn tortilla": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_tomato_rasam": {
+      "rasam powder": "Rasam powder defines this draft's named style, main ingredient, or signature base.",
+      "tomato": "Tomato defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_turkey_and_vegetable_soup": {
+      "cooked turkey": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_turkish_mercimek_corbasi": {
+      "red lentil": "Defines the named ingredient, base or preparation style.",
+      "tomato puree": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_vegetable_manchow_soup": {
+      "soy sauce": "Soy sauce defines this draft's named style, main ingredient, or signature base.",
+      "vegetable stock": "Vegetable stock defines this draft's named style, main ingredient, or signature base."
+    },
+    "rec_vendhaya_kuzhambu_with_onion": {
+      "fenugreek seed": "Defines the named ingredient, base or preparation style.",
+      "tamarind paste": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_watermelon_gazpacho": {
+      "tomato": "Defines the named ingredient, base or preparation style.",
+      "watermelon": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_yellow_moong_and_spinach_soup": {
+      "spinach": "Defines the named ingredient, base or preparation style.",
+      "split mung bean": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_yellow_moong_dal_tadka": {
+      "split mung bean": "Defines the named ingredient, base or preparation style."
+    },
+    "rec_yogurt_potato_curry": {
+      "plain yogurt": "Defines the named ingredient, base or preparation style.",
+      "potato": "Defines the named ingredient, base or preparation style."
+    }
+  },
+  "ingredient_metadata": {
+    "all purpose flour": {
+      "category": "grain",
+      "roles": [
+        "thickener"
+      ]
+    },
+    "apple": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "avocado": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "baby potato": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "baguette": {
+      "category": "grain",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "basil": {
+      "category": "produce",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "beef chuck": {
+      "category": "meat",
+      "roles": [
+        "protein"
+      ]
+    },
+    "beef stock": {
+      "category": "liquid",
+      "roles": [
+        "liquid"
+      ]
+    },
+    "beetroot": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "black pepper": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "black peppercorn": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "boneless chicken thigh": {
+      "category": "meat",
+      "roles": [
+        "protein"
+      ]
+    },
+    "broccoli": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "butter": {
+      "category": "dairy",
+      "roles": [
+        "fat"
+      ]
+    },
+    "butternut squash": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "cabbage": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "canned clam": {
+      "category": "seafood",
+      "roles": [
+        "protein"
+      ]
+    },
+    "canned tomato": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "carrot": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "cashew": {
+      "category": "nut_seed",
+      "roles": [
+        "bulk",
+        "fat"
+      ]
+    },
+    "cauliflower": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "celery": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "cheddar": {
+      "category": "dairy",
+      "roles": [
+        "protein"
+      ]
+    },
+    "cherry tomato": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "chicken": {
+      "category": "meat",
+      "roles": [
+        "protein"
+      ]
+    },
+    "chicken breast": {
+      "category": "meat",
+      "roles": [
+        "protein"
+      ]
+    },
+    "chicken leg": {
+      "category": "meat",
+      "roles": [
+        "protein"
+      ]
+    },
+    "chicken stock": {
+      "category": "liquid",
+      "roles": [
+        "liquid"
+      ]
+    },
+    "chickpea": {
+      "category": "legume",
+      "roles": [
+        "bulk",
+        "protein"
+      ]
+    },
+    "chickpea flour": {
+      "category": "grain",
+      "roles": [
+        "thickener"
+      ]
+    },
+    "cilantro": {
+      "category": "produce",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "cinnamon stick": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "clam juice": {
+      "category": "liquid",
+      "roles": [
+        "liquid"
+      ]
+    },
+    "clove": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "coconut milk": {
+      "category": "liquid",
+      "roles": [
+        "fat",
+        "liquid"
+      ]
+    },
+    "coconut oil": {
+      "category": "fat",
+      "roles": [
+        "fat"
+      ]
+    },
+    "cooked black bean": {
+      "category": "legume",
+      "roles": [
+        "bulk",
+        "protein"
+      ]
+    },
+    "cooked black chickpea": {
+      "category": "legume",
+      "roles": [
+        "bulk",
+        "protein"
+      ]
+    },
+    "cooked black eyed pea": {
+      "category": "legume",
+      "roles": [
+        "bulk",
+        "protein"
+      ]
+    },
+    "cooked brown lentil": {
+      "category": "legume",
+      "roles": [
+        "bulk",
+        "protein"
+      ]
+    },
+    "cooked cannellini bean": {
+      "category": "legume",
+      "roles": [
+        "bulk",
+        "protein"
+      ]
+    },
+    "cooked chicken": {
+      "category": "meat",
+      "roles": [
+        "protein"
+      ]
+    },
+    "cooked chickpea": {
+      "category": "legume",
+      "roles": [
+        "bulk",
+        "protein"
+      ]
+    },
+    "cooked kidney bean": {
+      "category": "legume",
+      "roles": [
+        "bulk",
+        "protein"
+      ]
+    },
+    "cooked mung bean": {
+      "category": "legume",
+      "roles": [
+        "bulk",
+        "protein"
+      ]
+    },
+    "cooked pigeon pea": {
+      "category": "legume",
+      "roles": [
+        "bulk",
+        "protein"
+      ]
+    },
+    "cooked turkey": {
+      "category": "meat",
+      "roles": [
+        "protein"
+      ]
+    },
+    "cooked whole black gram": {
+      "category": "legume",
+      "roles": [
+        "bulk",
+        "protein"
+      ]
+    },
+    "coriander seed": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "corn tortilla": {
+      "category": "grain",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "cornstarch": {
+      "category": "grain",
+      "roles": [
+        "thickener"
+      ]
+    },
+    "cream": {
+      "category": "dairy",
+      "roles": [
+        "fat",
+        "liquid"
+      ]
+    },
+    "crispy noodles": {
+      "category": "grain",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "cucumber": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "cumin seed": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "curry leaf": {
+      "category": "produce",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "curry powder": {
+      "category": "seasoning",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "dashi": {
+      "category": "liquid",
+      "roles": [
+        "liquid"
+      ]
+    },
+    "dill": {
+      "category": "produce",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "dried ancho chili": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "dried apricot": {
+      "category": "fruit",
+      "roles": [
+        "bulk",
+        "sweetener"
+      ]
+    },
+    "dried fenugreek leaf": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "dried red chili": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "dried wakame": {
+      "category": "seaweed",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "drumstick pod": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "egg": {
+      "category": "animal",
+      "roles": [
+        "protein",
+        "thickener"
+      ]
+    },
+    "egg noodles": {
+      "category": "grain",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "eggplant": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "fennel seed": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "fenugreek leaf": {
+      "category": "produce",
+      "roles": [
+        "aromatic",
+        "bulk"
+      ]
+    },
+    "fenugreek seed": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "firm tofu": {
+      "category": "legume",
+      "roles": [
+        "protein"
+      ]
+    },
+    "fish sauce": {
+      "category": "seasoning",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "galangal": {
+      "category": "produce",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "garam masala": {
+      "category": "seasoning",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "garlic": {
+      "category": "produce",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "ghee": {
+      "category": "dairy",
+      "roles": [
+        "fat"
+      ]
+    },
+    "ginger": {
+      "category": "produce",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "gochugaru": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "grated coconut": {
+      "category": "nut_seed",
+      "roles": [
+        "bulk",
+        "fat"
+      ]
+    },
+    "green bean": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "green bell pepper": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "green cardamom": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "green curry paste": {
+      "category": "prepared",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "green pea": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "ground cinnamon": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "ground coriander": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "ground cumin": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "ground fennel": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "ground ginger": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "ground red chili": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "gruyere": {
+      "category": "dairy",
+      "roles": [
+        "protein"
+      ]
+    },
+    "jamaican curry powder": {
+      "category": "seasoning",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "japanese curry roux": {
+      "category": "prepared",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "kale": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "kombu": {
+      "category": "seaweed",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "kombu stock": {
+      "category": "liquid",
+      "roles": [
+        "liquid"
+      ]
+    },
+    "leek": {
+      "category": "produce",
+      "roles": [
+        "aromatic",
+        "bulk"
+      ]
+    },
+    "lemon": {
+      "category": "produce",
+      "roles": [
+        "acid"
+      ]
+    },
+    "lemon juice": {
+      "category": "produce",
+      "roles": [
+        "acid"
+      ]
+    },
+    "lemongrass": {
+      "category": "produce",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "lime": {
+      "category": "produce",
+      "roles": [
+        "acid"
+      ]
+    },
+    "lime juice": {
+      "category": "produce",
+      "roles": [
+        "acid"
+      ]
+    },
+    "maize": {
+      "category": "grain",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "maize flour": {
+      "category": "grain",
+      "roles": [
+        "thickener"
+      ]
+    },
+    "makrut lime leaf": {
+      "category": "produce",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "massaman curry paste": {
+      "category": "prepared",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "milk": {
+      "category": "dairy",
+      "roles": [
+        "fat",
+        "liquid"
+      ]
+    },
+    "mint": {
+      "category": "produce",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "mirin": {
+      "category": "liquid",
+      "roles": [
+        "sweetener"
+      ]
+    },
+    "miso paste": {
+      "category": "prepared",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "mushroom": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "mustard greens": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "mustard seed": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "napa cabbage kimchi": {
+      "category": "prepared",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "nori": {
+      "category": "seaweed",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "okra": {
+      "category": "produce",
+      "roles": [
+        "bulk",
+        "thickener"
+      ]
+    },
+    "olive oil": {
+      "category": "fat",
+      "roles": [
+        "fat"
+      ]
+    },
+    "onion": {
+      "category": "produce",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "palm sugar": {
+      "category": "sweetener",
+      "roles": [
+        "sweetener"
+      ]
+    },
+    "paneer": {
+      "category": "dairy",
+      "roles": [
+        "protein"
+      ]
+    },
+    "panko": {
+      "category": "grain",
+      "roles": [
+        "thickener"
+      ]
+    },
+    "paprika": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "parmesan": {
+      "category": "dairy",
+      "roles": [
+        "protein"
+      ]
+    },
+    "parsley": {
+      "category": "produce",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "peanut": {
+      "category": "nut_seed",
+      "roles": [
+        "bulk",
+        "fat"
+      ]
+    },
+    "pearl barley": {
+      "category": "grain",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "pineapple": {
+      "category": "fruit",
+      "roles": [
+        "bulk",
+        "sweetener"
+      ]
+    },
+    "plain yogurt": {
+      "category": "dairy",
+      "roles": [
+        "acid",
+        "thickener"
+      ]
+    },
+    "pork belly": {
+      "category": "meat",
+      "roles": [
+        "protein"
+      ]
+    },
+    "pork shoulder": {
+      "category": "meat",
+      "roles": [
+        "protein"
+      ]
+    },
+    "potato": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "pumpkin": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "radish": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "ramen noodle": {
+      "category": "grain",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "rasam powder": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "red bell pepper": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "red curry paste": {
+      "category": "prepared",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "red lentil": {
+      "category": "legume",
+      "roles": [
+        "bulk",
+        "protein"
+      ]
+    },
+    "rice noodle": {
+      "category": "grain",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "rice vinegar": {
+      "category": "liquid",
+      "roles": [
+        "acid"
+      ]
+    },
+    "salt": {
+      "category": "seasoning",
+      "roles": []
+    },
+    "sambar powder": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "scallion": {
+      "category": "produce",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "sesame oil": {
+      "category": "fat",
+      "roles": [
+        "fat"
+      ]
+    },
+    "sherry vinegar": {
+      "category": "liquid",
+      "roles": [
+        "acid"
+      ]
+    },
+    "short grain rice": {
+      "category": "grain",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "shrimp": {
+      "category": "seafood",
+      "roles": [
+        "protein"
+      ]
+    },
+    "silken tofu": {
+      "category": "legume",
+      "roles": [
+        "protein"
+      ]
+    },
+    "small pasta": {
+      "category": "grain",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "soy sauce": {
+      "category": "seasoning",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "soybean": {
+      "category": "legume",
+      "roles": [
+        "bulk",
+        "protein"
+      ]
+    },
+    "spinach": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "split chickpea": {
+      "category": "legume",
+      "roles": [
+        "bulk",
+        "protein"
+      ]
+    },
+    "split mung bean": {
+      "category": "legume",
+      "roles": [
+        "bulk",
+        "protein"
+      ]
+    },
+    "split pigeon pea": {
+      "category": "legume",
+      "roles": [
+        "bulk",
+        "protein"
+      ]
+    },
+    "star anise": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "sugar": {
+      "category": "sweetener",
+      "roles": [
+        "sweetener"
+      ]
+    },
+    "sunflower seed": {
+      "category": "nut_seed",
+      "roles": [
+        "bulk",
+        "fat"
+      ]
+    },
+    "sweet corn": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "sweet potato": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "tamarind paste": {
+      "category": "produce",
+      "roles": [
+        "acid"
+      ]
+    },
+    "thai basil": {
+      "category": "produce",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "thai chili": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "thyme": {
+      "category": "produce",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "tomato": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "tomato puree": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    },
+    "turmeric": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "vegetable oil": {
+      "category": "fat",
+      "roles": [
+        "fat"
+      ]
+    },
+    "vegetable stock": {
+      "category": "liquid",
+      "roles": [
+        "liquid"
+      ]
+    },
+    "water": {
+      "category": "liquid",
+      "roles": [
+        "liquid"
+      ]
+    },
+    "watermelon": {
+      "category": "fruit",
+      "roles": [
+        "bulk",
+        "sweetener"
+      ]
+    },
+    "wheat flour": {
+      "category": "grain",
+      "roles": [
+        "thickener"
+      ]
+    },
+    "white fish fillet": {
+      "category": "seafood",
+      "roles": [
+        "protein"
+      ]
+    },
+    "white pepper": {
+      "category": "spice",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "white wine vinegar": {
+      "category": "liquid",
+      "roles": [
+        "acid"
+      ]
+    },
+    "yellow onion": {
+      "category": "produce",
+      "roles": [
+        "aromatic"
+      ]
+    },
+    "zucchini": {
+      "category": "produce",
+      "roles": [
+        "bulk"
+      ]
+    }
+  },
+  "recipe_groups": [
+    [
+      "rec_japanese_chicken_curry",
+      "rec_japanese_katsu_curry"
+    ],
+    [
+      "rec_matar_paneer",
+      "rec_paneer_butter_masala"
+    ],
+    [
+      "rec_chicken_pho",
+      "rec_shoyu_ramen"
+    ],
+    [
+      "rec_chana_masala",
+      "rec_rajma_masala",
+      "rec_punjabi_kala_chana",
+      "rec_lobia_masala",
+      "rec_punjabi_white_bean_masala",
+      "rec_chana_and_potato_curry"
+    ],
+    [
+      "rec_dal_tadka",
+      "rec_dal_makhani",
+      "rec_masoor_dal_tadka",
+      "rec_yellow_moong_dal_tadka",
+      "rec_chana_dal_with_garlic_tadka",
+      "rec_spinach_toor_dal"
+    ],
+    [
+      "rec_sambar",
+      "rec_drumstick_sambar",
+      "rec_pumpkin_sambar",
+      "rec_radish_sambar",
+      "rec_onion_sambar"
+    ],
+    [
+      "rec_kadhi_pakora",
+      "rec_dum_aloo",
+      "rec_gujarati_kadhi",
+      "rec_spinach_kadhi",
+      "rec_rajasthani_style_onion_kadhi",
+      "rec_yogurt_potato_curry"
+    ],
+    [
+      "rec_goan_fish_curry",
+      "rec_kerala_vegetable_ishtu",
+      "rec_kerala_chicken_ishtu",
+      "rec_kerala_mushroom_coconut_stew",
+      "rec_kerala_egg_and_coconut_curry"
+    ],
+    [
+      "rec_tamil_brinjal_puli_kuzhambu",
+      "rec_okra_puli_kuzhambu",
+      "rec_vendhaya_kuzhambu_with_onion",
+      "rec_garlic_puli_kuzhambu"
+    ],
+    [
+      "rec_palak_paneer",
+      "rec_sarson_ka_saag",
+      "rec_palak_chana",
+      "rec_saag_tofu",
+      "rec_methi_matar_malai"
+    ],
+    [
+      "rec_paneer_butter_masala",
+      "rec_butter_chicken",
+      "rec_malai_kofta",
+      "rec_matar_paneer",
+      "rec_tofu_makhani",
+      "rec_mushroom_makhani",
+      "rec_chickpea_makhani",
+      "rec_cauliflower_makhani"
+    ],
+    [
+      "rec_aloo_gobi",
+      "rec_aloo_matar",
+      "rec_aloo_baingan_sabzi",
+      "rec_aloo_shimla_mirch",
+      "rec_patta_gobi_matar",
+      "rec_beans_and_carrot_sabzi"
+    ],
+    [
+      "rec_aloo_matar",
+      "rec_banarasi_aloo_rasedar",
+      "rec_aloo_and_mung_curry",
+      "rec_bengali_aloo_phulkopi_dalna",
+      "rec_potato_and_green_bean_gravy"
+    ],
+    [
+      "rec_chicken_korma",
+      "rec_navratan_style_vegetable_korma",
+      "rec_mushroom_korma",
+      "rec_paneer_cashew_korma",
+      "rec_potato_and_pea_korma"
+    ],
+    [
+      "rec_kerala_egg_roast",
+      "rec_home_style_egg_curry",
+      "rec_chicken_masala_curry",
+      "rec_capsicum_and_paneer_masala",
+      "rec_green_pea_and_mushroom_masala"
+    ],
+    [
+      "rec_shorshe_fish_curry",
+      "rec_shorshe_begun",
+      "rec_bengali_mustard_paneer",
+      "rec_mustard_shrimp_curry"
+    ],
+    [
+      "rec_goan_pork_vindaloo",
+      "rec_chicken_vindaloo",
+      "rec_mushroom_vindaloo",
+      "rec_tofu_vindaloo"
+    ],
+    [
+      "rec_chicken_chettinad",
+      "rec_kerala_chicken_pepper_roast",
+      "rec_mushroom_pepper_fry",
+      "rec_black_pepper_paneer",
+      "rec_black_pepper_cauliflower_roast"
+    ],
+    [
+      "rec_thai_green_chicken_curry",
+      "rec_thai_green_tofu_curry",
+      "rec_thai_green_curry_with_shrimp",
+      "rec_thai_green_vegetable_curry",
+      "rec_thai_green_chicken_and_eggplant_curry"
+    ],
+    [
+      "rec_thai_red_tofu_curry",
+      "rec_thai_red_chicken_curry",
+      "rec_thai_red_pumpkin_curry",
+      "rec_thai_red_curry_with_fish",
+      "rec_thai_red_chickpea_curry"
+    ],
+    [
+      "rec_thai_yellow_chicken_and_potato_curry",
+      "rec_thai_yellow_tofu_curry",
+      "rec_thai_yellow_cauliflower_curry",
+      "rec_thai_yellow_sweet_potato_curry"
+    ],
+    [
+      "rec_massaman_beef_curry",
+      "rec_massaman_chicken_curry",
+      "rec_massaman_tofu_curry",
+      "rec_massaman_beef_and_potato_curry",
+      "rec_massaman_pumpkin_curry"
+    ],
+    [
+      "rec_japanese_chicken_curry",
+      "rec_japanese_katsu_curry",
+      "rec_japanese_beef_curry",
+      "rec_japanese_mushroom_curry_rice_sauce",
+      "rec_japanese_tofu_curry",
+      "rec_japanese_chicken_and_carrot_curry"
+    ],
+    [
+      "rec_sri_lankan_dhal_curry",
+      "rec_sri_lankan_beetroot_curry",
+      "rec_sri_lankan_pumpkin_curry",
+      "rec_sri_lankan_green_bean_curry",
+      "rec_sri_lankan_chicken_coconut_curry"
+    ],
+    [
+      "rec_jamaican_curry_chicken",
+      "rec_jamaican_curry_chicken_and_potatoes",
+      "rec_jamaican_curry_shrimp",
+      "rec_jamaican_chickpea_curry",
+      "rec_jamaican_curry_vegetables"
+    ],
+    [
+      "rec_cape_malay_chicken_curry",
+      "rec_cape_malay_beef_curry",
+      "rec_cape_malay_chickpea_curry",
+      "rec_cape_malay_cauliflower_curry",
+      "rec_cape_malay_chicken_and_apricot_curry"
+    ],
+    [
+      "rec_malaysian_chicken_and_potato_curry",
+      "rec_malaysian_fish_coconut_curry",
+      "rec_malaysian_tofu_and_eggplant_curry",
+      "rec_malaysian_shrimp_and_green_bean_curry"
+    ],
+    [
+      "rec_tomato_rasam",
+      "rec_pepper_rasam",
+      "rec_garlic_rasam",
+      "rec_lemon_dal_rasam",
+      "rec_pineapple_rasam"
+    ],
+    [
+      "rec_indian_tomato_shorba",
+      "rec_palak_shorba",
+      "rec_carrot_and_cumin_shorba",
+      "rec_chickpea_shorba"
+    ],
+    [
+      "rec_mulligatawny_soup",
+      "rec_masoor_dal_soup",
+      "rec_yellow_moong_and_spinach_soup",
+      "rec_tomato_and_toor_dal_soup",
+      "rec_indian_lentil_and_pumpkin_soup"
+    ],
+    [
+      "rec_vegetable_manchow_soup",
+      "rec_sweet_corn_soup",
+      "rec_indo_chinese_hot_and_sour_vegetable_soup",
+      "rec_sweet_corn_and_chicken_soup",
+      "rec_mushroom_manchow_style_soup",
+      "rec_sweet_corn_and_tofu_soup"
+    ],
+    [
+      "rec_lemon_coriander_soup",
+      "rec_clear_spinach_and_lemon_soup",
+      "rec_indian_clear_chicken_soup",
+      "rec_clear_cabbage_and_green_bean_soup",
+      "rec_indian_clear_mushroom_soup"
+    ],
+    [
+      "rec_spiced_pumpkin_shorba",
+      "rec_indian_beetroot_and_ginger_soup",
+      "rec_roasted_cauliflower_shorba",
+      "rec_indian_creamy_green_pea_soup"
+    ],
+    [
+      "rec_kerala_carrot_coconut_soup",
+      "rec_spiced_sweet_potato_and_coconut_soup",
+      "rec_spinach_coconut_shorba",
+      "rec_corn_and_curry_leaf_coconut_soup"
+    ],
+    [
+      "rec_pumpkin_soup",
+      "rec_carrot_ginger_soup",
+      "rec_butternut_squash_soup",
+      "rec_roasted_red_pepper_soup",
+      "rec_sweet_potato_and_carrot_soup",
+      "rec_creamy_zucchini_soup"
+    ],
+    [
+      "rec_french_onion_soup",
+      "rec_french_vegetable_potage",
+      "rec_french_mushroom_and_thyme_soup",
+      "rec_french_carrot_and_leek_soup",
+      "rec_french_lentil_and_carrot_soup"
+    ],
+    [
+      "rec_potato_leek_soup",
+      "rec_cauliflower_veloute",
+      "rec_cream_of_mushroom_soup",
+      "rec_french_green_pea_veloute"
+    ],
+    [
+      "rec_italian_tomato_basil_soup",
+      "rec_minestrone",
+      "rec_pasta_e_fagioli",
+      "rec_pasta_e_ceci",
+      "rec_italian_lentil_soup",
+      "rec_ribollita_style_bread_and_bean_soup"
+    ],
+    [
+      "rec_gazpacho",
+      "rec_cordoban_salmorejo",
+      "rec_green_cucumber_gazpacho",
+      "rec_watermelon_gazpacho",
+      "rec_cherry_tomato_and_cucumber_gazpacho"
+    ],
+    [
+      "rec_moroccan_harira",
+      "rec_greek_fasolada_style_bean_soup",
+      "rec_spanish_chickpea_and_spinach_soup",
+      "rec_mediterranean_kidney_bean_soup",
+      "rec_moroccan_lentil_and_carrot_soup"
+    ],
+    [
+      "rec_broccoli_cheddar_soup",
+      "rec_new_england_clam_chowder",
+      "rec_new_england_style_fish_chowder",
+      "rec_corn_chowder",
+      "rec_potato_cheddar_chowder",
+      "rec_chicken_and_corn_chowder"
+    ],
+    [
+      "rec_chicken_noodle_soup",
+      "rec_chicken_and_rice_soup",
+      "rec_turkey_and_vegetable_soup",
+      "rec_mushroom_and_barley_soup"
+    ],
+    [
+      "rec_mexican_tortilla_soup",
+      "rec_mexican_black_bean_soup",
+      "rec_sopa_de_fideo",
+      "rec_tomato_and_tortilla_soup_with_avocado",
+      "rec_caldo_de_pollo_with_vegetables"
+    ],
+    [
+      "rec_tom_yum_goong",
+      "rec_tom_kha_gai",
+      "rec_tom_yum_mushroom_soup",
+      "rec_tom_yum_tofu_soup",
+      "rec_tom_kha_mushroom_soup",
+      "rec_tom_kha_chicken_and_mushroom_soup"
+    ],
+    [
+      "rec_miso_soup",
+      "rec_japanese_miso_tofu_and_wakame_soup",
+      "rec_japanese_miso_mushroom_soup",
+      "rec_japanese_daikon_miso_soup",
+      "rec_japanese_cabbage_miso_soup"
+    ],
+    [
+      "rec_lebanese_red_lentil_soup",
+      "rec_turkish_mercimek_corbasi",
+      "rec_middle_eastern_lentil_and_sweet_potato_soup",
+      "rec_lentil_and_greens_soup"
+    ],
+    [
+      "rec_hungarian_style_mushroom_paprika_soup",
+      "rec_beet_and_cabbage_soup",
+      "rec_paprika_potato_soup",
+      "rec_paprika_white_bean_soup"
+    ]
+  ],
+  "review_status": "proposed_for_team_review",
+  "role_rules": [
+    {
+      "action_keywords": [
+        "roux",
+        "thicken",
+        "stir in flour"
+      ],
+      "ingredients": [
+        "all purpose flour",
+        "wheat flour"
+      ],
+      "priority": 10,
+      "role": "thickener",
+      "rule_id": "roux_thickener"
+    },
+    {
+      "action_keywords": [
+        "slurry",
+        "thicken",
+        "whisk cornstarch"
+      ],
+      "ingredients": [
+        "cornstarch"
+      ],
+      "priority": 10,
+      "role": "thickener",
+      "rule_id": "starch_slurry"
+    },
+    {
+      "action_keywords": [
+        "simmer",
+        "stir in coconut milk"
+      ],
+      "ingredients": [
+        "coconut milk"
+      ],
+      "priority": 5,
+      "role": "liquid",
+      "rule_id": "coconut_milk_simmer"
+    },
+    {
+      "action_keywords": [
+        "finish",
+        "season",
+        "stir in lemon juice",
+        "stir in lime juice"
+      ],
+      "ingredients": [
+        "lemon juice",
+        "lime juice"
+      ],
+      "priority": 5,
+      "role": "acid",
+      "rule_id": "citrus_finish"
+    }
+  ],
+  "unresolved_preparations": [
+    "canned clam",
+    "clam juice",
+    "rice noodle"
+  ]
+}
