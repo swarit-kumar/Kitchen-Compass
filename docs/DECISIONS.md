@@ -13,3 +13,12 @@
 
 The course deadline, hosting status and team availability can be recorded
 during the handoff.
+
+## 20 November 2026 · Phase 2 fixes and Phase 3 implementation
+
+| ID | Change and reason | Affected files | Review |
+|---|---|---|---|
+| P2-01 | Introduce a separately selectable plain-overlap comparator. Sort rankings on unrounded scores, identify data/config versions, and hash the exact LF bytes used in the ZIP. | recommend.py, service.py, .gitattributes, scripts/build_features.py, tests/test_recommend.py | Implemented for Vibhu. Swarit review pending. |
+| P2-02 | Resolve custom entries before saving or ranking. Allow confirmed IDs and essential flags. Export format 2.0 identifies the extension; importing format 1.0 upgrades in memory and preserves the UUID, original phrases, quantities and instructions. | custom_recipes.py, service.py, app.py, tests/test_custom_recipe.py | Implemented for Vibhu. Swarit review pending. |
+| P3-01 | Use the fixed plan weights and held-out development cases. Keep missing molecular evidence explicit and use the existing five molecular snapshots. Provide the four controlled comparisons and score breakdowns. No weight tuning was performed. | catalog.py, features.py, roles.py, substitute.py, config/settings.json, scripts/evaluate.py, tests/test_substitute.py | Implemented for Vibhu. Swarit review pending. |
+| P3-02 | Permit narrowly scoped, source-checked preparation rules. Partial role matches need an ingredient and dish family. Contextual pair blocks apply to all model variants. These are implementation judgments; human benchmark grading remains independent. | data/curation/substitution_policy.json, data/processed/substitution_pairs.jsonl, docs/PHASE_3.md | Codex checked the cited preparation sources. Team sign-off pending. |

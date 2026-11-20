@@ -1,0 +1,1777 @@
+{
+  "cases": [
+    {
+      "all_evidence": {
+        "flavor_only": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "excluded_ingredient": 8,
+            "missing_evidence": 2,
+            "original_or_retained": 13,
+            "outside_pantry": 139
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "full": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [
+            {
+              "candidate_id": "ing_firm_tofu",
+              "component_scores": {
+                "C": 0.2497643859535398,
+                "F": null,
+                "R": 1.0
+              },
+              "context_split": "groups_seed_42_v2",
+              "evidence_available": {
+                "C": true,
+                "F": false,
+                "R": true
+              },
+              "flavor_sources": [],
+              "mode": "full",
+              "name": "firm tofu",
+              "partial_evidence": true,
+              "purchase_required": false,
+              "reasons": [
+                "Role (catalogue default): protein → protein. same role.",
+                "Training-context cosine against 12 retained ingredients: 0.250.",
+                "Flavor unavailable: one or both molecular profiles are missing."
+              ],
+              "role_evidence": {
+                "clauses": [],
+                "roles": [
+                  "protein"
+                ],
+                "rule_ids": [],
+                "warnings": []
+              },
+              "role_match": {
+                "basis": "same role",
+                "candidate_role": "protein",
+                "target_role": "protein"
+              },
+              "score": 0.5960269770519061,
+              "used_features": [
+                "C",
+                "R"
+              ]
+            },
+            {
+              "candidate_id": "ing_silken_tofu",
+              "component_scores": {
+                "C": 0.06590334746280062,
+                "F": null,
+                "R": 1.0
+              },
+              "context_split": "groups_seed_42_v2",
+              "evidence_available": {
+                "C": true,
+                "F": false,
+                "R": true
+              },
+              "flavor_sources": [],
+              "mode": "full",
+              "name": "silken tofu",
+              "partial_evidence": true,
+              "purchase_required": false,
+              "reasons": [
+                "Role (catalogue default): protein → protein. same role.",
+                "Training-context cosine against 12 retained ingredients: 0.066.",
+                "Flavor unavailable: one or both molecular profiles are missing."
+              ],
+              "role_evidence": {
+                "clauses": [],
+                "roles": [
+                  "protein"
+                ],
+                "rule_ids": [],
+                "warnings": []
+              },
+              "role_match": {
+                "basis": "same role",
+                "candidate_role": "protein",
+                "target_role": "protein"
+              },
+              "score": 0.4970248794030465,
+              "used_features": [
+                "C",
+                "R"
+              ]
+            }
+          ],
+          "reason_counts": {
+            "excluded_ingredient": 8,
+            "original_or_retained": 13,
+            "outside_pantry": 139
+          },
+          "schema_version": "1.0",
+          "status": "OK",
+          "warnings": []
+        },
+        "without_context": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "excluded_ingredient": 8,
+            "missing_evidence": 2,
+            "original_or_retained": 13,
+            "outside_pantry": 139
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "without_roles": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "below_threshold": 2,
+            "excluded_ingredient": 8,
+            "original_or_retained": 13,
+            "outside_pantry": 139
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        }
+      },
+      "audit": {
+        "blocked_pair_ids": [],
+        "candidate_ids": [
+          "ing_firm_tofu",
+          "ing_silken_tofu"
+        ],
+        "complete_evidence_ids": []
+      },
+      "case_id": "dev_v2_06",
+      "complete_evidence": {
+        "flavor_only": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "excluded_ingredient": 8,
+            "incomplete_evidence": 2,
+            "original_or_retained": 13,
+            "outside_pantry": 139
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "full": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "excluded_ingredient": 8,
+            "incomplete_evidence": 2,
+            "original_or_retained": 13,
+            "outside_pantry": 139
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "without_context": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "excluded_ingredient": 8,
+            "incomplete_evidence": 2,
+            "original_or_retained": 13,
+            "outside_pantry": 139
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "without_roles": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "excluded_ingredient": 8,
+            "incomplete_evidence": 2,
+            "original_or_retained": 13,
+            "outside_pantry": 139
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        }
+      },
+      "constraints": {
+        "excluded_ids": [
+          "ing_milk"
+        ],
+        "max_replacements": 3,
+        "pantry_ids": [
+          "ing_cheddar",
+          "ing_firm_tofu",
+          "ing_silken_tofu"
+        ],
+        "pantry_only": true
+      },
+      "grades": null,
+      "independent_allowed_ids": [
+        "ing_firm_tofu",
+        "ing_silken_tofu"
+      ],
+      "recipe_id": "rec_capsicum_and_paneer_masala",
+      "review_status": "pending_review",
+      "target_id": "ing_paneer"
+    },
+    {
+      "all_evidence": {
+        "flavor_only": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "excluded_ingredient": 8,
+            "missing_evidence": 2,
+            "original_or_retained": 11,
+            "outside_pantry": 141
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "full": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [
+            {
+              "candidate_id": "ing_olive_oil",
+              "component_scores": {
+                "C": 0.3255265205887391,
+                "F": null,
+                "R": 1.0
+              },
+              "context_split": "groups_seed_42_v2",
+              "evidence_available": {
+                "C": true,
+                "F": false,
+                "R": true
+              },
+              "flavor_sources": [],
+              "mode": "full",
+              "name": "olive oil",
+              "partial_evidence": true,
+              "purchase_required": false,
+              "reasons": [
+                "Role (catalogue default): fat → fat. same role.",
+                "Training-context cosine against 10 retained ingredients: 0.326.",
+                "Flavor unavailable: one or both molecular profiles are missing."
+              ],
+              "role_evidence": {
+                "clauses": [],
+                "roles": [
+                  "fat"
+                ],
+                "rule_ids": [],
+                "warnings": []
+              },
+              "role_match": {
+                "basis": "same role",
+                "candidate_role": "fat",
+                "target_role": "fat"
+              },
+              "score": 0.6368219726247057,
+              "used_features": [
+                "C",
+                "R"
+              ]
+            },
+            {
+              "candidate_id": "ing_coconut_oil",
+              "component_scores": {
+                "C": 0.16469135924572492,
+                "F": null,
+                "R": 1.0
+              },
+              "context_split": "groups_seed_42_v2",
+              "evidence_available": {
+                "C": true,
+                "F": false,
+                "R": true
+              },
+              "flavor_sources": [],
+              "mode": "full",
+              "name": "coconut oil",
+              "partial_evidence": true,
+              "purchase_required": false,
+              "reasons": [
+                "Role (catalogue default): fat → fat. same role.",
+                "Training-context cosine against 10 retained ingredients: 0.165.",
+                "Flavor unavailable: one or both molecular profiles are missing."
+              ],
+              "role_evidence": {
+                "clauses": [],
+                "roles": [
+                  "fat"
+                ],
+                "rule_ids": [],
+                "warnings": []
+              },
+              "role_match": {
+                "basis": "same role",
+                "candidate_role": "fat",
+                "target_role": "fat"
+              },
+              "score": 0.5502184242092365,
+              "used_features": [
+                "C",
+                "R"
+              ]
+            }
+          ],
+          "reason_counts": {
+            "excluded_ingredient": 8,
+            "original_or_retained": 11,
+            "outside_pantry": 141
+          },
+          "schema_version": "1.0",
+          "status": "OK",
+          "warnings": []
+        },
+        "without_context": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "excluded_ingredient": 8,
+            "missing_evidence": 2,
+            "original_or_retained": 11,
+            "outside_pantry": 141
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "without_roles": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "below_threshold": 2,
+            "excluded_ingredient": 8,
+            "original_or_retained": 11,
+            "outside_pantry": 141
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        }
+      },
+      "audit": {
+        "blocked_pair_ids": [],
+        "candidate_ids": [
+          "ing_coconut_oil",
+          "ing_olive_oil"
+        ],
+        "complete_evidence_ids": []
+      },
+      "case_id": "dev_v2_07",
+      "complete_evidence": {
+        "flavor_only": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "excluded_ingredient": 8,
+            "incomplete_evidence": 2,
+            "original_or_retained": 11,
+            "outside_pantry": 141
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "full": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "excluded_ingredient": 8,
+            "incomplete_evidence": 2,
+            "original_or_retained": 11,
+            "outside_pantry": 141
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "without_context": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "excluded_ingredient": 8,
+            "incomplete_evidence": 2,
+            "original_or_retained": 11,
+            "outside_pantry": 141
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "without_roles": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "excluded_ingredient": 8,
+            "incomplete_evidence": 2,
+            "original_or_retained": 11,
+            "outside_pantry": 141
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        }
+      },
+      "constraints": {
+        "excluded_ids": [
+          "ing_milk"
+        ],
+        "max_replacements": 3,
+        "pantry_ids": [
+          "ing_butter",
+          "ing_coconut_oil",
+          "ing_olive_oil"
+        ],
+        "pantry_only": true
+      },
+      "grades": null,
+      "independent_allowed_ids": [
+        "ing_coconut_oil",
+        "ing_olive_oil"
+      ],
+      "recipe_id": "rec_carrot_and_cumin_shorba",
+      "review_status": "pending_review",
+      "target_id": "ing_ghee"
+    },
+    {
+      "all_evidence": {
+        "flavor_only": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "missing_evidence": 3,
+            "original_or_retained": 7,
+            "outside_pantry": 152
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "full": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [
+            {
+              "candidate_id": "ing_red_bell_pepper",
+              "component_scores": {
+                "C": 0.51860827477886,
+                "F": null,
+                "R": 1.0
+              },
+              "context_split": "groups_seed_42_v2",
+              "evidence_available": {
+                "C": true,
+                "F": false,
+                "R": true
+              },
+              "flavor_sources": [],
+              "mode": "full",
+              "name": "red bell pepper",
+              "partial_evidence": true,
+              "purchase_required": false,
+              "reasons": [
+                "Role (catalogue default): bulk → bulk. same role.",
+                "Training-context cosine against 6 retained ingredients: 0.519.",
+                "Flavor unavailable: one or both molecular profiles are missing."
+              ],
+              "role_evidence": {
+                "clauses": [],
+                "roles": [
+                  "bulk"
+                ],
+                "rule_ids": [],
+                "warnings": []
+              },
+              "role_match": {
+                "basis": "same role",
+                "candidate_role": "bulk",
+                "target_role": "bulk"
+              },
+              "score": 0.7407890710347708,
+              "used_features": [
+                "C",
+                "R"
+              ]
+            },
+            {
+              "candidate_id": "ing_tomato_puree",
+              "component_scores": {
+                "C": 0.32844499843767466,
+                "F": null,
+                "R": 1.0
+              },
+              "context_split": "groups_seed_42_v2",
+              "evidence_available": {
+                "C": true,
+                "F": false,
+                "R": true
+              },
+              "flavor_sources": [],
+              "mode": "full",
+              "name": "tomato puree",
+              "partial_evidence": true,
+              "purchase_required": false,
+              "reasons": [
+                "Role (catalogue default): bulk → bulk. same role.",
+                "Training-context cosine against 6 retained ingredients: 0.328.",
+                "Flavor unavailable: one or both molecular profiles are missing."
+              ],
+              "role_evidence": {
+                "clauses": [],
+                "roles": [
+                  "bulk"
+                ],
+                "rule_ids": [],
+                "warnings": []
+              },
+              "role_match": {
+                "basis": "same role",
+                "candidate_role": "bulk",
+                "target_role": "bulk"
+              },
+              "score": 0.6383934606972095,
+              "used_features": [
+                "C",
+                "R"
+              ]
+            },
+            {
+              "candidate_id": "ing_tomato",
+              "component_scores": {
+                "C": 0.23559664482553186,
+                "F": null,
+                "R": 1.0
+              },
+              "context_split": "groups_seed_42_v2",
+              "evidence_available": {
+                "C": true,
+                "F": false,
+                "R": true
+              },
+              "flavor_sources": [],
+              "mode": "full",
+              "name": "tomato",
+              "partial_evidence": true,
+              "purchase_required": false,
+              "reasons": [
+                "Role (catalogue default): bulk → bulk. same role.",
+                "Training-context cosine against 6 retained ingredients: 0.236.",
+                "Flavor unavailable: one or both molecular profiles are missing."
+              ],
+              "role_evidence": {
+                "clauses": [],
+                "roles": [
+                  "bulk"
+                ],
+                "rule_ids": [],
+                "warnings": []
+              },
+              "role_match": {
+                "basis": "same role",
+                "candidate_role": "bulk",
+                "target_role": "bulk"
+              },
+              "score": 0.5883981933675941,
+              "used_features": [
+                "C",
+                "R"
+              ]
+            }
+          ],
+          "reason_counts": {
+            "original_or_retained": 7,
+            "outside_pantry": 152
+          },
+          "schema_version": "1.0",
+          "status": "OK",
+          "warnings": []
+        },
+        "without_context": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "missing_evidence": 3,
+            "original_or_retained": 7,
+            "outside_pantry": 152
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "without_roles": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [
+            {
+              "candidate_id": "ing_red_bell_pepper",
+              "component_scores": {
+                "C": 0.51860827477886,
+                "F": null,
+                "R": 1.0
+              },
+              "context_split": "groups_seed_42_v2",
+              "evidence_available": {
+                "C": true,
+                "F": false,
+                "R": true
+              },
+              "flavor_sources": [],
+              "mode": "without_roles",
+              "name": "red bell pepper",
+              "partial_evidence": true,
+              "purchase_required": false,
+              "reasons": [
+                "Training-context cosine against 6 retained ingredients: 0.519.",
+                "Flavor unavailable: one or both molecular profiles are missing."
+              ],
+              "role_evidence": {
+                "clauses": [],
+                "roles": [
+                  "bulk"
+                ],
+                "rule_ids": [],
+                "warnings": []
+              },
+              "role_match": {
+                "basis": "same role",
+                "candidate_role": "bulk",
+                "target_role": "bulk"
+              },
+              "score": 0.51860827477886,
+              "used_features": [
+                "C"
+              ]
+            }
+          ],
+          "reason_counts": {
+            "below_threshold": 2,
+            "original_or_retained": 7,
+            "outside_pantry": 152
+          },
+          "schema_version": "1.0",
+          "status": "OK",
+          "warnings": []
+        }
+      },
+      "audit": {
+        "blocked_pair_ids": [],
+        "candidate_ids": [
+          "ing_red_bell_pepper",
+          "ing_tomato",
+          "ing_tomato_puree"
+        ],
+        "complete_evidence_ids": []
+      },
+      "case_id": "dev_v2_08",
+      "complete_evidence": {
+        "flavor_only": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "incomplete_evidence": 3,
+            "original_or_retained": 7,
+            "outside_pantry": 152
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "full": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "incomplete_evidence": 3,
+            "original_or_retained": 7,
+            "outside_pantry": 152
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "without_context": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "incomplete_evidence": 3,
+            "original_or_retained": 7,
+            "outside_pantry": 152
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "without_roles": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "incomplete_evidence": 3,
+            "original_or_retained": 7,
+            "outside_pantry": 152
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        }
+      },
+      "constraints": {
+        "excluded_ids": [],
+        "max_replacements": 3,
+        "pantry_ids": [
+          "ing_red_bell_pepper",
+          "ing_tomato",
+          "ing_tomato_puree"
+        ],
+        "pantry_only": true
+      },
+      "grades": null,
+      "independent_allowed_ids": [
+        "ing_red_bell_pepper",
+        "ing_tomato",
+        "ing_tomato_puree"
+      ],
+      "recipe_id": "rec_italian_tomato_basil_soup",
+      "review_status": "pending_review",
+      "target_id": "ing_canned_tomato"
+    },
+    {
+      "all_evidence": {
+        "flavor_only": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "missing_evidence": 3,
+            "original_or_retained": 10,
+            "outside_pantry": 149
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "full": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [
+            {
+              "candidate_id": "ing_green_bean",
+              "component_scores": {
+                "C": 0.36950114328064504,
+                "F": null,
+                "R": 1.0
+              },
+              "context_split": "groups_seed_42_v2",
+              "evidence_available": {
+                "C": true,
+                "F": false,
+                "R": true
+              },
+              "flavor_sources": [],
+              "mode": "full",
+              "name": "green bean",
+              "partial_evidence": true,
+              "purchase_required": false,
+              "reasons": [
+                "Role (catalogue default): bulk → bulk. same role.",
+                "Training-context cosine against 9 retained ingredients: 0.370.",
+                "Flavor unavailable: one or both molecular profiles are missing."
+              ],
+              "role_evidence": {
+                "clauses": [],
+                "roles": [
+                  "bulk"
+                ],
+                "rule_ids": [],
+                "warnings": []
+              },
+              "role_match": {
+                "basis": "same role",
+                "candidate_role": "bulk",
+                "target_role": "bulk"
+              },
+              "score": 0.660500615612655,
+              "used_features": [
+                "C",
+                "R"
+              ]
+            },
+            {
+              "candidate_id": "ing_mushroom",
+              "component_scores": {
+                "C": 0.28605290606859346,
+                "F": null,
+                "R": 1.0
+              },
+              "context_split": "groups_seed_42_v2",
+              "evidence_available": {
+                "C": true,
+                "F": false,
+                "R": true
+              },
+              "flavor_sources": [],
+              "mode": "full",
+              "name": "mushroom",
+              "partial_evidence": true,
+              "purchase_required": false,
+              "reasons": [
+                "Role (catalogue default): bulk → bulk. same role.",
+                "Training-context cosine against 9 retained ingredients: 0.286.",
+                "Flavor unavailable: one or both molecular profiles are missing."
+              ],
+              "role_evidence": {
+                "clauses": [],
+                "roles": [
+                  "bulk"
+                ],
+                "rule_ids": [],
+                "warnings": []
+              },
+              "role_match": {
+                "basis": "same role",
+                "candidate_role": "bulk",
+                "target_role": "bulk"
+              },
+              "score": 0.6155669494215504,
+              "used_features": [
+                "C",
+                "R"
+              ]
+            }
+          ],
+          "reason_counts": {
+            "missing_evidence": 1,
+            "original_or_retained": 10,
+            "outside_pantry": 149
+          },
+          "schema_version": "1.0",
+          "status": "OK",
+          "warnings": []
+        },
+        "without_context": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "missing_evidence": 3,
+            "original_or_retained": 10,
+            "outside_pantry": 149
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "without_roles": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "below_threshold": 2,
+            "missing_evidence": 1,
+            "original_or_retained": 10,
+            "outside_pantry": 149
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        }
+      },
+      "audit": {
+        "blocked_pair_ids": [],
+        "candidate_ids": [
+          "ing_broccoli",
+          "ing_green_bean",
+          "ing_mushroom"
+        ],
+        "complete_evidence_ids": []
+      },
+      "case_id": "dev_v2_09",
+      "complete_evidence": {
+        "flavor_only": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "incomplete_evidence": 3,
+            "original_or_retained": 10,
+            "outside_pantry": 149
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "full": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "incomplete_evidence": 3,
+            "original_or_retained": 10,
+            "outside_pantry": 149
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "without_context": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "incomplete_evidence": 3,
+            "original_or_retained": 10,
+            "outside_pantry": 149
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "without_roles": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "incomplete_evidence": 3,
+            "original_or_retained": 10,
+            "outside_pantry": 149
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        }
+      },
+      "constraints": {
+        "excluded_ids": [],
+        "max_replacements": 3,
+        "pantry_ids": [
+          "ing_broccoli",
+          "ing_green_bean",
+          "ing_mushroom"
+        ],
+        "pantry_only": true
+      },
+      "grades": null,
+      "independent_allowed_ids": [
+        "ing_broccoli",
+        "ing_green_bean",
+        "ing_mushroom"
+      ],
+      "recipe_id": "rec_black_pepper_cauliflower_roast",
+      "review_status": "pending_review",
+      "target_id": "ing_cauliflower"
+    },
+    {
+      "all_evidence": {
+        "flavor_only": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "excluded_ingredient": 2,
+            "missing_evidence": 2,
+            "original_or_retained": 12,
+            "outside_pantry": 146
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "full": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [
+            {
+              "candidate_id": "ing_pearl_barley",
+              "component_scores": {
+                "C": 0.45311714136100933,
+                "F": null,
+                "R": 1.0
+              },
+              "context_split": "groups_seed_42_v2",
+              "evidence_available": {
+                "C": true,
+                "F": false,
+                "R": true
+              },
+              "flavor_sources": [],
+              "mode": "full",
+              "name": "pearl barley",
+              "partial_evidence": true,
+              "purchase_required": false,
+              "reasons": [
+                "Role (catalogue default): bulk → bulk. same role.",
+                "Training-context cosine against 11 retained ingredients: 0.453.",
+                "Flavor unavailable: one or both molecular profiles are missing."
+              ],
+              "role_evidence": {
+                "clauses": [],
+                "roles": [
+                  "bulk"
+                ],
+                "rule_ids": [],
+                "warnings": []
+              },
+              "role_match": {
+                "basis": "same role",
+                "candidate_role": "bulk",
+                "target_role": "bulk"
+              },
+              "score": 0.7055246145790051,
+              "used_features": [
+                "C",
+                "R"
+              ]
+            },
+            {
+              "candidate_id": "ing_short_grain_rice",
+              "component_scores": {
+                "C": 0.43328861512331873,
+                "F": null,
+                "R": 1.0
+              },
+              "context_split": "groups_seed_42_v2",
+              "evidence_available": {
+                "C": true,
+                "F": false,
+                "R": true
+              },
+              "flavor_sources": [],
+              "mode": "full",
+              "name": "short grain rice",
+              "partial_evidence": true,
+              "purchase_required": false,
+              "reasons": [
+                "Role (catalogue default): bulk → bulk. same role.",
+                "Training-context cosine against 11 retained ingredients: 0.433.",
+                "Flavor unavailable: one or both molecular profiles are missing."
+              ],
+              "role_evidence": {
+                "clauses": [],
+                "roles": [
+                  "bulk"
+                ],
+                "rule_ids": [],
+                "warnings": []
+              },
+              "role_match": {
+                "basis": "same role",
+                "candidate_role": "bulk",
+                "target_role": "bulk"
+              },
+              "score": 0.6948477158356332,
+              "used_features": [
+                "C",
+                "R"
+              ]
+            }
+          ],
+          "reason_counts": {
+            "excluded_ingredient": 2,
+            "original_or_retained": 12,
+            "outside_pantry": 146
+          },
+          "schema_version": "1.0",
+          "status": "OK",
+          "warnings": []
+        },
+        "without_context": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "excluded_ingredient": 2,
+            "missing_evidence": 2,
+            "original_or_retained": 12,
+            "outside_pantry": 146
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "without_roles": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [
+            {
+              "candidate_id": "ing_pearl_barley",
+              "component_scores": {
+                "C": 0.45311714136100933,
+                "F": null,
+                "R": 1.0
+              },
+              "context_split": "groups_seed_42_v2",
+              "evidence_available": {
+                "C": true,
+                "F": false,
+                "R": true
+              },
+              "flavor_sources": [],
+              "mode": "without_roles",
+              "name": "pearl barley",
+              "partial_evidence": true,
+              "purchase_required": false,
+              "reasons": [
+                "Training-context cosine against 11 retained ingredients: 0.453.",
+                "Flavor unavailable: one or both molecular profiles are missing."
+              ],
+              "role_evidence": {
+                "clauses": [],
+                "roles": [
+                  "bulk"
+                ],
+                "rule_ids": [],
+                "warnings": []
+              },
+              "role_match": {
+                "basis": "same role",
+                "candidate_role": "bulk",
+                "target_role": "bulk"
+              },
+              "score": 0.45311714136100933,
+              "used_features": [
+                "C"
+              ]
+            },
+            {
+              "candidate_id": "ing_short_grain_rice",
+              "component_scores": {
+                "C": 0.43328861512331873,
+                "F": null,
+                "R": 1.0
+              },
+              "context_split": "groups_seed_42_v2",
+              "evidence_available": {
+                "C": true,
+                "F": false,
+                "R": true
+              },
+              "flavor_sources": [],
+              "mode": "without_roles",
+              "name": "short grain rice",
+              "partial_evidence": true,
+              "purchase_required": false,
+              "reasons": [
+                "Training-context cosine against 11 retained ingredients: 0.433.",
+                "Flavor unavailable: one or both molecular profiles are missing."
+              ],
+              "role_evidence": {
+                "clauses": [],
+                "roles": [
+                  "bulk"
+                ],
+                "rule_ids": [],
+                "warnings": []
+              },
+              "role_match": {
+                "basis": "same role",
+                "candidate_role": "bulk",
+                "target_role": "bulk"
+              },
+              "score": 0.43328861512331873,
+              "used_features": [
+                "C"
+              ]
+            }
+          ],
+          "reason_counts": {
+            "excluded_ingredient": 2,
+            "original_or_retained": 12,
+            "outside_pantry": 146
+          },
+          "schema_version": "1.0",
+          "status": "OK",
+          "warnings": []
+        }
+      },
+      "audit": {
+        "blocked_pair_ids": [],
+        "candidate_ids": [
+          "ing_pearl_barley",
+          "ing_short_grain_rice"
+        ],
+        "complete_evidence_ids": []
+      },
+      "case_id": "dev_v2_10",
+      "complete_evidence": {
+        "flavor_only": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "excluded_ingredient": 2,
+            "incomplete_evidence": 2,
+            "original_or_retained": 12,
+            "outside_pantry": 146
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "full": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "excluded_ingredient": 2,
+            "incomplete_evidence": 2,
+            "original_or_retained": 12,
+            "outside_pantry": 146
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "without_context": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "excluded_ingredient": 2,
+            "incomplete_evidence": 2,
+            "original_or_retained": 12,
+            "outside_pantry": 146
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "without_roles": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "excluded_ingredient": 2,
+            "incomplete_evidence": 2,
+            "original_or_retained": 12,
+            "outside_pantry": 146
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        }
+      },
+      "constraints": {
+        "excluded_ids": [
+          "ing_egg"
+        ],
+        "max_replacements": 3,
+        "pantry_ids": [
+          "ing_egg_noodles",
+          "ing_pearl_barley",
+          "ing_short_grain_rice"
+        ],
+        "pantry_only": true
+      },
+      "grades": null,
+      "independent_allowed_ids": [
+        "ing_pearl_barley",
+        "ing_short_grain_rice"
+      ],
+      "recipe_id": "rec_pasta_e_ceci",
+      "review_status": "pending_review",
+      "target_id": "ing_small_pasta"
+    },
+    {
+      "all_evidence": {
+        "flavor_only": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "missing_evidence": 3,
+            "original_or_retained": 13,
+            "outside_pantry": 146
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "full": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [
+            {
+              "candidate_id": "ing_sweet_potato",
+              "component_scores": {
+                "C": 0.3904881109086567,
+                "F": null,
+                "R": 1.0
+              },
+              "context_split": "groups_seed_42_v2",
+              "evidence_available": {
+                "C": true,
+                "F": false,
+                "R": true
+              },
+              "flavor_sources": [],
+              "mode": "full",
+              "name": "sweet potato",
+              "partial_evidence": true,
+              "purchase_required": false,
+              "reasons": [
+                "Role (catalogue default): bulk → bulk. same role.",
+                "Training-context cosine against 12 retained ingredients: 0.390.",
+                "Flavor unavailable: one or both molecular profiles are missing."
+              ],
+              "role_evidence": {
+                "clauses": [],
+                "roles": [
+                  "bulk"
+                ],
+                "rule_ids": [],
+                "warnings": []
+              },
+              "role_match": {
+                "basis": "same role",
+                "candidate_role": "bulk",
+                "target_role": "bulk"
+              },
+              "score": 0.6718012904892767,
+              "used_features": [
+                "C",
+                "R"
+              ]
+            },
+            {
+              "candidate_id": "ing_pumpkin",
+              "component_scores": {
+                "C": 0.3296635017380838,
+                "F": null,
+                "R": 1.0
+              },
+              "context_split": "groups_seed_42_v2",
+              "evidence_available": {
+                "C": true,
+                "F": false,
+                "R": true
+              },
+              "flavor_sources": [],
+              "mode": "full",
+              "name": "pumpkin",
+              "partial_evidence": true,
+              "purchase_required": false,
+              "reasons": [
+                "Role (catalogue default): bulk → bulk. same role.",
+                "Training-context cosine against 12 retained ingredients: 0.330.",
+                "Flavor unavailable: one or both molecular profiles are missing."
+              ],
+              "role_evidence": {
+                "clauses": [],
+                "roles": [
+                  "bulk"
+                ],
+                "rule_ids": [],
+                "warnings": []
+              },
+              "role_match": {
+                "basis": "same role",
+                "candidate_role": "bulk",
+                "target_role": "bulk"
+              },
+              "score": 0.6390495778589683,
+              "used_features": [
+                "C",
+                "R"
+              ]
+            },
+            {
+              "candidate_id": "ing_carrot",
+              "component_scores": {
+                "C": 0.32159670453770905,
+                "F": null,
+                "R": 1.0
+              },
+              "context_split": "groups_seed_42_v2",
+              "evidence_available": {
+                "C": true,
+                "F": false,
+                "R": true
+              },
+              "flavor_sources": [],
+              "mode": "full",
+              "name": "carrot",
+              "partial_evidence": true,
+              "purchase_required": false,
+              "reasons": [
+                "Role (catalogue default): bulk → bulk. same role.",
+                "Training-context cosine against 12 retained ingredients: 0.322.",
+                "Flavor unavailable: one or both molecular profiles are missing."
+              ],
+              "role_evidence": {
+                "clauses": [],
+                "roles": [
+                  "bulk"
+                ],
+                "rule_ids": [],
+                "warnings": []
+              },
+              "role_match": {
+                "basis": "same role",
+                "candidate_role": "bulk",
+                "target_role": "bulk"
+              },
+              "score": 0.6347059178279972,
+              "used_features": [
+                "C",
+                "R"
+              ]
+            }
+          ],
+          "reason_counts": {
+            "original_or_retained": 13,
+            "outside_pantry": 146
+          },
+          "schema_version": "1.0",
+          "status": "OK",
+          "warnings": []
+        },
+        "without_context": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "missing_evidence": 3,
+            "original_or_retained": 13,
+            "outside_pantry": 146
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "without_roles": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "below_threshold": 3,
+            "original_or_retained": 13,
+            "outside_pantry": 146
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        }
+      },
+      "audit": {
+        "blocked_pair_ids": [],
+        "candidate_ids": [
+          "ing_carrot",
+          "ing_pumpkin",
+          "ing_sweet_potato"
+        ],
+        "complete_evidence_ids": []
+      },
+      "case_id": "dev_v2_11",
+      "complete_evidence": {
+        "flavor_only": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "incomplete_evidence": 3,
+            "original_or_retained": 13,
+            "outside_pantry": 146
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "full": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "incomplete_evidence": 3,
+            "original_or_retained": 13,
+            "outside_pantry": 146
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "without_context": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "incomplete_evidence": 3,
+            "original_or_retained": 13,
+            "outside_pantry": 146
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        },
+        "without_roles": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [],
+          "reason_counts": {
+            "incomplete_evidence": 3,
+            "original_or_retained": 13,
+            "outside_pantry": 146
+          },
+          "schema_version": "1.0",
+          "status": "NO_FEASIBLE_RESULT",
+          "warnings": [
+            "No candidate meets this method’s constraints and evidence requirements."
+          ]
+        }
+      },
+      "constraints": {
+        "excluded_ids": [],
+        "max_replacements": 3,
+        "pantry_ids": [
+          "ing_carrot",
+          "ing_pumpkin",
+          "ing_sweet_potato"
+        ],
+        "pantry_only": true
+      },
+      "grades": null,
+      "independent_allowed_ids": [
+        "ing_carrot",
+        "ing_pumpkin",
+        "ing_sweet_potato"
+      ],
+      "recipe_id": "rec_sri_lankan_beetroot_curry",
+      "review_status": "pending_review",
+      "target_id": "ing_beetroot"
+    }
+  ],
+  "config_version": "0.4.0",
+  "data_version": "2.0",
+  "quality_note": "Null means no eligible graded cases. Common comparisons restrict all methods to candidates with F, C and R measured. Each reported quality case has a grade-2 option; misses and abstentions contribute zero.",
+  "schema_version": "1.0",
+  "split": "dev",
+  "split_id": "groups_seed_42_v2",
+  "summaries": {
+    "all_evidence": {
+      "flavor_only": {
+        "abstention_rate": 1.0,
+        "abstentions": 6,
+        "candidate_generation_recall": null,
+        "candidates_before_role_filter": 15,
+        "cases": 6,
+        "cases_with_results": 0,
+        "hard_constraint_violations": 0,
+        "hit_at_3": null,
+        "mean_human_grade_of_returned_top_3": null,
+        "mrr_at_5": null,
+        "quality_eligible_cases": 0,
+        "suggestions_returned": 0
+      },
+      "full": {
+        "abstention_rate": 0.0,
+        "abstentions": 0,
+        "candidate_generation_recall": null,
+        "candidates_before_role_filter": 15,
+        "cases": 6,
+        "cases_with_results": 6,
+        "hard_constraint_violations": 0,
+        "hit_at_3": null,
+        "mean_human_grade_of_returned_top_3": null,
+        "mrr_at_5": null,
+        "quality_eligible_cases": 0,
+        "suggestions_returned": 14
+      },
+      "without_context": {
+        "abstention_rate": 1.0,
+        "abstentions": 6,
+        "candidate_generation_recall": null,
+        "candidates_before_role_filter": 15,
+        "cases": 6,
+        "cases_with_results": 0,
+        "hard_constraint_violations": 0,
+        "hit_at_3": null,
+        "mean_human_grade_of_returned_top_3": null,
+        "mrr_at_5": null,
+        "quality_eligible_cases": 0,
+        "suggestions_returned": 0
+      },
+      "without_roles": {
+        "abstention_rate": 0.6666666666666667,
+        "abstentions": 4,
+        "candidate_generation_recall": null,
+        "candidates_before_role_filter": 15,
+        "cases": 6,
+        "cases_with_results": 2,
+        "hard_constraint_violations": 0,
+        "hit_at_3": null,
+        "mean_human_grade_of_returned_top_3": null,
+        "mrr_at_5": null,
+        "quality_eligible_cases": 0,
+        "suggestions_returned": 3
+      }
+    },
+    "complete_evidence": {
+      "flavor_only": {
+        "abstention_rate": null,
+        "abstentions": 0,
+        "candidate_generation_recall": null,
+        "candidates_before_role_filter": 0,
+        "cases": 0,
+        "cases_with_results": 0,
+        "hard_constraint_violations": 0,
+        "hit_at_3": null,
+        "mean_human_grade_of_returned_top_3": null,
+        "mrr_at_5": null,
+        "quality_eligible_cases": 0,
+        "suggestions_returned": 0
+      },
+      "full": {
+        "abstention_rate": null,
+        "abstentions": 0,
+        "candidate_generation_recall": null,
+        "candidates_before_role_filter": 0,
+        "cases": 0,
+        "cases_with_results": 0,
+        "hard_constraint_violations": 0,
+        "hit_at_3": null,
+        "mean_human_grade_of_returned_top_3": null,
+        "mrr_at_5": null,
+        "quality_eligible_cases": 0,
+        "suggestions_returned": 0
+      },
+      "without_context": {
+        "abstention_rate": null,
+        "abstentions": 0,
+        "candidate_generation_recall": null,
+        "candidates_before_role_filter": 0,
+        "cases": 0,
+        "cases_with_results": 0,
+        "hard_constraint_violations": 0,
+        "hit_at_3": null,
+        "mean_human_grade_of_returned_top_3": null,
+        "mrr_at_5": null,
+        "quality_eligible_cases": 0,
+        "suggestions_returned": 0
+      },
+      "without_roles": {
+        "abstention_rate": null,
+        "abstentions": 0,
+        "candidate_generation_recall": null,
+        "candidates_before_role_filter": 0,
+        "cases": 0,
+        "cases_with_results": 0,
+        "hard_constraint_violations": 0,
+        "hit_at_3": null,
+        "mean_human_grade_of_returned_top_3": null,
+        "mrr_at_5": null,
+        "quality_eligible_cases": 0,
+        "suggestions_returned": 0
+      }
+    }
+  }
+}

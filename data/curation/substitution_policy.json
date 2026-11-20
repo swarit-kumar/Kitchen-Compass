@@ -1,0 +1,26 @@
+{
+  "shorthand": {
+    "ing_all_purpose_flour": [
+      "flour"
+    ],
+    "ing_wheat_flour": [
+      "flour"
+    ]
+  },
+  "partial_matches": [
+    {
+      "target_role": "thickener",
+      "candidate_role": "bulk",
+      "candidate_ids": [
+        "ing_potato"
+      ],
+      "families": [
+        "soup"
+      ],
+      "note": "Partial soup-thickening match. Potato needs to be cooked and mashed.",
+      "evidence_ref": "https://extension.umd.edu/programs/family-consumer-sciences/snap-ed/eat-smart/recipes/broccoli-and-potato-soup",
+      "reviewer": "Codex, source check",
+      "review_status": "source_checked"
+    }
+  ]
+}

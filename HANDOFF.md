@@ -1,118 +1,34 @@
-# KitchenCompass Project Handoff
+# KitchenCompass handoff · Phase 3
 
-**Phase 1:** Completed  
-**Phase 2:** Implementation and initial validation completed  
-**Phase 2 lead:** Swarit  
-**Reviewer:** Vibhu Shriwal  
-**Data version:** 2.0  
-**Configuration version:** 0.3.0
+| Item | Checkpoint |
+|---|---|
+| Plan | Shared Implementation and Handoff Plan 1.0, included in `docs/` |
+| Snapshot | P03-v0.4.2-20261120 · ZIP handoff · ready_for_review |
+| Sender / receiver | Vibhu / Swarit |
+| Parent | Swarit’s `Kitchen-Compass-main.zip`, SHA-256 `2ecccff9be475984c9cf307e5891434f965addcc30a25a3308af56ca684c74c9` |
+| Catalogue / config / benchmark | 2.0 / 0.4.0 / groups_seed_42_v2 |
+| Schemas | Catalogue and result envelope 1.0. Custom recipe export 2.0 reads earlier 1.0 inputs. |
+| Environment | Verified with CPython 3.11.18 on Linux x86-64 and the pinned requirements. Windows instructions in README. |
+| Receiver verification | Pending Swarit’s clean extraction, Windows test run and rule review. |
 
-## 1. Phase 1 — Data audit and preparation
+### Changes since Swarit’s handoff
 
-Phase 1 produced a catalogue of 212 eligible recipes and 162 canonical ingredient records.
+- Added a separately callable overlap baseline and corrected ranking to sort on full-precision scores. Both pantry methods use the same exclusions, including compound ingredients.
+- Rebuilt the hashes against the distributed LF files and set an explicit Git line-ending rule. The earlier ZIP had seven CRLF/LF checksum mismatches.
+- Added ingredient confirmation for custom entry and import. The original wording, quantity, essential flags, instructions and UUID survive export/import. Duplicate entries retain their original lines and at least two distinct IDs must resolve. The catalogue and training corpus are read-only during a session.
+- Added a frozen catalogue loader and single-target service, instruction-based roles, molecular Jaccard, training-only context cosine, hard filters, optional purchases, ranked explanations and four comparison modes.
+- Integrated the screens, four demo examples, development runner and regression tests. The per-case outputs and validation commands are included. Notes P2-01, P2-02, P3-01 and P3-02 are in the decision log.
 
-- 118 curries and 94 soups.
-- 110 Indian and 102 international recipes.
-- 124 training, 45 development and 43 test recipes.
-- Original raw snapshot preserved.
-- V2 snapshot contains 248 raw entries.
-- 12 in-scope recipes with unresolved compounds were excluded.
-- Five FlavorDB profiles are available; 157 ingredient profiles remain missing.
+### v0.4.2 update
 
-The catalogue includes AI-assisted recipe drafts and variants. Recipes have not been cooking-tested, and proposed ingredient roles and essential-ingredient definitions require team review.
+Pantry search and substitutions show five ranked results initially and reveal up to five more per click. Each pantry result has a View recipe button for ingredients and instructions. A new search resets the visible count. The development benchmark retains its five-result budget.
 
-## 2. Phase 2 — Pantry recommendations and custom recipes
+### Verification
 
-The following features have been implemented:
+See `results/verification.txt` for the actual execution environment and checks. A clean unpack must pass `python -m pytest -q` before receiver acceptance. The expected count is 45 tests. The ZIP includes its dependencies list, data, prebuilt features, application, benchmark files, original plan and demo instructions. Virtual environments, build metadata and caches are omitted. Use the ZIP SHA-256 supplied with the download to check the transfer.
 
-- Ingredient name and alias normalization.
-- Canonical ingredient ID resolution.
-- Suggestions for uncertain ingredient names where available.
-- Nested compound exclusion expansion.
-- Hard filtering of recipes containing excluded ingredients.
-- Pantry-based recipe recommendation and weighted ranking.
-- Match and missing ingredient explanations.
-- Explicit handling of empty pantry, unsupported ingredients, unresolved exclusions and no feasible results.
-- Streamlit interface for pantry input, exclusions and recommendation results.
-- Custom recipe creation and validation.
-- UUID-based custom recipe IDs.
-- Session-based custom recipe storage.
-- JSON export and import with schema-version validation.
+### Open items and next task
 
-Custom recipes remain separate from the shared recipe catalogue.
+Swarit should first run [the Windows walkthrough](docs/DEMO_WINDOWS.md) and record the received ZIP digest, Python version, test result, date and acceptance decision here. Review the instruction and pair rules in [the implementation notes](docs/PHASE_3.md). Both teammates still need to independently grade the existing cases and reconcile their judgments. Five molecular profiles are available. Course deadline, weekly availability, professor approval of the benchmark scope and hosting smoke-test record are still unconfirmed.
 
-## 3. Recommendation scoring
-
-The implemented recommendation score is:
-
-`score = 0.8 * weighted_coverage + 0.2 / (1 + missing_count)`
-
-Essential ingredients receive weight 2 and other ingredients receive weight 1.
-
-Recommendations are sorted by:
-1. Descending score.
-2. Ascending missing ingredient count.
-3. Recipe ID.
-
-Up to five recommendations are returned.
-
-Exclusions are hard constraints. Pantry-only restrictions apply to later substitution candidates, not initial recipe discovery.
-
-## 4. Verification and testing
-
-### Phase 1
-
-The Phase 1 test suite passed 10 tests on the user's Windows environment.
-
-### Phase 2
-
-The Phase 2 test suite passed 9 tests.
-
-The complete test suite was executed on Windows using Python 3.11:
-
-`19 passed in 1.22s`
-
-### Demonstration scenario
-
-Development case `dev_v2_01` was tested with its specified pantry ingredients and milk exclusion.
-
-Results:
-- Status: `OK`.
-- Lemon Coriander Soup was included.
-- Broccoli Cheddar Soup was excluded through nested milk-component relationships.
-- Five eligible recommendations were returned.
-
-### Custom recipe workflow
-
-The Streamlit custom recipe workflow was manually tested:
-- Recipe creation.
-- Ingredient and instruction entry.
-- Session storage.
-- JSON export.
-- JSON re-import.
-
-The workflow operated successfully.
-
-## 5. Remaining limitations and review
-
-- Only five FlavorDB profiles are currently available.
-- Recipe drafts have not been independently source-validated or cooking-tested.
-- Essential ingredient definitions and ingredient roles need team review.
-- Development benchmark grading and independent review remain pending.
-- Ingredient exclusions are not certified allergy protection.
-- Custom recipes are session-private unless exported and saved by the user.
-
-The test split must remain held out from ranking adjustments.
-
-## 6. Team responsibilities
-
-- **Swarit:** Phase 2 implementation lead.
-- **Vibhu Shriwal:** Phase 2 reviewer.
-
-The next review should focus on recommendation quality, uncertain ingredient resolution, benchmark grading and any remaining validation gaps.
-
-## 7. Project status
-
-Phase 1 data preparation and the initial Phase 2 implementation have been completed and tested.
-
-The project is ready for further team review and evaluation against the development benchmark before final project completion.
+The next implementation phase is constrained joint substitution for one to three targets. Its planned entry point is `kitchencompass/adapt.py`. The Phase 3 demo covers a single replacement. The previous [Phase 2 handoff](docs/history/PHASE_2_HANDOFF.md) is retained for provenance.

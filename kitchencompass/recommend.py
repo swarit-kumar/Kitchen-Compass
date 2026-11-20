@@ -10,11 +10,16 @@ def recommend_recipes(
     pantry_ids,
     excluded_ids=None,
     limit=5,
+    mode="weighted",
+    engine=None,
 ):
-    """Rank recipes using pantry coverage and essential ingredient weights."""
+    """Rank recipes using pantry coverage and weights. Pass limit=None for every match."""
 
-    if limit < 1:
+    if limit is not None and limit < 1:
         raise ValueError("limit must be at least 1")
+
+    if mode not in {"weighted", "overlap"}:
+        raise ValueError("Unknown pantry ranking method")
 
     excluded_ids = excluded_ids or []
     pantry = set(pantry_ids)
@@ -24,7 +29,7 @@ def recommend_recipes(
         for item in ingredients
     }
 
-    constraints = ConstraintEngine(ingredients)
+    constraints = engine or ConstraintEngine(ingredients)
 
     eligible_recipes, expanded_exclusions = (
         constraints.filter_recipes(recipes, excluded_ids)
@@ -44,6 +49,8 @@ def recommend_recipes(
             )
 
         all_ids = set(essential_by_id)
+        if len(all_ids) < 2:
+            continue
         matched_ids = all_ids & pantry
         missing_ids = all_ids - pantry
 
@@ -74,12 +81,19 @@ def recommend_recipes(
             + 0.2 / (1 + missing_count)
         )
 
+        if mode == "overlap":
+            score = coverage
+
         ranked.append({
+            "available_ids": sorted(matched_ids),
+            "missing_ids": sorted(missing_ids),
+            "excluded_ids": expanded_exclusions,
+            "mode": mode,
             "recipe_id": recipe["recipe_id"],
             "title": recipe["title"],
-            "score": round(score, 6),
-            "coverage": round(coverage, 6),
-            "weighted_coverage": round(weighted_coverage, 6),
+            "score": score,
+            "coverage": coverage,
+            "weighted_coverage": weighted_coverage,
             "missing_count": missing_count,
             "matches": [
                 {
@@ -112,7 +126,7 @@ def recommend_recipes(
     )
 
     return {
-        "items": ranked[:limit],
+        "items": ranked if limit is None else ranked[:min(5, limit)],
         "expanded_exclusions": expanded_exclusions,
         "eligible_recipe_count": len(eligible_recipes),
     }
