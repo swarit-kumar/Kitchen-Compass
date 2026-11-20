@@ -29,6 +29,11 @@ def main():
         "kitchencompass/custom_recipes.py", "app.py",
         "scripts/prepare_data.py", "scripts/build_features.py",
         "requirements.txt", "data/benchmark/dev_cases.jsonl",
+        ".gitattributes", "kitchencompass/catalog.py", "kitchencompass/roles.py",
+        "kitchencompass/features.py", "kitchencompass/substitute.py", "scripts/evaluate.py",
+        "data/processed/substitution_pairs.jsonl", "data/curation/substitution_policy.json",
+        "tests/test_substitute.py", "tests/test_custom_recipe.py", "tests/test_recommend.py",
+        "tests/test_phase3_app.py", "tests/test_development.py",
         "tests/test_contracts.py", "tests/test_phase1.py", "tests/test_phase2.py",
     ]
     if config["data_version"] == "2.0":

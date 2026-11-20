@@ -1,152 +1,48 @@
 # KitchenCompass
 
-KitchenCompass is a pantry-based recipe recommendation and context-aware ingredient adaptation project.
+KitchenCompass runs locally in your browser. It finds soup and curry recipes from a pantry, saves custom recipes in the current session and ranks replacements for one ingredient at a time. The release includes 212 recipes, 162 catalogue ingredients and prebuilt features for offline use after installation.
 
-The application allows users to enter available ingredients, specify exclusions, discover suitable recipes, and create their own custom recipes.
+## First run on Windows
 
-## Project status
+Download the release ZIP into Downloads. In PowerShell, extract it into a new folder alongside your previous project.
 
-- Phase 1: Data audit and preparation completed.
-- Phase 2: Initial pantry recommendation and custom recipe implementation completed.
-- Full test suite: **19 tests passed** on Windows with Python 3.11.
-
-## Features
-
-### Pantry-based recommendations
-- Ingredient name and alias normalization.
-- Canonical ingredient ID resolution.
-- Pantry-based recipe ranking.
-- Weighted ingredient coverage scoring.
-- Display of matched and missing ingredients.
-- Up to five recommendations.
-
-### Ingredient exclusions
-- Exclusions are enforced as hard constraints.
-- Nested compound relationships are expanded.
-- Example: excluding milk also excludes ingredients such as butter and ghee through their component relationships.
-
-### Custom recipes
-- Create custom recipes with ingredients and instructions.
-- Validate recipe input.
-- Generate UUID-based recipe IDs.
-- Store recipes in the current application session.
-- Export and import custom recipes using schema-versioned JSON.
-
-Custom recipes remain separate from the shared recipe catalogue.
-
-## Technology stack
-
-- Python 3.11
-- Streamlit
-- Pydantic
-- NumPy
-- Pandas
-- Pytest
-
-## Set up on Windows
-
-Extract the project ZIP into a folder and open CMD inside the `KitchenCompass` directory containing `app.py`.
-
-Create a virtual environment:
-
-```cmd
+```powershell
+Expand-Archive -LiteralPath "$HOME\Downloads\KitchenCompass_P03_v0.4.2_20261120.zip" -DestinationPath "D:\KitchenCompass"
+Set-Location "D:\KitchenCompass\KitchenCompass_Phase3_v0.4.2"
 py -3.11 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m pip install -e . --no-deps
+.\.venv\Scripts\python.exe -m pytest -q
+.\.venv\Scripts\python.exe -m streamlit run app.py
 ```
 
-Install dependencies:
+If you extracted the ZIP manually, open PowerShell in the folder containing `app.py` and begin at the virtual environment command. If the Python launcher cannot find 3.11, run `python --version`. When it reports Python 3.11.x, use `python -m venv .venv` in place of the launcher command. A known working Python 3.11 executable can also create this environment by its full path.
 
-```cmd
-.venv\Scripts\python.exe -m pip install -r requirements.txt
+Open `http://localhost:8501` if the browser does not open automatically. Use the Local URL printed by Streamlit if the port differs. Keep PowerShell open while presenting. Press Ctrl+C there to stop the server.
+
+## Run it next time
+
+```powershell
+Set-Location "D:\KitchenCompass\KitchenCompass_Phase3_v0.4.2"
+.\.venv\Scripts\python.exe -m streamlit run app.py
 ```
 
-Install the project:
+## Professor demo
 
-```cmd
-.venv\Scripts\python.exe -m pip install -e . --no-deps
+Follow [the walkthrough](docs/DEMO_WINDOWS.md) for the inputs, expected results and a short explanation of each screen. Start with **Pantry search**, then open **Substitutions** in the sidebar. Four examples load reproducible inputs. Press **Find substitutes** after loading an example or changing a method. Click **View recipe** on a pantry result to read its ingredients and numbered cooking steps. **Hide recipe** collapses the details. Both search screens show up to five results initially. Use **Show 5 more** below the results to reveal the next batch. The final batch shows the remaining results.
+
+**Custom recipes** supports entry and JSON import, explicit confirmation of ingredient names, instructions and quantities, optional essential flags and JSON download. A session can use a custom recipe immediately in the same substitution screen.
+
+## Reproduce the development run
+
+Run these from the extracted project folder in PowerShell. The ZIP already includes the outputs needed for the demo.
+
+```powershell
+.\.venv\Scripts\python.exe scripts\expand_recipes.py --check
+.\.venv\Scripts\python.exe scripts\prepare_data.py --config config\settings.json
+.\.venv\Scripts\python.exe scripts\build_features.py --config config\settings.json
+.\.venv\Scripts\python.exe scripts\evaluate.py --split dev --config config\settings.json
+.\.venv\Scripts\python.exe -m pytest -q
 ```
 
-Run the tests:
-
-```cmd
-.venv\Scripts\python.exe -m pytest -q
-```
-
-Expected result for the current implementation:
-
-`19 passed`
-
-Start the application:
-
-```cmd
-.venv\Scripts\python.exe -m streamlit run app.py
-```
-
-Open `http://localhost:8501` in your browser.
-
-To stop the application, press `Ctrl+C` in CMD.
-
-On subsequent runs, reuse the existing `.venv` and start Streamlit directly.
-
-**Important:** Do not run data preparation or feature-building scripts during normal setup. The existing raw snapshots, processed catalogue and benchmark splits should be preserved.
-
-## Project structure
-
-| Path | Contents |
-|---|---|
-| `app.py` | Streamlit application |
-| `kitchencompass/normalize.py` | Ingredient normalization |
-| `kitchencompass/constraints.py` | Ingredient exclusions and compound expansion |
-| `kitchencompass/recommend.py` | Recommendation ranking |
-| `kitchencompass/service.py` | Shared application service layer |
-| `kitchencompass/custom_recipes.py` | Custom recipe validation and JSON handling |
-| `kitchencompass/schemas.py` | Data models and result contracts |
-| `data/raw/` | Original and expanded raw snapshots |
-| `data/benchmark/` | Development cases, splits and review sheets |
-| `scripts/` | Data preparation and feature-building scripts |
-| `tests/` | Automated tests |
-| `docs/` | Project documentation and implementation plans |
-| `results/` | Data audit and verification records |
-| `artifacts/` | Project manifest and generated artifacts |
-| `HANDOFF.md` | Project implementation status and handoff notes |
-
-## Dataset information
-
-The active catalogue contains:
-
-- 212 eligible recipes.
-- 162 canonical ingredient records.
-- 118 curries and 94 soups.
-- 124 training recipes.
-- 45 development recipes.
-- 43 test recipes.
-
-Related recipe groups remain within the same split.
-
-Some recipes are AI-assisted drafts and have not been independently source-validated or cooking-tested. FlavorDB coverage is currently limited to five ingredient profiles.
-
-Refer to `docs/DATA_SOURCES.md` and `HANDOFF.md` for provenance, limitations and review status.
-
-## Recommendation scoring
-
-The current weighted recommendation score is:
-
-`score = 0.8 * weighted_coverage + 0.2 / (1 + missing_count)`
-
-Essential ingredients receive weight 2; other ingredients receive weight 1.
-
-Recommendations are sorted by descending score, ascending missing ingredient count, and recipe ID.
-
-## Current limitations
-
-- Independent development benchmark reviews are pending.
-- Ingredient roles and essential-ingredient definitions require team review.
-- FlavorDB coverage is incomplete.
-- Exclusions are not certified allergy protection.
-- Custom recipes are session-private unless exported.
-
-The test split must remain held out from ranking adjustments.
-
-## Team
-
-- Phase 2 lead: Swarit
-- Reviewer: Vibhu Shriwal
+[Development results and methods](docs/PHASE_3.md) · [Team handoff](HANDOFF.md) · [Data sources](docs/DATA_SOURCES.md)

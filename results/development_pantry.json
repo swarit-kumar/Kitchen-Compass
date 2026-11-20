@@ -1,0 +1,4106 @@
+{
+  "cases": [
+    {
+      "case_id": "dev_v2_01",
+      "methods": {
+        "overlap": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [
+            {
+              "available_ids": [
+                "ing_black_pepper",
+                "ing_cabbage",
+                "ing_cilantro",
+                "ing_garlic",
+                "ing_ginger",
+                "ing_green_bean",
+                "ing_lemon_juice",
+                "ing_salt",
+                "ing_vegetable_oil",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 1.0,
+              "excluded_ids": [
+                "ing_butter",
+                "ing_cheddar",
+                "ing_cream",
+                "ing_ghee",
+                "ing_gruyere",
+                "ing_milk",
+                "ing_paneer",
+                "ing_parmesan",
+                "ing_plain_yogurt"
+              ],
+              "explanation": "10 of 10 distinct ingredients available; 0 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_black_pepper",
+                  "name": "black pepper"
+                },
+                {
+                  "ingredient_id": "ing_cabbage",
+                  "name": "cabbage"
+                },
+                {
+                  "ingredient_id": "ing_cilantro",
+                  "name": "cilantro"
+                },
+                {
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_green_bean",
+                  "name": "green bean"
+                },
+                {
+                  "ingredient_id": "ing_lemon_juice",
+                  "name": "lemon juice"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [],
+              "missing_count": 0,
+              "missing_ids": [],
+              "mode": "overlap",
+              "recipe_id": "rec_clear_cabbage_and_green_bean_soup",
+              "score": 1.0,
+              "title": "Clear Cabbage and Green Bean Soup",
+              "weighted_coverage": 1.0
+            },
+            {
+              "available_ids": [
+                "ing_black_pepper",
+                "ing_cabbage",
+                "ing_carrot",
+                "ing_cilantro",
+                "ing_garlic",
+                "ing_ginger",
+                "ing_lemon_juice",
+                "ing_vegetable_oil",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 1.0,
+              "excluded_ids": [
+                "ing_butter",
+                "ing_cheddar",
+                "ing_cream",
+                "ing_ghee",
+                "ing_gruyere",
+                "ing_milk",
+                "ing_paneer",
+                "ing_parmesan",
+                "ing_plain_yogurt"
+              ],
+              "explanation": "9 of 9 distinct ingredients available; 0 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_black_pepper",
+                  "name": "black pepper"
+                },
+                {
+                  "ingredient_id": "ing_cabbage",
+                  "name": "cabbage"
+                },
+                {
+                  "ingredient_id": "ing_carrot",
+                  "name": "carrot"
+                },
+                {
+                  "ingredient_id": "ing_cilantro",
+                  "name": "cilantro"
+                },
+                {
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_lemon_juice",
+                  "name": "lemon juice"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [],
+              "missing_count": 0,
+              "missing_ids": [],
+              "mode": "overlap",
+              "recipe_id": "rec_lemon_coriander_soup",
+              "score": 1.0,
+              "title": "Lemon Coriander Soup",
+              "weighted_coverage": 1.0
+            },
+            {
+              "available_ids": [
+                "ing_black_pepper",
+                "ing_carrot",
+                "ing_cilantro",
+                "ing_garlic",
+                "ing_ginger",
+                "ing_lemon_juice",
+                "ing_salt",
+                "ing_vegetable_oil",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.9,
+              "excluded_ids": [
+                "ing_butter",
+                "ing_cheddar",
+                "ing_cream",
+                "ing_ghee",
+                "ing_gruyere",
+                "ing_milk",
+                "ing_paneer",
+                "ing_parmesan",
+                "ing_plain_yogurt"
+              ],
+              "explanation": "9 of 10 distinct ingredients available; 1 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_black_pepper",
+                  "name": "black pepper"
+                },
+                {
+                  "ingredient_id": "ing_carrot",
+                  "name": "carrot"
+                },
+                {
+                  "ingredient_id": "ing_cilantro",
+                  "name": "cilantro"
+                },
+                {
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_lemon_juice",
+                  "name": "lemon juice"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_spinach",
+                  "name": "spinach"
+                }
+              ],
+              "missing_count": 1,
+              "missing_ids": [
+                "ing_spinach"
+              ],
+              "mode": "overlap",
+              "recipe_id": "rec_clear_spinach_and_lemon_soup",
+              "score": 0.9,
+              "title": "Clear Spinach and Lemon Soup",
+              "weighted_coverage": 0.8333333333333334
+            },
+            {
+              "available_ids": [
+                "ing_black_pepper",
+                "ing_carrot",
+                "ing_cilantro",
+                "ing_garlic",
+                "ing_ginger",
+                "ing_lemon_juice",
+                "ing_salt",
+                "ing_vegetable_oil",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.8181818181818182,
+              "excluded_ids": [
+                "ing_butter",
+                "ing_cheddar",
+                "ing_cream",
+                "ing_ghee",
+                "ing_gruyere",
+                "ing_milk",
+                "ing_paneer",
+                "ing_parmesan",
+                "ing_plain_yogurt"
+              ],
+              "explanation": "9 of 11 distinct ingredients available; 2 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_black_pepper",
+                  "name": "black pepper"
+                },
+                {
+                  "ingredient_id": "ing_carrot",
+                  "name": "carrot"
+                },
+                {
+                  "ingredient_id": "ing_cilantro",
+                  "name": "cilantro"
+                },
+                {
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_lemon_juice",
+                  "name": "lemon juice"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_cooked_chicken",
+                  "name": "cooked chicken"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_scallion",
+                  "name": "scallion"
+                }
+              ],
+              "missing_count": 2,
+              "missing_ids": [
+                "ing_cooked_chicken",
+                "ing_scallion"
+              ],
+              "mode": "overlap",
+              "recipe_id": "rec_indian_clear_chicken_soup",
+              "score": 0.8181818181818182,
+              "title": "Indian Clear Chicken Soup",
+              "weighted_coverage": 0.75
+            },
+            {
+              "available_ids": [
+                "ing_black_pepper",
+                "ing_cilantro",
+                "ing_garlic",
+                "ing_ginger",
+                "ing_lemon_juice",
+                "ing_salt",
+                "ing_vegetable_oil",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.7272727272727273,
+              "excluded_ids": [
+                "ing_butter",
+                "ing_cheddar",
+                "ing_cream",
+                "ing_ghee",
+                "ing_gruyere",
+                "ing_milk",
+                "ing_paneer",
+                "ing_parmesan",
+                "ing_plain_yogurt"
+              ],
+              "explanation": "8 of 11 distinct ingredients available; 3 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_black_pepper",
+                  "name": "black pepper"
+                },
+                {
+                  "ingredient_id": "ing_cilantro",
+                  "name": "cilantro"
+                },
+                {
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_lemon_juice",
+                  "name": "lemon juice"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_mushroom",
+                  "name": "mushroom"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_scallion",
+                  "name": "scallion"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_white_pepper",
+                  "name": "white pepper"
+                }
+              ],
+              "missing_count": 3,
+              "missing_ids": [
+                "ing_mushroom",
+                "ing_scallion",
+                "ing_white_pepper"
+              ],
+              "mode": "overlap",
+              "recipe_id": "rec_indian_clear_mushroom_soup",
+              "score": 0.7272727272727273,
+              "title": "Indian Clear Mushroom Soup",
+              "weighted_coverage": 0.6666666666666666
+            }
+          ],
+          "reason_counts": {},
+          "schema_version": "1.0",
+          "status": "OK",
+          "warnings": [
+            "Excluded ingredients and their known compounds: butter, cheddar, cream, ghee, gruyere, milk, paneer, parmesan, plain yogurt"
+          ]
+        },
+        "weighted": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [
+            {
+              "available_ids": [
+                "ing_black_pepper",
+                "ing_cabbage",
+                "ing_cilantro",
+                "ing_garlic",
+                "ing_ginger",
+                "ing_green_bean",
+                "ing_lemon_juice",
+                "ing_salt",
+                "ing_vegetable_oil",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 1.0,
+              "excluded_ids": [
+                "ing_butter",
+                "ing_cheddar",
+                "ing_cream",
+                "ing_ghee",
+                "ing_gruyere",
+                "ing_milk",
+                "ing_paneer",
+                "ing_parmesan",
+                "ing_plain_yogurt"
+              ],
+              "explanation": "10 of 10 distinct ingredients available; 0 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_black_pepper",
+                  "name": "black pepper"
+                },
+                {
+                  "ingredient_id": "ing_cabbage",
+                  "name": "cabbage"
+                },
+                {
+                  "ingredient_id": "ing_cilantro",
+                  "name": "cilantro"
+                },
+                {
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_green_bean",
+                  "name": "green bean"
+                },
+                {
+                  "ingredient_id": "ing_lemon_juice",
+                  "name": "lemon juice"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [],
+              "missing_count": 0,
+              "missing_ids": [],
+              "mode": "weighted",
+              "recipe_id": "rec_clear_cabbage_and_green_bean_soup",
+              "score": 1.0,
+              "title": "Clear Cabbage and Green Bean Soup",
+              "weighted_coverage": 1.0
+            },
+            {
+              "available_ids": [
+                "ing_black_pepper",
+                "ing_cabbage",
+                "ing_carrot",
+                "ing_cilantro",
+                "ing_garlic",
+                "ing_ginger",
+                "ing_lemon_juice",
+                "ing_vegetable_oil",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 1.0,
+              "excluded_ids": [
+                "ing_butter",
+                "ing_cheddar",
+                "ing_cream",
+                "ing_ghee",
+                "ing_gruyere",
+                "ing_milk",
+                "ing_paneer",
+                "ing_parmesan",
+                "ing_plain_yogurt"
+              ],
+              "explanation": "9 of 9 distinct ingredients available; 0 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_black_pepper",
+                  "name": "black pepper"
+                },
+                {
+                  "ingredient_id": "ing_cabbage",
+                  "name": "cabbage"
+                },
+                {
+                  "ingredient_id": "ing_carrot",
+                  "name": "carrot"
+                },
+                {
+                  "ingredient_id": "ing_cilantro",
+                  "name": "cilantro"
+                },
+                {
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_lemon_juice",
+                  "name": "lemon juice"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [],
+              "missing_count": 0,
+              "missing_ids": [],
+              "mode": "weighted",
+              "recipe_id": "rec_lemon_coriander_soup",
+              "score": 1.0,
+              "title": "Lemon Coriander Soup",
+              "weighted_coverage": 1.0
+            },
+            {
+              "available_ids": [
+                "ing_black_pepper",
+                "ing_carrot",
+                "ing_cilantro",
+                "ing_garlic",
+                "ing_ginger",
+                "ing_lemon_juice",
+                "ing_salt",
+                "ing_vegetable_oil",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.9,
+              "excluded_ids": [
+                "ing_butter",
+                "ing_cheddar",
+                "ing_cream",
+                "ing_ghee",
+                "ing_gruyere",
+                "ing_milk",
+                "ing_paneer",
+                "ing_parmesan",
+                "ing_plain_yogurt"
+              ],
+              "explanation": "9 of 10 distinct ingredients available; 1 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_black_pepper",
+                  "name": "black pepper"
+                },
+                {
+                  "ingredient_id": "ing_carrot",
+                  "name": "carrot"
+                },
+                {
+                  "ingredient_id": "ing_cilantro",
+                  "name": "cilantro"
+                },
+                {
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_lemon_juice",
+                  "name": "lemon juice"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_spinach",
+                  "name": "spinach"
+                }
+              ],
+              "missing_count": 1,
+              "missing_ids": [
+                "ing_spinach"
+              ],
+              "mode": "weighted",
+              "recipe_id": "rec_clear_spinach_and_lemon_soup",
+              "score": 0.7666666666666667,
+              "title": "Clear Spinach and Lemon Soup",
+              "weighted_coverage": 0.8333333333333334
+            },
+            {
+              "available_ids": [
+                "ing_black_pepper",
+                "ing_carrot",
+                "ing_cilantro",
+                "ing_garlic",
+                "ing_ginger",
+                "ing_lemon_juice",
+                "ing_salt",
+                "ing_vegetable_oil",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.8181818181818182,
+              "excluded_ids": [
+                "ing_butter",
+                "ing_cheddar",
+                "ing_cream",
+                "ing_ghee",
+                "ing_gruyere",
+                "ing_milk",
+                "ing_paneer",
+                "ing_parmesan",
+                "ing_plain_yogurt"
+              ],
+              "explanation": "9 of 11 distinct ingredients available; 2 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_black_pepper",
+                  "name": "black pepper"
+                },
+                {
+                  "ingredient_id": "ing_carrot",
+                  "name": "carrot"
+                },
+                {
+                  "ingredient_id": "ing_cilantro",
+                  "name": "cilantro"
+                },
+                {
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_lemon_juice",
+                  "name": "lemon juice"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_cooked_chicken",
+                  "name": "cooked chicken"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_scallion",
+                  "name": "scallion"
+                }
+              ],
+              "missing_count": 2,
+              "missing_ids": [
+                "ing_cooked_chicken",
+                "ing_scallion"
+              ],
+              "mode": "weighted",
+              "recipe_id": "rec_indian_clear_chicken_soup",
+              "score": 0.6666666666666667,
+              "title": "Indian Clear Chicken Soup",
+              "weighted_coverage": 0.75
+            },
+            {
+              "available_ids": [
+                "ing_black_pepper",
+                "ing_cilantro",
+                "ing_garlic",
+                "ing_ginger",
+                "ing_lemon_juice",
+                "ing_salt",
+                "ing_vegetable_oil",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.7272727272727273,
+              "excluded_ids": [
+                "ing_butter",
+                "ing_cheddar",
+                "ing_cream",
+                "ing_ghee",
+                "ing_gruyere",
+                "ing_milk",
+                "ing_paneer",
+                "ing_parmesan",
+                "ing_plain_yogurt"
+              ],
+              "explanation": "8 of 11 distinct ingredients available; 3 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_black_pepper",
+                  "name": "black pepper"
+                },
+                {
+                  "ingredient_id": "ing_cilantro",
+                  "name": "cilantro"
+                },
+                {
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_lemon_juice",
+                  "name": "lemon juice"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_mushroom",
+                  "name": "mushroom"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_scallion",
+                  "name": "scallion"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_white_pepper",
+                  "name": "white pepper"
+                }
+              ],
+              "missing_count": 3,
+              "missing_ids": [
+                "ing_mushroom",
+                "ing_scallion",
+                "ing_white_pepper"
+              ],
+              "mode": "weighted",
+              "recipe_id": "rec_indian_clear_mushroom_soup",
+              "score": 0.5833333333333334,
+              "title": "Indian Clear Mushroom Soup",
+              "weighted_coverage": 0.6666666666666666
+            }
+          ],
+          "reason_counts": {},
+          "schema_version": "1.0",
+          "status": "OK",
+          "warnings": [
+            "Excluded ingredients and their known compounds: butter, cheddar, cream, ghee, gruyere, milk, paneer, parmesan, plain yogurt"
+          ]
+        }
+      },
+      "review_status": "pending_review"
+    },
+    {
+      "case_id": "dev_v2_02",
+      "methods": {
+        "overlap": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [
+            {
+              "available_ids": [
+                "ing_apple",
+                "ing_boneless_chicken_thigh",
+                "ing_carrot",
+                "ing_ginger",
+                "ing_green_pea",
+                "ing_japanese_curry_roux",
+                "ing_onion",
+                "ing_vegetable_oil",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 1.0,
+              "excluded_ids": [
+                "ing_egg",
+                "ing_egg_noodles"
+              ],
+              "explanation": "9 of 9 distinct ingredients available; 0 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_apple",
+                  "name": "apple"
+                },
+                {
+                  "ingredient_id": "ing_boneless_chicken_thigh",
+                  "name": "boneless chicken thigh"
+                },
+                {
+                  "ingredient_id": "ing_carrot",
+                  "name": "carrot"
+                },
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_green_pea",
+                  "name": "green pea"
+                },
+                {
+                  "ingredient_id": "ing_japanese_curry_roux",
+                  "name": "japanese curry roux"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [],
+              "missing_count": 0,
+              "missing_ids": [],
+              "mode": "overlap",
+              "recipe_id": "rec_japanese_chicken_and_carrot_curry",
+              "score": 1.0,
+              "title": "Japanese Chicken and Carrot Curry",
+              "weighted_coverage": 1.0
+            },
+            {
+              "available_ids": [
+                "ing_apple",
+                "ing_carrot",
+                "ing_ginger",
+                "ing_japanese_curry_roux",
+                "ing_onion",
+                "ing_potato",
+                "ing_vegetable_oil",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.8888888888888888,
+              "excluded_ids": [
+                "ing_egg",
+                "ing_egg_noodles"
+              ],
+              "explanation": "8 of 9 distinct ingredients available; 1 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_apple",
+                  "name": "apple"
+                },
+                {
+                  "ingredient_id": "ing_carrot",
+                  "name": "carrot"
+                },
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_japanese_curry_roux",
+                  "name": "japanese curry roux"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_potato",
+                  "name": "potato"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_beef_chuck",
+                  "name": "beef chuck"
+                }
+              ],
+              "missing_count": 1,
+              "missing_ids": [
+                "ing_beef_chuck"
+              ],
+              "mode": "overlap",
+              "recipe_id": "rec_japanese_beef_curry",
+              "score": 0.8888888888888888,
+              "title": "Japanese Beef Curry",
+              "weighted_coverage": 0.8181818181818182
+            },
+            {
+              "available_ids": [
+                "ing_apple",
+                "ing_carrot",
+                "ing_ginger",
+                "ing_japanese_curry_roux",
+                "ing_onion",
+                "ing_potato",
+                "ing_vegetable_oil",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.8888888888888888,
+              "excluded_ids": [
+                "ing_egg",
+                "ing_egg_noodles"
+              ],
+              "explanation": "8 of 9 distinct ingredients available; 1 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_apple",
+                  "name": "apple"
+                },
+                {
+                  "ingredient_id": "ing_carrot",
+                  "name": "carrot"
+                },
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_japanese_curry_roux",
+                  "name": "japanese curry roux"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_potato",
+                  "name": "potato"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_mushroom",
+                  "name": "mushroom"
+                }
+              ],
+              "missing_count": 1,
+              "missing_ids": [
+                "ing_mushroom"
+              ],
+              "mode": "overlap",
+              "recipe_id": "rec_japanese_mushroom_curry_rice_sauce",
+              "score": 0.8888888888888888,
+              "title": "Japanese Mushroom Curry Rice Sauce",
+              "weighted_coverage": 0.8181818181818182
+            },
+            {
+              "available_ids": [
+                "ing_apple",
+                "ing_carrot",
+                "ing_ginger",
+                "ing_japanese_curry_roux",
+                "ing_onion",
+                "ing_potato",
+                "ing_vegetable_oil",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.8888888888888888,
+              "excluded_ids": [
+                "ing_egg",
+                "ing_egg_noodles"
+              ],
+              "explanation": "8 of 9 distinct ingredients available; 1 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_apple",
+                  "name": "apple"
+                },
+                {
+                  "ingredient_id": "ing_carrot",
+                  "name": "carrot"
+                },
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_japanese_curry_roux",
+                  "name": "japanese curry roux"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_potato",
+                  "name": "potato"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_firm_tofu",
+                  "name": "firm tofu"
+                }
+              ],
+              "missing_count": 1,
+              "missing_ids": [
+                "ing_firm_tofu"
+              ],
+              "mode": "overlap",
+              "recipe_id": "rec_japanese_tofu_curry",
+              "score": 0.8888888888888888,
+              "title": "Japanese Tofu Curry",
+              "weighted_coverage": 0.8181818181818182
+            },
+            {
+              "available_ids": [
+                "ing_boneless_chicken_thigh",
+                "ing_carrot",
+                "ing_japanese_curry_roux",
+                "ing_onion",
+                "ing_potato",
+                "ing_vegetable_oil"
+              ],
+              "coverage": 0.8571428571428571,
+              "excluded_ids": [
+                "ing_egg",
+                "ing_egg_noodles"
+              ],
+              "explanation": "6 of 7 distinct ingredients available; 1 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_boneless_chicken_thigh",
+                  "name": "boneless chicken thigh"
+                },
+                {
+                  "ingredient_id": "ing_carrot",
+                  "name": "carrot"
+                },
+                {
+                  "ingredient_id": "ing_japanese_curry_roux",
+                  "name": "japanese curry roux"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_potato",
+                  "name": "potato"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_water",
+                  "name": "water"
+                }
+              ],
+              "missing_count": 1,
+              "missing_ids": [
+                "ing_water"
+              ],
+              "mode": "overlap",
+              "recipe_id": "rec_japanese_chicken_curry",
+              "score": 0.8571428571428571,
+              "title": "Japanese Chicken Curry",
+              "weighted_coverage": 0.8888888888888888
+            }
+          ],
+          "reason_counts": {},
+          "schema_version": "1.0",
+          "status": "OK",
+          "warnings": [
+            "Excluded ingredients and their known compounds: egg, egg noodles"
+          ]
+        },
+        "weighted": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [
+            {
+              "available_ids": [
+                "ing_apple",
+                "ing_boneless_chicken_thigh",
+                "ing_carrot",
+                "ing_ginger",
+                "ing_green_pea",
+                "ing_japanese_curry_roux",
+                "ing_onion",
+                "ing_vegetable_oil",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 1.0,
+              "excluded_ids": [
+                "ing_egg",
+                "ing_egg_noodles"
+              ],
+              "explanation": "9 of 9 distinct ingredients available; 0 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_apple",
+                  "name": "apple"
+                },
+                {
+                  "ingredient_id": "ing_boneless_chicken_thigh",
+                  "name": "boneless chicken thigh"
+                },
+                {
+                  "ingredient_id": "ing_carrot",
+                  "name": "carrot"
+                },
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_green_pea",
+                  "name": "green pea"
+                },
+                {
+                  "ingredient_id": "ing_japanese_curry_roux",
+                  "name": "japanese curry roux"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [],
+              "missing_count": 0,
+              "missing_ids": [],
+              "mode": "weighted",
+              "recipe_id": "rec_japanese_chicken_and_carrot_curry",
+              "score": 1.0,
+              "title": "Japanese Chicken and Carrot Curry",
+              "weighted_coverage": 1.0
+            },
+            {
+              "available_ids": [
+                "ing_boneless_chicken_thigh",
+                "ing_carrot",
+                "ing_japanese_curry_roux",
+                "ing_onion",
+                "ing_potato",
+                "ing_vegetable_oil"
+              ],
+              "coverage": 0.8571428571428571,
+              "excluded_ids": [
+                "ing_egg",
+                "ing_egg_noodles"
+              ],
+              "explanation": "6 of 7 distinct ingredients available; 1 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_boneless_chicken_thigh",
+                  "name": "boneless chicken thigh"
+                },
+                {
+                  "ingredient_id": "ing_carrot",
+                  "name": "carrot"
+                },
+                {
+                  "ingredient_id": "ing_japanese_curry_roux",
+                  "name": "japanese curry roux"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_potato",
+                  "name": "potato"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_water",
+                  "name": "water"
+                }
+              ],
+              "missing_count": 1,
+              "missing_ids": [
+                "ing_water"
+              ],
+              "mode": "weighted",
+              "recipe_id": "rec_japanese_chicken_curry",
+              "score": 0.8111111111111111,
+              "title": "Japanese Chicken Curry",
+              "weighted_coverage": 0.8888888888888888
+            },
+            {
+              "available_ids": [
+                "ing_apple",
+                "ing_carrot",
+                "ing_ginger",
+                "ing_japanese_curry_roux",
+                "ing_onion",
+                "ing_potato",
+                "ing_vegetable_oil",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.8888888888888888,
+              "excluded_ids": [
+                "ing_egg",
+                "ing_egg_noodles"
+              ],
+              "explanation": "8 of 9 distinct ingredients available; 1 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_apple",
+                  "name": "apple"
+                },
+                {
+                  "ingredient_id": "ing_carrot",
+                  "name": "carrot"
+                },
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_japanese_curry_roux",
+                  "name": "japanese curry roux"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_potato",
+                  "name": "potato"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_beef_chuck",
+                  "name": "beef chuck"
+                }
+              ],
+              "missing_count": 1,
+              "missing_ids": [
+                "ing_beef_chuck"
+              ],
+              "mode": "weighted",
+              "recipe_id": "rec_japanese_beef_curry",
+              "score": 0.7545454545454546,
+              "title": "Japanese Beef Curry",
+              "weighted_coverage": 0.8181818181818182
+            },
+            {
+              "available_ids": [
+                "ing_apple",
+                "ing_carrot",
+                "ing_ginger",
+                "ing_japanese_curry_roux",
+                "ing_onion",
+                "ing_potato",
+                "ing_vegetable_oil",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.8888888888888888,
+              "excluded_ids": [
+                "ing_egg",
+                "ing_egg_noodles"
+              ],
+              "explanation": "8 of 9 distinct ingredients available; 1 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_apple",
+                  "name": "apple"
+                },
+                {
+                  "ingredient_id": "ing_carrot",
+                  "name": "carrot"
+                },
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_japanese_curry_roux",
+                  "name": "japanese curry roux"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_potato",
+                  "name": "potato"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_mushroom",
+                  "name": "mushroom"
+                }
+              ],
+              "missing_count": 1,
+              "missing_ids": [
+                "ing_mushroom"
+              ],
+              "mode": "weighted",
+              "recipe_id": "rec_japanese_mushroom_curry_rice_sauce",
+              "score": 0.7545454545454546,
+              "title": "Japanese Mushroom Curry Rice Sauce",
+              "weighted_coverage": 0.8181818181818182
+            },
+            {
+              "available_ids": [
+                "ing_apple",
+                "ing_carrot",
+                "ing_ginger",
+                "ing_japanese_curry_roux",
+                "ing_onion",
+                "ing_potato",
+                "ing_vegetable_oil",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.8888888888888888,
+              "excluded_ids": [
+                "ing_egg",
+                "ing_egg_noodles"
+              ],
+              "explanation": "8 of 9 distinct ingredients available; 1 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_apple",
+                  "name": "apple"
+                },
+                {
+                  "ingredient_id": "ing_carrot",
+                  "name": "carrot"
+                },
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_japanese_curry_roux",
+                  "name": "japanese curry roux"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_potato",
+                  "name": "potato"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_firm_tofu",
+                  "name": "firm tofu"
+                }
+              ],
+              "missing_count": 1,
+              "missing_ids": [
+                "ing_firm_tofu"
+              ],
+              "mode": "weighted",
+              "recipe_id": "rec_japanese_tofu_curry",
+              "score": 0.7545454545454546,
+              "title": "Japanese Tofu Curry",
+              "weighted_coverage": 0.8181818181818182
+            }
+          ],
+          "reason_counts": {},
+          "schema_version": "1.0",
+          "status": "OK",
+          "warnings": [
+            "Excluded ingredients and their known compounds: egg, egg noodles"
+          ]
+        }
+      },
+      "review_status": "pending_review"
+    },
+    {
+      "case_id": "dev_v2_03",
+      "methods": {
+        "overlap": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [
+            {
+              "available_ids": [
+                "ing_canned_tomato",
+                "ing_carrot",
+                "ing_celery",
+                "ing_cooked_cannellini_bean",
+                "ing_garlic",
+                "ing_lemon_juice",
+                "ing_olive_oil",
+                "ing_onion",
+                "ing_paprika",
+                "ing_parsley",
+                "ing_salt",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 1.0,
+              "excluded_ids": [
+                "ing_butter",
+                "ing_cheddar",
+                "ing_cream",
+                "ing_ghee",
+                "ing_gruyere",
+                "ing_milk",
+                "ing_paneer",
+                "ing_parmesan",
+                "ing_plain_yogurt"
+              ],
+              "explanation": "12 of 12 distinct ingredients available; 0 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_canned_tomato",
+                  "name": "canned tomato"
+                },
+                {
+                  "ingredient_id": "ing_carrot",
+                  "name": "carrot"
+                },
+                {
+                  "ingredient_id": "ing_celery",
+                  "name": "celery"
+                },
+                {
+                  "ingredient_id": "ing_cooked_cannellini_bean",
+                  "name": "cooked cannellini bean"
+                },
+                {
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "ingredient_id": "ing_lemon_juice",
+                  "name": "lemon juice"
+                },
+                {
+                  "ingredient_id": "ing_olive_oil",
+                  "name": "olive oil"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_paprika",
+                  "name": "paprika"
+                },
+                {
+                  "ingredient_id": "ing_parsley",
+                  "name": "parsley"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [],
+              "missing_count": 0,
+              "missing_ids": [],
+              "mode": "overlap",
+              "recipe_id": "rec_greek_fasolada_style_bean_soup",
+              "score": 1.0,
+              "title": "Greek Fasolada-Style Bean Soup",
+              "weighted_coverage": 1.0
+            },
+            {
+              "available_ids": [
+                "ing_canned_tomato",
+                "ing_carrot",
+                "ing_celery",
+                "ing_garlic",
+                "ing_lemon_juice",
+                "ing_olive_oil",
+                "ing_onion",
+                "ing_paprika",
+                "ing_parsley",
+                "ing_salt",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.8461538461538461,
+              "excluded_ids": [
+                "ing_butter",
+                "ing_cheddar",
+                "ing_cream",
+                "ing_ghee",
+                "ing_gruyere",
+                "ing_milk",
+                "ing_paneer",
+                "ing_parmesan",
+                "ing_plain_yogurt"
+              ],
+              "explanation": "11 of 13 distinct ingredients available; 2 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_canned_tomato",
+                  "name": "canned tomato"
+                },
+                {
+                  "ingredient_id": "ing_carrot",
+                  "name": "carrot"
+                },
+                {
+                  "ingredient_id": "ing_celery",
+                  "name": "celery"
+                },
+                {
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "ingredient_id": "ing_lemon_juice",
+                  "name": "lemon juice"
+                },
+                {
+                  "ingredient_id": "ing_olive_oil",
+                  "name": "olive oil"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_paprika",
+                  "name": "paprika"
+                },
+                {
+                  "ingredient_id": "ing_parsley",
+                  "name": "parsley"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_cooked_brown_lentil",
+                  "name": "cooked brown lentil"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_ground_cumin",
+                  "name": "ground cumin"
+                }
+              ],
+              "missing_count": 2,
+              "missing_ids": [
+                "ing_cooked_brown_lentil",
+                "ing_ground_cumin"
+              ],
+              "mode": "overlap",
+              "recipe_id": "rec_moroccan_lentil_and_carrot_soup",
+              "score": 0.8461538461538461,
+              "title": "Moroccan Lentil and Carrot Soup",
+              "weighted_coverage": 0.8
+            },
+            {
+              "available_ids": [
+                "ing_canned_tomato",
+                "ing_celery",
+                "ing_garlic",
+                "ing_lemon_juice",
+                "ing_olive_oil",
+                "ing_onion",
+                "ing_paprika",
+                "ing_parsley",
+                "ing_salt",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.7692307692307693,
+              "excluded_ids": [
+                "ing_butter",
+                "ing_cheddar",
+                "ing_cream",
+                "ing_ghee",
+                "ing_gruyere",
+                "ing_milk",
+                "ing_paneer",
+                "ing_parmesan",
+                "ing_plain_yogurt"
+              ],
+              "explanation": "10 of 13 distinct ingredients available; 3 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_canned_tomato",
+                  "name": "canned tomato"
+                },
+                {
+                  "ingredient_id": "ing_celery",
+                  "name": "celery"
+                },
+                {
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "ingredient_id": "ing_lemon_juice",
+                  "name": "lemon juice"
+                },
+                {
+                  "ingredient_id": "ing_olive_oil",
+                  "name": "olive oil"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_paprika",
+                  "name": "paprika"
+                },
+                {
+                  "ingredient_id": "ing_parsley",
+                  "name": "parsley"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_cooked_kidney_bean",
+                  "name": "cooked kidney bean"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_red_bell_pepper",
+                  "name": "red bell pepper"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_thyme",
+                  "name": "thyme"
+                }
+              ],
+              "missing_count": 3,
+              "missing_ids": [
+                "ing_cooked_kidney_bean",
+                "ing_red_bell_pepper",
+                "ing_thyme"
+              ],
+              "mode": "overlap",
+              "recipe_id": "rec_mediterranean_kidney_bean_soup",
+              "score": 0.7692307692307693,
+              "title": "Mediterranean Kidney Bean Soup",
+              "weighted_coverage": 0.7142857142857143
+            },
+            {
+              "available_ids": [
+                "ing_canned_tomato",
+                "ing_celery",
+                "ing_garlic",
+                "ing_lemon_juice",
+                "ing_olive_oil",
+                "ing_onion",
+                "ing_paprika",
+                "ing_parsley",
+                "ing_salt",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.7692307692307693,
+              "excluded_ids": [
+                "ing_butter",
+                "ing_cheddar",
+                "ing_cream",
+                "ing_ghee",
+                "ing_gruyere",
+                "ing_milk",
+                "ing_paneer",
+                "ing_parmesan",
+                "ing_plain_yogurt"
+              ],
+              "explanation": "10 of 13 distinct ingredients available; 3 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_canned_tomato",
+                  "name": "canned tomato"
+                },
+                {
+                  "ingredient_id": "ing_celery",
+                  "name": "celery"
+                },
+                {
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "ingredient_id": "ing_lemon_juice",
+                  "name": "lemon juice"
+                },
+                {
+                  "ingredient_id": "ing_olive_oil",
+                  "name": "olive oil"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_paprika",
+                  "name": "paprika"
+                },
+                {
+                  "ingredient_id": "ing_parsley",
+                  "name": "parsley"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_cooked_chickpea",
+                  "name": "cooked chickpea"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_ground_cumin",
+                  "name": "ground cumin"
+                },
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_spinach",
+                  "name": "spinach"
+                }
+              ],
+              "missing_count": 3,
+              "missing_ids": [
+                "ing_cooked_chickpea",
+                "ing_ground_cumin",
+                "ing_spinach"
+              ],
+              "mode": "overlap",
+              "recipe_id": "rec_spanish_chickpea_and_spinach_soup",
+              "score": 0.7692307692307693,
+              "title": "Spanish Chickpea and Spinach Soup",
+              "weighted_coverage": 0.6666666666666666
+            },
+            {
+              "available_ids": [
+                "ing_carrot",
+                "ing_garlic",
+                "ing_lemon_juice",
+                "ing_olive_oil",
+                "ing_onion",
+                "ing_parsley",
+                "ing_salt",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.7272727272727273,
+              "excluded_ids": [
+                "ing_butter",
+                "ing_cheddar",
+                "ing_cream",
+                "ing_ghee",
+                "ing_gruyere",
+                "ing_milk",
+                "ing_paneer",
+                "ing_parmesan",
+                "ing_plain_yogurt"
+              ],
+              "explanation": "8 of 11 distinct ingredients available; 3 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_carrot",
+                  "name": "carrot"
+                },
+                {
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "ingredient_id": "ing_lemon_juice",
+                  "name": "lemon juice"
+                },
+                {
+                  "ingredient_id": "ing_olive_oil",
+                  "name": "olive oil"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_parsley",
+                  "name": "parsley"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_ground_cumin",
+                  "name": "ground cumin"
+                },
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_red_lentil",
+                  "name": "red lentil"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_turmeric",
+                  "name": "turmeric"
+                }
+              ],
+              "missing_count": 3,
+              "missing_ids": [
+                "ing_ground_cumin",
+                "ing_red_lentil",
+                "ing_turmeric"
+              ],
+              "mode": "overlap",
+              "recipe_id": "rec_lebanese_red_lentil_soup",
+              "score": 0.7272727272727273,
+              "title": "Lebanese Red Lentil Soup",
+              "weighted_coverage": 0.6923076923076923
+            }
+          ],
+          "reason_counts": {},
+          "schema_version": "1.0",
+          "status": "OK",
+          "warnings": [
+            "Excluded ingredients and their known compounds: butter, cheddar, cream, ghee, gruyere, milk, paneer, parmesan, plain yogurt"
+          ]
+        },
+        "weighted": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [
+            {
+              "available_ids": [
+                "ing_canned_tomato",
+                "ing_carrot",
+                "ing_celery",
+                "ing_cooked_cannellini_bean",
+                "ing_garlic",
+                "ing_lemon_juice",
+                "ing_olive_oil",
+                "ing_onion",
+                "ing_paprika",
+                "ing_parsley",
+                "ing_salt",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 1.0,
+              "excluded_ids": [
+                "ing_butter",
+                "ing_cheddar",
+                "ing_cream",
+                "ing_ghee",
+                "ing_gruyere",
+                "ing_milk",
+                "ing_paneer",
+                "ing_parmesan",
+                "ing_plain_yogurt"
+              ],
+              "explanation": "12 of 12 distinct ingredients available; 0 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_canned_tomato",
+                  "name": "canned tomato"
+                },
+                {
+                  "ingredient_id": "ing_carrot",
+                  "name": "carrot"
+                },
+                {
+                  "ingredient_id": "ing_celery",
+                  "name": "celery"
+                },
+                {
+                  "ingredient_id": "ing_cooked_cannellini_bean",
+                  "name": "cooked cannellini bean"
+                },
+                {
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "ingredient_id": "ing_lemon_juice",
+                  "name": "lemon juice"
+                },
+                {
+                  "ingredient_id": "ing_olive_oil",
+                  "name": "olive oil"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_paprika",
+                  "name": "paprika"
+                },
+                {
+                  "ingredient_id": "ing_parsley",
+                  "name": "parsley"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [],
+              "missing_count": 0,
+              "missing_ids": [],
+              "mode": "weighted",
+              "recipe_id": "rec_greek_fasolada_style_bean_soup",
+              "score": 1.0,
+              "title": "Greek Fasolada-Style Bean Soup",
+              "weighted_coverage": 1.0
+            },
+            {
+              "available_ids": [
+                "ing_canned_tomato",
+                "ing_carrot",
+                "ing_celery",
+                "ing_garlic",
+                "ing_lemon_juice",
+                "ing_olive_oil",
+                "ing_onion",
+                "ing_paprika",
+                "ing_parsley",
+                "ing_salt",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.8461538461538461,
+              "excluded_ids": [
+                "ing_butter",
+                "ing_cheddar",
+                "ing_cream",
+                "ing_ghee",
+                "ing_gruyere",
+                "ing_milk",
+                "ing_paneer",
+                "ing_parmesan",
+                "ing_plain_yogurt"
+              ],
+              "explanation": "11 of 13 distinct ingredients available; 2 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_canned_tomato",
+                  "name": "canned tomato"
+                },
+                {
+                  "ingredient_id": "ing_carrot",
+                  "name": "carrot"
+                },
+                {
+                  "ingredient_id": "ing_celery",
+                  "name": "celery"
+                },
+                {
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "ingredient_id": "ing_lemon_juice",
+                  "name": "lemon juice"
+                },
+                {
+                  "ingredient_id": "ing_olive_oil",
+                  "name": "olive oil"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_paprika",
+                  "name": "paprika"
+                },
+                {
+                  "ingredient_id": "ing_parsley",
+                  "name": "parsley"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_cooked_brown_lentil",
+                  "name": "cooked brown lentil"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_ground_cumin",
+                  "name": "ground cumin"
+                }
+              ],
+              "missing_count": 2,
+              "missing_ids": [
+                "ing_cooked_brown_lentil",
+                "ing_ground_cumin"
+              ],
+              "mode": "weighted",
+              "recipe_id": "rec_moroccan_lentil_and_carrot_soup",
+              "score": 0.7066666666666668,
+              "title": "Moroccan Lentil and Carrot Soup",
+              "weighted_coverage": 0.8
+            },
+            {
+              "available_ids": [
+                "ing_canned_tomato",
+                "ing_celery",
+                "ing_garlic",
+                "ing_lemon_juice",
+                "ing_olive_oil",
+                "ing_onion",
+                "ing_paprika",
+                "ing_parsley",
+                "ing_salt",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.7692307692307693,
+              "excluded_ids": [
+                "ing_butter",
+                "ing_cheddar",
+                "ing_cream",
+                "ing_ghee",
+                "ing_gruyere",
+                "ing_milk",
+                "ing_paneer",
+                "ing_parmesan",
+                "ing_plain_yogurt"
+              ],
+              "explanation": "10 of 13 distinct ingredients available; 3 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_canned_tomato",
+                  "name": "canned tomato"
+                },
+                {
+                  "ingredient_id": "ing_celery",
+                  "name": "celery"
+                },
+                {
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "ingredient_id": "ing_lemon_juice",
+                  "name": "lemon juice"
+                },
+                {
+                  "ingredient_id": "ing_olive_oil",
+                  "name": "olive oil"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_paprika",
+                  "name": "paprika"
+                },
+                {
+                  "ingredient_id": "ing_parsley",
+                  "name": "parsley"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_cooked_kidney_bean",
+                  "name": "cooked kidney bean"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_red_bell_pepper",
+                  "name": "red bell pepper"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_thyme",
+                  "name": "thyme"
+                }
+              ],
+              "missing_count": 3,
+              "missing_ids": [
+                "ing_cooked_kidney_bean",
+                "ing_red_bell_pepper",
+                "ing_thyme"
+              ],
+              "mode": "weighted",
+              "recipe_id": "rec_mediterranean_kidney_bean_soup",
+              "score": 0.6214285714285716,
+              "title": "Mediterranean Kidney Bean Soup",
+              "weighted_coverage": 0.7142857142857143
+            },
+            {
+              "available_ids": [
+                "ing_carrot",
+                "ing_garlic",
+                "ing_lemon_juice",
+                "ing_olive_oil",
+                "ing_onion",
+                "ing_parsley",
+                "ing_salt",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.7272727272727273,
+              "excluded_ids": [
+                "ing_butter",
+                "ing_cheddar",
+                "ing_cream",
+                "ing_ghee",
+                "ing_gruyere",
+                "ing_milk",
+                "ing_paneer",
+                "ing_parmesan",
+                "ing_plain_yogurt"
+              ],
+              "explanation": "8 of 11 distinct ingredients available; 3 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_carrot",
+                  "name": "carrot"
+                },
+                {
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "ingredient_id": "ing_lemon_juice",
+                  "name": "lemon juice"
+                },
+                {
+                  "ingredient_id": "ing_olive_oil",
+                  "name": "olive oil"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_parsley",
+                  "name": "parsley"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_ground_cumin",
+                  "name": "ground cumin"
+                },
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_red_lentil",
+                  "name": "red lentil"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_turmeric",
+                  "name": "turmeric"
+                }
+              ],
+              "missing_count": 3,
+              "missing_ids": [
+                "ing_ground_cumin",
+                "ing_red_lentil",
+                "ing_turmeric"
+              ],
+              "mode": "weighted",
+              "recipe_id": "rec_lebanese_red_lentil_soup",
+              "score": 0.6038461538461539,
+              "title": "Lebanese Red Lentil Soup",
+              "weighted_coverage": 0.6923076923076923
+            },
+            {
+              "available_ids": [
+                "ing_canned_tomato",
+                "ing_garlic",
+                "ing_olive_oil",
+                "ing_onion",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.7142857142857143,
+              "excluded_ids": [
+                "ing_butter",
+                "ing_cheddar",
+                "ing_cream",
+                "ing_ghee",
+                "ing_gruyere",
+                "ing_milk",
+                "ing_paneer",
+                "ing_parmesan",
+                "ing_plain_yogurt"
+              ],
+              "explanation": "5 of 7 distinct ingredients available; 2 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_canned_tomato",
+                  "name": "canned tomato"
+                },
+                {
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "ingredient_id": "ing_olive_oil",
+                  "name": "olive oil"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_basil",
+                  "name": "basil"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_black_pepper",
+                  "name": "black pepper"
+                }
+              ],
+              "missing_count": 2,
+              "missing_ids": [
+                "ing_basil",
+                "ing_black_pepper"
+              ],
+              "mode": "weighted",
+              "recipe_id": "rec_italian_tomato_basil_soup",
+              "score": 0.6,
+              "title": "Italian Tomato Basil Soup",
+              "weighted_coverage": 0.6666666666666666
+            }
+          ],
+          "reason_counts": {},
+          "schema_version": "1.0",
+          "status": "OK",
+          "warnings": [
+            "Excluded ingredients and their known compounds: butter, cheddar, cream, ghee, gruyere, milk, paneer, parmesan, plain yogurt"
+          ]
+        }
+      },
+      "review_status": "pending_review"
+    },
+    {
+      "case_id": "dev_v2_04",
+      "methods": {
+        "overlap": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [
+            {
+              "available_ids": [
+                "ing_cilantro",
+                "ing_garlic",
+                "ing_ginger",
+                "ing_ground_coriander",
+                "ing_ground_cumin",
+                "ing_onion",
+                "ing_paneer",
+                "ing_red_bell_pepper",
+                "ing_salt",
+                "ing_tomato",
+                "ing_turmeric",
+                "ing_vegetable_oil",
+                "ing_water"
+              ],
+              "coverage": 1.0,
+              "excluded_ids": [
+                "ing_shrimp"
+              ],
+              "explanation": "13 of 13 distinct ingredients available; 0 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_cilantro",
+                  "name": "cilantro"
+                },
+                {
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_ground_coriander",
+                  "name": "ground coriander"
+                },
+                {
+                  "ingredient_id": "ing_ground_cumin",
+                  "name": "ground cumin"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_paneer",
+                  "name": "paneer"
+                },
+                {
+                  "ingredient_id": "ing_red_bell_pepper",
+                  "name": "red bell pepper"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_tomato",
+                  "name": "tomato"
+                },
+                {
+                  "ingredient_id": "ing_turmeric",
+                  "name": "turmeric"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_water",
+                  "name": "water"
+                }
+              ],
+              "missing": [],
+              "missing_count": 0,
+              "missing_ids": [],
+              "mode": "overlap",
+              "recipe_id": "rec_capsicum_and_paneer_masala",
+              "score": 1.0,
+              "title": "Capsicum and Paneer Masala",
+              "weighted_coverage": 1.0
+            },
+            {
+              "available_ids": [
+                "ing_cilantro",
+                "ing_garlic",
+                "ing_ginger",
+                "ing_ground_coriander",
+                "ing_ground_cumin",
+                "ing_onion",
+                "ing_salt",
+                "ing_tomato",
+                "ing_turmeric",
+                "ing_vegetable_oil",
+                "ing_water"
+              ],
+              "coverage": 0.9166666666666666,
+              "excluded_ids": [
+                "ing_shrimp"
+              ],
+              "explanation": "11 of 12 distinct ingredients available; 1 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_cilantro",
+                  "name": "cilantro"
+                },
+                {
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_ground_coriander",
+                  "name": "ground coriander"
+                },
+                {
+                  "ingredient_id": "ing_ground_cumin",
+                  "name": "ground cumin"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_tomato",
+                  "name": "tomato"
+                },
+                {
+                  "ingredient_id": "ing_turmeric",
+                  "name": "turmeric"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_water",
+                  "name": "water"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_egg",
+                  "name": "egg"
+                }
+              ],
+              "missing_count": 1,
+              "missing_ids": [
+                "ing_egg"
+              ],
+              "mode": "overlap",
+              "recipe_id": "rec_home_style_egg_curry",
+              "score": 0.9166666666666666,
+              "title": "Home-Style Egg Curry",
+              "weighted_coverage": 0.8461538461538461
+            },
+            {
+              "available_ids": [
+                "ing_cilantro",
+                "ing_garlic",
+                "ing_ginger",
+                "ing_ground_cumin",
+                "ing_onion",
+                "ing_salt",
+                "ing_tomato",
+                "ing_turmeric",
+                "ing_vegetable_oil",
+                "ing_water"
+              ],
+              "coverage": 0.8333333333333334,
+              "excluded_ids": [
+                "ing_shrimp"
+              ],
+              "explanation": "10 of 12 distinct ingredients available; 2 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_cilantro",
+                  "name": "cilantro"
+                },
+                {
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_ground_cumin",
+                  "name": "ground cumin"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_tomato",
+                  "name": "tomato"
+                },
+                {
+                  "ingredient_id": "ing_turmeric",
+                  "name": "turmeric"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_water",
+                  "name": "water"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_boneless_chicken_thigh",
+                  "name": "boneless chicken thigh"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_garam_masala",
+                  "name": "garam masala"
+                }
+              ],
+              "missing_count": 2,
+              "missing_ids": [
+                "ing_boneless_chicken_thigh",
+                "ing_garam_masala"
+              ],
+              "mode": "overlap",
+              "recipe_id": "rec_chicken_masala_curry",
+              "score": 0.8333333333333334,
+              "title": "Chicken Masala Curry",
+              "weighted_coverage": 0.7692307692307693
+            },
+            {
+              "available_ids": [
+                "ing_cilantro",
+                "ing_ginger",
+                "ing_ground_cumin",
+                "ing_onion",
+                "ing_salt",
+                "ing_tomato",
+                "ing_turmeric",
+                "ing_vegetable_oil",
+                "ing_water"
+              ],
+              "coverage": 0.8181818181818182,
+              "excluded_ids": [
+                "ing_shrimp"
+              ],
+              "explanation": "9 of 11 distinct ingredients available; 2 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_cilantro",
+                  "name": "cilantro"
+                },
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_ground_cumin",
+                  "name": "ground cumin"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_tomato",
+                  "name": "tomato"
+                },
+                {
+                  "ingredient_id": "ing_turmeric",
+                  "name": "turmeric"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_water",
+                  "name": "water"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_lemon_juice",
+                  "name": "lemon juice"
+                },
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_split_pigeon_pea",
+                  "name": "split pigeon pea"
+                }
+              ],
+              "missing_count": 2,
+              "missing_ids": [
+                "ing_lemon_juice",
+                "ing_split_pigeon_pea"
+              ],
+              "mode": "overlap",
+              "recipe_id": "rec_tomato_and_toor_dal_soup",
+              "score": 0.8181818181818182,
+              "title": "Tomato and Toor Dal Soup",
+              "weighted_coverage": 0.7692307692307693
+            },
+            {
+              "available_ids": [
+                "ing_ginger",
+                "ing_ground_cumin",
+                "ing_onion",
+                "ing_salt",
+                "ing_tomato",
+                "ing_turmeric",
+                "ing_vegetable_oil",
+                "ing_water"
+              ],
+              "coverage": 0.8,
+              "excluded_ids": [
+                "ing_shrimp"
+              ],
+              "explanation": "8 of 10 distinct ingredients available; 2 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_ground_cumin",
+                  "name": "ground cumin"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_tomato",
+                  "name": "tomato"
+                },
+                {
+                  "ingredient_id": "ing_turmeric",
+                  "name": "turmeric"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_water",
+                  "name": "water"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_green_pea",
+                  "name": "green pea"
+                },
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_potato",
+                  "name": "potato"
+                }
+              ],
+              "missing_count": 2,
+              "missing_ids": [
+                "ing_green_pea",
+                "ing_potato"
+              ],
+              "mode": "overlap",
+              "recipe_id": "rec_aloo_matar",
+              "score": 0.8,
+              "title": "Aloo Matar",
+              "weighted_coverage": 0.6666666666666666
+            }
+          ],
+          "reason_counts": {},
+          "schema_version": "1.0",
+          "status": "OK",
+          "warnings": [
+            "Excluded ingredients and their known compounds: shrimp"
+          ]
+        },
+        "weighted": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [
+            {
+              "available_ids": [
+                "ing_cilantro",
+                "ing_garlic",
+                "ing_ginger",
+                "ing_ground_coriander",
+                "ing_ground_cumin",
+                "ing_onion",
+                "ing_paneer",
+                "ing_red_bell_pepper",
+                "ing_salt",
+                "ing_tomato",
+                "ing_turmeric",
+                "ing_vegetable_oil",
+                "ing_water"
+              ],
+              "coverage": 1.0,
+              "excluded_ids": [
+                "ing_shrimp"
+              ],
+              "explanation": "13 of 13 distinct ingredients available; 0 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_cilantro",
+                  "name": "cilantro"
+                },
+                {
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_ground_coriander",
+                  "name": "ground coriander"
+                },
+                {
+                  "ingredient_id": "ing_ground_cumin",
+                  "name": "ground cumin"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_paneer",
+                  "name": "paneer"
+                },
+                {
+                  "ingredient_id": "ing_red_bell_pepper",
+                  "name": "red bell pepper"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_tomato",
+                  "name": "tomato"
+                },
+                {
+                  "ingredient_id": "ing_turmeric",
+                  "name": "turmeric"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_water",
+                  "name": "water"
+                }
+              ],
+              "missing": [],
+              "missing_count": 0,
+              "missing_ids": [],
+              "mode": "weighted",
+              "recipe_id": "rec_capsicum_and_paneer_masala",
+              "score": 1.0,
+              "title": "Capsicum and Paneer Masala",
+              "weighted_coverage": 1.0
+            },
+            {
+              "available_ids": [
+                "ing_cilantro",
+                "ing_garlic",
+                "ing_ginger",
+                "ing_ground_coriander",
+                "ing_ground_cumin",
+                "ing_onion",
+                "ing_salt",
+                "ing_tomato",
+                "ing_turmeric",
+                "ing_vegetable_oil",
+                "ing_water"
+              ],
+              "coverage": 0.9166666666666666,
+              "excluded_ids": [
+                "ing_shrimp"
+              ],
+              "explanation": "11 of 12 distinct ingredients available; 1 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_cilantro",
+                  "name": "cilantro"
+                },
+                {
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_ground_coriander",
+                  "name": "ground coriander"
+                },
+                {
+                  "ingredient_id": "ing_ground_cumin",
+                  "name": "ground cumin"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_tomato",
+                  "name": "tomato"
+                },
+                {
+                  "ingredient_id": "ing_turmeric",
+                  "name": "turmeric"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_water",
+                  "name": "water"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_egg",
+                  "name": "egg"
+                }
+              ],
+              "missing_count": 1,
+              "missing_ids": [
+                "ing_egg"
+              ],
+              "mode": "weighted",
+              "recipe_id": "rec_home_style_egg_curry",
+              "score": 0.7769230769230769,
+              "title": "Home-Style Egg Curry",
+              "weighted_coverage": 0.8461538461538461
+            },
+            {
+              "available_ids": [
+                "ing_cilantro",
+                "ing_garlic",
+                "ing_ginger",
+                "ing_ground_cumin",
+                "ing_onion",
+                "ing_salt",
+                "ing_tomato",
+                "ing_turmeric",
+                "ing_vegetable_oil",
+                "ing_water"
+              ],
+              "coverage": 0.8333333333333334,
+              "excluded_ids": [
+                "ing_shrimp"
+              ],
+              "explanation": "10 of 12 distinct ingredients available; 2 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_cilantro",
+                  "name": "cilantro"
+                },
+                {
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_ground_cumin",
+                  "name": "ground cumin"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_tomato",
+                  "name": "tomato"
+                },
+                {
+                  "ingredient_id": "ing_turmeric",
+                  "name": "turmeric"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_water",
+                  "name": "water"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_boneless_chicken_thigh",
+                  "name": "boneless chicken thigh"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_garam_masala",
+                  "name": "garam masala"
+                }
+              ],
+              "missing_count": 2,
+              "missing_ids": [
+                "ing_boneless_chicken_thigh",
+                "ing_garam_masala"
+              ],
+              "mode": "weighted",
+              "recipe_id": "rec_chicken_masala_curry",
+              "score": 0.6820512820512821,
+              "title": "Chicken Masala Curry",
+              "weighted_coverage": 0.7692307692307693
+            },
+            {
+              "available_ids": [
+                "ing_cilantro",
+                "ing_ginger",
+                "ing_ground_cumin",
+                "ing_onion",
+                "ing_salt",
+                "ing_tomato",
+                "ing_turmeric",
+                "ing_vegetable_oil",
+                "ing_water"
+              ],
+              "coverage": 0.8181818181818182,
+              "excluded_ids": [
+                "ing_shrimp"
+              ],
+              "explanation": "9 of 11 distinct ingredients available; 2 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_cilantro",
+                  "name": "cilantro"
+                },
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_ground_cumin",
+                  "name": "ground cumin"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_tomato",
+                  "name": "tomato"
+                },
+                {
+                  "ingredient_id": "ing_turmeric",
+                  "name": "turmeric"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_water",
+                  "name": "water"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_lemon_juice",
+                  "name": "lemon juice"
+                },
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_split_pigeon_pea",
+                  "name": "split pigeon pea"
+                }
+              ],
+              "missing_count": 2,
+              "missing_ids": [
+                "ing_lemon_juice",
+                "ing_split_pigeon_pea"
+              ],
+              "mode": "weighted",
+              "recipe_id": "rec_tomato_and_toor_dal_soup",
+              "score": 0.6820512820512821,
+              "title": "Tomato and Toor Dal Soup",
+              "weighted_coverage": 0.7692307692307693
+            },
+            {
+              "available_ids": [
+                "ing_ginger",
+                "ing_ground_coriander",
+                "ing_ground_cumin",
+                "ing_red_bell_pepper",
+                "ing_salt",
+                "ing_turmeric",
+                "ing_vegetable_oil",
+                "ing_water"
+              ],
+              "coverage": 0.8,
+              "excluded_ids": [
+                "ing_shrimp"
+              ],
+              "explanation": "8 of 10 distinct ingredients available; 2 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_ginger",
+                  "name": "ginger"
+                },
+                {
+                  "ingredient_id": "ing_ground_coriander",
+                  "name": "ground coriander"
+                },
+                {
+                  "ingredient_id": "ing_ground_cumin",
+                  "name": "ground cumin"
+                },
+                {
+                  "ingredient_id": "ing_red_bell_pepper",
+                  "name": "red bell pepper"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_turmeric",
+                  "name": "turmeric"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_oil",
+                  "name": "vegetable oil"
+                },
+                {
+                  "ingredient_id": "ing_water",
+                  "name": "water"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_cumin_seed",
+                  "name": "cumin seed"
+                },
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_potato",
+                  "name": "potato"
+                }
+              ],
+              "missing_count": 2,
+              "missing_ids": [
+                "ing_cumin_seed",
+                "ing_potato"
+              ],
+              "mode": "weighted",
+              "recipe_id": "rec_aloo_shimla_mirch",
+              "score": 0.6666666666666667,
+              "title": "Aloo Shimla Mirch",
+              "weighted_coverage": 0.75
+            }
+          ],
+          "reason_counts": {},
+          "schema_version": "1.0",
+          "status": "OK",
+          "warnings": [
+            "Excluded ingredients and their known compounds: shrimp"
+          ]
+        }
+      },
+      "review_status": "pending_review"
+    },
+    {
+      "case_id": "dev_v2_05",
+      "methods": {
+        "overlap": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [
+            {
+              "available_ids": [
+                "ing_all_purpose_flour",
+                "ing_black_pepper",
+                "ing_butter",
+                "ing_celery",
+                "ing_milk",
+                "ing_onion",
+                "ing_potato",
+                "ing_salt",
+                "ing_scallion",
+                "ing_sweet_corn",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 1.0,
+              "excluded_ids": [
+                "ing_boneless_chicken_thigh",
+                "ing_chicken",
+                "ing_chicken_leg",
+                "ing_chicken_stock",
+                "ing_cooked_chicken"
+              ],
+              "explanation": "11 of 11 distinct ingredients available; 0 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_all_purpose_flour",
+                  "name": "all purpose flour"
+                },
+                {
+                  "ingredient_id": "ing_black_pepper",
+                  "name": "black pepper"
+                },
+                {
+                  "ingredient_id": "ing_butter",
+                  "name": "butter"
+                },
+                {
+                  "ingredient_id": "ing_celery",
+                  "name": "celery"
+                },
+                {
+                  "ingredient_id": "ing_milk",
+                  "name": "milk"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_potato",
+                  "name": "potato"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_scallion",
+                  "name": "scallion"
+                },
+                {
+                  "ingredient_id": "ing_sweet_corn",
+                  "name": "sweet corn"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [],
+              "missing_count": 0,
+              "missing_ids": [],
+              "mode": "overlap",
+              "recipe_id": "rec_corn_chowder",
+              "score": 1.0,
+              "title": "Corn Chowder",
+              "weighted_coverage": 1.0
+            },
+            {
+              "available_ids": [
+                "ing_all_purpose_flour",
+                "ing_black_pepper",
+                "ing_butter",
+                "ing_celery",
+                "ing_milk",
+                "ing_onion",
+                "ing_potato",
+                "ing_salt",
+                "ing_scallion",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.9090909090909091,
+              "excluded_ids": [
+                "ing_boneless_chicken_thigh",
+                "ing_chicken",
+                "ing_chicken_leg",
+                "ing_chicken_stock",
+                "ing_cooked_chicken"
+              ],
+              "explanation": "10 of 11 distinct ingredients available; 1 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_all_purpose_flour",
+                  "name": "all purpose flour"
+                },
+                {
+                  "ingredient_id": "ing_black_pepper",
+                  "name": "black pepper"
+                },
+                {
+                  "ingredient_id": "ing_butter",
+                  "name": "butter"
+                },
+                {
+                  "ingredient_id": "ing_celery",
+                  "name": "celery"
+                },
+                {
+                  "ingredient_id": "ing_milk",
+                  "name": "milk"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_potato",
+                  "name": "potato"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_scallion",
+                  "name": "scallion"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_cheddar",
+                  "name": "cheddar"
+                }
+              ],
+              "missing_count": 1,
+              "missing_ids": [
+                "ing_cheddar"
+              ],
+              "mode": "overlap",
+              "recipe_id": "rec_potato_cheddar_chowder",
+              "score": 0.9090909090909091,
+              "title": "Potato Cheddar Chowder",
+              "weighted_coverage": 0.8461538461538461
+            },
+            {
+              "available_ids": [
+                "ing_all_purpose_flour",
+                "ing_black_pepper",
+                "ing_butter",
+                "ing_celery",
+                "ing_milk",
+                "ing_onion",
+                "ing_potato",
+                "ing_salt",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.8181818181818182,
+              "excluded_ids": [
+                "ing_boneless_chicken_thigh",
+                "ing_chicken",
+                "ing_chicken_leg",
+                "ing_chicken_stock",
+                "ing_cooked_chicken"
+              ],
+              "explanation": "9 of 11 distinct ingredients available; 2 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_all_purpose_flour",
+                  "name": "all purpose flour"
+                },
+                {
+                  "ingredient_id": "ing_black_pepper",
+                  "name": "black pepper"
+                },
+                {
+                  "ingredient_id": "ing_butter",
+                  "name": "butter"
+                },
+                {
+                  "ingredient_id": "ing_celery",
+                  "name": "celery"
+                },
+                {
+                  "ingredient_id": "ing_milk",
+                  "name": "milk"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_potato",
+                  "name": "potato"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_dill",
+                  "name": "dill"
+                },
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_white_fish_fillet",
+                  "name": "white fish fillet"
+                }
+              ],
+              "missing_count": 2,
+              "missing_ids": [
+                "ing_dill",
+                "ing_white_fish_fillet"
+              ],
+              "mode": "overlap",
+              "recipe_id": "rec_new_england_style_fish_chowder",
+              "score": 0.8181818181818182,
+              "title": "New England-Style Fish Chowder",
+              "weighted_coverage": 0.7692307692307693
+            },
+            {
+              "available_ids": [
+                "ing_black_pepper",
+                "ing_butter",
+                "ing_celery",
+                "ing_onion",
+                "ing_potato",
+                "ing_salt",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.6363636363636364,
+              "excluded_ids": [
+                "ing_boneless_chicken_thigh",
+                "ing_chicken",
+                "ing_chicken_leg",
+                "ing_chicken_stock",
+                "ing_cooked_chicken"
+              ],
+              "explanation": "7 of 11 distinct ingredients available; 4 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_black_pepper",
+                  "name": "black pepper"
+                },
+                {
+                  "ingredient_id": "ing_butter",
+                  "name": "butter"
+                },
+                {
+                  "ingredient_id": "ing_celery",
+                  "name": "celery"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_potato",
+                  "name": "potato"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_carrot",
+                  "name": "carrot"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_parsley",
+                  "name": "parsley"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_thyme",
+                  "name": "thyme"
+                }
+              ],
+              "missing_count": 4,
+              "missing_ids": [
+                "ing_carrot",
+                "ing_garlic",
+                "ing_parsley",
+                "ing_thyme"
+              ],
+              "mode": "overlap",
+              "recipe_id": "rec_french_vegetable_potage",
+              "score": 0.6363636363636364,
+              "title": "French Vegetable Potage",
+              "weighted_coverage": 0.6153846153846154
+            },
+            {
+              "available_ids": [
+                "ing_all_purpose_flour",
+                "ing_butter",
+                "ing_milk",
+                "ing_onion",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.625,
+              "excluded_ids": [
+                "ing_boneless_chicken_thigh",
+                "ing_chicken",
+                "ing_chicken_leg",
+                "ing_chicken_stock",
+                "ing_cooked_chicken"
+              ],
+              "explanation": "5 of 8 distinct ingredients available; 3 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_all_purpose_flour",
+                  "name": "all purpose flour"
+                },
+                {
+                  "ingredient_id": "ing_butter",
+                  "name": "butter"
+                },
+                {
+                  "ingredient_id": "ing_milk",
+                  "name": "milk"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_broccoli",
+                  "name": "broccoli"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_carrot",
+                  "name": "carrot"
+                },
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_cheddar",
+                  "name": "cheddar"
+                }
+              ],
+              "missing_count": 3,
+              "missing_ids": [
+                "ing_broccoli",
+                "ing_carrot",
+                "ing_cheddar"
+              ],
+              "mode": "overlap",
+              "recipe_id": "rec_broccoli_cheddar_soup",
+              "score": 0.625,
+              "title": "Broccoli Cheddar Soup",
+              "weighted_coverage": 0.5
+            }
+          ],
+          "reason_counts": {},
+          "schema_version": "1.0",
+          "status": "OK",
+          "warnings": [
+            "Excluded ingredients and their known compounds: boneless chicken thigh, chicken, chicken leg, chicken stock, cooked chicken"
+          ]
+        },
+        "weighted": {
+          "config_version": "0.4.0",
+          "data_version": "2.0",
+          "items": [
+            {
+              "available_ids": [
+                "ing_all_purpose_flour",
+                "ing_black_pepper",
+                "ing_butter",
+                "ing_celery",
+                "ing_milk",
+                "ing_onion",
+                "ing_potato",
+                "ing_salt",
+                "ing_scallion",
+                "ing_sweet_corn",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 1.0,
+              "excluded_ids": [
+                "ing_boneless_chicken_thigh",
+                "ing_chicken",
+                "ing_chicken_leg",
+                "ing_chicken_stock",
+                "ing_cooked_chicken"
+              ],
+              "explanation": "11 of 11 distinct ingredients available; 0 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_all_purpose_flour",
+                  "name": "all purpose flour"
+                },
+                {
+                  "ingredient_id": "ing_black_pepper",
+                  "name": "black pepper"
+                },
+                {
+                  "ingredient_id": "ing_butter",
+                  "name": "butter"
+                },
+                {
+                  "ingredient_id": "ing_celery",
+                  "name": "celery"
+                },
+                {
+                  "ingredient_id": "ing_milk",
+                  "name": "milk"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_potato",
+                  "name": "potato"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_scallion",
+                  "name": "scallion"
+                },
+                {
+                  "ingredient_id": "ing_sweet_corn",
+                  "name": "sweet corn"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [],
+              "missing_count": 0,
+              "missing_ids": [],
+              "mode": "weighted",
+              "recipe_id": "rec_corn_chowder",
+              "score": 1.0,
+              "title": "Corn Chowder",
+              "weighted_coverage": 1.0
+            },
+            {
+              "available_ids": [
+                "ing_all_purpose_flour",
+                "ing_black_pepper",
+                "ing_butter",
+                "ing_celery",
+                "ing_milk",
+                "ing_onion",
+                "ing_potato",
+                "ing_salt",
+                "ing_scallion",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.9090909090909091,
+              "excluded_ids": [
+                "ing_boneless_chicken_thigh",
+                "ing_chicken",
+                "ing_chicken_leg",
+                "ing_chicken_stock",
+                "ing_cooked_chicken"
+              ],
+              "explanation": "10 of 11 distinct ingredients available; 1 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_all_purpose_flour",
+                  "name": "all purpose flour"
+                },
+                {
+                  "ingredient_id": "ing_black_pepper",
+                  "name": "black pepper"
+                },
+                {
+                  "ingredient_id": "ing_butter",
+                  "name": "butter"
+                },
+                {
+                  "ingredient_id": "ing_celery",
+                  "name": "celery"
+                },
+                {
+                  "ingredient_id": "ing_milk",
+                  "name": "milk"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_potato",
+                  "name": "potato"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_scallion",
+                  "name": "scallion"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_cheddar",
+                  "name": "cheddar"
+                }
+              ],
+              "missing_count": 1,
+              "missing_ids": [
+                "ing_cheddar"
+              ],
+              "mode": "weighted",
+              "recipe_id": "rec_potato_cheddar_chowder",
+              "score": 0.7769230769230769,
+              "title": "Potato Cheddar Chowder",
+              "weighted_coverage": 0.8461538461538461
+            },
+            {
+              "available_ids": [
+                "ing_all_purpose_flour",
+                "ing_black_pepper",
+                "ing_butter",
+                "ing_celery",
+                "ing_milk",
+                "ing_onion",
+                "ing_potato",
+                "ing_salt",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.8181818181818182,
+              "excluded_ids": [
+                "ing_boneless_chicken_thigh",
+                "ing_chicken",
+                "ing_chicken_leg",
+                "ing_chicken_stock",
+                "ing_cooked_chicken"
+              ],
+              "explanation": "9 of 11 distinct ingredients available; 2 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_all_purpose_flour",
+                  "name": "all purpose flour"
+                },
+                {
+                  "ingredient_id": "ing_black_pepper",
+                  "name": "black pepper"
+                },
+                {
+                  "ingredient_id": "ing_butter",
+                  "name": "butter"
+                },
+                {
+                  "ingredient_id": "ing_celery",
+                  "name": "celery"
+                },
+                {
+                  "ingredient_id": "ing_milk",
+                  "name": "milk"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_potato",
+                  "name": "potato"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_dill",
+                  "name": "dill"
+                },
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_white_fish_fillet",
+                  "name": "white fish fillet"
+                }
+              ],
+              "missing_count": 2,
+              "missing_ids": [
+                "ing_dill",
+                "ing_white_fish_fillet"
+              ],
+              "mode": "weighted",
+              "recipe_id": "rec_new_england_style_fish_chowder",
+              "score": 0.6820512820512821,
+              "title": "New England-Style Fish Chowder",
+              "weighted_coverage": 0.7692307692307693
+            },
+            {
+              "available_ids": [
+                "ing_black_pepper",
+                "ing_butter",
+                "ing_celery",
+                "ing_onion",
+                "ing_potato",
+                "ing_salt",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.6363636363636364,
+              "excluded_ids": [
+                "ing_boneless_chicken_thigh",
+                "ing_chicken",
+                "ing_chicken_leg",
+                "ing_chicken_stock",
+                "ing_cooked_chicken"
+              ],
+              "explanation": "7 of 11 distinct ingredients available; 4 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_black_pepper",
+                  "name": "black pepper"
+                },
+                {
+                  "ingredient_id": "ing_butter",
+                  "name": "butter"
+                },
+                {
+                  "ingredient_id": "ing_celery",
+                  "name": "celery"
+                },
+                {
+                  "ingredient_id": "ing_onion",
+                  "name": "onion"
+                },
+                {
+                  "ingredient_id": "ing_potato",
+                  "name": "potato"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_carrot",
+                  "name": "carrot"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_parsley",
+                  "name": "parsley"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_thyme",
+                  "name": "thyme"
+                }
+              ],
+              "missing_count": 4,
+              "missing_ids": [
+                "ing_carrot",
+                "ing_garlic",
+                "ing_parsley",
+                "ing_thyme"
+              ],
+              "mode": "weighted",
+              "recipe_id": "rec_french_vegetable_potage",
+              "score": 0.5323076923076924,
+              "title": "French Vegetable Potage",
+              "weighted_coverage": 0.6153846153846154
+            },
+            {
+              "available_ids": [
+                "ing_black_pepper",
+                "ing_butter",
+                "ing_potato",
+                "ing_salt",
+                "ing_vegetable_stock"
+              ],
+              "coverage": 0.5555555555555556,
+              "excluded_ids": [
+                "ing_boneless_chicken_thigh",
+                "ing_chicken",
+                "ing_chicken_leg",
+                "ing_chicken_stock",
+                "ing_cooked_chicken"
+              ],
+              "explanation": "5 of 9 distinct ingredients available; 4 missing.",
+              "matches": [
+                {
+                  "ingredient_id": "ing_black_pepper",
+                  "name": "black pepper"
+                },
+                {
+                  "ingredient_id": "ing_butter",
+                  "name": "butter"
+                },
+                {
+                  "ingredient_id": "ing_potato",
+                  "name": "potato"
+                },
+                {
+                  "ingredient_id": "ing_salt",
+                  "name": "salt"
+                },
+                {
+                  "ingredient_id": "ing_vegetable_stock",
+                  "name": "vegetable stock"
+                }
+              ],
+              "missing": [
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_cream",
+                  "name": "cream"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_dill",
+                  "name": "dill"
+                },
+                {
+                  "essential": false,
+                  "ingredient_id": "ing_garlic",
+                  "name": "garlic"
+                },
+                {
+                  "essential": true,
+                  "ingredient_id": "ing_leek",
+                  "name": "leek"
+                }
+              ],
+              "missing_count": 4,
+              "missing_ids": [
+                "ing_cream",
+                "ing_dill",
+                "ing_garlic",
+                "ing_leek"
+              ],
+              "mode": "weighted",
+              "recipe_id": "rec_potato_leek_soup",
+              "score": 0.4763636363636363,
+              "title": "Potato Leek Soup",
+              "weighted_coverage": 0.5454545454545454
+            }
+          ],
+          "reason_counts": {},
+          "schema_version": "1.0",
+          "status": "OK",
+          "warnings": [
+            "Excluded ingredients and their known compounds: boneless chicken thigh, chicken, chicken leg, chicken stock, cooked chicken"
+          ]
+        }
+      },
+      "review_status": "pending_review"
+    }
+  ],
+  "config_version": "0.4.0",
+  "data_version": "2.0",
+  "schema_version": "1.0",
+  "split": "dev",
+  "split_id": "groups_seed_42_v2"
+}

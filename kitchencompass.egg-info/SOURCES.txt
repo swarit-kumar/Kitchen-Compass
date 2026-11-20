@@ -1,9 +1,0 @@
-README.md
-pyproject.toml
-kitchencompass/__init__.py
-kitchencompass/schemas.py
-kitchencompass.egg-info/PKG-INFO
-kitchencompass.egg-info/SOURCES.txt
-kitchencompass.egg-info/dependency_links.txt
-kitchencompass.egg-info/top_level.txt
-tests/test_contracts.py

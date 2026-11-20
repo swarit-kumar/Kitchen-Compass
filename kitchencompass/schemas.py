@@ -102,12 +102,19 @@ class FlavorProfile(Contract):
 
 class RoleRule(Contract):
     rule_id: NonEmpty
-    ingredient_ids: list[NonEmpty] = Field(min_length=1)
+    ingredient_ids: list[NonEmpty]
     categories: list[NonEmpty]
     action_keywords: list[NonEmpty] = Field(min_length=1)
     role: Role
     priority: int = Field(ge=0)
     source_refs: list[NonEmpty] = Field(min_length=1)
+
+
+    @model_validator(mode="after")
+    def check_target_selector(self):
+        if not self.ingredient_ids and not self.categories:
+            raise ValueError("A role rule must select ingredients or categories")
+        return self
 
 
 class Constraints(Contract):

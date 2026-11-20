@@ -9,6 +9,7 @@ from pydantic import (
     ConfigDict,
     Field,
     StringConstraints,
+    ValidationInfo,
     model_validator,
 )
 
@@ -36,6 +37,8 @@ class CustomIngredient(BaseModel):
 
     original_phrase: IngredientPhrase
     quantity_text: str | None = None
+    ingredient_id: IngredientPhrase | None = None
+    essential: bool = False
 
 
 class CustomRecipe(BaseModel):
@@ -52,7 +55,17 @@ class CustomRecipe(BaseModel):
         max_length=30,
     )
     instructions_not_provided: bool = False
-    schema_version: Literal["1.0"] = "1.0"
+    schema_version: Literal["2.0"] = "2.0"
+
+    @model_validator(mode="before")
+    @classmethod
+    def upgrade_legacy_json(cls, value, info: ValidationInfo):
+        if isinstance(value, dict):
+            if info.context and info.context.get("imported") and "schema_version" not in value:
+                raise ValueError("A recipe JSON file must specify schema_version.")
+            if value.get("schema_version") == "1.0":
+                return {**value, "schema_version": "2.0"}
+        return value
 
     @model_validator(mode="after")
     def validate_instructions(self):
@@ -116,4 +129,4 @@ def import_custom_recipe(payload):
     else:
         raise TypeError("Import must contain JSON text or bytes.")
 
-    return CustomRecipe.model_validate_json(payload)
+    return CustomRecipe.model_validate_json(payload, context={"imported": True})
