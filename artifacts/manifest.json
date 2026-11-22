@@ -20,12 +20,12 @@
     "data/raw/KitchenCompass_Recipes_v2.json": "dbed6b676e0c558260067c952963c0b1724e26bf5e2108070af3fb4935522828",
     "data/raw/flavordb_entity_cids.json": "47e2032e7c3c5cac974d93eaf20cf5c63f58e61221f7c43aa5bb25832ce933d6",
     "kitchencompass/catalog.py": "7b33a9c4078a268e7c6d8c4bc22fb9bd393d97b2c23c167acc563c83cf4cb96f",
-    "kitchencompass/constraints.py": "48b1efc9947c8e51f14f19ebcbf40e18cb7f726849f0dec276ba1b43917c09ea",
+    "kitchencompass/constraints.py": "ae0af6fa64806d34d91faa7b010b26cd5449cb5c4be329d09d750b045d25ae7b",
     "kitchencompass/context.py": "0bddfe4139f7a49c2c9c9ee41e7cbde8ef964cac1b54da1767ad30ffbd1f4d7b",
     "kitchencompass/custom_recipes.py": "16e3b90b8f1578a82022e79ecda8899ce2f2babf0fa39637376bcce66a257520",
     "kitchencompass/data_io.py": "e1e0246225c62a75c73b89028382e99c1267227ba023f3a0c6502f98c480e239",
     "kitchencompass/features.py": "d5741074f0cfe05ee7942f2abc24752af2427d781593dc31e10c40c3825ca65f",
-    "kitchencompass/normalize.py": "380008005af6342f7f57263995c3a8620539f63983cb7884c27318e89ee53030",
+    "kitchencompass/normalize.py": "8b059161eac20cfb5bae28493af60de252e0d018272048b6ee2186fb98da29e1",
     "kitchencompass/prepare.py": "370c447d6616abff6f02e10b97f8463beed3b163b914a99473219c49141acfca",
     "kitchencompass/recommend.py": "19319c793eef36d1085fbeedfd7a35ccf3e57d914898a50e3d8ab8395bb35465",
     "kitchencompass/roles.py": "5ed72c37b2bc67450b4f52404f7b408c0607600004fbb7f241cae7ad521e3dc5",
@@ -37,14 +37,21 @@
     "scripts/evaluate.py": "ae78ac33042dd57bcd3d9ba8eb0046276d521ff7dd7ee81f9cbaf088ba55f81d",
     "scripts/expand_recipes.py": "6069bbbd81e999cec4a277dc54520bce1a5fbdc140678a14fc8d19c06064cb64",
     "scripts/prepare_data.py": "f6f183d2c25427c9ae98f2f51a896b9f4d23ac25c4166dc722377c38fd8771ed",
-    "tests/test_contracts.py": "536bb4f00981739a35c183f3a39cc03865d455a11ae5e827ee0fc43fb221c1ed",
+    "tests/test_contracts.py": "a1fc3642a83edf2c459d63a1b2a302d54f112397c574db7f495b313557a159de",
     "tests/test_custom_recipe.py": "54318e0ed769ef4d40f99b201c3be868cb6f44e509aa79dfa6953800e1c70e59",
     "tests/test_development.py": "e28cd37d5f6b8cb4b1999510e376ab7dfacc1cde8fe1d5ee454b2230e34e8989",
     "tests/test_phase1.py": "77a393d9742cec4d7c3a4ef3a4a331680cf87f9e52953fe07a768a6b606ad3ca",
-    "tests/test_phase2.py": "f5bfc4e04818a7004c57d9f47392b6a0d848597d14a2cdf7434389336795df44",
+    "tests/test_phase2.py": "928eea5a3e264ba2591ebfe9d3dafd9d8da35892812f8c1eb07c41663239638d",
     "tests/test_phase3_app.py": "1c4c04306b19d64abccdffe57dee8f5a5946156ff12c1b3d0ce7cb3e5b888216",
     "tests/test_recommend.py": "8a6fd7c3978b082562a92a7d8d63e9a32ea66381c387a6cdff3d0b100d8805a6",
-    "tests/test_substitute.py": "d8f26b6d65a448f053b17bed61aa31c42fce4c002a5704212103532e3da9002d"
+    "tests/test_substitute.py": "d8f26b6d65a448f053b17bed61aa31c42fce4c002a5704212103532e3da9002d",
+    "kitchencompass/adapt.py": "b43054cb5d66fb393f62fc54578d97da72cf0db222f6910d9da3acc8a28fbf43",
+    "tests/test_adapt.py": "4f7634ec6d0691681ab3d6efad4aad671d3d175334c525cf3eabda70fb584152",
+    "scripts/check_joint_cases.py": "cbeaf569ad98d0e83c57fbdbc1df4202883714ae04179bdc52657f6e86a84e0b",
+    "docs/PHASE_4.md": "083f505ba188c935979917b5ddb1eac481d8812a391d39425e511dfd97e5bbc5",
+    "docs/SERVICE_CONTRACT_EXAMPLES.md": "e314cb3078b93a9d39a81d1d3f9fed54f45efb760e940549b5fe116ddc382a8f",
+    "scripts/update_phase4_manifest.py": "24ff642f2d7408655af5d78caefdb9c74528dd233819aacb7ceb5ff6920ec4f9",
+    "HANDOFF.md": "0489d2cb86a3c3993d75cbe8b7f420dc0988a6c905b85b21a4568269bbf21026"
   },
   "output_sha256": {
     "artifacts/context_vectors.json": "dc3a0f7ddbb747501e1b8a8ba6d9a3d514507e7453743546ca88278a512c171d",
@@ -54,7 +61,8 @@
     "data/processed/recipes.jsonl": "8a5a7ebd3bd9a0890c9ed5a9764af52e1b9625a2ddae67ccee39b5fd3ffcd22a",
     "data/processed/role_rules.json": "21b3beda2caf81a94520c4e9ff256fd5e1379c39a3b4cb415ef895c37a97e8a9",
     "data/processed/sources.jsonl": "05b94a3697baf90cefbbcae47149e8129f3101c6da0b07af16805cf4b9aee555",
-    "results/data_audit.json": "3c6e0984d59f492e559d30e36e150f4f3c52f798c4fc840eeecf16b667ccdae6"
+    "results/data_audit.json": "3c6e0984d59f492e559d30e36e150f4f3c52f798c4fc840eeecf16b667ccdae6",
+    "results/development_joint_plans.json": "d58dc0681b8bcf3de5e4e31fd6f03c1ff02efe0016b9e9c3fa6e4a7194a2f812"
   },
   "package_versions": {
     "numpy": "2.4.6",
@@ -66,5 +74,13 @@
   "python_version": "3.11.18",
   "schema_version": "1.0",
   "seed": 42,
-  "split_id": "groups_seed_42_v2"
+  "split_id": "groups_seed_42_v2",
+  "phase4": {
+    "status": "development_implementation_complete_pending_review",
+    "max_targets": 3,
+    "max_candidates_per_target": 5,
+    "max_combinations": 125,
+    "development_cases": 4,
+    "evidence_status": "pending_manual_review"
+  }
 }
