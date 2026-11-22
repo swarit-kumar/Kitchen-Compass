@@ -1,0 +1,533 @@
+{
+  "schema_version": "1.0",
+  "split": "dev",
+  "split_id": "groups_seed_42_v2",
+  "status": "development_pending_review",
+  "quality_note": "Development-only outputs generated from pending-review substitution evidence. Not validated culinary recommendations.",
+  "cases": [
+    {
+      "case_id": "dev_v2_09",
+      "recipe_id": "rec_black_pepper_cauliflower_roast",
+      "target_ids": [
+        "ing_cauliflower",
+        "ing_grated_coconut"
+      ],
+      "candidate_counts": {
+        "ing_cauliflower": 2,
+        "ing_grated_coconut": 2
+      },
+      "joint_plans": [
+        {
+          "plan": {
+            "target_ids": [
+              "ing_cauliflower",
+              "ing_grated_coconut"
+            ],
+            "replacement_ids": [
+              "ing_green_bean",
+              "ing_mushroom"
+            ],
+            "score": 0.5335094124272864,
+            "component_scores": {
+              "Q": 0.630543460383148,
+              "J": 0.14537322060383978
+            },
+            "pair_details": [
+              {
+                "ingredient_a": "ing_green_bean",
+                "ingredient_b": "ing_mushroom",
+                "score": 0.14537322060383978,
+                "source": "context_cosine",
+                "context_roles": [
+                  "bulk",
+                  "fat"
+                ]
+              }
+            ],
+            "warnings": [],
+            "purchase_count": 0
+          },
+          "validation": {
+            "valid": true,
+            "errors": [],
+            "final_ingredient_ids": [
+              "ing_coconut_oil",
+              "ing_onion",
+              "ing_garlic",
+              "ing_ginger",
+              "ing_curry_leaf",
+              "ing_black_peppercorn",
+              "ing_water",
+              "ing_green_bean",
+              "ing_salt",
+              "ing_mushroom"
+            ]
+          }
+        },
+        {
+          "plan": {
+            "target_ids": [
+              "ing_cauliflower",
+              "ing_grated_coconut"
+            ],
+            "replacement_ids": [
+              "ing_mushroom",
+              "ing_green_bean"
+            ],
+            "score": 0.5335094124272864,
+            "component_scores": {
+              "Q": 0.630543460383148,
+              "J": 0.14537322060383978
+            },
+            "pair_details": [
+              {
+                "ingredient_a": "ing_green_bean",
+                "ingredient_b": "ing_mushroom",
+                "score": 0.14537322060383978,
+                "source": "context_cosine",
+                "context_roles": [
+                  "bulk",
+                  "fat"
+                ]
+              }
+            ],
+            "warnings": [],
+            "purchase_count": 0
+          },
+          "validation": {
+            "valid": true,
+            "errors": [],
+            "final_ingredient_ids": [
+              "ing_coconut_oil",
+              "ing_onion",
+              "ing_garlic",
+              "ing_ginger",
+              "ing_curry_leaf",
+              "ing_black_peppercorn",
+              "ing_water",
+              "ing_mushroom",
+              "ing_salt",
+              "ing_green_bean"
+            ]
+          }
+        }
+      ],
+      "independent_baseline": {
+        "target_ids": [
+          "ing_cauliflower",
+          "ing_grated_coconut"
+        ],
+        "replacement_ids": [
+          "ing_green_bean",
+          "ing_green_bean"
+        ],
+        "individual_scores": [
+          0.6361759847346384,
+          0.6361759847346384
+        ],
+        "score": 0.6361759847346384,
+        "violations": [
+          "Duplicate replacement IDs selected."
+        ],
+        "valid": false
+      },
+      "review_status": "pending_review",
+      "evidence_note": "Candidate evidence is not manually reviewed; scores are software outputs, not culinary guarantees."
+    },
+    {
+      "case_id": "dev_v2_10",
+      "recipe_id": "rec_pasta_e_ceci",
+      "target_ids": [
+        "ing_small_pasta",
+        "ing_celery"
+      ],
+      "candidate_counts": {
+        "ing_small_pasta": 2,
+        "ing_celery": 2
+      },
+      "joint_plans": [
+        {
+          "plan": {
+            "target_ids": [
+              "ing_small_pasta",
+              "ing_celery"
+            ],
+            "replacement_ids": [
+              "ing_pearl_barley",
+              "ing_short_grain_rice"
+            ],
+            "score": 0.6639166675763155,
+            "component_scores": {
+              "Q": 0.6800654770672014,
+              "J": 0.5993214296127721
+            },
+            "pair_details": [
+              {
+                "ingredient_a": "ing_pearl_barley",
+                "ingredient_b": "ing_short_grain_rice",
+                "score": 0.5993214296127721,
+                "source": "context_cosine",
+                "context_roles": [
+                  "bulk"
+                ]
+              }
+            ],
+            "warnings": [],
+            "purchase_count": 0
+          },
+          "validation": {
+            "valid": true,
+            "errors": [],
+            "final_ingredient_ids": [
+              "ing_olive_oil",
+              "ing_onion",
+              "ing_garlic",
+              "ing_short_grain_rice",
+              "ing_canned_tomato",
+              "ing_vegetable_stock",
+              "ing_cooked_chickpea",
+              "ing_pearl_barley",
+              "ing_basil",
+              "ing_black_pepper",
+              "ing_salt",
+              "ing_parsley"
+            ]
+          }
+        },
+        {
+          "plan": {
+            "target_ids": [
+              "ing_small_pasta",
+              "ing_celery"
+            ],
+            "replacement_ids": [
+              "ing_short_grain_rice",
+              "ing_pearl_barley"
+            ],
+            "score": 0.6639166675763155,
+            "component_scores": {
+              "Q": 0.6800654770672014,
+              "J": 0.5993214296127721
+            },
+            "pair_details": [
+              {
+                "ingredient_a": "ing_pearl_barley",
+                "ingredient_b": "ing_short_grain_rice",
+                "score": 0.5993214296127721,
+                "source": "context_cosine",
+                "context_roles": [
+                  "bulk"
+                ]
+              }
+            ],
+            "warnings": [],
+            "purchase_count": 0
+          },
+          "validation": {
+            "valid": true,
+            "errors": [],
+            "final_ingredient_ids": [
+              "ing_olive_oil",
+              "ing_onion",
+              "ing_garlic",
+              "ing_pearl_barley",
+              "ing_canned_tomato",
+              "ing_vegetable_stock",
+              "ing_cooked_chickpea",
+              "ing_short_grain_rice",
+              "ing_basil",
+              "ing_black_pepper",
+              "ing_salt",
+              "ing_parsley"
+            ]
+          }
+        }
+      ],
+      "independent_baseline": {
+        "target_ids": [
+          "ing_small_pasta",
+          "ing_celery"
+        ],
+        "replacement_ids": [
+          "ing_pearl_barley",
+          "ing_pearl_barley"
+        ],
+        "individual_scores": [
+          0.685371435637084,
+          0.685371435637084
+        ],
+        "score": 0.685371435637084,
+        "violations": [
+          "Duplicate replacement IDs selected."
+        ],
+        "valid": false
+      },
+      "review_status": "pending_review",
+      "evidence_note": "Candidate evidence is not manually reviewed; scores are software outputs, not culinary guarantees."
+    },
+    {
+      "case_id": "dev_v2_10",
+      "recipe_id": "rec_pasta_e_ceci",
+      "target_ids": [
+        "ing_small_pasta",
+        "ing_canned_tomato"
+      ],
+      "candidate_counts": {
+        "ing_small_pasta": 2,
+        "ing_canned_tomato": 2
+      },
+      "joint_plans": [
+        {
+          "plan": {
+            "target_ids": [
+              "ing_small_pasta",
+              "ing_canned_tomato"
+            ],
+            "replacement_ids": [
+              "ing_pearl_barley",
+              "ing_short_grain_rice"
+            ],
+            "score": 0.6817711478343449,
+            "component_scores": {
+              "Q": 0.702383577389738,
+              "J": 0.5993214296127721
+            },
+            "pair_details": [
+              {
+                "ingredient_a": "ing_pearl_barley",
+                "ingredient_b": "ing_short_grain_rice",
+                "score": 0.5993214296127721,
+                "source": "context_cosine",
+                "context_roles": [
+                  "bulk"
+                ]
+              }
+            ],
+            "warnings": [],
+            "purchase_count": 0
+          },
+          "validation": {
+            "valid": true,
+            "errors": [],
+            "final_ingredient_ids": [
+              "ing_olive_oil",
+              "ing_onion",
+              "ing_garlic",
+              "ing_celery",
+              "ing_short_grain_rice",
+              "ing_vegetable_stock",
+              "ing_cooked_chickpea",
+              "ing_pearl_barley",
+              "ing_basil",
+              "ing_black_pepper",
+              "ing_salt",
+              "ing_parsley"
+            ]
+          }
+        },
+        {
+          "plan": {
+            "target_ids": [
+              "ing_small_pasta",
+              "ing_canned_tomato"
+            ],
+            "replacement_ids": [
+              "ing_short_grain_rice",
+              "ing_pearl_barley"
+            ],
+            "score": 0.6817711478343449,
+            "component_scores": {
+              "Q": 0.702383577389738,
+              "J": 0.5993214296127721
+            },
+            "pair_details": [
+              {
+                "ingredient_a": "ing_pearl_barley",
+                "ingredient_b": "ing_short_grain_rice",
+                "score": 0.5993214296127721,
+                "source": "context_cosine",
+                "context_roles": [
+                  "bulk"
+                ]
+              }
+            ],
+            "warnings": [],
+            "purchase_count": 0
+          },
+          "validation": {
+            "valid": true,
+            "errors": [],
+            "final_ingredient_ids": [
+              "ing_olive_oil",
+              "ing_onion",
+              "ing_garlic",
+              "ing_celery",
+              "ing_pearl_barley",
+              "ing_vegetable_stock",
+              "ing_cooked_chickpea",
+              "ing_short_grain_rice",
+              "ing_basil",
+              "ing_black_pepper",
+              "ing_salt",
+              "ing_parsley"
+            ]
+          }
+        }
+      ],
+      "independent_baseline": {
+        "target_ids": [
+          "ing_small_pasta",
+          "ing_canned_tomato"
+        ],
+        "replacement_ids": [
+          "ing_pearl_barley",
+          "ing_pearl_barley"
+        ],
+        "individual_scores": [
+          0.7123479013911966,
+          0.7123479013911966
+        ],
+        "score": 0.7123479013911966,
+        "violations": [
+          "Duplicate replacement IDs selected."
+        ],
+        "valid": false
+      },
+      "review_status": "pending_review",
+      "evidence_note": "Candidate evidence is not manually reviewed; scores are software outputs, not culinary guarantees."
+    },
+    {
+      "case_id": "dev_v2_10",
+      "recipe_id": "rec_pasta_e_ceci",
+      "target_ids": [
+        "ing_small_pasta",
+        "ing_cooked_chickpea"
+      ],
+      "candidate_counts": {
+        "ing_small_pasta": 2,
+        "ing_cooked_chickpea": 2
+      },
+      "joint_plans": [
+        {
+          "plan": {
+            "target_ids": [
+              "ing_small_pasta",
+              "ing_cooked_chickpea"
+            ],
+            "replacement_ids": [
+              "ing_pearl_barley",
+              "ing_short_grain_rice"
+            ],
+            "score": 0.6814304959397255,
+            "component_scores": {
+              "Q": 0.7019577625214639,
+              "J": 0.5993214296127721
+            },
+            "pair_details": [
+              {
+                "ingredient_a": "ing_pearl_barley",
+                "ingredient_b": "ing_short_grain_rice",
+                "score": 0.5993214296127721,
+                "source": "context_cosine",
+                "context_roles": [
+                  "bulk",
+                  "protein"
+                ]
+              }
+            ],
+            "warnings": [],
+            "purchase_count": 0
+          },
+          "validation": {
+            "valid": true,
+            "errors": [],
+            "final_ingredient_ids": [
+              "ing_olive_oil",
+              "ing_onion",
+              "ing_garlic",
+              "ing_celery",
+              "ing_canned_tomato",
+              "ing_vegetable_stock",
+              "ing_short_grain_rice",
+              "ing_pearl_barley",
+              "ing_basil",
+              "ing_black_pepper",
+              "ing_salt",
+              "ing_parsley"
+            ]
+          }
+        },
+        {
+          "plan": {
+            "target_ids": [
+              "ing_small_pasta",
+              "ing_cooked_chickpea"
+            ],
+            "replacement_ids": [
+              "ing_short_grain_rice",
+              "ing_pearl_barley"
+            ],
+            "score": 0.6814304959397255,
+            "component_scores": {
+              "Q": 0.7019577625214639,
+              "J": 0.5993214296127721
+            },
+            "pair_details": [
+              {
+                "ingredient_a": "ing_pearl_barley",
+                "ingredient_b": "ing_short_grain_rice",
+                "score": 0.5993214296127721,
+                "source": "context_cosine",
+                "context_roles": [
+                  "bulk",
+                  "protein"
+                ]
+              }
+            ],
+            "warnings": [],
+            "purchase_count": 0
+          },
+          "validation": {
+            "valid": true,
+            "errors": [],
+            "final_ingredient_ids": [
+              "ing_olive_oil",
+              "ing_onion",
+              "ing_garlic",
+              "ing_celery",
+              "ing_canned_tomato",
+              "ing_vegetable_stock",
+              "ing_pearl_barley",
+              "ing_short_grain_rice",
+              "ing_basil",
+              "ing_black_pepper",
+              "ing_salt",
+              "ing_parsley"
+            ]
+          }
+        }
+      ],
+      "independent_baseline": {
+        "target_ids": [
+          "ing_small_pasta",
+          "ing_cooked_chickpea"
+        ],
+        "replacement_ids": [
+          "ing_pearl_barley",
+          "ing_pearl_barley"
+        ],
+        "individual_scores": [
+          0.705946174023773,
+          0.705946174023773
+        ],
+        "score": 0.705946174023773,
+        "violations": [
+          "Duplicate replacement IDs selected."
+        ],
+        "valid": false
+      },
+      "review_status": "pending_review",
+      "evidence_note": "Candidate evidence is not manually reviewed; scores are software outputs, not culinary guarantees."
+    }
+  ]
+}
