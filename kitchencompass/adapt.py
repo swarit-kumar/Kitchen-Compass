@@ -1,4 +1,3 @@
-
 """Joint recipe adaptation using constrained ingredient substitutions."""
 
 from itertools import combinations, product
@@ -12,136 +11,37 @@ MAX_COMBINATIONS = 125
 
 
 def validate_targets(recipe, target_ids, catalog):
-    """Validate the requested ingredient targets before generating plans."""
-    
-    if not isinstance(target_ids, (list, tuple)):
-        return Result(
-            status="UNSUPPORTED_INPUT",
-            items=[],
-            schema_version="1.0",
-        )
+    def failure(status, warning):
+        return Result(status=status, warnings=[warning], **getattr(catalog, "versions", {}))
 
-    if not target_ids:
-        return Result(
-            status="NEEDS_INPUT",
-            items=[],
-            schema_version="1.0",
-        )
-    
-    
-    
-    if any(
-        not isinstance(target_id, str) or not target_id.strip()
-        for target_id in target_ids
+    if not isinstance(target_ids, (list, tuple)) or any(
+        not isinstance(key, str) or not key.strip() for key in target_ids
     ):
-        return Result(
-            status="UNSUPPORTED_INPUT",
-            items=[],
-            schema_version="1.0",
-        )
-    
-    
-    
-
-    if len(target_ids) > MAX_TARGETS:
-        return Result(
-            status="UNSUPPORTED_INPUT",
-            items=[],
-            schema_version="1.0",
-        )
-
-    if len(set(target_ids)) != len(target_ids):
-        return Result(
-            status="UNSUPPORTED_INPUT",
-            items=[],
-            schema_version="1.0",
-        )
-
-    recipe_ids = {
-        item["ingredient_id"]
-        for item in recipe["ingredients"]
-    }
-
-    if any(target_id not in recipe_ids for target_id in target_ids):
-        return Result(
-            status="NEEDS_INPUT",
-            items=[],
-            schema_version="1.0",
-        )
-
-    if any(target_id not in catalog.ingredients for target_id in target_ids):
-        return Result(
-            status="UNSUPPORTED_INPUT",
-            items=[],
-            schema_version="1.0",
-        )
-
+        return failure("UNSUPPORTED_INPUT", "Supply a list of ingredient IDs.")
+    if not target_ids:
+        return failure("NEEDS_INPUT", "Choose at least one ingredient to replace.")
+    if len(target_ids) > MAX_TARGETS or len(set(target_ids)) != len(target_ids):
+        return failure("UNSUPPORTED_INPUT", "Choose up to three distinct targets.")
+    if set(target_ids) - catalog.ingredients.keys():
+        return failure("UNSUPPORTED_INPUT", "A target ID is outside the catalogue.")
+    if set(target_ids) - {item["ingredient_id"] for item in recipe["ingredients"]}:
+        return failure("NEEDS_INPUT", "Choose targets present in this recipe.")
     return None
 
 
-
-def generate_candidate_lists(
-    recipe,
-    target_ids,
-    constraints,
-    catalog,
-    mode="full",
-):
-    """Generate up to five eligible candidates for each target."""
-
+def generate_candidate_lists(recipe, target_ids, constraints, catalog, mode="full", diagnostics=None):
+    """Use original instruction clauses and only non-targets for retained context."""
     from .substitute import rank
 
-    target_set = set(target_ids)
-    candidate_lists = {}
-
-    retained_ingredients = [
-        item
-        for item in recipe["ingredients"]
-        if item["ingredient_id"] not in target_set
-    ]
-
-    for target_id in target_ids:
-        working_recipe = dict(recipe)
-        working_recipe["ingredients"] = (
-            retained_ingredients
-            + [
-                item
-                for item in recipe["ingredients"]
-                if item["ingredient_id"] == target_id
-            ]
-        )
-
-        result = rank(
-            catalog=catalog,
-            recipe=working_recipe,
-            target_id=target_id,
-            constraints=constraints,
-            top_k=None,
-            mode=mode,
-        )
-
-        if result.status != "OK":
-            candidate_lists[target_id] = []
-            continue
-
-        if not isinstance(result.items, list):
-            candidate_lists[target_id] = []
-            continue
-
-        candidates = [
-            candidate
-            for candidate in result.items
-            if candidate["candidate_id"] not in target_set
-        ]
-
-        candidate_lists[target_id] = candidates[
-            :MAX_CANDIDATES_PER_TARGET
-        ]
-
-    return candidate_lists
-
-
-
+    pools = {}
+    for target in target_ids:
+        result = rank(catalog, recipe, target, constraints, MAX_CANDIDATES_PER_TARGET, mode,
+                      other_targets=set(target_ids) - {target})
+        pools[target] = result.items
+        if diagnostics is not None:
+            diagnostics[target] = {"status": result.status, "warnings": result.warnings,
+                                   "reason_counts": result.reason_counts}
+    return pools
 
 
 def target_role_context(recipe, target_id, catalog):
@@ -164,7 +64,6 @@ def target_role_context(recipe, target_id, catalog):
         "roles": set(role["roles"]),
         "warnings": list(role["warnings"]),
     }
-
 
 
 def pair_compatibility_score(
@@ -201,15 +100,17 @@ def pair_compatibility_score(
             "score": None,
             "blocked": True,
             "source": "reviewed_pair_rule",
+            "rule": blocked_rule,
             "warning": None,
         }
 
     if matching_rules:
-        rule = matching_rules[0]
+        rule = min(matching_rules, key=lambda row: row["score"])
         return {
             "score": rule["score"],
             "blocked": False,
             "source": "reviewed_pair_rule",
+            "rule": rule,
             "warning": None,
         }
 
@@ -238,15 +139,9 @@ def pair_compatibility_score(
     }
 
 
-
-
-
-
-
 def score_joint_plan(selected_candidates, catalog, recipe, target_ids):
     """Score a joint plan using substitution quality and pair compatibility."""
 
-    from itertools import combinations
     from math import fsum, isfinite
 
     def invalid_result(reason):
@@ -377,6 +272,8 @@ def score_joint_plan(selected_candidates, catalog, recipe, target_ids):
             "score": compatibility["score"],
             "source": compatibility["source"],
             "context_roles": sorted(context_roles),
+            "unknown_evidence": bool(compatibility["warning"]),
+            **({"rule": compatibility["rule"]} if "rule" in compatibility else {}),
         })
 
         if compatibility["warning"]:
@@ -399,15 +296,10 @@ def score_joint_plan(selected_candidates, catalog, recipe, target_ids):
         "pair_details": pair_details,
         "warnings": warnings,
     }
-   
-   
-    
 
 
-def generate_joint_plans(candidate_lists, catalog, recipe):
+def generate_joint_plans(candidate_lists, catalog, recipe, constraints=None, *, top_k=3, counts=None):
     """Generate and rank valid combinations of replacement candidates."""
-
-    from itertools import product
 
     target_ids = list(candidate_lists)
 
@@ -427,7 +319,7 @@ def generate_joint_plans(candidate_lists, catalog, recipe):
         candidate_lists[target_id][:MAX_CANDIDATES_PER_TARGET]
         for target_id in target_ids
     ]
-    
+
     # Reject malformed candidate records before combination generation.
     for group in candidate_groups:
         for candidate in group:
@@ -439,7 +331,7 @@ def generate_joint_plans(candidate_lists, catalog, recipe):
                 or isinstance(candidate.get("score"), bool)
             ):
                 return []
-    
+
     combination_count = 1
 
     for group in candidate_groups:
@@ -454,14 +346,6 @@ def generate_joint_plans(candidate_lists, catalog, recipe):
             for candidate in selected
         )
 
-        # A replacement cannot be duplicated.
-        if len(set(replacement_ids)) != len(replacement_ids):
-            continue
-
-        # A target cannot replace another target.
-        if set(replacement_ids).intersection(target_ids):
-            continue
-
         scored = score_joint_plan(
             selected,
             catalog,
@@ -470,22 +354,35 @@ def generate_joint_plans(candidate_lists, catalog, recipe):
         )
 
         if not scored["valid"]:
+            if counts is not None:
+                counts[scored["reason"]] += 1
             continue
 
-        purchase_count = sum(
-            bool(candidate.get("purchase_required", False))
-            for candidate in selected
-        )
-
-        plans.append({
+        plan = {
             "target_ids": target_ids,
             "replacement_ids": list(replacement_ids),
+            "replacements": dict(zip(target_ids, replacement_ids)),
             "score": scored["score"],
             "component_scores": scored["component_scores"],
             "pair_details": scored["pair_details"],
-            "warnings": scored["warnings"],
-            "purchase_count": purchase_count,
-        })
+            "warnings": list(dict.fromkeys(scored["warnings"])),
+            "purchase_count": sum(bool(c.get("purchase_required")) for c in selected),
+        }
+        if constraints is not None:
+            plan["purchase_ids"] = sorted(set(replacement_ids) - set(constraints.pantry_ids))
+            plan["purchase_count"] = len(plan["purchase_ids"])
+            checks = validate_plan(recipe, target_ids, plan, constraints, catalog)
+            if not checks["valid"]:
+                if counts is not None:
+                    counts.update(checks["errors"])
+                continue
+            plan["constraint_checks"] = checks
+            plan["final_ids"] = checks["final_ingredient_ids"]
+            plan["individual_scores"] = [c["score"] for c in selected]
+            partial = [target for target, candidate in zip(target_ids, selected) if candidate.get("partial_evidence")]
+            if partial:
+                plan["warnings"].append("Partial individual evidence for " + ", ".join(partial) + ".")
+        plans.append(plan)
 
     plans.sort(
         key=lambda plan: (
@@ -495,181 +392,66 @@ def generate_joint_plans(candidate_lists, catalog, recipe):
         )
     )
 
-    return plans
+    return plans[:min(top_k, 3)]
 
 
+def generate_independent_baseline(candidate_lists, target_ids=None, catalog=None, recipe=None, constraints=None):
+    """Choose the best eligible candidate for each target and preserve any violations."""
+    from math import fsum, isfinite
 
+    targets = list(candidate_lists if target_ids is None else target_ids)
 
+    def failure(message):
+        return {"target_ids": targets, "replacement_ids": [], "score": None, "joint_score": None,
+                "violations": [message], "valid": False}
 
-
-def generate_independent_baseline(
-    candidate_lists,
-    target_ids=None,
-    catalog=None,
-    recipe=None,
-):
-    """Select the individually highest-scoring candidate for each target.
-
-    This baseline deliberately does not repair duplicate replacements
-    or incompatible pairs. Those violations are reported for comparison.
-    """
-
-    target_ids = list(target_ids or candidate_lists)
-    if len(target_ids) > MAX_TARGETS:
-        return {
-            "target_ids": target_ids,
-            "replacement_ids": [],
-            "score": None,
-            "violations": [
-                "At most three replacement targets are allowed."
-            ],
-            "valid": False,
-        }
-
-    if not target_ids:
-        return {
-            "target_ids": [],
-            "replacement_ids": [],
-            "score": None,
-            "violations": ["No replacement targets supplied."],
-        }
+    if not targets:
+        return failure("No replacement targets supplied.")
+    if len(targets) > MAX_TARGETS:
+        return failure("At most three replacement targets are allowed.")
+    if len(set(targets)) != len(targets):
+        return failure("Duplicate requested target IDs.")
+    if (catalog is None) != (recipe is None) or (constraints is not None and catalog is None):
+        return failure("Both catalog and recipe are required for plan validation.")
 
     selected = []
-
-    for target_id in target_ids:
-        candidates = candidate_lists.get(target_id, [])
-
-        if not candidates:
-            return {
-                "target_ids": target_ids,
-                "replacement_ids": [],
-                "score": None,
-                "violations": [
-                    f"No candidates available for target {target_id}."
-                ],
-            }
-            
-        from math import isfinite
-
-        for candidate in candidates[:MAX_CANDIDATES_PER_TARGET]:
+    for target in targets:
+        group = candidate_lists.get(target, [])[:MAX_CANDIDATES_PER_TARGET]
+        if not group:
+            return failure(f"No candidates available for target {target}.")
+        for candidate in group:
             if not isinstance(candidate, dict):
-                return {
-                    "target_ids": target_ids,
-                    "replacement_ids": [],
-                    "score": None,
-                    "violations": [
-                        f"Invalid candidate record for target {target_id}."
-                    ],
-                    "valid": False,
-                }
-
-            candidate_id = candidate.get("candidate_id")
+                return failure(f"Invalid candidate record for target {target}.")
+            if not isinstance(candidate.get("candidate_id"), str) or not candidate["candidate_id"]:
+                return failure(f"Invalid candidate ID for target {target}.")
             score = candidate.get("score")
+            if type(score) not in (int, float) or not isfinite(score) or not 0 <= score <= 1:
+                return failure(f"Invalid candidate score for target {target}.")
+        selected.append(min(group, key=lambda c: (-c["score"], c["candidate_id"])))
 
-            if not isinstance(candidate_id, str) or not candidate_id:
-                return {
-                    "target_ids": target_ids,
-                    "replacement_ids": [],
-                    "score": None,
-                    "violations": [
-                        f"Invalid candidate ID for target {target_id}."
-                    ],
-                    "valid": False,
-                }
+    ids = [c["candidate_id"] for c in selected]
+    scores = [c["score"] for c in selected]
+    baseline = {"target_ids": targets, "replacement_ids": ids, "replacements": dict(zip(targets, ids)),
+                "individual_scores": scores, "score": fsum(scores) / len(scores), "joint_score": None}
+    if constraints is not None:
+        checks = validate_plan(recipe, targets, baseline, constraints, catalog)
+        baseline.update(constraint_checks=checks, valid=checks["valid"], violations=checks["errors"])
+        if checks["valid"]:
+            baseline["joint_score"] = score_joint_plan(selected, catalog, recipe, targets)["score"]
+        return baseline
 
-            if (
-                not isinstance(score, (int, float))
-                or isinstance(score, bool)
-                or not isfinite(score)
-                or not 0 <= score <= 1
-            ):
-                return {
-                    "target_ids": target_ids,
-                    "replacement_ids": [],
-                    "score": None,
-                    "violations": [
-                        f"Invalid candidate score for target {target_id}."
-                    ],
-                    "valid": False,
-                }
-
-        # Highest individual score; lexicographic ID breaks ties.
-        best = min(
-            candidates[:MAX_CANDIDATES_PER_TARGET],
-            key=lambda candidate: (
-                -candidate["score"],
-                candidate["candidate_id"],
-            ),
-        )
-
-        selected.append(best)
-
-    replacement_ids = [
-        candidate["candidate_id"]
-        for candidate in selected
-    ]
-
+    # Legacy helper callers can supply synthetic pools without a complete catalogue.
     violations = []
-
-    if len(set(replacement_ids)) != len(replacement_ids):
+    if len(set(ids)) != len(ids):
         violations.append("Duplicate replacement IDs selected.")
-
-    if set(replacement_ids).intersection(target_ids):
+    if set(ids).intersection(targets):
         violations.append("A target ingredient was selected as a replacement.")
-        
-        # Check reviewed hard-blocked pairs when context is supplied.
-    if (catalog is None) != (recipe is None):
-        violations.append(
-            "Both catalog and recipe are required for pair validation."
-        )
-
-    elif catalog is not None:
-        target_contexts = {
-            target_id: target_role_context(
-                recipe, target_id, catalog
-            )
-            for target_id in target_ids
-        }
-
-        for first_index, second_index in combinations(
-            range(len(replacement_ids)), 2
-        ):
-            first_target = target_ids[first_index]
-            second_target = target_ids[second_index]
-
-            context_roles = (
-                target_contexts[first_target]["roles"]
-                | target_contexts[second_target]["roles"]
-            )
-
-            pair = pair_compatibility_score(
-                replacement_ids[first_index],
-                replacement_ids[second_index],
-                catalog,
-                context_roles,
-            )
-
-            if pair["blocked"]:
-                violations.append(
-                    "Blocked replacement pair: "
-                    f"{replacement_ids[first_index]}, "
-                    f"{replacement_ids[second_index]}."
-                )
-
-    return {
-        "target_ids": target_ids,
-        "replacement_ids": replacement_ids,
-        "individual_scores": [
-            candidate["score"] for candidate in selected
-        ],
-        "score": (
-            sum(candidate["score"] for candidate in selected)
-            / len(selected)
-        ),
-        "violations": violations,
-        "valid": not violations,
-    }
-
+    if catalog is not None:
+        roles = [target_role_context(recipe, t, catalog)["roles"] for t in targets]
+        for i, j in combinations(range(len(ids)), 2):
+            if pair_compatibility_score(ids[i], ids[j], catalog, roles[i] | roles[j])["blocked"]:
+                violations.append(f"Blocked replacement pair: {ids[i]}, {ids[j]}.")
+    return {**baseline, "valid": not violations, "violations": violations}
 
 
 def validate_plan(recipe, target_ids, plan, constraints, catalog):
@@ -754,8 +536,8 @@ def validate_plan(recipe, target_ids, plan, constraints, catalog):
             errors.append(f"Unknown ingredient in original recipe: {ingredient_id}.")
 
     for target_id in target_ids:
-        if recipe_ids.count(target_id) != 1:
-            errors.append(f"Target {target_id} must occur exactly once in the recipe.")
+        if target_id not in recipe_ids:
+            errors.append(f"Target {target_id} must occur in the recipe.")
 
     mapping_is_safe = (
         len(plan_targets) == len(replacement_ids)
@@ -792,9 +574,17 @@ def validate_plan(recipe, target_ids, plan, constraints, catalog):
     if len(replacement_ids) > constraints.max_replacements:
         errors.append("Replacement count exceeds the allowed limit.")
 
-    if mapping_is_safe and all(
-        target_id in catalog.ingredients for target_id in target_ids
-    ):
+    if mapping_is_safe and set(recipe_ids + target_ids) <= catalog.ingredients.keys():
+        from .roles import target_clauses
+        from .substitute import directed_blocks
+
+        if getattr(catalog, "pairs", []):
+            for target, candidate in zip(plan_targets, replacement_ids):
+                clauses = target_clauses(recipe, target, catalog.ingredients, catalog.policy["shorthand"])
+                roles = target_role_context(recipe, target, catalog)
+                if candidate in directed_blocks(catalog, target, roles, clauses):
+                    errors.append(f"Blocked substitution: {target} to {candidate}.")
+
         target_contexts = {
             target_id: target_role_context(recipe, target_id, catalog)
             for target_id in target_ids
@@ -825,10 +615,17 @@ def validate_plan(recipe, target_ids, plan, constraints, catalog):
             if pair["blocked"]:
                 errors.append(f"Blocked replacement pair: {first_id}, {second_id}.")
 
+    if "replacements" in plan and plan["replacements"] != dict(zip(plan_targets, replacement_ids)):
+        errors.append("Replacement mapping disagrees with the target and replacement lists.")
+    if "final_ids" in plan and plan["final_ids"] != final_ids:
+        errors.append("Final IDs disagree with the reconstructed recipe.")
+    purchases = sorted(set(replacement_ids) - set(constraints.pantry_ids))
+    if "purchase_ids" in plan and plan["purchase_ids"] != purchases:
+        errors.append("Purchase IDs disagree with the available pantry.")
+    if "purchase_count" in plan and plan["purchase_count"] != len(purchases):
+        errors.append("Purchase count disagrees with the available pantry.")
     return {
         "valid": not errors,
         "errors": errors,
         "final_ingredient_ids": final_ids,
     }
-
-

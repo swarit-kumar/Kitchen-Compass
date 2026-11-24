@@ -1,533 +1,1324 @@
 {
+  "cases": [
+    {
+      "annotator_ids": [],
+      "audit": {
+        "candidate_ids": {
+          "ing_butter": [
+            "ing_olive_oil",
+            "ing_coconut_milk"
+          ],
+          "ing_cheddar": [
+            "ing_firm_tofu",
+            "ing_silken_tofu"
+          ],
+          "ing_milk": [
+            "ing_olive_oil",
+            "ing_coconut_milk"
+          ]
+        },
+        "combinations": 8,
+        "target_diagnostics": {
+          "ing_butter": {
+            "reason_counts": {
+              "excluded_ingredient": 6,
+              "incompatible_or_missing_role": 2,
+              "original_or_retained": 8,
+              "outside_pantry": 144
+            },
+            "status": "OK",
+            "warnings": []
+          },
+          "ing_cheddar": {
+            "reason_counts": {
+              "excluded_ingredient": 6,
+              "incompatible_or_missing_role": 2,
+              "original_or_retained": 8,
+              "outside_pantry": 144
+            },
+            "status": "OK",
+            "warnings": []
+          },
+          "ing_milk": {
+            "reason_counts": {
+              "excluded_ingredient": 6,
+              "incompatible_or_missing_role": 2,
+              "original_or_retained": 8,
+              "outside_pantry": 144
+            },
+            "status": "OK",
+            "warnings": []
+          }
+        }
+      },
+      "case_id": "dev_v2_12",
+      "constraints": {
+        "excluded_ids": [
+          "ing_milk"
+        ],
+        "max_replacements": 3,
+        "pantry_ids": [
+          "ing_butter",
+          "ing_coconut_milk",
+          "ing_firm_tofu",
+          "ing_olive_oil",
+          "ing_silken_tofu"
+        ],
+        "pantry_only": true
+      },
+      "duplicate_group_id": "group_broccoli_cheddar_soup",
+      "grade_2_hit_at_3": null,
+      "independent": {
+        "constraint_checks": {
+          "errors": [
+            "Duplicate replacement ingredients."
+          ],
+          "final_ingredient_ids": [
+            "ing_broccoli",
+            "ing_onion",
+            "ing_carrot",
+            "ing_firm_tofu",
+            "ing_vegetable_stock",
+            "ing_olive_oil",
+            "ing_olive_oil",
+            "ing_all_purpose_flour"
+          ],
+          "valid": false
+        },
+        "individual_scores": [
+          0.6514751032960011,
+          0.5549004277028305,
+          0.6514751032960011
+        ],
+        "joint_score": null,
+        "replacement_ids": [
+          "ing_olive_oil",
+          "ing_firm_tofu",
+          "ing_olive_oil"
+        ],
+        "replacements": {
+          "ing_butter": "ing_olive_oil",
+          "ing_cheddar": "ing_firm_tofu",
+          "ing_milk": "ing_olive_oil"
+        },
+        "score": 0.6192835447649442,
+        "target_ids": [
+          "ing_butter",
+          "ing_cheddar",
+          "ing_milk"
+        ],
+        "valid": false,
+        "violations": [
+          "Duplicate replacement ingredients."
+        ]
+      },
+      "plan_violations": 0,
+      "prompt": "Replace three milk-derived items and evaluate whether the soup can retain body and richness.",
+      "recipe_id": "rec_broccoli_cheddar_soup",
+      "result": {
+        "config_version": "0.4.0",
+        "data_version": "2.0",
+        "items": [
+          {
+            "component_scores": {
+              "J": 0.15881806609871804,
+              "Q": 0.5996736464206736
+            },
+            "constraint_checks": {
+              "errors": [],
+              "final_ingredient_ids": [
+                "ing_broccoli",
+                "ing_onion",
+                "ing_carrot",
+                "ing_firm_tofu",
+                "ing_vegetable_stock",
+                "ing_olive_oil",
+                "ing_coconut_milk",
+                "ing_all_purpose_flour"
+              ],
+              "valid": true
+            },
+            "final_ids": [
+              "ing_broccoli",
+              "ing_onion",
+              "ing_carrot",
+              "ing_firm_tofu",
+              "ing_vegetable_stock",
+              "ing_olive_oil",
+              "ing_coconut_milk",
+              "ing_all_purpose_flour"
+            ],
+            "individual_scores": [
+              0.592645408263189,
+              0.5549004277028305,
+              0.6514751032960011
+            ],
+            "pair_details": [
+              {
+                "context_roles": [
+                  "fat",
+                  "protein"
+                ],
+                "ingredient_a": "ing_coconut_milk",
+                "ingredient_b": "ing_firm_tofu",
+                "score": 0.4406553869594604,
+                "source": "context_cosine",
+                "unknown_evidence": false
+              },
+              {
+                "context_roles": [
+                  "fat",
+                  "liquid"
+                ],
+                "ingredient_a": "ing_coconut_milk",
+                "ingredient_b": "ing_olive_oil",
+                "score": 0.03464206903607522,
+                "source": "context_cosine",
+                "unknown_evidence": false
+              },
+              {
+                "context_roles": [
+                  "fat",
+                  "liquid",
+                  "protein"
+                ],
+                "ingredient_a": "ing_firm_tofu",
+                "ingredient_b": "ing_olive_oil",
+                "score": 0.001156742300618549,
+                "source": "context_cosine",
+                "unknown_evidence": false
+              }
+            ],
+            "purchase_count": 0,
+            "purchase_ids": [],
+            "replacement_ids": [
+              "ing_coconut_milk",
+              "ing_firm_tofu",
+              "ing_olive_oil"
+            ],
+            "replacements": {
+              "ing_butter": "ing_coconut_milk",
+              "ing_cheddar": "ing_firm_tofu",
+              "ing_milk": "ing_olive_oil"
+            },
+            "score": 0.5115025303562825,
+            "target_ids": [
+              "ing_butter",
+              "ing_cheddar",
+              "ing_milk"
+            ],
+            "warnings": [
+              "Partial individual evidence for ing_butter, ing_cheddar, ing_milk."
+            ]
+          },
+          {
+            "component_scores": {
+              "J": 0.15881806609871804,
+              "Q": 0.5996736464206736
+            },
+            "constraint_checks": {
+              "errors": [],
+              "final_ingredient_ids": [
+                "ing_broccoli",
+                "ing_onion",
+                "ing_carrot",
+                "ing_firm_tofu",
+                "ing_vegetable_stock",
+                "ing_coconut_milk",
+                "ing_olive_oil",
+                "ing_all_purpose_flour"
+              ],
+              "valid": true
+            },
+            "final_ids": [
+              "ing_broccoli",
+              "ing_onion",
+              "ing_carrot",
+              "ing_firm_tofu",
+              "ing_vegetable_stock",
+              "ing_coconut_milk",
+              "ing_olive_oil",
+              "ing_all_purpose_flour"
+            ],
+            "individual_scores": [
+              0.6514751032960011,
+              0.5549004277028305,
+              0.592645408263189
+            ],
+            "pair_details": [
+              {
+                "context_roles": [
+                  "fat",
+                  "protein"
+                ],
+                "ingredient_a": "ing_firm_tofu",
+                "ingredient_b": "ing_olive_oil",
+                "score": 0.001156742300618549,
+                "source": "context_cosine",
+                "unknown_evidence": false
+              },
+              {
+                "context_roles": [
+                  "fat",
+                  "liquid"
+                ],
+                "ingredient_a": "ing_coconut_milk",
+                "ingredient_b": "ing_olive_oil",
+                "score": 0.03464206903607522,
+                "source": "context_cosine",
+                "unknown_evidence": false
+              },
+              {
+                "context_roles": [
+                  "fat",
+                  "liquid",
+                  "protein"
+                ],
+                "ingredient_a": "ing_coconut_milk",
+                "ingredient_b": "ing_firm_tofu",
+                "score": 0.4406553869594604,
+                "source": "context_cosine",
+                "unknown_evidence": false
+              }
+            ],
+            "purchase_count": 0,
+            "purchase_ids": [],
+            "replacement_ids": [
+              "ing_olive_oil",
+              "ing_firm_tofu",
+              "ing_coconut_milk"
+            ],
+            "replacements": {
+              "ing_butter": "ing_olive_oil",
+              "ing_cheddar": "ing_firm_tofu",
+              "ing_milk": "ing_coconut_milk"
+            },
+            "score": 0.5115025303562825,
+            "target_ids": [
+              "ing_butter",
+              "ing_cheddar",
+              "ing_milk"
+            ],
+            "warnings": [
+              "Partial individual evidence for ing_butter, ing_cheddar, ing_milk."
+            ]
+          },
+          {
+            "component_scores": {
+              "J": 0.011549025570853572,
+              "Q": 0.5765980400534515
+            },
+            "constraint_checks": {
+              "errors": [],
+              "final_ingredient_ids": [
+                "ing_broccoli",
+                "ing_onion",
+                "ing_carrot",
+                "ing_silken_tofu",
+                "ing_vegetable_stock",
+                "ing_olive_oil",
+                "ing_coconut_milk",
+                "ing_all_purpose_flour"
+              ],
+              "valid": true
+            },
+            "final_ids": [
+              "ing_broccoli",
+              "ing_onion",
+              "ing_carrot",
+              "ing_silken_tofu",
+              "ing_vegetable_stock",
+              "ing_olive_oil",
+              "ing_coconut_milk",
+              "ing_all_purpose_flour"
+            ],
+            "individual_scores": [
+              0.592645408263189,
+              0.4856736086011642,
+              0.6514751032960011
+            ],
+            "pair_details": [
+              {
+                "context_roles": [
+                  "fat",
+                  "protein"
+                ],
+                "ingredient_a": "ing_coconut_milk",
+                "ingredient_b": "ing_silken_tofu",
+                "score": 5.007676485501877e-06,
+                "source": "context_cosine",
+                "unknown_evidence": false
+              },
+              {
+                "context_roles": [
+                  "fat",
+                  "liquid"
+                ],
+                "ingredient_a": "ing_coconut_milk",
+                "ingredient_b": "ing_olive_oil",
+                "score": 0.03464206903607522,
+                "source": "context_cosine",
+                "unknown_evidence": false
+              },
+              {
+                "context_roles": [
+                  "fat",
+                  "liquid",
+                  "protein"
+                ],
+                "ingredient_a": "ing_olive_oil",
+                "ingredient_b": "ing_silken_tofu",
+                "score": 0.0,
+                "source": "context_cosine",
+                "unknown_evidence": false
+              }
+            ],
+            "purchase_count": 0,
+            "purchase_ids": [],
+            "replacement_ids": [
+              "ing_coconut_milk",
+              "ing_silken_tofu",
+              "ing_olive_oil"
+            ],
+            "replacements": {
+              "ing_butter": "ing_coconut_milk",
+              "ing_cheddar": "ing_silken_tofu",
+              "ing_milk": "ing_olive_oil"
+            },
+            "score": 0.4635882371569319,
+            "target_ids": [
+              "ing_butter",
+              "ing_cheddar",
+              "ing_milk"
+            ],
+            "warnings": [
+              "Partial individual evidence for ing_butter, ing_cheddar, ing_milk."
+            ]
+          }
+        ],
+        "reason_counts": {
+          "Duplicate replacement ingredient IDs.": 4
+        },
+        "schema_version": "1.0",
+        "status": "OK",
+        "warnings": [
+          "Quantities and instructions are the originals. You may need to adjust the preparation."
+        ]
+      },
+      "review_status": "pending_review",
+      "score_difference": null,
+      "target_ids": [
+        "ing_butter",
+        "ing_cheddar",
+        "ing_milk"
+      ]
+    },
+    {
+      "annotator_ids": [],
+      "audit": {
+        "candidate_ids": {
+          "ing_butter": [
+            "ing_olive_oil",
+            "ing_vegetable_oil",
+            "ing_coconut_milk"
+          ],
+          "ing_milk": [
+            "ing_olive_oil",
+            "ing_vegetable_oil",
+            "ing_coconut_milk"
+          ]
+        },
+        "combinations": 9,
+        "target_diagnostics": {
+          "ing_butter": {
+            "reason_counts": {
+              "excluded_ingredient": 7,
+              "original_or_retained": 11,
+              "outside_pantry": 141
+            },
+            "status": "OK",
+            "warnings": []
+          },
+          "ing_milk": {
+            "reason_counts": {
+              "excluded_ingredient": 7,
+              "original_or_retained": 11,
+              "outside_pantry": 141
+            },
+            "status": "OK",
+            "warnings": []
+          }
+        }
+      },
+      "case_id": "dev_v2_13",
+      "constraints": {
+        "excluded_ids": [
+          "ing_milk"
+        ],
+        "max_replacements": 3,
+        "pantry_ids": [
+          "ing_coconut_milk",
+          "ing_olive_oil",
+          "ing_plain_yogurt",
+          "ing_vegetable_oil"
+        ],
+        "pantry_only": true
+      },
+      "duplicate_group_id": "group_broccoli_cheddar_soup",
+      "grade_2_hit_at_3": null,
+      "independent": {
+        "constraint_checks": {
+          "errors": [
+            "Duplicate replacement ingredients."
+          ],
+          "final_ingredient_ids": [
+            "ing_olive_oil",
+            "ing_onion",
+            "ing_celery",
+            "ing_olive_oil",
+            "ing_vegetable_stock",
+            "ing_all_purpose_flour",
+            "ing_white_fish_fillet",
+            "ing_potato",
+            "ing_black_pepper",
+            "ing_salt",
+            "ing_dill"
+          ],
+          "valid": false
+        },
+        "individual_scores": [
+          0.7399472585459183,
+          0.7399472585459183
+        ],
+        "joint_score": null,
+        "replacement_ids": [
+          "ing_olive_oil",
+          "ing_olive_oil"
+        ],
+        "replacements": {
+          "ing_butter": "ing_olive_oil",
+          "ing_milk": "ing_olive_oil"
+        },
+        "score": 0.7399472585459183,
+        "target_ids": [
+          "ing_butter",
+          "ing_milk"
+        ],
+        "valid": false,
+        "violations": [
+          "Duplicate replacement ingredients."
+        ]
+      },
+      "plan_violations": 0,
+      "prompt": "Replace both dairy ingredients and assess flavor, thickening and constraint compliance.",
+      "recipe_id": "rec_new_england_style_fish_chowder",
+      "result": {
+        "config_version": "0.4.0",
+        "data_version": "2.0",
+        "items": [
+          {
+            "component_scores": {
+              "J": 0.020194446438271976,
+              "Q": 0.7090091864791371
+            },
+            "constraint_checks": {
+              "errors": [],
+              "final_ingredient_ids": [
+                "ing_olive_oil",
+                "ing_onion",
+                "ing_celery",
+                "ing_vegetable_oil",
+                "ing_vegetable_stock",
+                "ing_all_purpose_flour",
+                "ing_white_fish_fillet",
+                "ing_potato",
+                "ing_black_pepper",
+                "ing_salt",
+                "ing_dill"
+              ],
+              "valid": true
+            },
+            "final_ids": [
+              "ing_olive_oil",
+              "ing_onion",
+              "ing_celery",
+              "ing_vegetable_oil",
+              "ing_vegetable_stock",
+              "ing_all_purpose_flour",
+              "ing_white_fish_fillet",
+              "ing_potato",
+              "ing_black_pepper",
+              "ing_salt",
+              "ing_dill"
+            ],
+            "individual_scores": [
+              0.7399472585459183,
+              0.678071114412356
+            ],
+            "pair_details": [
+              {
+                "context_roles": [
+                  "fat",
+                  "liquid"
+                ],
+                "ingredient_a": "ing_olive_oil",
+                "ingredient_b": "ing_vegetable_oil",
+                "score": 0.020194446438271976,
+                "source": "context_cosine",
+                "unknown_evidence": false
+              }
+            ],
+            "purchase_count": 0,
+            "purchase_ids": [],
+            "replacement_ids": [
+              "ing_olive_oil",
+              "ing_vegetable_oil"
+            ],
+            "replacements": {
+              "ing_butter": "ing_olive_oil",
+              "ing_milk": "ing_vegetable_oil"
+            },
+            "score": 0.5712462384709641,
+            "target_ids": [
+              "ing_butter",
+              "ing_milk"
+            ],
+            "warnings": [
+              "Partial individual evidence for ing_butter, ing_milk."
+            ]
+          },
+          {
+            "component_scores": {
+              "J": 0.020194446438271976,
+              "Q": 0.7090091864791371
+            },
+            "constraint_checks": {
+              "errors": [],
+              "final_ingredient_ids": [
+                "ing_vegetable_oil",
+                "ing_onion",
+                "ing_celery",
+                "ing_olive_oil",
+                "ing_vegetable_stock",
+                "ing_all_purpose_flour",
+                "ing_white_fish_fillet",
+                "ing_potato",
+                "ing_black_pepper",
+                "ing_salt",
+                "ing_dill"
+              ],
+              "valid": true
+            },
+            "final_ids": [
+              "ing_vegetable_oil",
+              "ing_onion",
+              "ing_celery",
+              "ing_olive_oil",
+              "ing_vegetable_stock",
+              "ing_all_purpose_flour",
+              "ing_white_fish_fillet",
+              "ing_potato",
+              "ing_black_pepper",
+              "ing_salt",
+              "ing_dill"
+            ],
+            "individual_scores": [
+              0.678071114412356,
+              0.7399472585459183
+            ],
+            "pair_details": [
+              {
+                "context_roles": [
+                  "fat",
+                  "liquid"
+                ],
+                "ingredient_a": "ing_olive_oil",
+                "ingredient_b": "ing_vegetable_oil",
+                "score": 0.020194446438271976,
+                "source": "context_cosine",
+                "unknown_evidence": false
+              }
+            ],
+            "purchase_count": 0,
+            "purchase_ids": [],
+            "replacement_ids": [
+              "ing_vegetable_oil",
+              "ing_olive_oil"
+            ],
+            "replacements": {
+              "ing_butter": "ing_vegetable_oil",
+              "ing_milk": "ing_olive_oil"
+            },
+            "score": 0.5712462384709641,
+            "target_ids": [
+              "ing_butter",
+              "ing_milk"
+            ],
+            "warnings": [
+              "Partial individual evidence for ing_butter, ing_milk."
+            ]
+          },
+          {
+            "component_scores": {
+              "J": 0.1682082564456517,
+              "Q": 0.6409285050424585
+            },
+            "constraint_checks": {
+              "errors": [],
+              "final_ingredient_ids": [
+                "ing_coconut_milk",
+                "ing_onion",
+                "ing_celery",
+                "ing_vegetable_oil",
+                "ing_vegetable_stock",
+                "ing_all_purpose_flour",
+                "ing_white_fish_fillet",
+                "ing_potato",
+                "ing_black_pepper",
+                "ing_salt",
+                "ing_dill"
+              ],
+              "valid": true
+            },
+            "final_ids": [
+              "ing_coconut_milk",
+              "ing_onion",
+              "ing_celery",
+              "ing_vegetable_oil",
+              "ing_vegetable_stock",
+              "ing_all_purpose_flour",
+              "ing_white_fish_fillet",
+              "ing_potato",
+              "ing_black_pepper",
+              "ing_salt",
+              "ing_dill"
+            ],
+            "individual_scores": [
+              0.6037858956725608,
+              0.678071114412356
+            ],
+            "pair_details": [
+              {
+                "context_roles": [
+                  "fat",
+                  "liquid"
+                ],
+                "ingredient_a": "ing_coconut_milk",
+                "ingredient_b": "ing_vegetable_oil",
+                "score": 0.1682082564456517,
+                "source": "context_cosine",
+                "unknown_evidence": false
+              }
+            ],
+            "purchase_count": 0,
+            "purchase_ids": [],
+            "replacement_ids": [
+              "ing_coconut_milk",
+              "ing_vegetable_oil"
+            ],
+            "replacements": {
+              "ing_butter": "ing_coconut_milk",
+              "ing_milk": "ing_vegetable_oil"
+            },
+            "score": 0.5463844553230971,
+            "target_ids": [
+              "ing_butter",
+              "ing_milk"
+            ],
+            "warnings": [
+              "Partial individual evidence for ing_butter, ing_milk."
+            ]
+          }
+        ],
+        "reason_counts": {
+          "Duplicate replacement ingredient IDs.": 3
+        },
+        "schema_version": "1.0",
+        "status": "OK",
+        "warnings": [
+          "Quantities and instructions are the originals. You may need to adjust the preparation."
+        ]
+      },
+      "review_status": "pending_review",
+      "score_difference": null,
+      "target_ids": [
+        "ing_butter",
+        "ing_milk"
+      ]
+    },
+    {
+      "annotator_ids": [],
+      "audit": {
+        "candidate_ids": {
+          "ing_paneer": [
+            "ing_firm_tofu",
+            "ing_silken_tofu"
+          ],
+          "ing_red_bell_pepper": [
+            "ing_green_bell_pepper"
+          ]
+        },
+        "combinations": 2,
+        "target_diagnostics": {
+          "ing_paneer": {
+            "reason_counts": {
+              "excluded_ingredient": 8,
+              "incompatible_or_missing_role": 2,
+              "original_or_retained": 11,
+              "outside_pantry": 139
+            },
+            "status": "OK",
+            "warnings": []
+          },
+          "ing_red_bell_pepper": {
+            "reason_counts": {
+              "excluded_ingredient": 8,
+              "incompatible_or_missing_role": 2,
+              "missing_evidence": 1,
+              "original_or_retained": 11,
+              "outside_pantry": 139
+            },
+            "status": "OK",
+            "warnings": []
+          }
+        }
+      },
+      "case_id": "dev_v2_14",
+      "constraints": {
+        "excluded_ids": [
+          "ing_milk"
+        ],
+        "max_replacements": 3,
+        "pantry_ids": [
+          "ing_broccoli",
+          "ing_cheddar",
+          "ing_firm_tofu",
+          "ing_green_bell_pepper",
+          "ing_silken_tofu"
+        ],
+        "pantry_only": true
+      },
+      "duplicate_group_id": "group_black_pepper_cauliflower_roast",
+      "grade_2_hit_at_3": null,
+      "independent": {
+        "constraint_checks": {
+          "errors": [],
+          "final_ingredient_ids": [
+            "ing_coconut_oil",
+            "ing_onion",
+            "ing_garlic",
+            "ing_ginger",
+            "ing_curry_leaf",
+            "ing_black_peppercorn",
+            "ing_water",
+            "ing_firm_tofu",
+            "ing_green_bell_pepper",
+            "ing_salt",
+            "ing_ground_cumin"
+          ],
+          "valid": true
+        },
+        "individual_scores": [
+          0.6506454019665422,
+          0.5396474034423692
+        ],
+        "joint_score": 0.4766163592540799,
+        "replacement_ids": [
+          "ing_firm_tofu",
+          "ing_green_bell_pepper"
+        ],
+        "replacements": {
+          "ing_paneer": "ing_firm_tofu",
+          "ing_red_bell_pepper": "ing_green_bell_pepper"
+        },
+        "score": 0.5951464027044557,
+        "target_ids": [
+          "ing_paneer",
+          "ing_red_bell_pepper"
+        ],
+        "valid": true,
+        "violations": []
+      },
+      "plan_violations": 0,
+      "prompt": "Choose a pair that will hold its texture in a pepper stir-fry under the milk exclusion.",
+      "recipe_id": "rec_black_pepper_paneer",
+      "result": {
+        "config_version": "0.4.0",
+        "data_version": "2.0",
+        "items": [
+          {
+            "component_scores": {
+              "J": 0.0024961854525766473,
+              "Q": 0.5951464027044557
+            },
+            "constraint_checks": {
+              "errors": [],
+              "final_ingredient_ids": [
+                "ing_coconut_oil",
+                "ing_onion",
+                "ing_garlic",
+                "ing_ginger",
+                "ing_curry_leaf",
+                "ing_black_peppercorn",
+                "ing_water",
+                "ing_firm_tofu",
+                "ing_green_bell_pepper",
+                "ing_salt",
+                "ing_ground_cumin"
+              ],
+              "valid": true
+            },
+            "final_ids": [
+              "ing_coconut_oil",
+              "ing_onion",
+              "ing_garlic",
+              "ing_ginger",
+              "ing_curry_leaf",
+              "ing_black_peppercorn",
+              "ing_water",
+              "ing_firm_tofu",
+              "ing_green_bell_pepper",
+              "ing_salt",
+              "ing_ground_cumin"
+            ],
+            "individual_scores": [
+              0.6506454019665422,
+              0.5396474034423692
+            ],
+            "pair_details": [
+              {
+                "context_roles": [
+                  "bulk",
+                  "protein"
+                ],
+                "ingredient_a": "ing_firm_tofu",
+                "ingredient_b": "ing_green_bell_pepper",
+                "score": 0.0024961854525766473,
+                "source": "context_cosine",
+                "unknown_evidence": false
+              }
+            ],
+            "purchase_count": 0,
+            "purchase_ids": [],
+            "replacement_ids": [
+              "ing_firm_tofu",
+              "ing_green_bell_pepper"
+            ],
+            "replacements": {
+              "ing_paneer": "ing_firm_tofu",
+              "ing_red_bell_pepper": "ing_green_bell_pepper"
+            },
+            "score": 0.4766163592540799,
+            "target_ids": [
+              "ing_paneer",
+              "ing_red_bell_pepper"
+            ],
+            "warnings": [
+              "Partial individual evidence for ing_paneer, ing_red_bell_pepper."
+            ]
+          },
+          {
+            "component_scores": {
+              "J": 4.7470116043229284e-05,
+              "Q": 0.5205231089235636
+            },
+            "constraint_checks": {
+              "errors": [],
+              "final_ingredient_ids": [
+                "ing_coconut_oil",
+                "ing_onion",
+                "ing_garlic",
+                "ing_ginger",
+                "ing_curry_leaf",
+                "ing_black_peppercorn",
+                "ing_water",
+                "ing_silken_tofu",
+                "ing_green_bell_pepper",
+                "ing_salt",
+                "ing_ground_cumin"
+              ],
+              "valid": true
+            },
+            "final_ids": [
+              "ing_coconut_oil",
+              "ing_onion",
+              "ing_garlic",
+              "ing_ginger",
+              "ing_curry_leaf",
+              "ing_black_peppercorn",
+              "ing_water",
+              "ing_silken_tofu",
+              "ing_green_bell_pepper",
+              "ing_salt",
+              "ing_ground_cumin"
+            ],
+            "individual_scores": [
+              0.501398814404758,
+              0.5396474034423692
+            ],
+            "pair_details": [
+              {
+                "context_roles": [
+                  "bulk",
+                  "protein"
+                ],
+                "ingredient_a": "ing_green_bell_pepper",
+                "ingredient_b": "ing_silken_tofu",
+                "score": 4.7470116043229284e-05,
+                "source": "context_cosine",
+                "unknown_evidence": false
+              }
+            ],
+            "purchase_count": 0,
+            "purchase_ids": [],
+            "replacement_ids": [
+              "ing_silken_tofu",
+              "ing_green_bell_pepper"
+            ],
+            "replacements": {
+              "ing_paneer": "ing_silken_tofu",
+              "ing_red_bell_pepper": "ing_green_bell_pepper"
+            },
+            "score": 0.41642798116205954,
+            "target_ids": [
+              "ing_paneer",
+              "ing_red_bell_pepper"
+            ],
+            "warnings": [
+              "Partial individual evidence for ing_paneer, ing_red_bell_pepper."
+            ]
+          }
+        ],
+        "reason_counts": {},
+        "schema_version": "1.0",
+        "status": "OK",
+        "warnings": [
+          "Quantities and instructions are the originals. You may need to adjust the preparation."
+        ]
+      },
+      "review_status": "pending_review",
+      "score_difference": 0.0,
+      "target_ids": [
+        "ing_paneer",
+        "ing_red_bell_pepper"
+      ]
+    },
+    {
+      "annotator_ids": [],
+      "audit": {
+        "candidate_ids": {
+          "ing_basil": [
+            "ing_thyme",
+            "ing_parsley"
+          ],
+          "ing_canned_tomato": [
+            "ing_tomato_puree",
+            "ing_tomato"
+          ]
+        },
+        "combinations": 4,
+        "target_diagnostics": {
+          "ing_basil": {
+            "reason_counts": {
+              "incompatible_or_missing_role": 2,
+              "original_or_retained": 7,
+              "outside_pantry": 151
+            },
+            "status": "OK",
+            "warnings": []
+          },
+          "ing_canned_tomato": {
+            "reason_counts": {
+              "incompatible_or_missing_role": 2,
+              "original_or_retained": 7,
+              "outside_pantry": 151
+            },
+            "status": "OK",
+            "warnings": []
+          }
+        }
+      },
+      "case_id": "dev_v2_15",
+      "constraints": {
+        "excluded_ids": [],
+        "max_replacements": 3,
+        "pantry_ids": [
+          "ing_parsley",
+          "ing_thyme",
+          "ing_tomato",
+          "ing_tomato_puree"
+        ],
+        "pantry_only": true
+      },
+      "duplicate_group_id": "group_italian_lentil_soup",
+      "grade_2_hit_at_3": null,
+      "independent": {
+        "constraint_checks": {
+          "errors": [],
+          "final_ingredient_ids": [
+            "ing_tomato_puree",
+            "ing_onion",
+            "ing_garlic",
+            "ing_vegetable_stock",
+            "ing_olive_oil",
+            "ing_thyme",
+            "ing_black_pepper"
+          ],
+          "valid": true
+        },
+        "individual_scores": [
+          0.8435571838403954,
+          0.6517173461917861
+        ],
+        "joint_score": 0.6604486764189217,
+        "replacement_ids": [
+          "ing_thyme",
+          "ing_tomato_puree"
+        ],
+        "replacements": {
+          "ing_basil": "ing_thyme",
+          "ing_canned_tomato": "ing_tomato_puree"
+        },
+        "score": 0.7476372650160907,
+        "target_ids": [
+          "ing_basil",
+          "ing_canned_tomato"
+        ],
+        "valid": true,
+        "violations": []
+      },
+      "plan_violations": 0,
+      "prompt": "Compare combinations of a tomato base and a finishing herb.",
+      "recipe_id": "rec_italian_tomato_basil_soup",
+      "result": {
+        "config_version": "0.4.0",
+        "data_version": "2.0",
+        "items": [
+          {
+            "component_scores": {
+              "J": 0.3116943220302453,
+              "Q": 0.7476372650160907
+            },
+            "constraint_checks": {
+              "errors": [],
+              "final_ingredient_ids": [
+                "ing_tomato_puree",
+                "ing_onion",
+                "ing_garlic",
+                "ing_vegetable_stock",
+                "ing_olive_oil",
+                "ing_thyme",
+                "ing_black_pepper"
+              ],
+              "valid": true
+            },
+            "final_ids": [
+              "ing_tomato_puree",
+              "ing_onion",
+              "ing_garlic",
+              "ing_vegetable_stock",
+              "ing_olive_oil",
+              "ing_thyme",
+              "ing_black_pepper"
+            ],
+            "individual_scores": [
+              0.8435571838403954,
+              0.6517173461917861
+            ],
+            "pair_details": [
+              {
+                "context_roles": [
+                  "aromatic",
+                  "bulk"
+                ],
+                "ingredient_a": "ing_thyme",
+                "ingredient_b": "ing_tomato_puree",
+                "score": 0.3116943220302453,
+                "source": "context_cosine",
+                "unknown_evidence": false
+              }
+            ],
+            "purchase_count": 0,
+            "purchase_ids": [],
+            "replacement_ids": [
+              "ing_thyme",
+              "ing_tomato_puree"
+            ],
+            "replacements": {
+              "ing_basil": "ing_thyme",
+              "ing_canned_tomato": "ing_tomato_puree"
+            },
+            "score": 0.6604486764189217,
+            "target_ids": [
+              "ing_basil",
+              "ing_canned_tomato"
+            ],
+            "warnings": [
+              "Partial individual evidence for ing_basil, ing_canned_tomato."
+            ]
+          },
+          {
+            "component_scores": {
+              "J": 0.23306766494723521,
+              "Q": 0.7264613079862556
+            },
+            "constraint_checks": {
+              "errors": [],
+              "final_ingredient_ids": [
+                "ing_tomato_puree",
+                "ing_onion",
+                "ing_garlic",
+                "ing_vegetable_stock",
+                "ing_olive_oil",
+                "ing_parsley",
+                "ing_black_pepper"
+              ],
+              "valid": true
+            },
+            "final_ids": [
+              "ing_tomato_puree",
+              "ing_onion",
+              "ing_garlic",
+              "ing_vegetable_stock",
+              "ing_olive_oil",
+              "ing_parsley",
+              "ing_black_pepper"
+            ],
+            "individual_scores": [
+              0.8012052697807251,
+              0.6517173461917861
+            ],
+            "pair_details": [
+              {
+                "context_roles": [
+                  "aromatic",
+                  "bulk"
+                ],
+                "ingredient_a": "ing_parsley",
+                "ingredient_b": "ing_tomato_puree",
+                "score": 0.23306766494723521,
+                "source": "context_cosine",
+                "unknown_evidence": false
+              }
+            ],
+            "purchase_count": 0,
+            "purchase_ids": [],
+            "replacement_ids": [
+              "ing_parsley",
+              "ing_tomato_puree"
+            ],
+            "replacements": {
+              "ing_basil": "ing_parsley",
+              "ing_canned_tomato": "ing_tomato_puree"
+            },
+            "score": 0.6277825793784516,
+            "target_ids": [
+              "ing_basil",
+              "ing_canned_tomato"
+            ],
+            "warnings": [
+              "Partial individual evidence for ing_basil, ing_canned_tomato."
+            ]
+          },
+          {
+            "component_scores": {
+              "J": 0.030114715418928312,
+              "Q": 0.7030335978485563
+            },
+            "constraint_checks": {
+              "errors": [],
+              "final_ingredient_ids": [
+                "ing_tomato",
+                "ing_onion",
+                "ing_garlic",
+                "ing_vegetable_stock",
+                "ing_olive_oil",
+                "ing_thyme",
+                "ing_black_pepper"
+              ],
+              "valid": true
+            },
+            "final_ids": [
+              "ing_tomato",
+              "ing_onion",
+              "ing_garlic",
+              "ing_vegetable_stock",
+              "ing_olive_oil",
+              "ing_thyme",
+              "ing_black_pepper"
+            ],
+            "individual_scores": [
+              0.8435571838403954,
+              0.5625100118567173
+            ],
+            "pair_details": [
+              {
+                "context_roles": [
+                  "aromatic",
+                  "bulk"
+                ],
+                "ingredient_a": "ing_thyme",
+                "ingredient_b": "ing_tomato",
+                "score": 0.030114715418928312,
+                "source": "context_cosine",
+                "unknown_evidence": false
+              }
+            ],
+            "purchase_count": 0,
+            "purchase_ids": [],
+            "replacement_ids": [
+              "ing_thyme",
+              "ing_tomato"
+            ],
+            "replacements": {
+              "ing_basil": "ing_thyme",
+              "ing_canned_tomato": "ing_tomato"
+            },
+            "score": 0.5684498213626308,
+            "target_ids": [
+              "ing_basil",
+              "ing_canned_tomato"
+            ],
+            "warnings": [
+              "Partial individual evidence for ing_basil, ing_canned_tomato."
+            ]
+          }
+        ],
+        "reason_counts": {},
+        "schema_version": "1.0",
+        "status": "OK",
+        "warnings": [
+          "Quantities and instructions are the originals. You may need to adjust the preparation."
+        ]
+      },
+      "review_status": "pending_review",
+      "score_difference": 0.0,
+      "target_ids": [
+        "ing_basil",
+        "ing_canned_tomato"
+      ]
+    }
+  ],
+  "config_version": "0.4.0",
+  "data_version": "2.0",
+  "quality_note": "Quality requires reconciled human grades. Score differences compare feasible plans on the same joint objective.",
   "schema_version": "1.0",
   "split": "dev",
   "split_id": "groups_seed_42_v2",
-  "status": "development_pending_review",
-  "quality_note": "Development-only outputs generated from pending-review substitution evidence. Not validated culinary recommendations.",
-  "cases": [
-    {
-      "case_id": "dev_v2_09",
-      "recipe_id": "rec_black_pepper_cauliflower_roast",
-      "target_ids": [
-        "ing_cauliflower",
-        "ing_grated_coconut"
-      ],
-      "candidate_counts": {
-        "ing_cauliflower": 2,
-        "ing_grated_coconut": 2
-      },
-      "joint_plans": [
-        {
-          "plan": {
-            "target_ids": [
-              "ing_cauliflower",
-              "ing_grated_coconut"
-            ],
-            "replacement_ids": [
-              "ing_green_bean",
-              "ing_mushroom"
-            ],
-            "score": 0.5335094124272864,
-            "component_scores": {
-              "Q": 0.630543460383148,
-              "J": 0.14537322060383978
-            },
-            "pair_details": [
-              {
-                "ingredient_a": "ing_green_bean",
-                "ingredient_b": "ing_mushroom",
-                "score": 0.14537322060383978,
-                "source": "context_cosine",
-                "context_roles": [
-                  "bulk",
-                  "fat"
-                ]
-              }
-            ],
-            "warnings": [],
-            "purchase_count": 0
-          },
-          "validation": {
-            "valid": true,
-            "errors": [],
-            "final_ingredient_ids": [
-              "ing_coconut_oil",
-              "ing_onion",
-              "ing_garlic",
-              "ing_ginger",
-              "ing_curry_leaf",
-              "ing_black_peppercorn",
-              "ing_water",
-              "ing_green_bean",
-              "ing_salt",
-              "ing_mushroom"
-            ]
-          }
-        },
-        {
-          "plan": {
-            "target_ids": [
-              "ing_cauliflower",
-              "ing_grated_coconut"
-            ],
-            "replacement_ids": [
-              "ing_mushroom",
-              "ing_green_bean"
-            ],
-            "score": 0.5335094124272864,
-            "component_scores": {
-              "Q": 0.630543460383148,
-              "J": 0.14537322060383978
-            },
-            "pair_details": [
-              {
-                "ingredient_a": "ing_green_bean",
-                "ingredient_b": "ing_mushroom",
-                "score": 0.14537322060383978,
-                "source": "context_cosine",
-                "context_roles": [
-                  "bulk",
-                  "fat"
-                ]
-              }
-            ],
-            "warnings": [],
-            "purchase_count": 0
-          },
-          "validation": {
-            "valid": true,
-            "errors": [],
-            "final_ingredient_ids": [
-              "ing_coconut_oil",
-              "ing_onion",
-              "ing_garlic",
-              "ing_ginger",
-              "ing_curry_leaf",
-              "ing_black_peppercorn",
-              "ing_water",
-              "ing_mushroom",
-              "ing_salt",
-              "ing_green_bean"
-            ]
-          }
-        }
-      ],
-      "independent_baseline": {
-        "target_ids": [
-          "ing_cauliflower",
-          "ing_grated_coconut"
-        ],
-        "replacement_ids": [
-          "ing_green_bean",
-          "ing_green_bean"
-        ],
-        "individual_scores": [
-          0.6361759847346384,
-          0.6361759847346384
-        ],
-        "score": 0.6361759847346384,
-        "violations": [
-          "Duplicate replacement IDs selected."
-        ],
-        "valid": false
-      },
-      "review_status": "pending_review",
-      "evidence_note": "Candidate evidence is not manually reviewed; scores are software outputs, not culinary guarantees."
-    },
-    {
-      "case_id": "dev_v2_10",
-      "recipe_id": "rec_pasta_e_ceci",
-      "target_ids": [
-        "ing_small_pasta",
-        "ing_celery"
-      ],
-      "candidate_counts": {
-        "ing_small_pasta": 2,
-        "ing_celery": 2
-      },
-      "joint_plans": [
-        {
-          "plan": {
-            "target_ids": [
-              "ing_small_pasta",
-              "ing_celery"
-            ],
-            "replacement_ids": [
-              "ing_pearl_barley",
-              "ing_short_grain_rice"
-            ],
-            "score": 0.6639166675763155,
-            "component_scores": {
-              "Q": 0.6800654770672014,
-              "J": 0.5993214296127721
-            },
-            "pair_details": [
-              {
-                "ingredient_a": "ing_pearl_barley",
-                "ingredient_b": "ing_short_grain_rice",
-                "score": 0.5993214296127721,
-                "source": "context_cosine",
-                "context_roles": [
-                  "bulk"
-                ]
-              }
-            ],
-            "warnings": [],
-            "purchase_count": 0
-          },
-          "validation": {
-            "valid": true,
-            "errors": [],
-            "final_ingredient_ids": [
-              "ing_olive_oil",
-              "ing_onion",
-              "ing_garlic",
-              "ing_short_grain_rice",
-              "ing_canned_tomato",
-              "ing_vegetable_stock",
-              "ing_cooked_chickpea",
-              "ing_pearl_barley",
-              "ing_basil",
-              "ing_black_pepper",
-              "ing_salt",
-              "ing_parsley"
-            ]
-          }
-        },
-        {
-          "plan": {
-            "target_ids": [
-              "ing_small_pasta",
-              "ing_celery"
-            ],
-            "replacement_ids": [
-              "ing_short_grain_rice",
-              "ing_pearl_barley"
-            ],
-            "score": 0.6639166675763155,
-            "component_scores": {
-              "Q": 0.6800654770672014,
-              "J": 0.5993214296127721
-            },
-            "pair_details": [
-              {
-                "ingredient_a": "ing_pearl_barley",
-                "ingredient_b": "ing_short_grain_rice",
-                "score": 0.5993214296127721,
-                "source": "context_cosine",
-                "context_roles": [
-                  "bulk"
-                ]
-              }
-            ],
-            "warnings": [],
-            "purchase_count": 0
-          },
-          "validation": {
-            "valid": true,
-            "errors": [],
-            "final_ingredient_ids": [
-              "ing_olive_oil",
-              "ing_onion",
-              "ing_garlic",
-              "ing_pearl_barley",
-              "ing_canned_tomato",
-              "ing_vegetable_stock",
-              "ing_cooked_chickpea",
-              "ing_short_grain_rice",
-              "ing_basil",
-              "ing_black_pepper",
-              "ing_salt",
-              "ing_parsley"
-            ]
-          }
-        }
-      ],
-      "independent_baseline": {
-        "target_ids": [
-          "ing_small_pasta",
-          "ing_celery"
-        ],
-        "replacement_ids": [
-          "ing_pearl_barley",
-          "ing_pearl_barley"
-        ],
-        "individual_scores": [
-          0.685371435637084,
-          0.685371435637084
-        ],
-        "score": 0.685371435637084,
-        "violations": [
-          "Duplicate replacement IDs selected."
-        ],
-        "valid": false
-      },
-      "review_status": "pending_review",
-      "evidence_note": "Candidate evidence is not manually reviewed; scores are software outputs, not culinary guarantees."
-    },
-    {
-      "case_id": "dev_v2_10",
-      "recipe_id": "rec_pasta_e_ceci",
-      "target_ids": [
-        "ing_small_pasta",
-        "ing_canned_tomato"
-      ],
-      "candidate_counts": {
-        "ing_small_pasta": 2,
-        "ing_canned_tomato": 2
-      },
-      "joint_plans": [
-        {
-          "plan": {
-            "target_ids": [
-              "ing_small_pasta",
-              "ing_canned_tomato"
-            ],
-            "replacement_ids": [
-              "ing_pearl_barley",
-              "ing_short_grain_rice"
-            ],
-            "score": 0.6817711478343449,
-            "component_scores": {
-              "Q": 0.702383577389738,
-              "J": 0.5993214296127721
-            },
-            "pair_details": [
-              {
-                "ingredient_a": "ing_pearl_barley",
-                "ingredient_b": "ing_short_grain_rice",
-                "score": 0.5993214296127721,
-                "source": "context_cosine",
-                "context_roles": [
-                  "bulk"
-                ]
-              }
-            ],
-            "warnings": [],
-            "purchase_count": 0
-          },
-          "validation": {
-            "valid": true,
-            "errors": [],
-            "final_ingredient_ids": [
-              "ing_olive_oil",
-              "ing_onion",
-              "ing_garlic",
-              "ing_celery",
-              "ing_short_grain_rice",
-              "ing_vegetable_stock",
-              "ing_cooked_chickpea",
-              "ing_pearl_barley",
-              "ing_basil",
-              "ing_black_pepper",
-              "ing_salt",
-              "ing_parsley"
-            ]
-          }
-        },
-        {
-          "plan": {
-            "target_ids": [
-              "ing_small_pasta",
-              "ing_canned_tomato"
-            ],
-            "replacement_ids": [
-              "ing_short_grain_rice",
-              "ing_pearl_barley"
-            ],
-            "score": 0.6817711478343449,
-            "component_scores": {
-              "Q": 0.702383577389738,
-              "J": 0.5993214296127721
-            },
-            "pair_details": [
-              {
-                "ingredient_a": "ing_pearl_barley",
-                "ingredient_b": "ing_short_grain_rice",
-                "score": 0.5993214296127721,
-                "source": "context_cosine",
-                "context_roles": [
-                  "bulk"
-                ]
-              }
-            ],
-            "warnings": [],
-            "purchase_count": 0
-          },
-          "validation": {
-            "valid": true,
-            "errors": [],
-            "final_ingredient_ids": [
-              "ing_olive_oil",
-              "ing_onion",
-              "ing_garlic",
-              "ing_celery",
-              "ing_pearl_barley",
-              "ing_vegetable_stock",
-              "ing_cooked_chickpea",
-              "ing_short_grain_rice",
-              "ing_basil",
-              "ing_black_pepper",
-              "ing_salt",
-              "ing_parsley"
-            ]
-          }
-        }
-      ],
-      "independent_baseline": {
-        "target_ids": [
-          "ing_small_pasta",
-          "ing_canned_tomato"
-        ],
-        "replacement_ids": [
-          "ing_pearl_barley",
-          "ing_pearl_barley"
-        ],
-        "individual_scores": [
-          0.7123479013911966,
-          0.7123479013911966
-        ],
-        "score": 0.7123479013911966,
-        "violations": [
-          "Duplicate replacement IDs selected."
-        ],
-        "valid": false
-      },
-      "review_status": "pending_review",
-      "evidence_note": "Candidate evidence is not manually reviewed; scores are software outputs, not culinary guarantees."
-    },
-    {
-      "case_id": "dev_v2_10",
-      "recipe_id": "rec_pasta_e_ceci",
-      "target_ids": [
-        "ing_small_pasta",
-        "ing_cooked_chickpea"
-      ],
-      "candidate_counts": {
-        "ing_small_pasta": 2,
-        "ing_cooked_chickpea": 2
-      },
-      "joint_plans": [
-        {
-          "plan": {
-            "target_ids": [
-              "ing_small_pasta",
-              "ing_cooked_chickpea"
-            ],
-            "replacement_ids": [
-              "ing_pearl_barley",
-              "ing_short_grain_rice"
-            ],
-            "score": 0.6814304959397255,
-            "component_scores": {
-              "Q": 0.7019577625214639,
-              "J": 0.5993214296127721
-            },
-            "pair_details": [
-              {
-                "ingredient_a": "ing_pearl_barley",
-                "ingredient_b": "ing_short_grain_rice",
-                "score": 0.5993214296127721,
-                "source": "context_cosine",
-                "context_roles": [
-                  "bulk",
-                  "protein"
-                ]
-              }
-            ],
-            "warnings": [],
-            "purchase_count": 0
-          },
-          "validation": {
-            "valid": true,
-            "errors": [],
-            "final_ingredient_ids": [
-              "ing_olive_oil",
-              "ing_onion",
-              "ing_garlic",
-              "ing_celery",
-              "ing_canned_tomato",
-              "ing_vegetable_stock",
-              "ing_short_grain_rice",
-              "ing_pearl_barley",
-              "ing_basil",
-              "ing_black_pepper",
-              "ing_salt",
-              "ing_parsley"
-            ]
-          }
-        },
-        {
-          "plan": {
-            "target_ids": [
-              "ing_small_pasta",
-              "ing_cooked_chickpea"
-            ],
-            "replacement_ids": [
-              "ing_short_grain_rice",
-              "ing_pearl_barley"
-            ],
-            "score": 0.6814304959397255,
-            "component_scores": {
-              "Q": 0.7019577625214639,
-              "J": 0.5993214296127721
-            },
-            "pair_details": [
-              {
-                "ingredient_a": "ing_pearl_barley",
-                "ingredient_b": "ing_short_grain_rice",
-                "score": 0.5993214296127721,
-                "source": "context_cosine",
-                "context_roles": [
-                  "bulk",
-                  "protein"
-                ]
-              }
-            ],
-            "warnings": [],
-            "purchase_count": 0
-          },
-          "validation": {
-            "valid": true,
-            "errors": [],
-            "final_ingredient_ids": [
-              "ing_olive_oil",
-              "ing_onion",
-              "ing_garlic",
-              "ing_celery",
-              "ing_canned_tomato",
-              "ing_vegetable_stock",
-              "ing_pearl_barley",
-              "ing_short_grain_rice",
-              "ing_basil",
-              "ing_black_pepper",
-              "ing_salt",
-              "ing_parsley"
-            ]
-          }
-        }
-      ],
-      "independent_baseline": {
-        "target_ids": [
-          "ing_small_pasta",
-          "ing_cooked_chickpea"
-        ],
-        "replacement_ids": [
-          "ing_pearl_barley",
-          "ing_pearl_barley"
-        ],
-        "individual_scores": [
-          0.705946174023773,
-          0.705946174023773
-        ],
-        "score": 0.705946174023773,
-        "violations": [
-          "Duplicate replacement IDs selected."
-        ],
-        "valid": false
-      },
-      "review_status": "pending_review",
-      "evidence_note": "Candidate evidence is not manually reviewed; scores are software outputs, not culinary guarantees."
-    }
-  ]
+  "summary": {
+    "abstentions": 0,
+    "cases": 4,
+    "comparable_cases": 2,
+    "constraint_violations": 0,
+    "grade_2_hit_at_3": null,
+    "independent_abstentions": 0,
+    "independent_duplicate_failures": 2,
+    "independent_invalid": 2,
+    "independent_valid": 2,
+    "mean_score_difference": 0.0,
+    "plans_returned": 11,
+    "plans_with_unknown_pair_evidence": 0,
+    "quality_eligible_cases": 0,
+    "violation_rate": 0.0
+  }
 }

@@ -1,202 +1,31 @@
-\# KitchenCompass — Phase 4: Joint Ingredient Adaptation
+# Phase 4 joint replacement selection
 
+The Streamlit **Joint replacements** screen and the development evaluator both call `kitchencompass.service.adapt_recipe`. The input can be a catalogue recipe ID, a validated recipe record or a session recipe with confirmed ingredient IDs.
 
+## Selection and validation
 
-\## Objective
+1. Choose one to three distinct target IDs. The service checks the request-specific replacement limit and expands exclusions through ingredient components. If an excluded ingredient would remain in the dish, it identifies the conflict.
+2. For each target, rank up to five candidates using the Phase 3 full model. Identify instruction roles in the original recipe. Calculate recipe context from the ingredients left after removing **all** targets. Apply pantry constraints, exclusions and preparation-specific substitution blocks before taking the five.
+3. Enumerate the product of these lists, up to 125 combinations. Q is the mean individual score. J is the mean compatibility across replacement pairs. Score a multi-target plan as `0.8 × Q + 0.2 × J`. For one target use Q alone.
+4. Reviewed pair rules take precedence over vector cosine in matching target-role contexts. A block wins. If several positive rules match different roles, use the lower score. Without a rule, use training-context cosine. A missing vector contributes 0 and an explicit warning. A measured cosine of 0 carries no missing-evidence warning.
+5. Reconstruct each final recipe independently. Check exact coverage, distinct replacements, original and retained ingredient IDs, exclusions, pantry-only eligibility, maximum replacements, directed preparation blocks and replacement-pair blocks. Multiple original lines using the same ingredient share one substitution decision. Quantities and instruction text remain available in the original recipe.
+6. Return at most three valid plans. Break score ties by fewer replacement purchases and then by the tuple of replacement IDs in target order. The independent comparator uses the highest-scoring candidate in each identical list, breaking ties by ID. Its output retains any duplicate or blocked selection.
 
+## Development evidence
 
+The four pre-existing joint cases in the frozen development split supplied the targets, pantry and exclusions. The evaluator records each case even if it returns zero plans. The independent selections and the joint output are in [the per-case report](../results/development_joint_plans.json).
 
-Phase 4 extends single-ingredient substitution into joint multi-target ingredient adaptation.
+| Case | Recipe | Targets | Valid plans returned | Independent choices |
+|---|---|---:|---:|---|
+| dev_v2_12 | Broccoli Cheddar Soup | 3 | 3 | Olive oil selected twice |
+| dev_v2_13 | New England Style Fish Chowder | 2 | 3 | Olive oil selected twice |
+| dev_v2_14 | Black Pepper Paneer | 2 | 2 | Valid |
+| dev_v2_15 | Italian Tomato Basil Soup | 2 | 3 | Valid |
 
+All 11 returned plans passed validation. The two feasible independent selections tied the top joint score. All four cases await human grading. An oil suggestion can meet encoded roles and exclusions while still giving a poor result in a chowder. A grade-2 hit rate requires human judgments about the resulting dish. The tests include a constructed hard-block interaction and an independent numerical enumeration of a 125-combination request.
 
+## Pair evidence
 
-The planner evaluates candidate replacement combinations and selects a valid plan using individual substitution quality and pair compatibility.
+`data/processed/pair_compatibility.jsonl` stores sorted distinct IDs, target roles, a score, a block flag, source, reviewer and review status. A reviewed row requires a named reviewer. The file includes a **pending** onion–celery aromatic proposal. Escoffier describes their use in mirepoix. The proposed numeric score is a project judgment awaiting review. Pending rows cannot change a recommendation. The current release uses the cosine fallback for all production replacement pairs. Source [Escoffier, French culinary techniques](https://www.escoffier.edu/blog/value-of-culinary-education/french-culinary-education-french-cooking-techniques-chefs-need-to-know/).
 
-
-
-\## Implementation
-
-
-
-Main implementation: `kitchencompass/adapt.py`
-
-
-
-Functions:
-
-
-
-\- `validate\_targets`: validates requested replacement targets.
-
-\- `generate\_candidate\_lists`: generates eligible candidates for each target.
-
-\- `target\_role\_context`: obtains recipe-role context.
-
-\- `pair\_compatibility\_score`: evaluates compatibility between replacement pairs.
-
-\- `score\_joint\_plan`: calculates the joint-plan score.
-
-\- `generate\_joint\_plans`: enumerates and ranks candidate combinations.
-
-\- `generate\_independent\_baseline`: selects individually highest-scoring candidates for comparison.
-
-\- `validate\_plan`: independently validates a completed plan.
-
-
-
-\## Planning constraints
-
-
-
-\- Maximum targets: 3.
-
-\- Maximum candidates per target: 5.
-
-\- Maximum combinations: 125.
-
-\- Replacement IDs must be distinct.
-
-\- Target ingredients cannot be selected as replacements.
-
-\- Excluded ingredients and pantry restrictions must be respected.
-
-\- Every requested target must be replaced exactly once.
-
-
-
-\## Joint scoring
-
-
-
-For multiple replacements:
-
-
-
-`Plan score = 0.8 × Q + 0.2 × J`
-
-
-
-Where:
-
-
-
-\- Q is the mean individual substitution score.
-
-\- J is the mean pair-compatibility score.
-
-
-
-For a single replacement, the individual score is used.
-
-
-
-Pair compatibility is a computational proxy, not a guarantee of culinary suitability.
-
-
-
-\## Independent baseline
-
-
-
-The baseline selects the individually highest-scoring eligible candidate for each target.
-
-
-
-It does not silently repair duplicate replacement IDs or incompatible pairs. Violations are reported.
-
-
-
-\## Development output
-
-
-
-File: `results/development\_joint\_plans.json`
-
-
-
-The generated development output contains four eligible two-target cases:
-
-
-
-\- `dev\_v2\_09`: cauliflower and grated coconut.
-
-\- `dev\_v2\_10`: small pasta and celery.
-
-\- `dev\_v2\_10`: small pasta and canned tomato.
-
-\- `dev\_v2\_10`: small pasta and cooked chickpea.
-
-
-
-All four cases produced two joint plans, with both plans passing the independent validator.
-
-
-
-The independent baselines were invalid in all four cases.
-
-
-
-\## Tests
-
-
-
-The complete test suite passed:
-
-
-
-`99 passed in 7.82s`
-
-
-
-The development JSON output was also parsed successfully using Python's JSON tool.
-
-
-
-\## Evidence limitations
-
-
-
-All generated development cases remain `pending\_review`.
-
-
-
-Candidate scores and pair compatibility are software outputs. They must not be interpreted as manually verified culinary recommendations.
-
-
-
-Synthetic test fixtures are software-validation fixtures and are not culinary evidence.
-
-
-
-\## Service integration status
-
-
-
-The existing public service functions are:
-
-
-
-\- `recommend\_recipes`
-
-\- `recommend\_for\_pantry`
-
-\- `rank\_substitutes`
-
-
-
-The Phase 4 joint planner is currently implemented as an internal module API in `adapt.py`. A public joint-adaptation endpoint in `service.py` is not claimed by this phase documentation.
-
-
-
-\## Phase 4 completion status
-
-
-
-Core joint-planning implementation, independent validation, development output generation, and regression tests are complete.
-
-
-
-Documentation and manifest updates are being finalized.
-
-
-
+Swarit and Vibhu can use the existing [benchmark guide](BENCHMARK_GUIDE.md) and review sheets to grade the options independently. A grade requires the actual recipe context. For an unjudged returned plan the quality metric stays empty.

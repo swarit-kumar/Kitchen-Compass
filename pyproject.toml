@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "kitchencompass"
-version = "0.3.0"
+version = "0.6.0"
 description = "Context-aware recipe recommendation and adaptation"
 requires-python = ">=3.11,<3.12"
 

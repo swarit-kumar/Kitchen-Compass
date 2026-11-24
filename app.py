@@ -2,13 +2,28 @@
 import streamlit as st
 
 from kitchencompass.custom_recipes import create_custom_recipe, export_custom_recipe, import_custom_recipe
-from kitchencompass.data_io import ROOT, sha256
+from kitchencompass.data_io import ROOT, read_json, sha256
 from kitchencompass.schemas import Constraints
-from kitchencompass.service import confirm_custom_recipe, get_catalog, normalize_inputs, rank_substitutes, recommend_for_pantry
+from kitchencompass.service import adapt_recipe, confirm_custom_recipe, get_catalog, normalize_inputs, rank_substitutes, recommend_for_pantry
 
 
 st.set_page_config(page_title="KitchenCompass", page_icon="🍲", layout="centered")
-catalog = get_catalog(sha256(ROOT / "artifacts/manifest.json"))
+
+# Cache identity explicitly includes the frozen data/config versions and the
+# manifest digest, so a new release cannot reuse an older catalogue snapshot.
+release_settings = read_json(ROOT / "config/settings.json")
+release_cache_key = (
+    release_settings["data_version"],
+    release_settings["config_version"],
+    sha256(ROOT / "artifacts/manifest.json"),
+)
+try:
+    catalog = get_catalog(release_cache_key)
+except Exception as error:
+    st.error("KitchenCompass could not load its read-only catalogue. Please retry or contact the project team.")
+    st.exception(error)
+    st.stop()
+
 state = st.session_state
 state.setdefault("custom_recipes", {})
 names = {key: item["display_name"] for key, item in catalog.ingredients.items()}
@@ -18,12 +33,25 @@ LABELS = {"full": "Context + role + flavor", "flavor_only": "Flavor only",
 REASONS = {"original_or_retained": "Target or already in the recipe", "outside_pantry": "Outside this pantry",
            "excluded_ingredient": "Excluded directly or through a component", "blocked_pair": "Blocked by a preparation rule",
            "incompatible_or_missing_role": "Incompatible or unknown role", "below_threshold": "Below minimum score",
-           "missing_evidence": "Insufficient evidence", "retained_exclusions": "Retained ingredients in conflict"}
+           "missing_evidence": "Insufficient evidence", "targets_without_candidates": "Targets without eligible replacements", "retained_exclusions": "Retained ingredients in conflict"}
 
 RESULTS_PER_BATCH = 5
 
 
+def run_service(label, operation):
+    """Run a service request with visible loading and error feedback."""
+    try:
+        with st.spinner(label):
+            return operation()
+    except Exception as error:
+        st.error("The request could not be completed. Please check the inputs and try again.")
+        st.exception(error)
+        return None
+
+
 def notices(result):
+    if result.status != "OK":
+        st.info(f"Request status: {result.status}")
     for message in result.warnings:
         if result.status == "OK":
             st.caption(message)
@@ -73,9 +101,17 @@ def pantry_page():
     if st.button("Find recipes", type="primary"):
         pantry_names = [v.strip() for v in pantry.split(",") if v.strip()]
         excluded_names = [v.strip() for v in excluded.split(",") if v.strip()]
-        result = recommend_for_pantry(pantry_names, excluded_names, limit=None, mode=mode, catalog=catalog)
-        pantry_ids = normalize_inputs(pantry_names, catalog)["resolved_ids"]
-        excluded_ids = normalize_inputs(excluded_names, catalog)["resolved_ids"]
+        response = run_service(
+            "Searching the recipe catalogue...",
+            lambda: (
+                recommend_for_pantry(pantry_names, excluded_names, limit=None, mode=mode, catalog=catalog),
+                normalize_inputs(pantry_names, catalog)["resolved_ids"],
+                normalize_inputs(excluded_names, catalog)["resolved_ids"],
+            ),
+        )
+        if response is None:
+            return
+        result, pantry_ids, excluded_ids = response
         state["pantry_search"] = (query, result, pantry_ids, excluded_ids)
         state["pantry_count"] = RESULTS_PER_BATCH
         state.pop("viewed_recipe", None)
@@ -87,6 +123,8 @@ def pantry_page():
 
     _, result, pantry_ids, excluded_ids = search
     notices(result)
+    if not result.items:
+        st.info("No recipes match these pantry ingredients and exclusions. Try changing your inputs.")
     for index, row in enumerate(result.items[:state["pantry_count"]], 1):
         with st.container(border=True):
             st.subheader(f"{index}. {row['title']}")
@@ -163,8 +201,16 @@ def substitute_page():
     method = st.selectbox("Substitution method", list(LABELS), format_func=LABELS.get, key="sub_mode")
     query = (recipe_id, target, tuple(pantry), tuple(excluded), only, method)
     if st.button("Find substitutes", type="primary"):
-        result = rank_substitutes(recipe, target, Constraints(pantry_ids=pantry, excluded_ids=excluded, pantry_only=only),
-                                  top_k=None, mode=method, catalog=catalog)
+        result = run_service(
+            "Finding eligible ingredient replacements...",
+            lambda: rank_substitutes(
+                recipe, target,
+                Constraints(pantry_ids=pantry, excluded_ids=excluded, pantry_only=only),
+                top_k=None, mode=method, catalog=catalog,
+            ),
+        )
+        if result is None:
+            return
         state["sub_search"] = (query, result)
         state["sub_count"] = RESULTS_PER_BATCH
 
@@ -191,6 +237,95 @@ def substitute_page():
             if item["flavor_sources"]:
                 st.caption("Molecular sources: " + ", ".join(item["flavor_sources"]))
     show_more("sub_count", len(result.items))
+
+
+JOINT_EXAMPLES = {
+    "Paneer and pepper": ("rec_black_pepper_paneer", ["ing_paneer", "ing_red_bell_pepper"],
+                         ["ing_broccoli", "ing_cheddar", "ing_firm_tofu", "ing_green_bell_pepper", "ing_silken_tofu"]),
+    "Chowder comparison": ("rec_new_england_style_fish_chowder", ["ing_butter", "ing_milk"],
+                          ["ing_coconut_milk", "ing_olive_oil", "ing_plain_yogurt", "ing_vegetable_oil"]),
+}
+
+
+def load_joint_example(label):
+    key, targets, pantry = JOINT_EXAMPLES[label]
+    state.update(joint_recipe=key, joint_targets=targets, joint_pantry=pantry,
+                 joint_excluded=["ing_milk"], joint_only=True)
+    state.pop("joint_search", None)
+
+
+def joint_page():
+    st.header("Joint replacements")
+    st.write("Choose up to three ingredients to replace together.")
+    columns = st.columns(2)
+    for col, label in zip(columns, JOINT_EXAMPLES):
+        col.button(label, on_click=load_joint_example, args=(label,))
+
+    custom = state["custom_recipes"]
+    titles = {key: row["title"] for key, row in catalog.recipes.items()}
+    titles.update({key: f"{row.title} (your recipe)" for key, row in custom.items()})
+    key = st.selectbox("Recipe", sorted(titles, key=titles.get), format_func=titles.get, key="joint_recipe",
+                       on_change=state.pop, args=("joint_targets", None))
+    recipe = custom.get(key, key)
+    entries = ([e.model_dump() for e in recipe.ingredients] if key in custom else catalog.recipes[key]["ingredients"])
+    steps = recipe.instructions if key in custom else catalog.recipes[key]["instructions"]
+    with st.expander("Original ingredients and cooking instructions"):
+        recipe_details(entries, steps, separate_quantities=key in custom)
+    options = list(dict.fromkeys(e["ingredient_id"] for e in entries))
+    targets = st.multiselect("Ingredients to replace", options, format_func=names.get,
+                             key="joint_targets", max_selections=3)
+    pantry = st.multiselect("Available replacements in your pantry", ingredient_options,
+                            format_func=names.get, key="joint_pantry")
+    excluded = st.multiselect("Ingredients to exclude", ingredient_options, format_func=names.get, key="joint_excluded")
+    only = st.checkbox("Only use replacements in my pantry", key="joint_only")
+    query = (key, tuple(targets), tuple(pantry), tuple(excluded), only)
+    if st.button("Find replacement plans", type="primary"):
+        audit = {}
+        response = run_service(
+            "Evaluating joint replacement plans...",
+            lambda: adapt_recipe(
+                recipe, targets,
+                Constraints(pantry_ids=pantry, excluded_ids=excluded, pantry_only=only),
+                catalog=catalog, audit=audit,
+            ),
+        )
+        if response is None:
+            return
+        state["joint_search"] = (query, response, audit.get("baseline"))
+    saved = state.get("joint_search")
+    if saved is None or saved[0] != query:
+        state.pop("joint_search", None)
+        return
+    _, result, baseline = saved
+    notices(result)
+    if not result.items:
+        st.info("No valid joint replacement plan was found. Try changing the targets, pantry or exclusions.")
+    for number, plan in enumerate(result.items, 1):
+        with st.container(border=True):
+            st.subheader(f"Plan {number}")
+            for target, candidate in plan["replacements"].items():
+                st.write(f"{names[target]} → {names[candidate]}")
+            q, j = plan["component_scores"]["Q"], plan["component_scores"]["J"]
+            st.write(f"Plan score {plan['score']:.3f} · Individual quality {q:.3f}"
+                     + (f" · Pair compatibility {j:.3f}" if j is not None else ""))
+            st.write("Replacement ingredients to buy: " + (", ".join(names[k] for k in plan["purchase_ids"]) or "none"))
+            with st.expander("Plan checks and scoring evidence"):
+                st.write("Passed final target, pantry, exclusion, duplicate and pair checks.")
+                for pair in plan["pair_details"]:
+                    basis = "reviewed rule" if pair["source"] == "reviewed_pair_rule" else "training-context similarity"
+                    st.write(f"{names[pair['ingredient_a']]} + {names[pair['ingredient_b']]} · {basis} · {pair['score']:.3f}")
+                if j is not None:
+                    st.caption("Training-context similarity estimates how ingredients fit together. Culinary quality still needs review.")
+                for warning in plan["warnings"]:
+                    st.caption(warning)
+    if baseline and baseline["replacement_ids"]:
+        with st.expander("Compare with independent choices"):
+            for target, candidate in zip(baseline["target_ids"], baseline["replacement_ids"]):
+                st.write(f"{names[target]} → {names[candidate]}")
+            if baseline["valid"]:
+                st.write(f"Passed plan checks · Joint score {baseline['joint_score']:.3f}")
+            else:
+                st.warning("Independent choices failed plan checks. " + " ".join(baseline["constraint_checks"]["errors"]))
 
 
 def custom_page():
@@ -223,8 +358,8 @@ def custom_page():
             if str(imported.recipe_id) in state["custom_recipes"]:
                 raise ValueError("This recipe ID already exists in this session.")
             state["draft_recipe"] = imported
-        except ValueError as error:
-            st.error(str(error))
+        except (ValueError, UnicodeError) as error:
+            st.error(f"Could not import this recipe: {error}")
 
     draft = state.get("draft_recipe")
     if draft:
@@ -264,12 +399,14 @@ def custom_page():
 
 
 st.title("KitchenCompass")
-page = st.sidebar.radio("Workspace", ["Pantry search", "Substitutions", "Custom recipes"], key="workspace")
+page = st.sidebar.radio("Workspace", ["Pantry search", "Substitutions", "Joint replacements", "Custom recipes"], key="workspace")
 st.sidebar.caption(f"{len(catalog.recipes)} recipes · {len(names)} ingredients")
 st.sidebar.caption(f"Data {catalog.config['data_version']} · Model {catalog.config['config_version']}")
 if page == "Pantry search":
     pantry_page()
 elif page == "Substitutions":
     substitute_page()
+elif page == "Joint replacements":
+    joint_page()
 else:
     custom_page()

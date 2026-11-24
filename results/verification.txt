@@ -1,18 +1,28 @@
-KitchenCompass P03-v0.4.2-20261120
-Build environment: Linux x86-64, CPython 3.11.18; install from requirements.txt
-Streamlit 1.67.0, Pydantic 2.14.3, NumPy 2.4.6, pandas 3.1.1, pytest 9.2.0
+KitchenCompass P05-v0.6.0-20261123
+Local verification used CPython 3.11.18, Linux x86-64, the pinned requirements and editable KitchenCompass 0.6.0. Native Windows verification remains open. See README.md for the Windows PowerShell commands.
 
 python scripts/expand_recipes.py --check
-Exit 0. Verified 176 authored variants in 44 style groups.
 python scripts/prepare_data.py --config config/settings.json
-Exit 0. 212 eligible recipes; 162 ingredients; 5 available flavor profiles. 124 training, 45 development, 43 test recipes.
-python scripts/build_features.py --config config/settings.json
-Exit 0. Training-only context and SHA-256 manifest built.
-python scripts/evaluate.py --split dev --config config/settings.json
-Exit 0. Six single-target cases. Full returned 6/6, flavor only 0/6, without context 0/6, without roles 2/6.
-No hard-constraint violations among returned items in this run. Ranking quality awaits human grades.
+212 recipes, 162 catalogue ingredients, 5 available molecular profiles. Recipe counts by split: 124 train, 45 dev, 43 test.
+
+python scripts/benchmark.py prepare
+python scripts/benchmark.py status
+150 frozen case requests across the three tasks, 75 per split. 825 pooled case-option pairs. 45 double-reviewed assignments including all 15 joint test cases. Original ratings pending: 548 for Vibhu and 509 for Swarit. This is an assignment count; neither teammate has submitted ratings. Rebuilding the original case definitions and lock in a separate directory reproduced their exact bytes.
+
+python scripts/evaluate.py --split dev
+75 cases, 288 items across weighted pantry, full substitution and joint selection. Zero accepted-output constraint violations. Machine-readable results are in results/per_case.jsonl, results/metrics.json and results/summary.csv. Running again reproduced identical rankings, metrics and tables.
+
+python scripts/measure_runtime.py --requests 100 --output results/runtime.json
+300 measured full-service requests, 100 per task. Measurements, raw samples, catalogue-load time and machine metadata are recorded in that JSON.
+
+python scripts/benchmark.py freeze-labels
+Expected exit 1 at this checkpoint: 1057 original ratings missing. No empty label snapshot created.
+python scripts/evaluate.py --split test
+Expected exit 1 at this checkpoint: human grades must be frozen. No final test output written.
+
+python scripts/build_features.py
 python -m pytest -q
-Exit 0. 45 passed. Includes catalogue hashes, custom JSON migration, role matching, feature arithmetic, ablations, exclusion enforcement, session isolation, import, the Streamlit demo examples, inline recipe viewing, and five-at-a-time pagination on both search screens.
-python -m streamlit run app.py (headless, loopback smoke test)
-HTTP GET / returned 200. HTTP GET /_stcore/health returned 200, body ok.
-Native Windows verification and teammate acceptance for this checkpoint remain open.
+127 tests passed. Includes existing app and model tests, benchmark split validation, frozen input drift, reviewer reconciliation, immutable labels, hand-calculated metrics, group bootstrap and held-out test protection. Synthetic judgments in temporary test directories exercise the software.
+
+python scripts/package_handoff.py --phase 5 --output dist
+The packaged project was checked from a fresh extraction and isolated Python 3.11 environment. A full data and feature rebuild and repack reproduced the ZIP bytes on the verifying host. The local Streamlit root and health endpoint returned HTTP 200.

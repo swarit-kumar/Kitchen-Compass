@@ -22,3 +22,14 @@ during the handoff.
 | P2-02 | Resolve custom entries before saving or ranking. Allow confirmed IDs and essential flags. Export format 2.0 identifies the extension; importing format 1.0 upgrades in memory and preserves the UUID, original phrases, quantities and instructions. | custom_recipes.py, service.py, app.py, tests/test_custom_recipe.py | Implemented for Vibhu. Swarit review pending. |
 | P3-01 | Use the fixed plan weights and held-out development cases. Keep missing molecular evidence explicit and use the existing five molecular snapshots. Provide the four controlled comparisons and score breakdowns. No weight tuning was performed. | catalog.py, features.py, roles.py, substitute.py, config/settings.json, scripts/evaluate.py, tests/test_substitute.py | Implemented for Vibhu. Swarit review pending. |
 | P3-02 | Permit narrowly scoped, source-checked preparation rules. Partial role matches need an ingredient and dish family. Contextual pair blocks apply to all model variants. These are implementation judgments; human benchmark grading remains independent. | data/curation/substitution_policy.json, data/processed/substitution_pairs.jsonl, docs/PHASE_3.md | Codex checked the cited preparation sources. Team sign-off pending. |
+
+## 23 November 2026 · Phase 4
+
+The public service and the Streamlit joint screen share the bounded exhaustive planner and an independent final validator. The benchmark runner now evaluates the four original joint development prompts and retains abstentions. Positive pair scores and hard blocks require a reviewed entry with evidence and a reviewer. The onion–celery proposal remains pending; all release pair scores therefore use the training vectors. The distinct model, catalogue and release version numbers identify different parts of the snapshot.
+
+## 23 November 2026 · Phase 5
+
+| ID | Decision and reason | Files and review |
+|---|---|---|
+| P5-01 | Keep the grouped recipe splits and Phase 4 model unchanged. Construct 150 distinct scenarios and pool options from all methods for blinded human review. A development pilot lacked common flavor-evidence comparisons, so a declared subset uses measured targets and candidate availability. Lock this design before final test evaluation. | phase5 case files, benchmark.py, experiments.py, protocol_lock.json. Implemented for Vibhu and Swarit. |
+| P5-02 | Publish development coverage and constraint metrics while the review sheets are blank. Defer final test evaluation until original human ratings, pre-reconciliation agreement, resolved labels and file hashes are recorded. Store observed timings separately from deterministic ranking outputs. | annotations.py, experiment_metrics.py, scripts/evaluate.py, docs/EVALUATION.md. Final human review pending. |

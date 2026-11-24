@@ -10,15 +10,20 @@ MODES = {"full": ("F", "C", "R"), "flavor_only": ("F",),
          "without_context": ("F", "R"), "without_roles": ("F", "C")}
 
 
-def constrained_pool(catalog, target_id, retained, constraints, expanded, role_info, clauses):
-    pantry = set(constraints.pantry_ids)
-    counts = Counter()
+def directed_blocks(catalog, target_id, role_info, clauses):
     pair_blocks = {}
     for rule in catalog.pairs:
         if (rule["original_id"] == target_id and rule["review_status"] in {"source_checked", "reviewed"}
                 and (not rule["applicable_roles"] or set(role_info["roles"]).intersection(rule["applicable_roles"]))
                 and any(contains(clause, phrase) for clause in clauses for phrase in rule["blocked_contexts"])):
             pair_blocks[rule["candidate_id"]] = rule["evidence_ref"]
+    return pair_blocks
+
+
+def constrained_pool(catalog, target_id, retained, constraints, expanded, role_info, clauses):
+    pantry = set(constraints.pantry_ids)
+    counts = Counter()
+    pair_blocks = directed_blocks(catalog, target_id, role_info, clauses)
     candidates = []
     for key in sorted(catalog.ingredients):
         if key == target_id or key in retained:
@@ -34,7 +39,7 @@ def constrained_pool(catalog, target_id, retained, constraints, expanded, role_i
     return candidates, counts, pair_blocks
 
 
-def rank(catalog, recipe, target_id, constraints, top_k, mode, complete_only=False, audit=None):
+def rank(catalog, recipe, target_id, constraints, top_k, mode, complete_only=False, audit=None, *, other_targets=()):
     """Rank all qualifying replacements when top_k is None."""
     if mode not in MODES:
         raise ValueError(f"Unknown substitution method: {mode}")
@@ -44,7 +49,7 @@ def rank(catalog, recipe, target_id, constraints, top_k, mode, complete_only=Fal
     ids = {entry["ingredient_id"] for entry in recipe["ingredients"]}
     if target_id not in ids:
         return Result(status="NEEDS_INPUT", warnings=["Choose a target ingredient present in this recipe."], **versions)
-    retained = ids - {target_id}
+    retained = ids - {target_id} - set(other_targets)
     expanded = set(catalog.constraints.expand_exclusions(constraints.excluded_ids))
     conflicts = sorted(retained & expanded)
     if conflicts:
@@ -54,7 +59,7 @@ def rank(catalog, recipe, target_id, constraints, top_k, mode, complete_only=Fal
     target = catalog.ingredients[target_id]
     clauses = target_clauses(recipe, target_id, catalog.ingredients, catalog.policy["shorthand"])
     role = infer_roles(target, catalog.rules, clauses)
-    pool, counts, blocked = constrained_pool(catalog, target_id, retained, constraints, expanded, role, clauses)
+    pool, counts, blocked = constrained_pool(catalog, target_id, retained | set(other_targets), constraints, expanded, role, clauses)
     context = mean_context(retained, catalog.vectors)
     settings = catalog.config["substitution"]
     items = []

@@ -7,12 +7,30 @@ from .constraints import ConstraintEngine
 from .context import validate_splits
 from .data_io import ROOT, index_by, read_json, read_records
 from .normalize import IngredientNormalizer
-from .schemas import FlavorProfile, Ingredient, Recipe, RoleRule
+from .schemas import FlavorProfile, Ingredient, Recipe, RoleRule, JointPairRule
 
 
 def load_jsonl(path):
     with Path(path).open(encoding="utf-8-sig") as stream:
         return [json.loads(line) for line in stream if line.strip()]
+
+
+def load_joint_rules(path, known):
+    """Only human-reviewed entries may override the vector score."""
+    active = []
+    scopes = set()
+    for row in read_records(path, JointPairRule):
+        if {row.ingredient_a, row.ingredient_b} - known:
+            raise ValueError("Unknown ingredient in joint compatibility rule.")
+        if row.review_status != "reviewed":
+            continue
+        for role in row.context_roles:
+            scope = (row.ingredient_a, row.ingredient_b, role, row.blocked)
+            if scope in scopes:
+                raise ValueError("Overlapping reviewed joint compatibility rules.")
+            scopes.add(scope)
+        active.append(row.model_dump())
+    return active
 
 
 class Catalog:
@@ -37,6 +55,7 @@ class Catalog:
         self.split_id = splits["split_id"]
         self.vectors = context["vectors"]
         known = set(self.ingredients)
+        self.pair_compatibility = load_joint_rules(data / "pair_compatibility.jsonl", known)
         if (context["split_id"] != self.split_id or context["training_recipe_ids"] != splits["recipes"]["train"]
                 or set(context["vocabulary"]) != known or set(self.vectors) != known or set(self.compounds) != known):
             raise ValueError("Feature snapshot does not match the frozen vocabulary and training split.")

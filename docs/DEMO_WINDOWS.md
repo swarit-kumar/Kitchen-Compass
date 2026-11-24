@@ -1,6 +1,6 @@
 # KitchenCompass professor demo
 
-Allow about five minutes. Complete the Windows setup in [README.md](../README.md) before class, run the tests once, and open the app. After installation the demonstration uses packaged local data. The numbers below were reproduced on checkpoint P03 v0.4.
+Allow about five minutes. Complete the Windows setup in [README.md](../README.md) before class, run the tests once, and open the app. After installation the demonstration uses packaged local data. The single-ingredient examples carry forward from Phase 3. The joint examples use the Phase 4 development checkpoint.
 
 | Screen | What to do | What to point out |
 |---|---|---|
@@ -10,6 +10,12 @@ Allow about five minutes. Complete the Windows setup in [README.md](../README.md
 | Substitutions | Click **Instruction match**, then **Find substitutes**. | Broccoli Cheddar Soup calls for stirring in flour. The app shows the matched sentence and the `roux_thickener` rule. Cornstarch scores 0.547 as a thickener using role and context. The cook still decides how to adjust preparation. |
 | Substitutions | Click **Impossible pantry**, then **Find substitutes**. Expand **Why candidates were filtered**. | Cheddar is the only pantry candidate. Its milk component conflicts with the exclusion, so the app returns an empty list. |
 | Custom recipes | Paste the sample below, click **Review ingredients**, select **onion** for the first line and click **Save custom recipe**. Use **Download recipe JSON**, then **Use this recipe for substitution**. | The original phrase and quantity survive confirmation. Select **onion** as target, add **garlic** to the pantry, check the pantry-only box and run. Garlic appears. Opening a new browser session gives an empty custom list. Import the downloaded JSON there to restore the recipe. |
+
+### Demo the Phase 4 planner
+
+1. Open **Joint replacements**, load **Paneer and pepper**, and click **Find replacement plans**. The first plan replaces paneer with firm tofu and red bell pepper with green bell pepper. The second uses silken tofu. Both require zero purchases from the example pantry. Open **Plan checks and scoring evidence** to see the individual and pair components.
+2. Load **Chowder comparison** and run again. Open **Compare with independent choices**. Both independent selections picked olive oil. The joint planner enforces distinct replacements. Ask whether the suggested replacements preserve the body of the chowder. The software checks constraints, while the team grades culinary suitability separately.
+3. Clear the replacement pantry, keep **Only use replacements in my pantry** selected and run again. The screen identifies the targets that lack candidates.
 
 ### Custom recipe to paste
 
@@ -31,4 +37,4 @@ Add potato and simmer.
 
 ### If the professor asks about evaluation
 
-The context model uses 124 training recipes. The six existing single-substitution development cases are held outside that training split. The full method returned suggestions for six and the flavor-only method for zero. The flavor comparison above is a separate demonstration using available profiles. Only five ingredients currently have measured molecular profiles. The team still needs to grade the development options before reporting ranking accuracy. Multi-ingredient replacement is the next phase.
+The context model uses 124 training recipes. The six existing single-substitution development cases are held outside that training split. The full method returned suggestions for six and the flavor-only method for zero. The flavor comparison above is a separate demonstration using available profiles. Only five ingredients currently have measured molecular profiles. The team still needs to grade the development options before reporting ranking accuracy. The Phase 4 joint planner returned 11 feasible plans over four development cases. All passed the final constraint checks. Both teammates still need to review culinary suitability.

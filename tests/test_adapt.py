@@ -531,13 +531,15 @@ def test_joint_planner_rejects_empty_candidate_group():
 
 
 def test_joint_planner_uses_at_most_five_candidates_per_target():
-    from kitchencompass.catalog import Catalog
+    catalog, recipe, targets, _, _ = make_validator_fixture()
+    # An artificially high sixth candidate must never enter the search.
+    ids = ["ing_carrot", "ing_broccoli", "ing_celery", "ing_cauliflower", "ing_zucchini"]
+    candidates = [{"candidate_id": key, "score": 0.5} for key in ids]
+    candidates.append({"candidate_id": "ing_paneer", "score": 1.0})
+    plans = generate_joint_plans({targets[0]: candidates}, catalog, recipe)
+    assert len(plans) == 3
+    assert all(p["score"] == 0.5 and p["replacement_ids"][0] in ids for p in plans)
 
-    catalog = Catalog()
-
-    target_id = "ing_potato"
-
-    
 
 def make_validator_fixture():
     from kitchencompass.catalog import Catalog

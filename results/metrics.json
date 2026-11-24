@@ -1,0 +1,793 @@
+{
+  "accepted_output_violations": 0,
+  "agreement": null,
+  "cases": 75,
+  "comparisons": [
+    {
+      "cases_with_results": 13,
+      "constraint_violations": 3,
+      "declared_cases": 15,
+      "duplicate_replacements": 3,
+      "evaluated_cases": 15,
+      "groups": 9,
+      "items_returned": 13,
+      "method": "independent",
+      "metrics": {
+        "abstention": {
+          "eligible_cases": 15,
+          "group_ci95": [
+            0.0,
+            0.4
+          ],
+          "mean": 0.13333333333333333
+        },
+        "candidate_generation_recall": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "grade2_hit_at_3": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "hit_at_3": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "joint_score_difference": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "mean_missing_items": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "mrr_at_5": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "ndcg_at_5": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "top3_mean_grade": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        }
+      },
+      "population": "all",
+      "task_type": "joint",
+      "unknown_pair_evidence": 0,
+      "violation_rate": 0.23076923076923078
+    },
+    {
+      "cases_with_results": 13,
+      "constraint_violations": 0,
+      "declared_cases": 15,
+      "duplicate_replacements": 0,
+      "evaluated_cases": 15,
+      "groups": 9,
+      "items_returned": 38,
+      "method": "joint",
+      "metrics": {
+        "abstention": {
+          "eligible_cases": 15,
+          "group_ci95": [
+            0.0,
+            0.4
+          ],
+          "mean": 0.13333333333333333
+        },
+        "candidate_generation_recall": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "grade2_hit_at_3": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "hit_at_3": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "joint_score_difference": {
+          "eligible_cases": 10,
+          "group_ci95": [
+            0.015703309824401865,
+            0.049840205181323184
+          ],
+          "mean": 0.034744052797527895
+        },
+        "mean_missing_items": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "mrr_at_5": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "ndcg_at_5": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "top3_mean_grade": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        }
+      },
+      "population": "all",
+      "task_type": "joint",
+      "unknown_pair_evidence": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "cases_with_results": 25,
+      "constraint_violations": 0,
+      "declared_cases": 25,
+      "duplicate_replacements": 0,
+      "evaluated_cases": 25,
+      "groups": 9,
+      "items_returned": 125,
+      "method": "overlap",
+      "metrics": {
+        "abstention": {
+          "eligible_cases": 25,
+          "group_ci95": [
+            0.0,
+            0.0
+          ],
+          "mean": 0
+        },
+        "candidate_generation_recall": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "grade2_hit_at_3": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "hit_at_3": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "joint_score_difference": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "mean_missing_items": {
+          "eligible_cases": 25,
+          "group_ci95": [
+            3.4521739130434783,
+            4.6230769230769235
+          ],
+          "mean": 4.112
+        },
+        "mrr_at_5": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "ndcg_at_5": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "top3_mean_grade": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        }
+      },
+      "population": "all",
+      "task_type": "pantry",
+      "unknown_pair_evidence": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "cases_with_results": 25,
+      "constraint_violations": 0,
+      "declared_cases": 25,
+      "duplicate_replacements": 0,
+      "evaluated_cases": 25,
+      "groups": 9,
+      "items_returned": 125,
+      "method": "weighted",
+      "metrics": {
+        "abstention": {
+          "eligible_cases": 25,
+          "group_ci95": [
+            0.0,
+            0.0
+          ],
+          "mean": 0
+        },
+        "candidate_generation_recall": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "grade2_hit_at_3": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "hit_at_3": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "joint_score_difference": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "mean_missing_items": {
+          "eligible_cases": 25,
+          "group_ci95": [
+            3.463636363636364,
+            4.653846153846154
+          ],
+          "mean": 4.136
+        },
+        "mrr_at_5": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "ndcg_at_5": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "top3_mean_grade": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        }
+      },
+      "population": "all",
+      "task_type": "pantry",
+      "unknown_pair_evidence": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "cases_with_results": 6,
+      "constraint_violations": 0,
+      "declared_cases": 35,
+      "duplicate_replacements": 0,
+      "evaluated_cases": 35,
+      "groups": 9,
+      "items_returned": 20,
+      "method": "flavor_only",
+      "metrics": {
+        "abstention": {
+          "eligible_cases": 35,
+          "group_ci95": [
+            0.7142857142857143,
+            0.9411764705882353
+          ],
+          "mean": 0.8285714285714286
+        },
+        "candidate_generation_recall": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "grade2_hit_at_3": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "hit_at_3": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "joint_score_difference": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "mean_missing_items": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "mrr_at_5": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "ndcg_at_5": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "top3_mean_grade": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        }
+      },
+      "population": "all",
+      "task_type": "single",
+      "unknown_pair_evidence": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "cases_with_results": 6,
+      "constraint_violations": 0,
+      "declared_cases": 35,
+      "duplicate_replacements": 0,
+      "evaluated_cases": 6,
+      "groups": 5,
+      "items_returned": 20,
+      "method": "flavor_only",
+      "metrics": {
+        "abstention": {
+          "eligible_cases": 6,
+          "group_ci95": [
+            0.0,
+            0.0
+          ],
+          "mean": 0
+        },
+        "candidate_generation_recall": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "grade2_hit_at_3": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "hit_at_3": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "joint_score_difference": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "mean_missing_items": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "mrr_at_5": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "ndcg_at_5": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "top3_mean_grade": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        }
+      },
+      "population": "complete_evidence",
+      "task_type": "single",
+      "unknown_pair_evidence": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "cases_with_results": 30,
+      "constraint_violations": 0,
+      "declared_cases": 35,
+      "duplicate_replacements": 0,
+      "evaluated_cases": 35,
+      "groups": 9,
+      "items_returned": 125,
+      "method": "full",
+      "metrics": {
+        "abstention": {
+          "eligible_cases": 35,
+          "group_ci95": [
+            0.027777777777777776,
+            0.29411764705882354
+          ],
+          "mean": 0.14285714285714285
+        },
+        "candidate_generation_recall": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "grade2_hit_at_3": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "hit_at_3": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "joint_score_difference": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "mean_missing_items": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "mrr_at_5": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "ndcg_at_5": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "top3_mean_grade": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        }
+      },
+      "population": "all",
+      "task_type": "single",
+      "unknown_pair_evidence": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "cases_with_results": 4,
+      "constraint_violations": 0,
+      "declared_cases": 35,
+      "duplicate_replacements": 0,
+      "evaluated_cases": 6,
+      "groups": 5,
+      "items_returned": 5,
+      "method": "full",
+      "metrics": {
+        "abstention": {
+          "eligible_cases": 6,
+          "group_ci95": [
+            0.0,
+            0.8
+          ],
+          "mean": 0.3333333333333333
+        },
+        "candidate_generation_recall": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "grade2_hit_at_3": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "hit_at_3": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "joint_score_difference": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "mean_missing_items": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "mrr_at_5": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "ndcg_at_5": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "top3_mean_grade": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        }
+      },
+      "population": "complete_evidence",
+      "task_type": "single",
+      "unknown_pair_evidence": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "cases_with_results": 4,
+      "constraint_violations": 0,
+      "declared_cases": 35,
+      "duplicate_replacements": 0,
+      "evaluated_cases": 35,
+      "groups": 9,
+      "items_returned": 5,
+      "method": "without_context",
+      "metrics": {
+        "abstention": {
+          "eligible_cases": 35,
+          "group_ci95": [
+            0.75,
+            0.9722222222222222
+          ],
+          "mean": 0.8857142857142857
+        },
+        "candidate_generation_recall": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "grade2_hit_at_3": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "hit_at_3": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "joint_score_difference": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "mean_missing_items": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "mrr_at_5": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "ndcg_at_5": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "top3_mean_grade": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        }
+      },
+      "population": "all",
+      "task_type": "single",
+      "unknown_pair_evidence": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "cases_with_results": 4,
+      "constraint_violations": 0,
+      "declared_cases": 35,
+      "duplicate_replacements": 0,
+      "evaluated_cases": 6,
+      "groups": 5,
+      "items_returned": 5,
+      "method": "without_context",
+      "metrics": {
+        "abstention": {
+          "eligible_cases": 6,
+          "group_ci95": [
+            0.0,
+            0.8
+          ],
+          "mean": 0.3333333333333333
+        },
+        "candidate_generation_recall": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "grade2_hit_at_3": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "hit_at_3": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "joint_score_difference": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "mean_missing_items": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "mrr_at_5": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "ndcg_at_5": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "top3_mean_grade": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        }
+      },
+      "population": "complete_evidence",
+      "task_type": "single",
+      "unknown_pair_evidence": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "cases_with_results": 17,
+      "constraint_violations": 0,
+      "declared_cases": 35,
+      "duplicate_replacements": 0,
+      "evaluated_cases": 35,
+      "groups": 9,
+      "items_returned": 48,
+      "method": "without_roles",
+      "metrics": {
+        "abstention": {
+          "eligible_cases": 35,
+          "group_ci95": [
+            0.3611111111111111,
+            0.6571428571428571
+          ],
+          "mean": 0.5142857142857142
+        },
+        "candidate_generation_recall": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "grade2_hit_at_3": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "hit_at_3": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "joint_score_difference": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "mean_missing_items": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "mrr_at_5": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "ndcg_at_5": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "top3_mean_grade": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        }
+      },
+      "population": "all",
+      "task_type": "single",
+      "unknown_pair_evidence": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "cases_with_results": 3,
+      "constraint_violations": 0,
+      "declared_cases": 35,
+      "duplicate_replacements": 0,
+      "evaluated_cases": 6,
+      "groups": 5,
+      "items_returned": 3,
+      "method": "without_roles",
+      "metrics": {
+        "abstention": {
+          "eligible_cases": 6,
+          "group_ci95": [
+            0.125,
+            1.0
+          ],
+          "mean": 0.5
+        },
+        "candidate_generation_recall": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "grade2_hit_at_3": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "hit_at_3": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "joint_score_difference": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "mean_missing_items": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "mrr_at_5": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "ndcg_at_5": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        },
+        "top3_mean_grade": {
+          "eligible_cases": 0,
+          "group_ci95": null,
+          "mean": null
+        }
+      },
+      "population": "complete_evidence",
+      "task_type": "single",
+      "unknown_pair_evidence": 0,
+      "violation_rate": 0.0
+    }
+  ],
+  "config_version": "0.4.0",
+  "data_version": "2.0",
+  "label_status": "pending_human_review",
+  "labels_sha256": null,
+  "protocol_sha256": "970e56ba4b38e0208d5fd01a0e3351cdb15c095ebdadb1108bf9d448d7a3f6e4",
+  "schema_version": "1.0",
+  "split": "dev",
+  "split_id": "groups_seed_42_v2",
+  "split_sha256": "7ab36ee668b7bf47c1c315201f8127f940234921dc34bc2c1c5b8352add8be0c"
+}

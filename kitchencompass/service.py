@@ -146,3 +146,66 @@ def rank_substitutes(recipe, target_id, constraints, top_k=5, *, mode="full", ca
     if not validated["valid"]:
         return Result(status="UNSUPPORTED_INPUT", warnings=validated["errors"], **catalog.versions)
     return rank(catalog, validated["recipe"], target_id, constraints, top_k, mode, complete_only, audit)
+
+
+def adapt_recipe(recipe, target_ids, constraints, top_k=3, *, catalog=None, audit=None):
+    """Rank up to three plans. An optional audit receives the same-pool baseline."""
+    from collections import Counter
+    from math import prod
+    from .adapt import (generate_candidate_lists, generate_independent_baseline,
+                        generate_joint_plans, validate_targets)
+
+    catalog = catalog or get_catalog()
+    versions = catalog.versions
+    if audit is not None:
+        audit.clear()
+        audit.update(candidate_ids={}, combinations=0, baseline=None)
+    if type(top_k) is not int or top_k < 1:
+        return Result(status="UNSUPPORTED_INPUT", warnings=["Request a positive integer plan limit."], **versions)
+    try:
+        constraints = Constraints.model_validate(constraints)
+    except ValueError as error:
+        return Result(status="UNSUPPORTED_INPUT", warnings=[str(error)], **versions)
+    invalid = _check_constraints(constraints, catalog.ingredients, versions)
+    if invalid:
+        return invalid
+    validated = validate_recipe(recipe, catalog)
+    if not validated["valid"]:
+        return Result(status="UNSUPPORTED_INPUT", warnings=validated["errors"], **versions)
+    recipe = validated["recipe"]
+    invalid = validate_targets(recipe, target_ids, catalog)
+    if invalid:
+        return invalid
+    if len(target_ids) > constraints.max_replacements:
+        return Result(status="UNSUPPORTED_INPUT", warnings=["The selected targets exceed max_replacements."], **versions)
+    retained = {item["ingredient_id"] for item in recipe["ingredients"]} - set(target_ids)
+    conflicts = sorted(retained.intersection(catalog.constraints.expand_exclusions(constraints.excluded_ids)))
+    if conflicts:
+        names = ", ".join(catalog.ingredients[key]["display_name"] for key in conflicts)
+        return Result(status="UNRESOLVED_EXCLUSION", reason_counts={"retained_exclusions": len(conflicts)},
+                      warnings=[f"Retained ingredients conflict with your exclusions: {names}. Include them among the targets or revise the exclusions."],
+                      **versions)
+
+    diagnostics = {}
+    pools = generate_candidate_lists(recipe, target_ids, constraints, catalog, diagnostics=diagnostics)
+    if audit is not None:
+        audit.update(candidate_ids={key: [c["candidate_id"] for c in group] for key, group in pools.items()},
+                     combinations=prod(map(len, pools.values())), target_diagnostics=diagnostics,
+                     baseline=generate_independent_baseline(pools, target_ids, catalog, recipe, constraints))
+    empty = [key for key, group in pools.items() if not group]
+    if empty:
+        reasons = Counter({"targets_without_candidates": len(empty)})
+        for key in empty:
+            reasons.update(diagnostics[key]["reason_counts"])
+        return Result(status="NO_FEASIBLE_RESULT", reason_counts=dict(reasons),
+                      warnings=["No eligible replacement for " + ", ".join(catalog.ingredients[k]["display_name"] for k in empty) + "."],
+                      **versions)
+
+    counts = Counter()
+    plans = generate_joint_plans(pools, catalog, recipe, constraints, top_k=top_k, counts=counts)
+    warnings = (["Quantities and instructions are the originals. You may need to adjust the preparation."]
+                if plans else ["Every candidate combination failed a whole-plan check."])
+    if not recipe["instructions"]:
+        warnings.append("No instructions supplied. The planner used catalogue roles.")
+    return Result(status="OK" if plans else "NO_FEASIBLE_RESULT", items=plans,
+                  reason_counts=dict(counts), warnings=warnings, **versions)

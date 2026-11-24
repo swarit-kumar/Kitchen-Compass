@@ -132,3 +132,24 @@ class Result(Contract):
     schema_version: SchemaVersion = "1.0"
     data_version: str = "not-created"
     config_version: str = "not-created"
+
+
+class JointPairRule(Contract):
+    ingredient_a: NonEmpty
+    ingredient_b: NonEmpty
+    context_roles: list[Role] = Field(min_length=1)
+    score: float = Field(ge=0, le=1, allow_inf_nan=False)
+    blocked: bool
+    evidence_ref: NonEmpty
+    reviewer: NonEmpty | None
+    review_status: Literal["pending_review", "reviewed"]
+
+    @model_validator(mode="after")
+    def validate_scope(self):
+        if self.ingredient_a >= self.ingredient_b:
+            raise ValueError("Joint pairs require two distinct IDs in sorted order.")
+        if len(set(self.context_roles)) != len(self.context_roles):
+            raise ValueError("Joint pair roles must be distinct.")
+        if self.review_status == "reviewed" and not self.reviewer:
+            raise ValueError("A reviewed pair requires a named reviewer.")
+        return self
