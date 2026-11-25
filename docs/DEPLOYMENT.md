@@ -28,8 +28,8 @@ Confirm the app opens and complete the workflow checklist below before deploying
 
 ## Streamlit Community Cloud setup
 
-1. Push the reviewed release branch to the GitHub repository.
-2. In Streamlit Community Cloud, create an app from that repository and select the release branch.
+1. Ensure the reviewed release commit is pushed to the GitHub repository's main branch.
+2. In Streamlit Community Cloud, create an app from that repository and select the main branch.
 3. Set the main file path to `app.py`.
 4. Use the repository's pinned `requirements.txt`; do not install unpinned packages manually.
 5. Deploy and record the generated public URL and release commit below.

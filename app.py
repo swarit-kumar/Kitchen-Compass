@@ -7,7 +7,273 @@ from kitchencompass.schemas import Constraints
 from kitchencompass.service import adapt_recipe, confirm_custom_recipe, get_catalog, normalize_inputs, rank_substitutes, recommend_for_pantry
 
 
-st.set_page_config(page_title="KitchenCompass", page_icon="🍲", layout="centered")
+
+st.set_page_config(
+    page_title="KitchenCompass | Smart Cooking Assistant",
+    page_icon="🍲",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
+# KitchenCompass visual theme
+
+# ===== KITCHENCOMPASS VISUAL THEME =====
+
+st.markdown("""
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap');
+
+:root {
+    --cream: #F7F3E9;
+    --green: #204B37;
+    --dark-green: #173B2B;
+    --sage: #DCE7C5;
+    --orange: #E99A50;
+    --ink: #26352D;
+    --muted: #657468;
+    --white: #FFFFFF;
+}
+
+.stApp {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+}
+
+html, body, [class*="css"] {
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Main content */
+.block-container {
+    max-width: 1350px;
+    padding: 2rem 3rem 4rem 3rem;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: var(--green) !important;
+    font-family: 'Playfair Display', Georgia, serif !important;
+    font-weight: 700 !important;
+}
+
+h1 { font-size: 2.8rem !important; }
+h2 { font-size: 2rem !important; }
+h3 { font-size: 1.35rem !important; }
+
+p, li, label, .stMarkdown {
+    color: var(--ink);
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #173B2B, #244D38) !important;
+    border-right: none;
+}
+
+[data-testid="stSidebar"] > div:first-child {
+    padding: 1.5rem 1rem;
+}
+
+[data-testid="stSidebar"] * {
+    color: #F8F5E9 !important;
+}
+
+[data-testid="stSidebar"] [data-testid="stRadio"] label {
+    padding: 10px 12px;
+    border-radius: 10px;
+}
+
+[data-testid="stSidebar"] [data-testid="stRadio"] label:hover {
+    background: #365D43;
+}
+
+/* Widget labels */
+[data-testid="stWidgetLabel"] p {
+    color: #244B37 !important;
+    font-weight: 700 !important;
+}
+
+/* Text inputs */
+.stTextInput input,
+.stTextArea textarea {
+    background: #FFFFFF !important;
+    color: #26352D !important;
+    border: 1px solid #C9D3C6 !important;
+    border-radius: 12px !important;
+    min-height: 45px;
+}
+
+.stTextInput input::placeholder,
+.stTextArea textarea::placeholder {
+    color: #858D83 !important;
+    opacity: 1 !important;
+}
+
+.stTextInput input:focus,
+.stTextArea textarea:focus {
+    border: 2px solid #37694D !important;
+    box-shadow: 0 0 0 2px rgba(55, 105, 77, 0.12) !important;
+}
+
+/* Select boxes and multiselects */
+[data-baseweb="select"] > div {
+    background: #FFFFFF !important;
+    color: #26352D !important;
+    border-color: #C9D3C6 !important;
+    border-radius: 10px !important;
+}
+
+/* Buttons */
+.stButton > button,
+.stDownloadButton > button,
+.stFormSubmitButton > button {
+    background: #204B37 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #204B37 !important;
+    border-radius: 11px !important;
+    padding: 0.55rem 1.1rem !important;
+    font-weight: 700 !important;
+    transition: 0.2s ease;
+}
+
+.stButton > button:hover,
+.stDownloadButton > button:hover,
+.stFormSubmitButton > button:hover {
+    background: #37694D !important;
+    border-color: #37694D !important;
+    color: #FFFFFF !important;
+    transform: translateY(-1px);
+}
+
+/* Primary button */
+.stButton > button[kind="primary"],
+.stFormSubmitButton > button[kind="primary"] {
+    background: #204B37 !important;
+    color: #FFFFFF !important;
+}
+
+/* Force readable text inside every green button */
+.stButton > button *,
+.stDownloadButton > button *,
+.stFormSubmitButton > button * {
+    color: #FFFFFF !important;
+}
+
+/* Cards */
+[data-testid="stVerticalBlockBorderWrapper"] {
+    background: #FFFFFF !important;
+    border: 1px solid #E5E3D8 !important;
+    border-radius: 17px !important;
+    padding: 1rem !important;
+    box-shadow: 0 4px 15px rgba(35, 60, 43, 0.06);
+}
+
+/* Captions */
+[data-testid="stCaptionContainer"] {
+    color: #596B5E !important;
+}
+
+/* Radio and checkbox labels */
+[data-testid="stRadio"] label,
+[data-testid="stCheckbox"] label {
+    color: #26352D !important;
+}
+
+/* Expanders */
+[data-testid="stExpander"] {
+    background: #FFFFFF;
+    border: 1px solid #E1E5DA;
+    border-radius: 12px;
+}
+
+/* Recipe ingredient and instruction text */
+[data-testid="stText"],
+[data-testid="stText"] *,
+[data-testid="stExpander"] [data-testid="stMarkdownContainer"] p,
+[data-testid="stExpander"] [data-testid="stMarkdownContainer"] li {
+    color: #26352D !important;
+}
+
+/* Hero banner */
+.kc-hero {
+    background: linear-gradient(110deg, #F4E8D2 0%, #F9F1E4 55%, #E8D8B9 100%);
+    border: 1px solid #E5D8C1;
+    border-radius: 22px;
+    padding: 35px 38px;
+    margin-bottom: 25px;
+    box-shadow: 0 7px 22px rgba(40, 55, 37, 0.08);
+}
+
+.kc-eyebrow {
+    color: #B76D37;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.kc-hero-title {
+    color: #204B37;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(34px, 4vw, 54px);
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.kc-hero-subtitle {
+    color: #4E6253;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.kc-hero-art {
+    font-size: 105px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Sidebar branding */
+.kc-sidebar-brand {
+    color: #FFFFFF;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.kc-sidebar-tagline {
+    color: #D8E4D0;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 4px;
+}
+
+.kc-sidebar-divider {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin: 20px 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .block-container {
+        padding: 1.2rem 1rem 3rem;
+    }
+
+    .kc-hero {
+        padding: 22px;
+    }
+
+    .kc-hero-art {
+        font-size: 55px;
+    }
+
+    h1 { font-size: 2.1rem !important; }
+    h2 { font-size: 1.7rem !important; }
+}
+</style>
+""", unsafe_allow_html=True)
+
 
 # Cache identity explicitly includes the frozen data/config versions and the
 # manifest digest, so a new release cannot reuse an older catalogue snapshot.
@@ -89,58 +355,189 @@ def recipe_details(entries, steps, *, separate_quantities=False):
         st.caption("Instructions were omitted. Catalogue roles will be used.")
 
 
+
 def pantry_page():
-    st.header("Find a recipe")
-    st.write("Enter the ingredients you have. Each match shows what you can use and what you still need.")
-    pantry = st.text_input("Pantry ingredients", value="potato, tomato, onion, water", help="Separate names or aliases with commas.")
-    excluded = st.text_input("Ingredients to exclude", placeholder="e.g. milk")
-    mode = st.radio("Recipe ranking", ["weighted", "overlap"], horizontal=True,
-                    format_func=lambda k: {"weighted": "Weighted match", "overlap": "Simple overlap"}[k])
-    st.caption("Weighted match favors essential ingredients and fewer missing items. Simple overlap counts each distinct ingredient once.")
+
+    st.markdown("## 🔎 Find a recipe")
+    st.write(
+        "Enter the ingredients you have. Discover recipes that make "
+        "the most of what's already in your kitchen."
+    )
+
+    with st.container(border=True):
+        st.markdown("### 🧺 Your pantry")
+        st.caption("Tell KitchenCompass what you have available.")
+
+        pantry_col, exclude_col = st.columns([1.4, 1])
+
+        with pantry_col:
+            pantry = st.text_input(
+                "Pantry ingredients",
+                value="potato, tomato, onion, water",
+                help="Separate ingredient names or aliases with commas."
+            )
+
+        with exclude_col:
+            excluded = st.text_input(
+                "Ingredients to exclude",
+                placeholder="e.g. milk, peanuts"
+            )
+
+        st.divider()
+        st.markdown("### ⭐ Recipe ranking")
+
+        mode = st.radio(
+            "Choose how recipes should be ranked",
+            ["weighted", "overlap"],
+            horizontal=True,
+            format_func=lambda k: {
+                "weighted": "Weighted match",
+                "overlap": "Simple overlap"
+            }[k]
+        )
+
+        st.caption(
+            "Weighted match favors essential ingredients and fewer "
+            "missing items. Simple overlap counts each distinct "
+            "ingredient once."
+        )
+
+        search_button = st.button(
+            "Find recipes",
+            type="primary",
+            use_container_width=True
+        )
+
+
     query = (pantry, excluded, mode)
-    if st.button("Find recipes", type="primary"):
-        pantry_names = [v.strip() for v in pantry.split(",") if v.strip()]
-        excluded_names = [v.strip() for v in excluded.split(",") if v.strip()]
+
+    if search_button:
+        pantry_names = [
+            v.strip() for v in pantry.split(",") if v.strip()
+        ]
+        excluded_names = [
+            v.strip() for v in excluded.split(",") if v.strip()
+        ]
+
         response = run_service(
-            "Searching the recipe catalogue...",
+            "Searching your recipe collection...",
             lambda: (
-                recommend_for_pantry(pantry_names, excluded_names, limit=None, mode=mode, catalog=catalog),
-                normalize_inputs(pantry_names, catalog)["resolved_ids"],
-                normalize_inputs(excluded_names, catalog)["resolved_ids"],
+                recommend_for_pantry(
+                    pantry_names,
+                    excluded_names,
+                    limit=None,
+                    mode=mode,
+                    catalog=catalog
+                ),
+                normalize_inputs(
+                    pantry_names, catalog
+                )["resolved_ids"],
+                normalize_inputs(
+                    excluded_names, catalog
+                )["resolved_ids"],
             ),
         )
+
         if response is None:
             return
+
         result, pantry_ids, excluded_ids = response
-        state["pantry_search"] = (query, result, pantry_ids, excluded_ids)
+
+        state["pantry_search"] = (
+            query, result, pantry_ids, excluded_ids
+        )
         state["pantry_count"] = RESULTS_PER_BATCH
         state.pop("viewed_recipe", None)
 
     search = state.get("pantry_search")
+
     if search is None or search[0] != query:
         state.pop("pantry_search", None)
         return
 
     _, result, pantry_ids, excluded_ids = search
+
+    st.markdown("## 🍽️ Recipe recommendations")
     notices(result)
+
     if not result.items:
-        st.info("No recipes match these pantry ingredients and exclusions. Try changing your inputs.")
-    for index, row in enumerate(result.items[:state["pantry_count"]], 1):
+        st.info(
+            "No recipes match these pantry ingredients and exclusions. "
+            "Try changing your inputs."
+        )
+
+
+    for index, row in enumerate(
+        result.items[:state["pantry_count"]], 1
+    ):
         with st.container(border=True):
             st.subheader(f"{index}. {row['title']}")
-            st.write(f"Score {row['score']:.3f} · {row['coverage']:.0%} in pantry · {row['missing_count']} missing")
-            st.write("Have: " + (", ".join(item["name"] for item in row["matches"]) or "none"))
-            st.write("Need: " + (", ".join(item["name"] + (" (essential)" if item["essential"] else "") for item in row["missing"]) or "nothing"))
+
+            metric1, metric2, metric3 = st.columns(3)
+
+            metric1.metric(
+                "Match score", f"{row['score']:.3f}"
+            )
+            metric2.metric(
+                "Pantry coverage", f"{row['coverage']:.0%}"
+            )
+            metric3.metric(
+                "Missing items", row["missing_count"]
+            )
+
+            st.divider()
+
+            available_col, missing_col = st.columns(2)
+
+            with available_col:
+                st.markdown("**✅ Ingredients you have**")
+                st.write(
+                    ", ".join(item["name"] for item in row["matches"])
+                    or "None"
+                )
+
+            with missing_col:
+                st.markdown("**🛒 Ingredients you still need**")
+                st.write(
+                    ", ".join(
+                        item["name"] +
+                        (" (essential)" if item["essential"] else "")
+                        for item in row["missing"]
+                    ) or "Nothing — you have everything!"
+                )
+
             recipe_id = row["recipe_id"]
             expanded = state.get("viewed_recipe") == recipe_id
+
             view, substitute = st.columns(2)
-            view.button("Hide recipe" if expanded else "View recipe", key="view_" + recipe_id,
-                        on_click=state.update, kwargs={"viewed_recipe": None if expanded else recipe_id})
-            substitute.button("Open for substitution", key="open_" + recipe_id, on_click=open_recipe,
-                              args=(recipe_id, pantry_ids, excluded_ids))
+
+            view.button(
+                "Hide recipe" if expanded else "📖 View recipe",
+                key="view_" + recipe_id,
+                on_click=state.update,
+                kwargs={
+                    "viewed_recipe":
+                    None if expanded else recipe_id
+                },
+                use_container_width=True
+            )
+
+            substitute.button(
+                "Open for substitution",
+                key="open_" + recipe_id,
+                on_click=open_recipe,
+                args=(recipe_id, pantry_ids, excluded_ids),
+                use_container_width=True
+            )
+
             if expanded:
                 recipe = catalog.recipes[recipe_id]
-                recipe_details(recipe["ingredients"], recipe["instructions"])
+                recipe_details(
+                    recipe["ingredients"],
+                    recipe["instructions"]
+                )
+
+
     show_more("pantry_count", len(result.items))
 
 
@@ -168,45 +565,136 @@ def load_example(label):
                  sub_pantry_only=True, sub_mode="full")
 
 
+
 def substitute_page():
-    st.header("Replace one ingredient")
-    st.write("Choose a recipe and a target. Restrict candidates to your pantry or include ingredients you would need to buy.")
-    st.caption("Load a demo example")
-    columns = st.columns(2)
-    for index, label in enumerate(PRESETS):
-        columns[index % 2].button(label, on_click=load_example, args=(label,), use_container_width=True)
+    st.header("Ingredient substitution")
+    st.write(
+        "Find suitable alternatives for an ingredient while "
+        "respecting your recipe, pantry and exclusions."
+    )
 
-    recipes = {key: row["title"] for key, row in catalog.recipes.items()}
-    custom = state["custom_recipes"]
-    recipes.update({key: f"{row.title} (your recipe)" for key, row in custom.items()})
-    recipe_id = st.selectbox("Recipe", sorted(recipes, key=recipes.get), format_func=recipes.get, key="sub_recipe")
-    if recipe_id in custom:
-        recipe = custom[recipe_id]
-        entries = [e.model_dump() for e in recipe.ingredients]
-        steps = recipe.instructions
-    else:
-        recipe = recipe_id
-        entries = catalog.recipes[recipe_id]["ingredients"]
-        steps = catalog.recipes[recipe_id]["instructions"]
-    with st.expander("Recipe ingredients and instructions"):
-        recipe_details(entries, steps, separate_quantities=recipe_id in custom)
+    with st.container(border=True):
+        st.markdown("### ✨ Quick examples")
+        st.caption("Load an example to explore substitution options.")
 
-    options = list(dict.fromkeys(entry["ingredient_id"] for entry in entries))
-    if state.get("sub_target") not in options:
-        state["sub_target"] = options[0]
-    target = st.selectbox("Ingredient to replace", options, format_func=names.get, key="sub_target")
-    pantry = st.multiselect("Available replacements in your pantry", ingredient_options, format_func=names.get, key="sub_pantry")
-    excluded = st.multiselect("Exclude these ingredients and their known derivatives", ingredient_options, format_func=names.get, key="sub_excluded")
-    only = st.checkbox("Only suggest ingredients in my pantry", key="sub_pantry_only")
-    method = st.selectbox("Substitution method", list(LABELS), format_func=LABELS.get, key="sub_mode")
-    query = (recipe_id, target, tuple(pantry), tuple(excluded), only, method)
-    if st.button("Find substitutes", type="primary"):
+        columns = st.columns(2)
+        for index, label in enumerate(PRESETS):
+            columns[index % 2].button(
+                label,
+                on_click=load_example,
+                args=(label,),
+                use_container_width=True
+            )
+
+        st.divider()
+        st.markdown("### 🍲 Choose your recipe")
+
+        recipes = {
+            key: row["title"] for key, row in catalog.recipes.items()
+        }
+        custom = state["custom_recipes"]
+        recipes.update({
+            key: f"{row.title} (your recipe)"
+            for key, row in custom.items()
+        })
+
+        recipe_id = st.selectbox(
+            "Recipe",
+            sorted(recipes, key=recipes.get),
+            format_func=recipes.get,
+            key="sub_recipe"
+        )
+
+        if recipe_id in custom:
+            recipe = custom[recipe_id]
+            entries = [e.model_dump() for e in recipe.ingredients]
+            steps = recipe.instructions
+        else:
+            recipe = recipe_id
+            entries = catalog.recipes[recipe_id]["ingredients"]
+            steps = catalog.recipes[recipe_id]["instructions"]
+
+        with st.expander("View recipe ingredients and instructions"):
+            recipe_details(
+                entries,
+                steps,
+                separate_quantities=recipe_id in custom
+            )
+
+        options = list(dict.fromkeys(
+            entry["ingredient_id"] for entry in entries
+        ))
+        if state.get("sub_target") not in options:
+            state["sub_target"] = options[0]
+
+        st.markdown("### 🔄 Configure your substitution")
+
+        target = st.selectbox(
+            "Ingredient to replace",
+            options,
+            format_func=names.get,
+            key="sub_target"
+        )
+
+        pantry_col, excluded_col = st.columns(2)
+
+        with pantry_col:
+            pantry = st.multiselect(
+                "Available replacements in your pantry",
+                ingredient_options,
+                format_func=names.get,
+                key="sub_pantry"
+            )
+
+        with excluded_col:
+            excluded = st.multiselect(
+                "Ingredients to exclude",
+                ingredient_options,
+                format_func=names.get,
+                key="sub_excluded"
+            )
+
+        only_col, method_col = st.columns(2)
+
+        with only_col:
+            only = st.checkbox(
+                "Only suggest ingredients in my pantry",
+                key="sub_pantry_only"
+            )
+
+        with method_col:
+            method = st.selectbox(
+                "Substitution method",
+                list(LABELS),
+                format_func=LABELS.get,
+                key="sub_mode"
+            )
+
+        query = (
+            recipe_id, target, tuple(pantry), tuple(excluded),
+            only, method
+        )
+
+        st.divider()
+        search_button = st.button(
+            "Find substitutes",
+            type="primary",
+            use_container_width=True
+        )
+
+    if search_button:
         result = run_service(
             "Finding eligible ingredient replacements...",
             lambda: rank_substitutes(
                 recipe, target,
-                Constraints(pantry_ids=pantry, excluded_ids=excluded, pantry_only=only),
-                top_k=None, mode=method, catalog=catalog,
+                Constraints(
+                    pantry_ids=pantry,
+                    excluded_ids=excluded,
+                    pantry_only=only
+                ),
+                top_k=None,
+                mode=method,
+                catalog=catalog,
             ),
         )
         if result is None:
@@ -220,22 +708,53 @@ def substitute_page():
         return
 
     _, result = search
-    st.subheader(f"Replacements for {names[target]}")
-    if not result.items:
-        st.write("No substitutions to show.")
+
+    st.subheader(f"Suggested replacements for {names[target]}")
     notices(result)
-    for number, item in enumerate(result.items[:state["sub_count"]], 1):
+
+    if not result.items:
+        st.info("No substitutions to show. Try changing your pantry or exclusions.")
+
+    for number, item in enumerate(
+        result.items[:state["sub_count"]], 1
+    ):
         with st.container(border=True):
             st.subheader(f"{number}. {item['name']}")
-            st.write(("Purchase required" if item["purchase_required"] else "In your pantry") + f" · Score {item['score']:.3f}")
+
+            status_col, score_col = st.columns(2)
+
+            with status_col:
+                st.caption("AVAILABILITY")
+                st.write(
+                    "🛒 Purchase required"
+                    if item["purchase_required"]
+                    else "✅ In your pantry"
+                )
+
+            with score_col:
+                st.caption("MATCH SCORE")
+                st.metric("Score", f"{item['score']:.3f}")
+
+            st.divider()
+            st.markdown("**Why this replacement was suggested**")
+
             for detail in item["reasons"]:
                 st.write(detail)
+
             for clause in item["role_evidence"]["clauses"]:
                 st.caption(f"Matched instruction: {clause}")
+
             if item["partial_evidence"]:
-                st.caption("The score uses the available signals with rescaled weights.")
+                st.caption(
+                    "The score uses the available signals with rescaled weights."
+                )
+
             if item["flavor_sources"]:
-                st.caption("Molecular sources: " + ", ".join(item["flavor_sources"]))
+                st.caption(
+                    "Molecular sources: "
+                    + ", ".join(item["flavor_sources"])
+                )
+
     show_more("sub_count", len(result.items))
 
 
@@ -256,10 +775,21 @@ def load_joint_example(label):
 
 def joint_page():
     st.header("Joint replacements")
-    st.write("Choose up to three ingredients to replace together.")
-    columns = st.columns(2)
-    for col, label in zip(columns, JOINT_EXAMPLES):
-        col.button(label, on_click=load_joint_example, args=(label,))
+    st.write(
+        "Explore coordinated alternatives for multiple ingredients "
+        "while preserving recipe constraints."
+    )
+
+    with st.container(border=True):
+        st.markdown("### ✨ Try an example")
+        columns = st.columns(2)
+        for col, label in zip(columns, JOINT_EXAMPLES):
+            col.button(
+                label,
+                on_click=load_joint_example,
+                args=(label,),
+                use_container_width=True
+            )
 
     custom = state["custom_recipes"]
     titles = {key: row["title"] for key, row in catalog.recipes.items()}
@@ -297,14 +827,19 @@ def joint_page():
         state.pop("joint_search", None)
         return
     _, result, baseline = saved
+    st.divider()
+    st.subheader("🍲 Suggested replacement plans")
     notices(result)
     if not result.items:
         st.info("No valid joint replacement plan was found. Try changing the targets, pantry or exclusions.")
     for number, plan in enumerate(result.items, 1):
         with st.container(border=True):
             st.subheader(f"Plan {number}")
+            st.markdown("**Ingredient replacements**")
             for target, candidate in plan["replacements"].items():
-                st.write(f"{names[target]} → {names[candidate]}")
+                left, right = st.columns(2)
+                left.info(names[target])
+                right.success(names[candidate])
             q, j = plan["component_scores"]["Q"], plan["component_scores"]["J"]
             st.write(f"Plan score {plan['score']:.3f} · Individual quality {q:.3f}"
                      + (f" · Pair compatibility {j:.3f}" if j is not None else ""))
@@ -330,14 +865,36 @@ def joint_page():
 
 def custom_page():
     st.header("Your custom recipes")
-    st.write("Recipes stay in this browser session. Download a JSON copy to keep one after the session ends.")
-    with st.form("custom_input"):
-        title = st.text_input("Recipe title")
-        lines = st.text_area("Ingredients (one per line)", placeholder="potato | 200 g\ntomato | 2 medium",
-                             help="Use a vertical bar before an optional quantity.")
-        steps = st.text_area("Instructions (one step per line)")
-        omitted = st.checkbox("Instructions not provided")
-        create = st.form_submit_button("Review ingredients")
+    st.write(
+        "Create your own recipes, confirm their ingredients and "
+        "save them for use in KitchenCompass."
+    )
+
+    with st.container(border=True):
+        st.markdown("### 📝 Create a recipe")
+
+        with st.form("custom_input"):
+            title = st.text_input("Recipe title")
+
+            ingredient_col, instruction_col = st.columns(2)
+
+            with ingredient_col:
+                lines = st.text_area(
+                    "Ingredients (one per line)",
+                    placeholder="potato | 200 g\ntomato | 2 medium",
+                    help="Use a vertical bar before an optional quantity."
+                )
+
+            with instruction_col:
+                steps = st.text_area(
+                    "Instructions (one step per line)"
+                )
+
+            omitted = st.checkbox("Instructions not provided")
+            create = st.form_submit_button(
+                "Review ingredients",
+                type="primary"
+            )
     if create:
         state.pop("draft_recipe", None)
         try:
@@ -389,19 +946,99 @@ def custom_page():
                 st.success(f"Saved {confirmed.title} in this session.")
             except ValueError as error:
                 st.error(str(error))
+    st.markdown("### 📚 Your saved recipes")
+
     for key, saved in state["custom_recipes"].items():
         with st.container(border=True):
-            st.subheader(saved.title)
+            st.subheader(f"🍲 {saved.title}")
             st.caption(f"{len(saved.ingredients)} ingredient entries · {len(saved.instructions)} instruction steps")
             st.button("Use this recipe for substitution", key="use_" + key, on_click=open_recipe, args=(key,))
             st.download_button("Download recipe JSON", export_custom_recipe(saved), file_name=f"recipe-{key}.json",
                                mime="application/json", key="download_" + key)
 
 
-st.title("KitchenCompass")
-page = st.sidebar.radio("Workspace", ["Pantry search", "Substitutions", "Joint replacements", "Custom recipes"], key="workspace")
-st.sidebar.caption(f"{len(catalog.recipes)} recipes · {len(names)} ingredients")
-st.sidebar.caption(f"Data {catalog.config['data_version']} · Model {catalog.config['config_version']}")
+
+# ===== HERO HEADER =====
+
+hero_left, hero_right = st.columns([3, 1])
+
+with hero_left:
+    st.markdown("""
+    <div class="kc-hero">
+        <div class="kc-eyebrow">
+            YOUR SMART COOKING COMPANION
+        </div>
+        <div class="kc-hero-title">
+            KitchenCompass
+        </div>
+        <div class="kc-hero-subtitle">
+            Discover recipes. Make the most of your ingredients.
+            Cook with confidence.
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
+with hero_right:
+    st.markdown("""
+    <div class="kc-hero">
+        <div class="kc-hero-art">🍲</div>
+        <div style="text-align:center; color:#204B37;
+                    font-weight:700;">
+            Discover • Substitute • Cook
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
+
+# ===== SIDEBAR BRANDING =====
+
+st.sidebar.markdown("""
+<div class="kc-sidebar-brand">🍃 KitchenCompass</div>
+<div class="kc-sidebar-tagline">
+    Discover • Substitute • Cook
+</div>
+<div class="kc-sidebar-divider"></div>
+""", unsafe_allow_html=True)
+
+page = st.sidebar.radio(
+    "EXPLORE KITCHENCOMPASS",
+    [
+        "Pantry search",
+        "Substitutions",
+        "Joint replacements",
+        "Custom recipes"
+    ],
+    key="workspace"
+)
+
+st.sidebar.markdown(
+    '<div class="kc-sidebar-divider"></div>',
+    unsafe_allow_html=True
+)
+
+st.sidebar.markdown(
+    f"🍲 **{len(catalog.recipes)}** recipes",
+    unsafe_allow_html=True
+)
+
+st.sidebar.markdown(
+    f"🌿 **{len(names)}** ingredients",
+    unsafe_allow_html=True
+)
+
+st.sidebar.markdown(
+    '<div class="kc-sidebar-divider"></div>',
+    unsafe_allow_html=True
+)
+
+st.sidebar.caption(
+    f"Data {catalog.config['data_version']} · "
+    f"Model {catalog.config['config_version']}"
+)
+
+
+# ===== PAGE ROUTING =====
+
 if page == "Pantry search":
     pantry_page()
 elif page == "Substitutions":
