@@ -1,16 +1,114 @@
-# KitchenCompass Phase 5 handoff
 
-| Field | Checkpoint |
+# KitchenCompass – Project Handoff
+
+## Project overview
+
+KitchenCompass is a web application for pantry-based recipe recommendation and context-aware ingredient substitution.
+
+The project combines recipe data, ingredient information, flavor evidence and cooking-role context to generate useful recipe recommendations and replacement plans.
+
+The application is developed using Python and Streamlit.
+
+## Current project status
+
+| Area | Status |
 |---|---|
-| Snapshot | P05-v0.6.0-20261123, ZIP checkpoint. Parent P04-v0.5.0-20261123 SHA-256 `bf80f5378a9ad89654e1af65bda389636a45b04862c0f2e890fe3a9a718c7a9c`. |
-| Status | In progress. Engineering and development experiments verified. Team grading and final test evaluation pending. |
-| Team | Prepared for Vibhu and Swarit, Phase 5 co-leads. Receiver acceptance and the Windows machine check are open. |
-| Versions | Shared plan 1.0, catalogue 2.0, individual-scoring config 0.4.0, application 0.6.0, benchmark P05-v1, split groups_seed_42_v2. |
-| Scope | 150 distinct pantry, single and joint requests with frozen pools and independent review assignments. Experiment runner, quality and feasibility metrics, group bootstrap, timing, label reconciliation and integrity checks. |
-| Development evidence | 75 requests, 288 returned items across the three full methods, zero hard violations. Human quality values are empty. All 15 held-out joint cases are assigned to both teammates. |
-| Environment | CPython 3.11.18 with requirements.txt. See results/verification.txt and results/runtime.json. |
-| Decisions | P5-01 and P5-02 in docs/DECISIONS.md. No ranking weights changed. |
-| Next task | Vibhu and Swarit independently complete their assigned UTF-8 worksheets in data/benchmark/phase5/reviews/. |
-| Final artifacts pending | labels_lock.json and results/test/ are generated after human review using the commands in docs/EVALUATION.md. The handoff includes all data required to run the pipeline. |
+| Recipe catalogue | Prepared |
+| Ingredient catalogue | Prepared |
+| FlavorDB integration | Implemented with limited profile coverage |
+| Recipe recommendation | Implemented |
+| Single-ingredient substitution | Implemented |
+| Joint ingredient replacement | Implemented |
+| Custom recipe support | Implemented |
+| Streamlit interface | Implemented and redesigned |
+| Automated tests | 128 passed in the latest recorded full run |
+| GitHub repository | Updated with latest UI commit |
+| Streamlit deployment | Configured |
+| Human-reviewed benchmark results | Pending completion |
 
-Use [the Windows README](README.md) to run the local application and [the evaluation guide](docs/EVALUATION.md) to review, reconcile, freeze, reproduce and package the experiment. The original Phase 4 handoff is in [the history folder](docs/history/PHASE_4_HANDOFF.md). Public hosting belongs to Phase 6. Hosting, course deadline and teammate availability have no new recorded decisions.
+## Application functionality
+
+The application contains four main sections:
+
+1. **Pantry:** recommends recipes based on available and excluded ingredients.
+2. **Substitutions:** ranks possible replacements for a selected ingredient.
+3. **Joint replacements:** generates plans for replacing multiple ingredients together.
+4. **Custom recipes:** allows users to create, import, save during a session and export their own recipes.
+
+The interface has been updated to improve page organization, readability, navigation and visibility of important information.
+
+The UI changes preserve the existing application workflows and Streamlit widget keys.
+
+## Data and implementation
+
+- The active recipe catalogue contains 212 recipes.
+- The ingredient catalogue contains 162 canonical ingredient records.
+- Molecular flavor evidence is currently available for five ingredient profiles.
+- Recipe context features are generated from the training split.
+- The application uses packaged data and features during normal execution.
+- Custom recipes are stored in the current Streamlit session and can be exported as JSON.
+
+Refer to `docs/DATA_SOURCES.md` for data provenance and attribution.
+
+## Verification
+
+The latest recorded full test run after the UI changes:
+
+```text
+python -m pytest -q
+
+128 passed
+```
+
+The application was also checked for Python syntax errors and its main workflows were manually reviewed.
+
+The manifest was regenerated after the application changes.
+
+## GitHub and deployment
+
+The latest UI update was committed and pushed to the `main` branch.
+
+Latest UI commit:
+
+```text
+156f018
+```
+
+Repository:
+
+https://github.com/swarit-kumar/Kitchen-Compass
+
+The Streamlit Community Cloud deployment uses the GitHub repository.
+
+## Important limitations
+
+- FlavorDB coverage is limited, so molecular evidence is not available for every ingredient.
+- Recipe substitutions are recommendations and may require adjustments during actual cooking.
+- Human review is needed to assess culinary suitability independently of automated constraint checks.
+- Final benchmark quality results should not be claimed until the human-review process and held-out evaluation are complete.
+- Custom recipes are session-based unless exported by the user.
+
+## Running the project
+
+Refer to `README.md` for the complete Windows installation and execution instructions.
+
+To run the application:
+
+```cmd
+python -m streamlit run app.py
+```
+
+To run the test suite:
+
+```cmd
+python -m pytest -q
+```
+
+## Main documentation
+
+- `README.md` – project description and setup.
+- `docs/DATA_SOURCES.md` – data sources and attribution.
+- `docs/EVALUATION.md` – benchmark and evaluation methodology.
+- `docs/DEPLOYMENT.md` – deployment configuration and checks.
+- `docs/DEMO_WINDOWS.md` – application demonstration guide.
+- `docs/DECISIONS.md` – recorded project decisions.
