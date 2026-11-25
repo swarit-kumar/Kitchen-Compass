@@ -1,61 +1,126 @@
-# KitchenCompass Phase 6 deployment
 
-## Release configuration
+# KitchenCompass – Deployment Guide
 
-- Hosting target: Streamlit Community Cloud (subject to the smoke check below).
-- Application entry point: `app.py`.
-- Python: 3.11 (the project requires `>=3.11,<3.12`).
-- Dependencies: install from the pinned `requirements.txt`.
-- Secrets: none are required by the current application. Do not add private credentials to the repository.
-- Data: the read-only catalogue, frozen feature snapshot and manifest are packaged in the repository. The application does not download or modify source data at runtime.
+## Overview
 
-## Cache and session behavior
+KitchenCompass is a Streamlit application that can run locally or be hosted using Streamlit Community Cloud.
 
-`kitchencompass.service.get_catalog` caches only the read-only catalogue. The Streamlit application cache key includes the data version, config version and SHA-256 digest of `artifacts/manifest.json`. Custom recipes and drafts are stored only in the current Streamlit session state; they are not written to the catalogue, files, global caches or durable account storage.
+The application entry point is:
 
-A custom recipe is lost when its session ends unless the user downloads its JSON export. Users can import that JSON in a later session. A new browser session must begin with an empty custom-recipe list.
+```text
+app.py
+```
 
-## Local smoke check
+## Environment
 
-From the project root, with Python 3.11 and dependencies installed:
+| Component | Requirement |
+|---|---|
+| Python | 3.11.x |
+| Framework | Streamlit |
+| Dependencies | requirements.txt |
+| Main file | app.py |
+| Hosting | Streamlit Community Cloud |
 
-```powershell
-python -m pytest -q
+The project requires Python >=3.11 and <3.12.
+
+## Local deployment
+
+From the project root, create and activate a virtual environment:
+
+```cmd
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+Install the dependencies:
+
+```cmd
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+python -m pip install -e . --no-deps
+```
+
+Start the application:
+
+```cmd
 python -m streamlit run app.py
 ```
 
-Confirm the app opens and complete the workflow checklist below before deploying.
+The application will normally be available at:
 
-## Streamlit Community Cloud setup
+```text
+http://localhost:8501
+```
 
-1. Ensure the reviewed release commit is pushed to the GitHub repository's main branch.
-2. In Streamlit Community Cloud, create an app from that repository and select the main branch.
-3. Set the main file path to `app.py`.
-4. Use the repository's pinned `requirements.txt`; do not install unpinned packages manually.
-5. Deploy and record the generated public URL and release commit below.
+## Streamlit Community Cloud
 
-If the deployment smoke check fails, do not claim a successful release. Record the failure and select/document an equivalent host before release.
+The project is configured for deployment through Streamlit Community Cloud.
 
-## End-to-end release checklist
+The deployment uses the GitHub repository:
 
-- [ ] Pantry recommendation returns results and a no-result message for an impossible request.
-- [ ] Single-ingredient substitution returns candidates or a clear no-result message.
-- [ ] Joint replacement returns valid plans or a clear no-result message.
-- [ ] Custom recipe creation requires ingredient confirmation.
-- [ ] Custom recipe JSON export downloads a valid schema-versioned file.
-- [ ] A second fresh browser session cannot see the first session's custom recipes.
-- [ ] Importing the exported JSON restores the recipe in the second session.
-- [ ] Data and model/config versions are visible in the sidebar.
-- [ ] Evidence and uncertainty warnings remain visible.
-- [ ] Loading and error feedback are visible during service requests and failures.
-- [ ] Both teammates complete the deployed workflows.
+https://github.com/swarit-kumar/Kitchen-Compass
 
-## Release record
+### Deployment configuration
 
-- Deployed URL: **pending deployment**
-- Hosting provider: **pending smoke check**
-- Release commit: **pending release commit**
-- Python version: **3.11**
-- Dependency file: `requirements.txt`
-- Fresh-browser verification: **pending**
-- Teammate verification: **pending**
+- Repository: `swarit-kumar/Kitchen-Compass`
+- Branch: `main`
+- Main file path: `app.py`
+- Python version: 3.11
+- Dependencies: `requirements.txt`
+
+### Updating the deployed application
+
+When changes are pushed to the connected GitHub branch, Streamlit Community Cloud detects the new commit and normally starts a new deployment automatically.
+
+After pushing changes:
+
+1. Open the Streamlit Community Cloud dashboard.
+2. Select the KitchenCompass application.
+3. Check the deployment status.
+4. Wait for the application to finish restarting.
+5. Open the application and verify the updated version.
+
+If automatic deployment does not start, check the deployment logs and repository configuration.
+
+## Application data and session behavior
+
+The application uses the recipe catalogue and precomputed feature files included in the repository.
+
+Normal application usage does not require downloading recipe or FlavorDB data.
+
+Custom recipes are maintained in the current Streamlit session. They are not permanently added to the shared recipe catalogue.
+
+Users can export custom recipes as JSON and import them in another session.
+
+## Verification checklist
+
+Before presenting or releasing an updated version, verify the following:
+
+- [ ] The application starts without errors.
+- [ ] Pantry recommendations return results.
+- [ ] Ingredient exclusions are respected.
+- [ ] Single substitutions return suggestions or a clear explanation.
+- [ ] Joint replacement produces valid plans or explains why none are available.
+- [ ] Custom recipes can be created and imported.
+- [ ] Custom recipe JSON export works.
+- [ ] The interface is readable and all navigation sections work.
+- [ ] The automated test suite passes.
+- [ ] The deployed application reflects the latest GitHub commit.
+
+## Security and configuration
+
+The current application does not require private API credentials for its normal operation.
+
+Do not commit passwords, access tokens or other private credentials to the repository.
+
+## Deployment record
+
+Repository: https://github.com/swarit-kumar/Kitchen-Compass
+
+Branch: `main`
+
+Application entry point: `app.py`
+
+Latest recorded UI commit: `156f018`
+
+Hosting provider: Streamlit Community Cloud
